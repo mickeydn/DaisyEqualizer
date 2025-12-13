@@ -9,7 +9,8 @@ The DaisyAutio must be cloned to the Daisy/DaisyExamples/ folder of the Daisy in
 
 Install the Python library pyserial (pip install pyserial) to execute the comPortPlotData.py.
 
-$ pip install pyserial <\br>
+$ pip install pyserial 
+
 $ python comPortPlotData.py COM4
 
 The comPortPlotData.py needs a parameter for the COM port connected to the Daisy Pod hardware.
