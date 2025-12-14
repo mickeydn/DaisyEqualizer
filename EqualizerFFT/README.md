@@ -20,17 +20,39 @@ The FFT magnitude and EQ settings are transmitted over a USB COM port at 9600 BA
 
 The EQ settings are transmitted as:
 
+
+
 \#BAND 1 Freq 100.0 Gain x.x
+
+
 #BAND 2 Freq 500.0 Gain x.x
+
+
 #BAND 3 Freq 2000.0 Gain x.x
+
+
 #BAND 4 Freq 8000.0 Gain x.x
+
+
 
 The FFT magnitude is transmitted as:
 
+
+
 \#BEGIN
+
+
 Frequency,Amplitude
+
+
 f1.f1,a1.a1
+
+
 ...
+
+
 f2048.f2048,a2048.a2048
+
+
 #END
 
