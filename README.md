@@ -5,7 +5,7 @@ This repository requires the Daisy tool chain to be installed. See tutorial belo
 
 https://daisy.audio/tutorials/cpp-dev-env/
 
-The DaisyAutio must be cloned to the Daisy/DaisyExamples/ folder of the Daisy installation.
+The DaisyAudio repository must be cloned to the Daisy/DaisyExamples/ folder of the Daisy installation.
 
 Install the Python library pyserial (pip install pyserial) to execute the comPortPlotData.py.
 
