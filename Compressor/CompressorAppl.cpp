@@ -51,7 +51,7 @@ int main(void)
 	compressorRight.setThresholdDb(-18.0f);
 	compressorLeft.setRatio(3.0f);
 	compressorRight.setRatio(3.0f);
-	compressorLeft.setAttackMs(8.0f);
+	compressorLeft.setReleaseMs(150.0f);
 	compressorRight.setReleaseMs(150.0f);
 	compressorLeft.setAttackMs(8.0f);
 	compressorRight.setAttackMs(8.0f);
