@@ -17,4 +17,16 @@ The comPortPlotData.py needs a parameter for the COM port connected to the Daisy
 
 It receives data from the programs "FFT" or "EqualizerFFT" and plots the magnitude of the FFT.
 
+# Visual Code
+
+Use file -> open folder for the project to execute
+
+Run: 
+
+- task build_all
+- task build_and_program  - require STM debugger
+- task build_and_debug - require STM debugger
+- task build_and_program_dfu - Set Pod in programming mode 
+
+
 
