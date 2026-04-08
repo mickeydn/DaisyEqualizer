@@ -1,0 +1,1193 @@
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"Controller.cpp"
+  13              		.text
+  14              	.Ltext0:
+  15              		.cfi_sections	.debug_frame
+  16              		.section	.text._ZN10ControllerD2Ev,"ax",%progbits
+  17              		.align	1
+  18              		.p2align 2,,3
+  19              		.global	_ZN10ControllerD2Ev
+  20              		.arch armv7e-m
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  24              		.fpu fpv5-d16
+  26              	_ZN10ControllerD2Ev:
+  27              	.LVL0:
+  28              	.LFB2582:
+  29              		.file 1 "Controller.cpp"
+   1:Controller.cpp **** ///////////////////////////////////////////////////////////
+   2:Controller.cpp **** //  Controller.cpp
+   3:Controller.cpp **** //  Implementation of the Class Controller
+   4:Controller.cpp **** //  Created on:      06-aug-2014 23:31:01
+   5:Controller.cpp **** //  Modified:        27-nov-2025 20:01:00
+   6:Controller.cpp **** //  Original author: kbe
+   7:Controller.cpp **** ///////////////////////////////////////////////////////////
+   8:Controller.cpp **** 
+   9:Controller.cpp **** #include "Controller.h"
+  10:Controller.cpp **** 
+  11:Controller.cpp **** Controller::Controller(Equalizer *eqLeft, Equalizer *eqRight, DaisyPod *daisyPod) : m_band(0)
+  12:Controller.cpp **** {
+  13:Controller.cpp **** 	m_eqLeft = eqLeft;
+  14:Controller.cpp **** 	m_eqRight = eqRight;
+  15:Controller.cpp **** 	m_daisyPod = daisyPod; 
+  16:Controller.cpp **** }
+  17:Controller.cpp **** 
+  18:Controller.cpp **** Controller::~Controller()
+  30              		.loc 1 18 1 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		@ link register save eliminated.
+  19:Controller.cpp **** {
+  20:Controller.cpp **** 
+  21:Controller.cpp **** }
+  35              		.loc 1 21 1 is_stmt 0 view .LVU1
+  36 0000 7047     		bx	lr
+  37              		.cfi_endproc
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 2
+
+
+  38              	.LFE2582:
+  40              		.global	_ZN10ControllerD1Ev
+  41              		.thumb_set _ZN10ControllerD1Ev,_ZN10ControllerD2Ev
+  42 0002 00BF     		.section	.text._ZN10ControllerD0Ev,"ax",%progbits
+  43              		.align	1
+  44              		.p2align 2,,3
+  45              		.global	_ZN10ControllerD0Ev
+  46              		.syntax unified
+  47              		.thumb
+  48              		.thumb_func
+  49              		.fpu fpv5-d16
+  51              	_ZN10ControllerD0Ev:
+  52              	.LVL1:
+  53              	.LFB2584:
+  18:Controller.cpp **** {
+  54              		.loc 1 18 1 is_stmt 1 view -0
+  55              		.cfi_startproc
+  56              		@ args = 0, pretend = 0, frame = 0
+  57              		@ frame_needed = 0, uses_anonymous_args = 0
+  18:Controller.cpp **** {
+  58              		.loc 1 18 1 is_stmt 0 view .LVU3
+  59 0000 10B5     		push	{r4, lr}
+  60              		.cfi_def_cfa_offset 8
+  61              		.cfi_offset 4, -8
+  62              		.cfi_offset 14, -4
+  18:Controller.cpp **** {
+  63              		.loc 1 18 1 view .LVU4
+  64 0002 0446     		mov	r4, r0
+  65              	.LVL2:
+  66              	.LBB13:
+  67              	.LBI13:
+  18:Controller.cpp **** {
+  68              		.loc 1 18 1 is_stmt 1 view .LVU5
+  18:Controller.cpp **** {
+  69              		.loc 1 18 1 is_stmt 0 view .LVU6
+  70              	.LBE13:
+  71              		.loc 1 21 1 view .LVU7
+  72 0004 1421     		movs	r1, #20
+  73 0006 FFF7FEFF 		bl	_ZdlPvj
+  74              	.LVL3:
+  75              		.loc 1 21 1 view .LVU8
+  76 000a 2046     		mov	r0, r4
+  77 000c 10BD     		pop	{r4, pc}
+  78              		.loc 1 21 1 view .LVU9
+  79              		.cfi_endproc
+  80              	.LFE2584:
+  82 000e 00BF     		.section	.text._ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE,"ax",%progbits
+  83              		.align	1
+  84              		.p2align 2,,3
+  85              		.global	_ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE
+  86              		.syntax unified
+  87              		.thumb
+  88              		.thumb_func
+  89              		.fpu fpv5-d16
+  91              	_ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE:
+  92              	.LVL4:
+  93              	.LFB2579:
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 3
+
+
+  11:Controller.cpp **** {
+  94              		.loc 1 11 1 is_stmt 1 view -0
+  95              		.cfi_startproc
+  96              		@ args = 0, pretend = 0, frame = 0
+  97              		@ frame_needed = 0, uses_anonymous_args = 0
+  98              		@ link register save eliminated.
+  99              	.LBB14:
+  14:Controller.cpp **** 	m_daisyPod = daisyPod; 
+ 100              		.loc 1 14 12 is_stmt 0 view .LVU11
+ 101 0000 C0E90212 		strd	r1, r2, [r0, #8]
+  15:Controller.cpp **** }
+ 102              		.loc 1 15 13 view .LVU12
+ 103 0004 0361     		str	r3, [r0, #16]
+  11:Controller.cpp **** {
+ 104              		.loc 1 11 93 view .LVU13
+ 105 0006 0023     		movs	r3, #0
+ 106              	.LVL5:
+  11:Controller.cpp **** {
+ 107              		.loc 1 11 93 view .LVU14
+ 108 0008 014A     		ldr	r2, .L6
+ 109              	.LVL6:
+  11:Controller.cpp **** {
+ 110              		.loc 1 11 93 view .LVU15
+ 111 000a 8380     		strh	r3, [r0, #4]	@ movhi
+  13:Controller.cpp **** 	m_eqRight = eqRight;
+ 112              		.loc 1 13 2 is_stmt 1 view .LVU16
+  14:Controller.cpp **** 	m_daisyPod = daisyPod; 
+ 113              		.loc 1 14 2 view .LVU17
+  15:Controller.cpp **** }
+ 114              		.loc 1 15 2 view .LVU18
+  11:Controller.cpp **** {
+ 115              		.loc 1 11 93 is_stmt 0 view .LVU19
+ 116 000c 0260     		str	r2, [r0]
+ 117              	.LBE14:
+  16:Controller.cpp **** 
+ 118              		.loc 1 16 1 view .LVU20
+ 119 000e 7047     		bx	lr
+ 120              	.L7:
+ 121              		.align	2
+ 122              	.L6:
+ 123 0010 08000000 		.word	.LANCHOR0+8
+ 124              		.cfi_endproc
+ 125              	.LFE2579:
+ 127              		.global	_ZN10ControllerC1EP9EqualizerS1_PN5daisy8DaisyPodE
+ 128              		.thumb_set _ZN10ControllerC1EP9EqualizerS1_PN5daisy8DaisyPodE,_ZN10ControllerC2EP9EqualizerS1_PN5d
+ 129              		.section	.text._ZN10Controller7incBandEv,"ax",%progbits
+ 130              		.align	1
+ 131              		.p2align 2,,3
+ 132              		.global	_ZN10Controller7incBandEv
+ 133              		.syntax unified
+ 134              		.thumb
+ 135              		.thumb_func
+ 136              		.fpu fpv5-d16
+ 138              	_ZN10Controller7incBandEv:
+ 139              	.LVL7:
+ 140              	.LFB2585:
+  22:Controller.cpp **** 
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 4
+
+
+  23:Controller.cpp **** float Controller::incBand()
+  24:Controller.cpp **** {
+ 141              		.loc 1 24 1 is_stmt 1 view -0
+ 142              		.cfi_startproc
+ 143              		@ args = 0, pretend = 0, frame = 0
+ 144              		@ frame_needed = 0, uses_anonymous_args = 0
+ 145              		@ link register save eliminated.
+  25:Controller.cpp **** 	// Selects the next EQ band
+  26:Controller.cpp **** 	m_band++;
+ 146              		.loc 1 26 2 view .LVU22
+ 147              		.loc 1 26 8 is_stmt 0 view .LVU23
+ 148 0000 8388     		ldrh	r3, [r0, #4]
+ 149 0002 0133     		adds	r3, r3, #1
+ 150 0004 1BB2     		sxth	r3, r3
+  27:Controller.cpp **** 	if (m_band >= NUM_EQ_BANDS)
+ 151              		.loc 1 27 2 is_stmt 1 view .LVU24
+ 152 0006 032B     		cmp	r3, #3
+ 153 0008 05DC     		bgt	.L9
+  28:Controller.cpp **** 		m_band = 0;
+  29:Controller.cpp **** 
+  30:Controller.cpp **** 	return (float)m_band;
+ 154              		.loc 1 30 16 is_stmt 0 view .LVU25
+ 155 000a 07EE903A 		vmov	s15, r3	@ int
+  26:Controller.cpp **** 	if (m_band >= NUM_EQ_BANDS)
+ 156              		.loc 1 26 8 view .LVU26
+ 157 000e 8380     		strh	r3, [r0, #4]	@ movhi
+ 158              		.loc 1 30 16 view .LVU27
+ 159 0010 B8EEE70A 		vcvt.f32.s32	s0, s15
+ 160 0014 7047     		bx	lr
+ 161              	.L9:
+  28:Controller.cpp **** 		m_band = 0;
+ 162              		.loc 1 28 3 is_stmt 1 view .LVU28
+  28:Controller.cpp **** 		m_band = 0;
+ 163              		.loc 1 28 10 is_stmt 0 view .LVU29
+ 164 0016 0023     		movs	r3, #0
+ 165 0018 9FED010A 		vldr.32	s0, .L11
+ 166              		.loc 1 30 2 is_stmt 1 view .LVU30
+  28:Controller.cpp **** 		m_band = 0;
+ 167              		.loc 1 28 10 is_stmt 0 view .LVU31
+ 168 001c 8380     		strh	r3, [r0, #4]	@ movhi
+  31:Controller.cpp **** }
+ 169              		.loc 1 31 1 view .LVU32
+ 170 001e 7047     		bx	lr
+ 171              	.L12:
+ 172              		.align	2
+ 173              	.L11:
+ 174 0020 00000000 		.word	0
+ 175              		.cfi_endproc
+ 176              	.LFE2585:
+ 178              		.section	.text._ZN10Controller8incParamEv,"ax",%progbits
+ 179              		.align	1
+ 180              		.p2align 2,,3
+ 181              		.global	_ZN10Controller8incParamEv
+ 182              		.syntax unified
+ 183              		.thumb
+ 184              		.thumb_func
+ 185              		.fpu fpv5-d16
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 5
+
+
+ 187              	_ZN10Controller8incParamEv:
+ 188              	.LVL8:
+ 189              	.LFB2586:
+  32:Controller.cpp **** 
+  33:Controller.cpp **** float Controller::incParam()
+  34:Controller.cpp **** {
+ 190              		.loc 1 34 1 is_stmt 1 view -0
+ 191              		.cfi_startproc
+ 192              		@ args = 0, pretend = 0, frame = 0
+ 193              		@ frame_needed = 0, uses_anonymous_args = 0
+ 194              		@ link register save eliminated.
+  35:Controller.cpp **** 	// TODO Optional to insert code to select next parameter in algorithm
+  36:Controller.cpp **** 	return 0.0;
+ 195              		.loc 1 36 2 view .LVU34
+  37:Controller.cpp **** }
+ 196              		.loc 1 37 1 is_stmt 0 view .LVU35
+ 197 0000 9FED010A 		vldr.32	s0, .L14
+ 198 0004 7047     		bx	lr
+ 199              	.L15:
+ 200 0006 00BF     		.align	2
+ 201              	.L14:
+ 202 0008 00000000 		.word	0
+ 203              		.cfi_endproc
+ 204              	.LFE2586:
+ 206              		.section	.text._ZN10Controller13incParamValueEv,"ax",%progbits
+ 207              		.align	1
+ 208              		.p2align 2,,3
+ 209              		.global	_ZN10Controller13incParamValueEv
+ 210              		.syntax unified
+ 211              		.thumb
+ 212              		.thumb_func
+ 213              		.fpu fpv5-d16
+ 215              	_ZN10Controller13incParamValueEv:
+ 216              	.LVL9:
+ 217              	.LFB2587:
+  38:Controller.cpp **** 
+  39:Controller.cpp **** float Controller::incParamValue()
+  40:Controller.cpp **** {
+ 218              		.loc 1 40 1 is_stmt 1 view -0
+ 219              		.cfi_startproc
+ 220              		@ args = 0, pretend = 0, frame = 0
+ 221              		@ frame_needed = 0, uses_anonymous_args = 0
+  41:Controller.cpp **** 	// Increments parameter value for PM_GAIN
+  42:Controller.cpp **** 	m_eqLeft->incParameter(m_band, PM_GAIN, 0.1);
+ 222              		.loc 1 42 2 view .LVU37
+  40:Controller.cpp **** 	// Increments parameter value for PM_GAIN
+ 223              		.loc 1 40 1 is_stmt 0 view .LVU38
+ 224 0000 10B5     		push	{r4, lr}
+ 225              		.cfi_def_cfa_offset 8
+ 226              		.cfi_offset 4, -8
+ 227              		.cfi_offset 14, -4
+ 228 0002 2DED028B 		vpush.64	{d8}
+ 229              		.cfi_def_cfa_offset 16
+ 230              		.cfi_offset 80, -16
+ 231              		.cfi_offset 81, -12
+ 232              		.loc 1 42 24 view .LVU39
+ 233 0006 9FED0B8A 		vldr.32	s16, .L18
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 6
+
+
+  40:Controller.cpp **** 	// Increments parameter value for PM_GAIN
+ 234              		.loc 1 40 1 view .LVU40
+ 235 000a 0446     		mov	r4, r0
+ 236              		.loc 1 42 24 view .LVU41
+ 237 000c B0F90410 		ldrsh	r1, [r0, #4]
+ 238 0010 0022     		movs	r2, #0
+ 239 0012 B0EE480A 		vmov.f32	s0, s16
+ 240 0016 8068     		ldr	r0, [r0, #8]
+ 241              	.LVL10:
+ 242              		.loc 1 42 24 view .LVU42
+ 243 0018 FFF7FEFF 		bl	_ZN9Equalizer12incParameterEs9PARAMETERf
+ 244              	.LVL11:
+  43:Controller.cpp **** 	float val = m_eqRight->incParameter(m_band, PM_GAIN, 0.1);
+ 245              		.loc 1 43 2 is_stmt 1 view .LVU43
+ 246              		.loc 1 43 37 is_stmt 0 view .LVU44
+ 247 001c B0EE480A 		vmov.f32	s0, s16
+ 248 0020 B4F90410 		ldrsh	r1, [r4, #4]
+ 249 0024 0022     		movs	r2, #0
+ 250 0026 E068     		ldr	r0, [r4, #12]
+  44:Controller.cpp **** 	return val;
+  45:Controller.cpp **** }
+ 251              		.loc 1 45 1 view .LVU45
+ 252 0028 BDEC028B 		vldm	sp!, {d8}
+ 253              		.cfi_restore 80
+ 254              		.cfi_restore 81
+ 255              		.cfi_def_cfa_offset 8
+ 256 002c BDE81040 		pop	{r4, lr}
+ 257              		.cfi_restore 14
+ 258              		.cfi_restore 4
+ 259              		.cfi_def_cfa_offset 0
+ 260              	.LVL12:
+  43:Controller.cpp **** 	float val = m_eqRight->incParameter(m_band, PM_GAIN, 0.1);
+ 261              		.loc 1 43 37 view .LVU46
+ 262 0030 FFF7FEBF 		b	_ZN9Equalizer12incParameterEs9PARAMETERf
+ 263              	.LVL13:
+ 264              	.L19:
+ 265              		.align	2
+ 266              	.L18:
+ 267 0034 CDCCCC3D 		.word	1036831949
+ 268              		.cfi_endproc
+ 269              	.LFE2587:
+ 271              		.section	.text._ZN10Controller13decParamValueEv,"ax",%progbits
+ 272              		.align	1
+ 273              		.p2align 2,,3
+ 274              		.global	_ZN10Controller13decParamValueEv
+ 275              		.syntax unified
+ 276              		.thumb
+ 277              		.thumb_func
+ 278              		.fpu fpv5-d16
+ 280              	_ZN10Controller13decParamValueEv:
+ 281              	.LVL14:
+ 282              	.LFB2588:
+  46:Controller.cpp **** 
+  47:Controller.cpp **** float Controller::decParamValue()
+  48:Controller.cpp **** {
+ 283              		.loc 1 48 1 is_stmt 1 view -0
+ 284              		.cfi_startproc
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 7
+
+
+ 285              		@ args = 0, pretend = 0, frame = 0
+ 286              		@ frame_needed = 0, uses_anonymous_args = 0
+  49:Controller.cpp **** 	// Decrements parameter value for PM_GAIN
+  50:Controller.cpp **** 	m_eqLeft->decParameter(m_band, PM_GAIN, 0.1);
+ 287              		.loc 1 50 2 view .LVU48
+  48:Controller.cpp **** 	// Decrements parameter value for PM_GAIN
+ 288              		.loc 1 48 1 is_stmt 0 view .LVU49
+ 289 0000 10B5     		push	{r4, lr}
+ 290              		.cfi_def_cfa_offset 8
+ 291              		.cfi_offset 4, -8
+ 292              		.cfi_offset 14, -4
+ 293 0002 2DED028B 		vpush.64	{d8}
+ 294              		.cfi_def_cfa_offset 16
+ 295              		.cfi_offset 80, -16
+ 296              		.cfi_offset 81, -12
+ 297              		.loc 1 50 24 view .LVU50
+ 298 0006 9FED0B8A 		vldr.32	s16, .L22
+  48:Controller.cpp **** 	// Decrements parameter value for PM_GAIN
+ 299              		.loc 1 48 1 view .LVU51
+ 300 000a 0446     		mov	r4, r0
+ 301              		.loc 1 50 24 view .LVU52
+ 302 000c B0F90410 		ldrsh	r1, [r0, #4]
+ 303 0010 0022     		movs	r2, #0
+ 304 0012 B0EE480A 		vmov.f32	s0, s16
+ 305 0016 8068     		ldr	r0, [r0, #8]
+ 306              	.LVL15:
+ 307              		.loc 1 50 24 view .LVU53
+ 308 0018 FFF7FEFF 		bl	_ZN9Equalizer12decParameterEs9PARAMETERf
+ 309              	.LVL16:
+  51:Controller.cpp **** 	float val = m_eqRight->decParameter(m_band, PM_GAIN, 0.1);
+ 310              		.loc 1 51 2 is_stmt 1 view .LVU54
+ 311              		.loc 1 51 37 is_stmt 0 view .LVU55
+ 312 001c B0EE480A 		vmov.f32	s0, s16
+ 313 0020 B4F90410 		ldrsh	r1, [r4, #4]
+ 314 0024 0022     		movs	r2, #0
+ 315 0026 E068     		ldr	r0, [r4, #12]
+  52:Controller.cpp **** 	return val;
+  53:Controller.cpp **** }
+ 316              		.loc 1 53 1 view .LVU56
+ 317 0028 BDEC028B 		vldm	sp!, {d8}
+ 318              		.cfi_restore 80
+ 319              		.cfi_restore 81
+ 320              		.cfi_def_cfa_offset 8
+ 321 002c BDE81040 		pop	{r4, lr}
+ 322              		.cfi_restore 14
+ 323              		.cfi_restore 4
+ 324              		.cfi_def_cfa_offset 0
+ 325              	.LVL17:
+  51:Controller.cpp **** 	float val = m_eqRight->decParameter(m_band, PM_GAIN, 0.1);
+ 326              		.loc 1 51 37 view .LVU57
+ 327 0030 FFF7FEBF 		b	_ZN9Equalizer12decParameterEs9PARAMETERf
+ 328              	.LVL18:
+ 329              	.L23:
+ 330              		.align	2
+ 331              	.L22:
+ 332 0034 CDCCCC3D 		.word	1036831949
+ 333              		.cfi_endproc
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 8
+
+
+ 334              	.LFE2588:
+ 336              		.section	.text._ZN10Controller6adjustEs,"ax",%progbits
+ 337              		.align	1
+ 338              		.p2align 2,,3
+ 339              		.global	_ZN10Controller6adjustEs
+ 340              		.syntax unified
+ 341              		.thumb
+ 342              		.thumb_func
+ 343              		.fpu fpv5-d16
+ 345              	_ZN10Controller6adjustEs:
+ 346              	.LVL19:
+ 347              	.LFB2589:
+  54:Controller.cpp **** 
+  55:Controller.cpp **** float Controller::adjust(short select)
+  56:Controller.cpp **** {
+ 348              		.loc 1 56 1 is_stmt 1 view -0
+ 349              		.cfi_startproc
+ 350              		@ args = 0, pretend = 0, frame = 0
+ 351              		@ frame_needed = 0, uses_anonymous_args = 0
+  57:Controller.cpp **** 	float val = 0.0;
+ 352              		.loc 1 57 2 view .LVU59
+  58:Controller.cpp **** 
+  59:Controller.cpp **** 	switch (select) {
+ 353              		.loc 1 59 2 view .LVU60
+ 354 0000 0129     		cmp	r1, #1
+  56:Controller.cpp **** 	float val = 0.0;
+ 355              		.loc 1 56 1 is_stmt 0 view .LVU61
+ 356 0002 38B5     		push	{r3, r4, r5, lr}
+ 357              		.cfi_def_cfa_offset 16
+ 358              		.cfi_offset 3, -16
+ 359              		.cfi_offset 4, -12
+ 360              		.cfi_offset 5, -8
+ 361              		.cfi_offset 14, -4
+  56:Controller.cpp **** 	float val = 0.0;
+ 362              		.loc 1 56 1 view .LVU62
+ 363 0004 0546     		mov	r5, r0
+ 364              		.loc 1 59 2 view .LVU63
+ 365 0006 06D0     		beq	.L25
+ 366 0008 0329     		cmp	r1, #3
+ 367 000a 0C46     		mov	r4, r1
+ 368 000c 27D0     		beq	.L26
+ 369 000e A1B1     		cbz	r1, .L32
+ 370 0010 9FED1B0A 		vldr.32	s0, .L34
+  60:Controller.cpp **** 		case INC_PARAM_VALUE:
+  61:Controller.cpp **** 			val = incParamValue(); // Increment selected parameter value
+  62:Controller.cpp **** 			break;
+  63:Controller.cpp **** 		case DEC_PARAM_VALUE:
+  64:Controller.cpp **** 			val = decParamValue(); // Decrement selected parameter value
+  65:Controller.cpp **** 			break;
+  66:Controller.cpp **** 		case SEL_PARAM:
+  67:Controller.cpp **** 			val = incParam(); // Select parameter - optional not implemented
+  68:Controller.cpp **** 			break;
+  69:Controller.cpp **** 		case SEL_BAND:
+  70:Controller.cpp **** 			val = incBand(); // Select equalizer band to adjust
+  71:Controller.cpp **** 			break;
+  72:Controller.cpp **** 	}
+  73:Controller.cpp **** 
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 9
+
+
+  74:Controller.cpp **** 	return val;
+ 371              		.loc 1 74 2 is_stmt 1 view .LVU64
+  75:Controller.cpp **** }
+ 372              		.loc 1 75 1 is_stmt 0 view .LVU65
+ 373 0014 38BD     		pop	{r3, r4, r5, pc}
+ 374              	.L25:
+  63:Controller.cpp **** 			val = decParamValue(); // Decrement selected parameter value
+ 375              		.loc 1 63 3 is_stmt 1 view .LVU66
+  64:Controller.cpp **** 			break;
+ 376              		.loc 1 64 4 view .LVU67
+ 377              	.LVL20:
+ 378              	.LBB21:
+ 379              	.LBI21:
+  47:Controller.cpp **** {
+ 380              		.loc 1 47 7 view .LVU68
+ 381              	.LBB22:
+  50:Controller.cpp **** 	float val = m_eqRight->decParameter(m_band, PM_GAIN, 0.1);
+ 382              		.loc 1 50 2 view .LVU69
+  50:Controller.cpp **** 	float val = m_eqRight->decParameter(m_band, PM_GAIN, 0.1);
+ 383              		.loc 1 50 24 is_stmt 0 view .LVU70
+ 384 0016 B0F90410 		ldrsh	r1, [r0, #4]
+ 385              	.LVL21:
+  50:Controller.cpp **** 	float val = m_eqRight->decParameter(m_band, PM_GAIN, 0.1);
+ 386              		.loc 1 50 24 view .LVU71
+ 387 001a 0022     		movs	r2, #0
+ 388 001c 8068     		ldr	r0, [r0, #8]
+ 389              	.LVL22:
+  50:Controller.cpp **** 	float val = m_eqRight->decParameter(m_band, PM_GAIN, 0.1);
+ 390              		.loc 1 50 24 view .LVU72
+ 391 001e 9FED190A 		vldr.32	s0, .L34+4
+ 392 0022 FFF7FEFF 		bl	_ZN9Equalizer12decParameterEs9PARAMETERf
+ 393              	.LVL23:
+  51:Controller.cpp **** 	return val;
+ 394              		.loc 1 51 2 is_stmt 1 view .LVU73
+  51:Controller.cpp **** 	return val;
+ 395              		.loc 1 51 37 is_stmt 0 view .LVU74
+ 396 0026 B5F90410 		ldrsh	r1, [r5, #4]
+ 397 002a E868     		ldr	r0, [r5, #12]
+ 398 002c 0022     		movs	r2, #0
+ 399 002e 9FED150A 		vldr.32	s0, .L34+4
+ 400              	.LBE22:
+ 401              	.LBE21:
+ 402              		.loc 1 75 1 view .LVU75
+ 403 0032 BDE83840 		pop	{r3, r4, r5, lr}
+ 404              		.cfi_remember_state
+ 405              		.cfi_restore 14
+ 406              		.cfi_restore 5
+ 407              		.cfi_restore 4
+ 408              		.cfi_restore 3
+ 409              		.cfi_def_cfa_offset 0
+ 410              	.LVL24:
+ 411              	.LBB24:
+ 412              	.LBB23:
+  51:Controller.cpp **** 	return val;
+ 413              		.loc 1 51 37 view .LVU76
+ 414 0036 FFF7FEBF 		b	_ZN9Equalizer12decParameterEs9PARAMETERf
+ 415              	.LVL25:
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 10
+
+
+ 416              	.L32:
+ 417              		.cfi_restore_state
+  51:Controller.cpp **** 	return val;
+ 418              		.loc 1 51 37 view .LVU77
+ 419              	.LBE23:
+ 420              	.LBE24:
+  60:Controller.cpp **** 			val = incParamValue(); // Increment selected parameter value
+ 421              		.loc 1 60 3 is_stmt 1 view .LVU78
+  61:Controller.cpp **** 			break;
+ 422              		.loc 1 61 4 view .LVU79
+ 423              	.LBB25:
+ 424              	.LBI25:
+  39:Controller.cpp **** {
+ 425              		.loc 1 39 7 view .LVU80
+ 426              	.LBB26:
+  42:Controller.cpp **** 	float val = m_eqRight->incParameter(m_band, PM_GAIN, 0.1);
+ 427              		.loc 1 42 2 view .LVU81
+  42:Controller.cpp **** 	float val = m_eqRight->incParameter(m_band, PM_GAIN, 0.1);
+ 428              		.loc 1 42 24 is_stmt 0 view .LVU82
+ 429 003a 0A46     		mov	r2, r1
+ 430 003c 9FED110A 		vldr.32	s0, .L34+4
+ 431 0040 B0F90410 		ldrsh	r1, [r0, #4]
+ 432              	.LVL26:
+  42:Controller.cpp **** 	float val = m_eqRight->incParameter(m_band, PM_GAIN, 0.1);
+ 433              		.loc 1 42 24 view .LVU83
+ 434 0044 8068     		ldr	r0, [r0, #8]
+ 435              	.LVL27:
+  42:Controller.cpp **** 	float val = m_eqRight->incParameter(m_band, PM_GAIN, 0.1);
+ 436              		.loc 1 42 24 view .LVU84
+ 437 0046 FFF7FEFF 		bl	_ZN9Equalizer12incParameterEs9PARAMETERf
+ 438              	.LVL28:
+  43:Controller.cpp **** 	return val;
+ 439              		.loc 1 43 2 is_stmt 1 view .LVU85
+  43:Controller.cpp **** 	return val;
+ 440              		.loc 1 43 37 is_stmt 0 view .LVU86
+ 441 004a 2246     		mov	r2, r4
+ 442 004c B5F90410 		ldrsh	r1, [r5, #4]
+ 443 0050 E868     		ldr	r0, [r5, #12]
+ 444 0052 9FED0C0A 		vldr.32	s0, .L34+4
+ 445              	.LBE26:
+ 446              	.LBE25:
+ 447              		.loc 1 75 1 view .LVU87
+ 448 0056 BDE83840 		pop	{r3, r4, r5, lr}
+ 449              		.cfi_remember_state
+ 450              		.cfi_restore 14
+ 451              		.cfi_restore 5
+ 452              		.cfi_restore 4
+ 453              		.cfi_restore 3
+ 454              		.cfi_def_cfa_offset 0
+ 455              	.LVL29:
+ 456              	.LBB28:
+ 457              	.LBB27:
+  43:Controller.cpp **** 	return val;
+ 458              		.loc 1 43 37 view .LVU88
+ 459 005a FFF7FEBF 		b	_ZN9Equalizer12incParameterEs9PARAMETERf
+ 460              	.LVL30:
+ 461              	.L26:
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 11
+
+
+ 462              		.cfi_restore_state
+  43:Controller.cpp **** 	return val;
+ 463              		.loc 1 43 37 view .LVU89
+ 464              	.LBE27:
+ 465              	.LBE28:
+  69:Controller.cpp **** 			val = incBand(); // Select equalizer band to adjust
+ 466              		.loc 1 69 3 is_stmt 1 view .LVU90
+  70:Controller.cpp **** 			break;
+ 467              		.loc 1 70 4 view .LVU91
+ 468              	.LBB29:
+ 469              	.LBI29:
+  23:Controller.cpp **** {
+ 470              		.loc 1 23 7 view .LVU92
+ 471              	.LBB30:
+  26:Controller.cpp **** 	if (m_band >= NUM_EQ_BANDS)
+ 472              		.loc 1 26 2 view .LVU93
+  26:Controller.cpp **** 	if (m_band >= NUM_EQ_BANDS)
+ 473              		.loc 1 26 8 is_stmt 0 view .LVU94
+ 474 005e 8388     		ldrh	r3, [r0, #4]
+ 475 0060 0133     		adds	r3, r3, #1
+ 476 0062 1BB2     		sxth	r3, r3
+  27:Controller.cpp **** 		m_band = 0;
+ 477              		.loc 1 27 2 is_stmt 1 view .LVU95
+ 478 0064 032B     		cmp	r3, #3
+ 479 0066 04DD     		ble	.L33
+  28:Controller.cpp **** 
+ 480              		.loc 1 28 3 view .LVU96
+  28:Controller.cpp **** 
+ 481              		.loc 1 28 10 is_stmt 0 view .LVU97
+ 482 0068 0023     		movs	r3, #0
+ 483 006a 9FED050A 		vldr.32	s0, .L34
+  30:Controller.cpp **** }
+ 484              		.loc 1 30 2 is_stmt 1 view .LVU98
+ 485              	.LVL31:
+  30:Controller.cpp **** }
+ 486              		.loc 1 30 2 is_stmt 0 view .LVU99
+ 487              	.LBE30:
+ 488              	.LBE29:
+  71:Controller.cpp **** 	}
+ 489              		.loc 1 71 4 is_stmt 1 view .LVU100
+ 490              	.LBB33:
+ 491              	.LBB31:
+  28:Controller.cpp **** 
+ 492              		.loc 1 28 10 is_stmt 0 view .LVU101
+ 493 006e 8380     		strh	r3, [r0, #4]	@ movhi
+ 494              	.LVL32:
+  28:Controller.cpp **** 
+ 495              		.loc 1 28 10 view .LVU102
+ 496              	.LBE31:
+ 497              	.LBE33:
+ 498              		.loc 1 75 1 view .LVU103
+ 499 0070 38BD     		pop	{r3, r4, r5, pc}
+ 500              	.LVL33:
+ 501              	.L33:
+ 502              	.LBB34:
+ 503              	.LBB32:
+  30:Controller.cpp **** }
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 12
+
+
+ 504              		.loc 1 30 16 view .LVU104
+ 505 0072 07EE903A 		vmov	s15, r3	@ int
+  26:Controller.cpp **** 	if (m_band >= NUM_EQ_BANDS)
+ 506              		.loc 1 26 8 view .LVU105
+ 507 0076 8380     		strh	r3, [r0, #4]	@ movhi
+  30:Controller.cpp **** }
+ 508              		.loc 1 30 16 view .LVU106
+ 509 0078 B8EEE70A 		vcvt.f32.s32	s0, s15
+ 510              	.LBE32:
+ 511              	.LBE34:
+ 512              		.loc 1 75 1 view .LVU107
+ 513 007c 38BD     		pop	{r3, r4, r5, pc}
+ 514              	.L35:
+ 515 007e 00BF     		.align	2
+ 516              	.L34:
+ 517 0080 00000000 		.word	0
+ 518 0084 CDCCCC3D 		.word	1036831949
+ 519              		.cfi_endproc
+ 520              	.LFE2589:
+ 522              		.section	.text._ZN10Controller9setBypassEb,"ax",%progbits
+ 523              		.align	1
+ 524              		.p2align 2,,3
+ 525              		.global	_ZN10Controller9setBypassEb
+ 526              		.syntax unified
+ 527              		.thumb
+ 528              		.thumb_func
+ 529              		.fpu fpv5-d16
+ 531              	_ZN10Controller9setBypassEb:
+ 532              	.LVL34:
+ 533              	.LFB2590:
+  76:Controller.cpp **** 
+  77:Controller.cpp **** void Controller::setBypass(bool bypass) 
+  78:Controller.cpp **** {
+ 534              		.loc 1 78 1 is_stmt 1 view -0
+ 535              		.cfi_startproc
+ 536              		@ args = 0, pretend = 0, frame = 0
+ 537              		@ frame_needed = 0, uses_anonymous_args = 0
+ 538              		@ link register save eliminated.
+  79:Controller.cpp **** 	m_eqLeft->setBypass(bypass);
+ 539              		.loc 1 79 2 view .LVU109
+ 540              	.LBB35:
+ 541              	.LBI35:
+ 542              		.file 2 "Equalizer.h"
+   1:Equalizer.h   **** ///////////////////////////////////////////////////////////
+   2:Equalizer.h   **** //  Equalizer.h
+   3:Equalizer.h   **** //  Implementation of the Class Equalizer
+   4:Equalizer.h   **** //  Created on:      06-aug-2014 09:31:01
+   5:Equalizer.h   **** //  Modified:        28-feb-2018 09:32:00
+   6:Equalizer.h   **** //  Modified:        27-nov-2025 20:01:00
+   7:Equalizer.h   **** //  Original author: kbe
+   8:Equalizer.h   **** ///////////////////////////////////////////////////////////
+   9:Equalizer.h   **** 
+  10:Equalizer.h   **** #if !defined(EQUALIZER_INCLUDED_)
+  11:Equalizer.h   **** #define EQUALIZER_INCLUDED_
+  12:Equalizer.h   **** 
+  13:Equalizer.h   **** #include "IIRFilter.h"
+  14:Equalizer.h   **** 
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 13
+
+
+  15:Equalizer.h   **** #define NUM_EQ_BANDS 4 
+  16:Equalizer.h   **** 
+  17:Equalizer.h   **** #define MAX_FREQ		20000.0
+  18:Equalizer.h   **** #define MIN_FREQ        2.0
+  19:Equalizer.h   **** #define MAX_Q			20.0
+  20:Equalizer.h   **** #define MIN_Q        	1.0
+  21:Equalizer.h   **** #define MAX_GAIN 		5.0
+  22:Equalizer.h   **** #define MIN_GAIN 		0.1
+  23:Equalizer.h   **** 
+  24:Equalizer.h   **** enum PARAMETER {
+  25:Equalizer.h   **** 	PM_GAIN = 0,
+  26:Equalizer.h   **** 	PM_FREQ = 1,
+  27:Equalizer.h   **** 	PM_Q = 2
+  28:Equalizer.h   **** };
+  29:Equalizer.h   **** 
+  30:Equalizer.h   **** class Equalizer //: public Algorithm
+  31:Equalizer.h   **** {
+  32:Equalizer.h   **** 
+  33:Equalizer.h   **** public:
+  34:Equalizer.h   **** 
+  35:Equalizer.h   **** 	Equalizer();
+  36:Equalizer.h   **** 	virtual ~Equalizer();
+  37:Equalizer.h   **** 
+  38:Equalizer.h   **** 	float Process(float input);
+  39:Equalizer.h   **** 	void Init(int SampleRate);
+  40:Equalizer.h   **** 
+  41:Equalizer.h   **** 	void setParameter(short band, PARAMETER param, float value);
+  42:Equalizer.h   **** 	float incParameter(short band, PARAMETER param, float delta);
+  43:Equalizer.h   **** 	float decParameter(short band, PARAMETER param, float delta);
+  44:Equalizer.h   **** 	float getParameter(short band, PARAMETER param);
+  45:Equalizer.h   **** 	void setBypass(bool val) { filterOn_ = !val; };
+ 543              		.loc 2 45 7 view .LVU110
+ 544              	.LBB36:
+ 545              		.loc 2 45 29 view .LVU111
+ 546              		.loc 2 45 41 is_stmt 0 view .LVU112
+ 547 0000 81F00101 		eor	r1, r1, #1
+ 548              	.LVL35:
+ 549              		.loc 2 45 41 view .LVU113
+ 550              	.LBE36:
+ 551              	.LBE35:
+ 552              	.LBB38:
+ 553              	.LBB39:
+ 554              		.loc 2 45 39 view .LVU114
+ 555 0004 D0E90223 		ldrd	r2, r3, [r0, #8]
+ 556              	.LBE39:
+ 557              	.LBE38:
+ 558              	.LBB41:
+ 559              	.LBB37:
+ 560 0008 1172     		strb	r1, [r2, #8]
+ 561              	.LVL36:
+ 562              		.loc 2 45 39 view .LVU115
+ 563              	.LBE37:
+ 564              	.LBE41:
+  80:Controller.cpp **** 	m_eqRight->setBypass(bypass);
+ 565              		.loc 1 80 2 is_stmt 1 view .LVU116
+ 566              	.LBB42:
+ 567              	.LBI38:
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 14
+
+
+ 568              		.loc 2 45 7 view .LVU117
+ 569              	.LBB40:
+ 570              		.loc 2 45 29 view .LVU118
+ 571              		.loc 2 45 39 is_stmt 0 view .LVU119
+ 572 000a 1972     		strb	r1, [r3, #8]
+ 573              	.LVL37:
+ 574              		.loc 2 45 39 view .LVU120
+ 575              	.LBE40:
+ 576              	.LBE42:
+  81:Controller.cpp **** }	
+ 577              		.loc 1 81 1 view .LVU121
+ 578 000c 7047     		bx	lr
+ 579              		.cfi_endproc
+ 580              	.LFE2590:
+ 582 000e 00BF     		.section	.rodata._ZN10Controller10printStateEmf.str1.4,"aMS",%progbits,1
+ 583              		.align	2
+ 584              	.LC0:
+ 585 0000 20204261 		.ascii	"  Band %d Freq %.0f Q %.0f Gain %.1f Duration %u ns"
+ 585      6E642025 
+ 585      64204672 
+ 585      65712025 
+ 585      2E306620 
+ 586 0033 2028252E 		.ascii	" (%.0f ns)        \015\000"
+ 586      3066206E 
+ 586      73292020 
+ 586      20202020 
+ 586      20200D00 
+ 587              		.section	.text._ZN10Controller10printStateEmf,"ax",%progbits
+ 588              		.align	1
+ 589              		.p2align 2,,3
+ 590              		.global	_ZN10Controller10printStateEmf
+ 591              		.syntax unified
+ 592              		.thumb
+ 593              		.thumb_func
+ 594              		.fpu fpv5-d16
+ 596              	_ZN10Controller10printStateEmf:
+ 597              	.LVL38:
+ 598              	.LFB2591:
+  82:Controller.cpp **** 
+  83:Controller.cpp **** void Controller::printState(uint32_t duration, float sampleTimeNs) 
+  84:Controller.cpp **** {
+ 599              		.loc 1 84 1 is_stmt 1 view -0
+ 600              		.cfi_startproc
+ 601              		@ args = 0, pretend = 0, frame = 0
+ 602              		@ frame_needed = 0, uses_anonymous_args = 0
+  85:Controller.cpp **** 	float val, freq, q;
+ 603              		.loc 1 85 2 view .LVU123
+  86:Controller.cpp **** 	val = m_eqLeft->getParameter(m_band, PM_GAIN);
+ 604              		.loc 1 86 2 view .LVU124
+  84:Controller.cpp **** 	float val, freq, q;
+ 605              		.loc 1 84 1 is_stmt 0 view .LVU125
+ 606 0000 30B5     		push	{r4, r5, lr}
+ 607              		.cfi_def_cfa_offset 12
+ 608              		.cfi_offset 4, -12
+ 609              		.cfi_offset 5, -8
+ 610              		.cfi_offset 14, -4
+ 611 0002 0446     		mov	r4, r0
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 15
+
+
+ 612 0004 0D46     		mov	r5, r1
+ 613              		.loc 1 86 30 view .LVU126
+ 614 0006 0022     		movs	r2, #0
+ 615 0008 B0F90410 		ldrsh	r1, [r0, #4]
+ 616              	.LVL39:
+ 617              		.loc 1 86 30 view .LVU127
+ 618 000c 8068     		ldr	r0, [r0, #8]
+ 619              	.LVL40:
+  84:Controller.cpp **** 	float val, freq, q;
+ 620              		.loc 1 84 1 view .LVU128
+ 621 000e 2DED048B 		vpush.64	{d8, d9}
+ 622              		.cfi_def_cfa_offset 28
+ 623              		.cfi_offset 80, -28
+ 624              		.cfi_offset 81, -24
+ 625              		.cfi_offset 82, -20
+ 626              		.cfi_offset 83, -16
+ 627 0012 89B0     		sub	sp, sp, #36
+ 628              		.cfi_def_cfa_offset 64
+  84:Controller.cpp **** 	float val, freq, q;
+ 629              		.loc 1 84 1 view .LVU129
+ 630 0014 F0EE408A 		vmov.f32	s17, s0
+ 631              		.loc 1 86 30 view .LVU130
+ 632 0018 FFF7FEFF 		bl	_ZN9Equalizer12getParameterEs9PARAMETER
+ 633              	.LVL41:
+  87:Controller.cpp **** 	freq = m_eqLeft->getParameter(m_band, PM_FREQ);
+ 634              		.loc 1 87 31 view .LVU131
+ 635 001c B4F90410 		ldrsh	r1, [r4, #4]
+ 636 0020 A068     		ldr	r0, [r4, #8]
+ 637 0022 0122     		movs	r2, #1
+  86:Controller.cpp **** 	val = m_eqLeft->getParameter(m_band, PM_GAIN);
+ 638              		.loc 1 86 30 view .LVU132
+ 639 0024 B0EE408A 		vmov.f32	s16, s0
+ 640              	.LVL42:
+ 641              		.loc 1 87 2 is_stmt 1 view .LVU133
+ 642              		.loc 1 87 31 is_stmt 0 view .LVU134
+ 643 0028 FFF7FEFF 		bl	_ZN9Equalizer12getParameterEs9PARAMETER
+ 644              	.LVL43:
+ 645              		.loc 1 87 31 view .LVU135
+ 646 002c B0EE409A 		vmov.f32	s18, s0
+ 647              	.LVL44:
+  88:Controller.cpp **** 	q = m_eqLeft->getParameter(m_band, PM_Q);
+ 648              		.loc 1 88 2 is_stmt 1 view .LVU136
+ 649              		.loc 1 88 28 is_stmt 0 view .LVU137
+ 650 0030 B4F90410 		ldrsh	r1, [r4, #4]
+ 651 0034 A068     		ldr	r0, [r4, #8]
+ 652 0036 0222     		movs	r2, #2
+ 653 0038 FFF7FEFF 		bl	_ZN9Equalizer12getParameterEs9PARAMETER
+ 654              	.LVL45:
+  89:Controller.cpp **** 	m_daisyPod->seed.Print("  Band %d Freq %.0f Q %.0f Gain %.1f Duration %u ns (%.0f ns)        \r", 
+ 655              		.loc 1 89 2 is_stmt 1 view .LVU138
+ 656              	.LBB45:
+ 657              	.LBI45:
+ 658              		.file 3 "../../libDaisy//src/daisy_seed.h"
+   1:../../libDaisy//src/daisy_seed.h **** #pragma once
+   2:../../libDaisy//src/daisy_seed.h **** #ifndef DSY_SEED_H
+   3:../../libDaisy//src/daisy_seed.h **** #define DSY_SEED_H
+   4:../../libDaisy//src/daisy_seed.h **** 
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 16
+
+
+   5:../../libDaisy//src/daisy_seed.h **** #include "daisy.h"
+   6:../../libDaisy//src/daisy_seed.h **** 
+   7:../../libDaisy//src/daisy_seed.h **** //Uncomment this out if you're still using the rev2 hardware
+   8:../../libDaisy//src/daisy_seed.h **** //#define SEED_REV2
+   9:../../libDaisy//src/daisy_seed.h **** 
+  10:../../libDaisy//src/daisy_seed.h **** namespace daisy
+  11:../../libDaisy//src/daisy_seed.h **** {
+  12:../../libDaisy//src/daisy_seed.h **** /**
+  13:../../libDaisy//src/daisy_seed.h ****    @brief This is the higher-level interface for the Daisy board. \n 
+  14:../../libDaisy//src/daisy_seed.h ****     All basic peripheral configuration/initialization is setup here. \n
+  15:../../libDaisy//src/daisy_seed.h **** 
+  16:../../libDaisy//src/daisy_seed.h ****    @ingroup boards
+  17:../../libDaisy//src/daisy_seed.h **** */
+  18:../../libDaisy//src/daisy_seed.h **** class DaisySeed
+  19:../../libDaisy//src/daisy_seed.h **** {
+  20:../../libDaisy//src/daisy_seed.h ****   public:
+  21:../../libDaisy//src/daisy_seed.h ****     DaisySeed() {}
+  22:../../libDaisy//src/daisy_seed.h ****     ~DaisySeed() {}
+  23:../../libDaisy//src/daisy_seed.h **** 
+  24:../../libDaisy//src/daisy_seed.h ****     /** This function used to provide a pre-initialization configuraiton 
+  25:../../libDaisy//src/daisy_seed.h ****      *  it has since been deprecated, and does nothing.
+  26:../../libDaisy//src/daisy_seed.h ****      */
+  27:../../libDaisy//src/daisy_seed.h ****     void Configure();
+  28:../../libDaisy//src/daisy_seed.h **** 
+  29:../../libDaisy//src/daisy_seed.h ****     /** 
+  30:../../libDaisy//src/daisy_seed.h ****     Initializes the Daisy Seed and the following peripherals:
+  31:../../libDaisy//src/daisy_seed.h ****     SDRAM, QSPI, 24-bit 48kHz Audio via AK4556, Internal USB,
+  32:../../libDaisy//src/daisy_seed.h ****     as well as the built-in LED and Testpoint.
+  33:../../libDaisy//src/daisy_seed.h **** 
+  34:../../libDaisy//src/daisy_seed.h ****     ADCs, DACs, and other special peripherals (such as I2C, SPI, etc.)
+  35:../../libDaisy//src/daisy_seed.h ****     can be initialized using their specific initializers within libdaisy
+  36:../../libDaisy//src/daisy_seed.h ****     for a specific application.
+  37:../../libDaisy//src/daisy_seed.h ****     */
+  38:../../libDaisy//src/daisy_seed.h ****     void Init(bool boost = false);
+  39:../../libDaisy//src/daisy_seed.h **** 
+  40:../../libDaisy//src/daisy_seed.h ****     /** 
+  41:../../libDaisy//src/daisy_seed.h ****     Deinitializes all peripherals automatically handled by `Init`.
+  42:../../libDaisy//src/daisy_seed.h ****     */
+  43:../../libDaisy//src/daisy_seed.h ****     void DeInit();
+  44:../../libDaisy//src/daisy_seed.h **** 
+  45:../../libDaisy//src/daisy_seed.h ****     /** 
+  46:../../libDaisy//src/daisy_seed.h ****     Wait some ms before going on.
+  47:../../libDaisy//src/daisy_seed.h ****     \param del Delay time in ms.
+  48:../../libDaisy//src/daisy_seed.h ****     */
+  49:../../libDaisy//src/daisy_seed.h ****     void DelayMs(size_t del);
+  50:../../libDaisy//src/daisy_seed.h **** 
+  51:../../libDaisy//src/daisy_seed.h ****     /** 
+  52:../../libDaisy//src/daisy_seed.h ****     Returns the gpio_pin corresponding to the index 0-31.
+  53:../../libDaisy//src/daisy_seed.h ****     For the given GPIO on the Daisy Seed (labeled 1-32 in docs).
+  54:../../libDaisy//src/daisy_seed.h ****     */
+  55:../../libDaisy//src/daisy_seed.h ****     static dsy_gpio_pin GetPin(uint8_t pin_idx);
+  56:../../libDaisy//src/daisy_seed.h **** 
+  57:../../libDaisy//src/daisy_seed.h ****     /** Begins the audio for the seeds builtin audio.
+  58:../../libDaisy//src/daisy_seed.h ****     the specified callback will get called whenever
+  59:../../libDaisy//src/daisy_seed.h ****     new data is ready to be prepared.
+  60:../../libDaisy//src/daisy_seed.h ****     */
+  61:../../libDaisy//src/daisy_seed.h ****     void StartAudio(AudioHandle::InterleavingAudioCallback cb);
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 17
+
+
+  62:../../libDaisy//src/daisy_seed.h **** 
+  63:../../libDaisy//src/daisy_seed.h ****     /** Begins the audio for the seeds builtin audio.
+  64:../../libDaisy//src/daisy_seed.h ****     the specified callback will get called whenever
+  65:../../libDaisy//src/daisy_seed.h ****     new data is ready to be prepared.
+  66:../../libDaisy//src/daisy_seed.h ****     This will use the newer non-interleaved callback.
+  67:../../libDaisy//src/daisy_seed.h ****     */
+  68:../../libDaisy//src/daisy_seed.h ****     void StartAudio(AudioHandle::AudioCallback cb);
+  69:../../libDaisy//src/daisy_seed.h **** 
+  70:../../libDaisy//src/daisy_seed.h ****     /** Changes to a new interleaved callback
+  71:../../libDaisy//src/daisy_seed.h ****      */
+  72:../../libDaisy//src/daisy_seed.h ****     void ChangeAudioCallback(AudioHandle::InterleavingAudioCallback cb);
+  73:../../libDaisy//src/daisy_seed.h **** 
+  74:../../libDaisy//src/daisy_seed.h ****     /** Changes to a new multichannel callback
+  75:../../libDaisy//src/daisy_seed.h ****      */
+  76:../../libDaisy//src/daisy_seed.h ****     void ChangeAudioCallback(AudioHandle::AudioCallback cb);
+  77:../../libDaisy//src/daisy_seed.h **** 
+  78:../../libDaisy//src/daisy_seed.h ****     /** Stops the audio if it is running. */
+  79:../../libDaisy//src/daisy_seed.h ****     void StopAudio();
+  80:../../libDaisy//src/daisy_seed.h **** 
+  81:../../libDaisy//src/daisy_seed.h ****     /** Updates the Audio Sample Rate, and reinitializes.
+  82:../../libDaisy//src/daisy_seed.h ****      ** Audio must be stopped for this to work.
+  83:../../libDaisy//src/daisy_seed.h ****      */
+  84:../../libDaisy//src/daisy_seed.h ****     void SetAudioSampleRate(SaiHandle::Config::SampleRate samplerate);
+  85:../../libDaisy//src/daisy_seed.h **** 
+  86:../../libDaisy//src/daisy_seed.h ****     /** Returns the audio sample rate in Hz as a floating point number.
+  87:../../libDaisy//src/daisy_seed.h ****      */
+  88:../../libDaisy//src/daisy_seed.h ****     float AudioSampleRate();
+  89:../../libDaisy//src/daisy_seed.h **** 
+  90:../../libDaisy//src/daisy_seed.h ****     /** Sets the number of samples processed per channel by the audio callback.
+  91:../../libDaisy//src/daisy_seed.h ****      */
+  92:../../libDaisy//src/daisy_seed.h ****     void SetAudioBlockSize(size_t blocksize);
+  93:../../libDaisy//src/daisy_seed.h **** 
+  94:../../libDaisy//src/daisy_seed.h ****     /** Returns the number of samples per channel in a block of audio. */
+  95:../../libDaisy//src/daisy_seed.h ****     size_t AudioBlockSize();
+  96:../../libDaisy//src/daisy_seed.h **** 
+  97:../../libDaisy//src/daisy_seed.h ****     /** Returns the rate in Hz that the Audio callback is called */
+  98:../../libDaisy//src/daisy_seed.h ****     float AudioCallbackRate() const;
+  99:../../libDaisy//src/daisy_seed.h **** 
+ 100:../../libDaisy//src/daisy_seed.h ****     /** Returns the SAI Handle for the Daisy Seed 
+ 101:../../libDaisy//src/daisy_seed.h ****      *  This can be useful when adding a secondary codec,
+ 102:../../libDaisy//src/daisy_seed.h ****      *  the result of this function can be passed to the audio reinit 
+ 103:../../libDaisy//src/daisy_seed.h ****      *  with an SAI2 configuration
+ 104:../../libDaisy//src/daisy_seed.h ****      */
+ 105:../../libDaisy//src/daisy_seed.h ****     const SaiHandle& AudioSaiHandle() const;
+ 106:../../libDaisy//src/daisy_seed.h **** 
+ 107:../../libDaisy//src/daisy_seed.h ****     /** Sets the state of the built in LED
+ 108:../../libDaisy//src/daisy_seed.h ****      */
+ 109:../../libDaisy//src/daisy_seed.h ****     void SetLed(bool state);
+ 110:../../libDaisy//src/daisy_seed.h **** 
+ 111:../../libDaisy//src/daisy_seed.h ****     /** Sets the state of the test point near pin 10
+ 112:../../libDaisy//src/daisy_seed.h ****      */
+ 113:../../libDaisy//src/daisy_seed.h ****     void SetTestPoint(bool state);
+ 114:../../libDaisy//src/daisy_seed.h **** 
+ 115:../../libDaisy//src/daisy_seed.h ****     /** Print formatted debug log message
+ 116:../../libDaisy//src/daisy_seed.h ****      */
+ 117:../../libDaisy//src/daisy_seed.h ****     template <typename... VA>
+ 118:../../libDaisy//src/daisy_seed.h ****     static void Print(const char* format, VA... va)
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 18
+
+
+ 659              		.loc 3 118 17 view .LVU139
+ 660              	.LBB46:
+ 119:../../libDaisy//src/daisy_seed.h ****     {
+ 120:../../libDaisy//src/daisy_seed.h ****         Log::Print(format, va...);
+ 661              		.loc 3 120 19 is_stmt 0 view .LVU140
+ 662 003c B7EEE86A 		vcvt.f64.f32	d6, s17
+ 663 0040 B7EEC00A 		vcvt.f64.f32	d0, s0
+ 664              	.LVL46:
+ 665              		.loc 3 120 19 view .LVU141
+ 666 0044 B4F90410 		ldrsh	r1, [r4, #4]
+ 667 0048 B7EEC97A 		vcvt.f64.f32	d7, s18
+ 668 004c 0848     		ldr	r0, .L39
+ 669 004e B7EEC88A 		vcvt.f64.f32	d8, s16
+ 670              	.LVL47:
+ 671              		.loc 3 120 19 view .LVU142
+ 672 0052 0495     		str	r5, [sp, #16]
+ 673              	.LVL48:
+ 674              		.loc 3 120 19 view .LVU143
+ 675 0054 53EC172B 		vmov	r2, r3, d7
+ 676 0058 8DED066B 		vstr.64	d6, [sp, #24]
+ 677 005c 8DED028B 		vstr.64	d8, [sp, #8]
+ 678 0060 8DED000B 		vstr.64	d0, [sp]
+ 679 0064 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE5PrintEPKcz
+ 680              	.LVL49:
+ 681              		.loc 3 120 19 view .LVU144
+ 682              	.LBE46:
+ 683              	.LBE45:
+  90:Controller.cpp **** }
+ 684              		.loc 1 90 1 view .LVU145
+ 685 0068 09B0     		add	sp, sp, #36
+ 686              		.cfi_def_cfa_offset 28
+ 687              		@ sp needed
+ 688 006a BDEC048B 		vldm	sp!, {d8-d9}
+ 689              		.cfi_restore 82
+ 690              		.cfi_restore 83
+ 691              		.cfi_restore 80
+ 692              		.cfi_restore 81
+ 693              		.cfi_def_cfa_offset 12
+ 694              	.LVL50:
+ 695              		.loc 1 90 1 view .LVU146
+ 696 006e 30BD     		pop	{r4, r5, pc}
+ 697              	.LVL51:
+ 698              	.L40:
+ 699              		.loc 1 90 1 view .LVU147
+ 700              		.align	2
+ 701              	.L39:
+ 702 0070 00000000 		.word	.LC0
+ 703              		.cfi_endproc
+ 704              	.LFE2591:
+ 706              		.global	_ZTV10Controller
+ 707              		.section	.rodata._ZTV10Controller,"a"
+ 708              		.align	2
+ 709              		.set	.LANCHOR0,. + 0
+ 712              	_ZTV10Controller:
+ 713 0000 00000000 		.word	0
+ 714 0004 00000000 		.word	0
+ 715 0008 00000000 		.word	_ZN10ControllerD1Ev
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 19
+
+
+ 716 000c 00000000 		.word	_ZN10ControllerD0Ev
+ 717              		.text
+ 718              	.Letext0:
+ 719              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 720              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 721              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 722              		.file 7 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 723              		.file 8 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 724              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 725              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ 726              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 727              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 728              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 729              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 730              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 731              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ 732              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 733              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\initializer_list
+ 734              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+ 735              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 736              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 737              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 738              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 739              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 740              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 741              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 742              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 743              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 744              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 745              		.file 30 "../../libDaisy//src/daisy_core.h"
+ 746              		.file 31 "../../libDaisy//src/per/tim.h"
+ 747              		.file 32 "../../libDaisy//src/sys/system.h"
+ 748              		.file 33 "../../libDaisy//src/per/qspi.h"
+ 749              		.file 34 "../../libDaisy//src/per/dac.h"
+ 750              		.file 35 "../../libDaisy//src/per/sai.h"
+ 751              		.file 36 "../../libDaisy//src/hid/audio.h"
+ 752              		.file 37 "../../libDaisy//src/per/adc.h"
+ 753              		.file 38 "../../libDaisy//src/per/uart.h"
+ 754              		.file 39 "../../libDaisy//src/hid/MidiEvent.h"
+ 755              		.file 40 "../../libDaisy//src/hid/midi_parser.h"
+ 756              		.file 41 "../../libDaisy//src/hid/usb.h"
+ 757              		.file 42 "../../libDaisy//src/hid/midi.h"
+ 758              		.file 43 "../../libDaisy//src/util/FIFO.h"
+ 759              		.file 44 "../../libDaisy//src/hid/switch.h"
+ 760              		.file 45 "../../libDaisy//src/hid/encoder.h"
+ 761              		.file 46 "../../libDaisy//src/hid/ctrl.h"
+ 762              		.file 47 "../../libDaisy//src/hid/logger_impl.h"
+ 763              		.file 48 "../../libDaisy//src/util/wav_format.h"
+ 764              		.file 49 "../../libDaisy//src/hid/led.h"
+ 765              		.file 50 "../../libDaisy//src/util/color.h"
+ 766              		.file 51 "../../libDaisy//src/hid/rgb_led.h"
+ 767              		.file 52 "../../libDaisy//src/dev/max11300.h"
+ 768              		.file 53 "../../libDaisy//src/hid/logger.h"
+ 769              		.file 54 "../../libDaisy//src/daisy_pod.h"
+ 770              		.file 55 "../../libDaisy//src/per/gpio.h"
+ 771              		.file 56 "../../libDaisy//src/dev/sdram.h"
+ 772              		.file 57 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 20
+
+
+ 773              		.file 58 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 774              		.file 59 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 775              		.file 60 "Controller.h"
+ 776              		.file 61 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\new"
+ 777              		.file 62 "<built-in>"
+ 778              		.file 63 "../../libDaisy//src/dev/sr_595.h"
+ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s 			page 21
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 Controller.cpp
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:17     .text._ZN10ControllerD2Ev:00000000 $t
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:26     .text._ZN10ControllerD2Ev:00000000 _ZN10ControllerD2Ev
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:26     .text._ZN10ControllerD2Ev:00000000 _ZN10ControllerD1Ev
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:43     .text._ZN10ControllerD0Ev:00000000 $t
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:51     .text._ZN10ControllerD0Ev:00000000 _ZN10ControllerD0Ev
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:83     .text._ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE:00000000 $t
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:91     .text._ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE:00000000 _ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:123    .text._ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE:00000010 $d
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:91     .text._ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE:00000000 _ZN10ControllerC1EP9EqualizerS1_PN5daisy8DaisyPodE
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:130    .text._ZN10Controller7incBandEv:00000000 $t
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:138    .text._ZN10Controller7incBandEv:00000000 _ZN10Controller7incBandEv
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:174    .text._ZN10Controller7incBandEv:00000020 $d
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:179    .text._ZN10Controller8incParamEv:00000000 $t
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:187    .text._ZN10Controller8incParamEv:00000000 _ZN10Controller8incParamEv
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:202    .text._ZN10Controller8incParamEv:00000008 $d
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:207    .text._ZN10Controller13incParamValueEv:00000000 $t
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:215    .text._ZN10Controller13incParamValueEv:00000000 _ZN10Controller13incParamValueEv
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:267    .text._ZN10Controller13incParamValueEv:00000034 $d
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:272    .text._ZN10Controller13decParamValueEv:00000000 $t
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:280    .text._ZN10Controller13decParamValueEv:00000000 _ZN10Controller13decParamValueEv
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:332    .text._ZN10Controller13decParamValueEv:00000034 $d
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:337    .text._ZN10Controller6adjustEs:00000000 $t
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:345    .text._ZN10Controller6adjustEs:00000000 _ZN10Controller6adjustEs
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:517    .text._ZN10Controller6adjustEs:00000080 $d
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:523    .text._ZN10Controller9setBypassEb:00000000 $t
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:531    .text._ZN10Controller9setBypassEb:00000000 _ZN10Controller9setBypassEb
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:583    .rodata._ZN10Controller10printStateEmf.str1.4:00000000 $d
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:588    .text._ZN10Controller10printStateEmf:00000000 $t
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:596    .text._ZN10Controller10printStateEmf:00000000 _ZN10Controller10printStateEmf
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:702    .text._ZN10Controller10printStateEmf:00000070 $d
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:712    .rodata._ZTV10Controller:00000000 _ZTV10Controller
+C:\Users\Mickey\AppData\Local\Temp\cc9TvaGA.s:708    .rodata._ZTV10Controller:00000000 $d
+
+UNDEFINED SYMBOLS
+_ZdlPvj
+_ZN9Equalizer12incParameterEs9PARAMETERf
+_ZN9Equalizer12decParameterEs9PARAMETERf
+_ZN9Equalizer12getParameterEs9PARAMETER
+_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE5PrintEPKcz
