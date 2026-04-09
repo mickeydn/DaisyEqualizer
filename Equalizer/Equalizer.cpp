@@ -34,6 +34,11 @@ float Equalizer::Process(float input)
     return signal;
 }
 
+void Equalizer::Init()
+{
+	Init(48000); // Default sample rate
+}
+
 void Equalizer::Init(int sampleRate)
 {
 	sampleRate_ = sampleRate;

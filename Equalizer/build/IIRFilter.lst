@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
   41              		.loc 1 10 31 view .LVU6
   12:IIRFilter.cpp ****                             b[i] = 0;
   42              		.loc 1 12 29 view .LVU7
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 2
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s 			page 2
 
 
   12:IIRFilter.cpp ****                             b[i] = 0;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
   81 0018 C361     		str	r3, [r0, #28]	@ float
   18:IIRFilter.cpp ****         }
   82              		.loc 1 18 9 view .LVU30
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 3
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s 			page 3
 
 
   83 001a 7047     		bx	lr
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
  124 0024 90ED025A 		vldr.32	s10, [r0, #8]
  125              		.loc 1 32 19 view .LVU42
  126 0028 90ED0A6A 		vldr.32	s12, [r0, #40]
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 4
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s 			page 4
 
 
  127 002c D0ED035A 		vldr.32	s11, [r0, #12]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
  167              		@ args = 0, pretend = 0, frame = 0
  168              		@ frame_needed = 0, uses_anonymous_args = 0
  169              	.LBB7:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 5
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s 			page 5
 
 
    6:IIRFilter.cpp **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
  218              	.LBB10:
    6:IIRFilter.cpp **** 
  219              		.loc 1 6 31 is_stmt 0 view .LVU65
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 6
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s 			page 6
 
 
  220 0000 054B     		ldr	r3, .L10
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
  269              	.LFB545:
    4:IIRFilter.cpp **** 
  270              		.loc 1 4 9 is_stmt 1 view -0
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 7
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s 			page 7
 
 
  271              		.cfi_startproc
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
   21:IIRFilter.cpp ****             for (int i = 0; i < NUM_IIR_COEFFS; i++) 
  319              		.loc 1 21 9 is_stmt 1 view -0
  320              		.cfi_startproc
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 8
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s 			page 8
 
 
  321              		@ args = 0, pretend = 0, frame = 0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
  359 0022 0362     		str	r3, [r0, #32]	@ float
   27:IIRFilter.cpp ****         }
  360              		.loc 1 27 8 view .LVU99
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 9
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s 			page 9
 
 
  361 0024 C361     		str	r3, [r0, #28]	@ float
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
  404 0018 B7EE009A 		vmov.f32	s18, #1.0e+0
   47:IIRFilter.cpp **** 			float alpha = sinf (omega) / (2.0 * Q);
  405              		.loc 1 47 49 view .LVU108
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 10
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s 			page 10
 
 
  406 001c B7EEE70A 		vcvt.f64.f32	d0, s15
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
   53:IIRFilter.cpp **** 			a[0] = 1.0 + alpha / A;
  445              		.loc 1 53 23 is_stmt 0 view .LVU125
  446 0060 88EE297A 		vdiv.f32	s14, s16, s19
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 11
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s 			page 11
 
 
   50:IIRFilter.cpp **** 			b[1] = -2.0 * cosf (omega);
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
  485              		.cfi_restore 80
  486              		.cfi_restore 81
  487              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 12
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s 			page 12
 
 
  488              	.LVL27:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
  532 0010 00000000 		.word	_ZN9IIRFilter7ProcessEf
  533 0014 00000000 		.word	_ZN9IIRFilter4InitEv
  534              		.text
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 13
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s 			page 13
 
 
  535              	.Letext0:
@@ -729,33 +729,33 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
  540              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
  541              		.file 7 "IIRFilter.h"
  542              		.file 8 "<built-in>"
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 14
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 IIRFilter.cpp
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:17     .text._ZN9IIRFilter4InitEv:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:26     .text._ZN9IIRFilter4InitEv:00000000 _ZN9IIRFilter4InitEv
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:88     .text._ZN9IIRFilter7ProcessEf:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:96     .text._ZN9IIRFilter7ProcessEf:00000000 _ZN9IIRFilter7ProcessEf
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:154    .text._ZN9IIRFilterD2Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:162    .text._ZN9IIRFilterD2Ev:00000000 _ZN9IIRFilterD2Ev
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:195    .text._ZN9IIRFilterD2Ev:00000010 $d
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:162    .text._ZN9IIRFilterD2Ev:00000000 _ZN9IIRFilterD1Ev
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:202    .text._ZN9IIRFilterD0Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:210    .text._ZN9IIRFilterD0Ev:00000000 _ZN9IIRFilterD0Ev
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:254    .text._ZN9IIRFilterD0Ev:00000018 $d
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:259    .text._ZN9IIRFilterC2Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:267    .text._ZN9IIRFilterC2Ev:00000000 _ZN9IIRFilterC2Ev
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:301    .text._ZN9IIRFilterC2Ev:00000010 $d
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:267    .text._ZN9IIRFilterC2Ev:00000000 _ZN9IIRFilterC1Ev
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:308    .text._ZN9IIRFilter4InitEPfS0_:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:316    .text._ZN9IIRFilter4InitEPfS0_:00000000 _ZN9IIRFilter4InitEPfS0_
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:368    .text._ZN9IIRFilter10makePeakEQEffff:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:376    .text._ZN9IIRFilter10makePeakEQEffff:00000000 _ZN9IIRFilter10makePeakEQEffff
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:516    .text._ZN9IIRFilter10makePeakEQEffff:000000a8 $d
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:527    .rodata._ZTV9IIRFilter:00000000 _ZTV9IIRFilter
-C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:523    .rodata._ZTV9IIRFilter:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:17     .text._ZN9IIRFilter4InitEv:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:26     .text._ZN9IIRFilter4InitEv:00000000 _ZN9IIRFilter4InitEv
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:88     .text._ZN9IIRFilter7ProcessEf:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:96     .text._ZN9IIRFilter7ProcessEf:00000000 _ZN9IIRFilter7ProcessEf
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:154    .text._ZN9IIRFilterD2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:162    .text._ZN9IIRFilterD2Ev:00000000 _ZN9IIRFilterD2Ev
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:195    .text._ZN9IIRFilterD2Ev:00000010 $d
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:162    .text._ZN9IIRFilterD2Ev:00000000 _ZN9IIRFilterD1Ev
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:202    .text._ZN9IIRFilterD0Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:210    .text._ZN9IIRFilterD0Ev:00000000 _ZN9IIRFilterD0Ev
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:254    .text._ZN9IIRFilterD0Ev:00000018 $d
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:259    .text._ZN9IIRFilterC2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:267    .text._ZN9IIRFilterC2Ev:00000000 _ZN9IIRFilterC2Ev
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:301    .text._ZN9IIRFilterC2Ev:00000010 $d
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:267    .text._ZN9IIRFilterC2Ev:00000000 _ZN9IIRFilterC1Ev
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:308    .text._ZN9IIRFilter4InitEPfS0_:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:316    .text._ZN9IIRFilter4InitEPfS0_:00000000 _ZN9IIRFilter4InitEPfS0_
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:368    .text._ZN9IIRFilter10makePeakEQEffff:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:376    .text._ZN9IIRFilter10makePeakEQEffff:00000000 _ZN9IIRFilter10makePeakEQEffff
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:516    .text._ZN9IIRFilter10makePeakEQEffff:000000a8 $d
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:527    .rodata._ZTV9IIRFilter:00000000 _ZTV9IIRFilter
+C:\Users\micke\AppData\Local\Temp\ccmYo0Yb.s:523    .rodata._ZTV9IIRFilter:00000000 $d
 
 UNDEFINED SYMBOLS
 _ZN9AlgorithmD2Ev
