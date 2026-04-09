@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 1
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -27,7 +27,7 @@ ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 1
   24              		.fpu fpv5-d16
   26              	_ZN9EqualizerD2Ev:
   27              	.LVL0:
-  28              	.LFB560:
+  28              	.LFB550:
   29              		.file 1 "Equalizer.cpp"
    1:Equalizer.cpp **** ///////////////////////////////////////////////////////////
    2:Equalizer.cpp **** //  Equalizer.cpp
@@ -54,2152 +54,1484 @@ ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 1
   31              		.cfi_startproc
   32              		@ args = 0, pretend = 0, frame = 0
   33              		@ frame_needed = 0, uses_anonymous_args = 0
-  34              		@ link register save eliminated.
+  34              		.loc 1 21 1 is_stmt 0 view .LVU1
+  35 0000 70B5     		push	{r4, r5, r6, lr}
+  36              		.cfi_def_cfa_offset 16
+  37              		.cfi_offset 4, -16
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 2
+
+
+  38              		.cfi_offset 5, -12
+  39              		.cfi_offset 6, -8
+  40              		.cfi_offset 14, -4
+  41              	.LBB8:
+  42              		.loc 1 21 23 view .LVU2
+  43 0002 094B     		ldr	r3, .L6
+  44 0004 0446     		mov	r4, r0
+  45              	.LBE8:
+  46              		.loc 1 21 1 view .LVU3
+  47 0006 0546     		mov	r5, r0
+  48 0008 00F14C06 		add	r6, r0, #76
+  49              	.LBB9:
+  50              		.loc 1 21 23 view .LVU4
+  51 000c 44F8FC3B 		str	r3, [r4], #252
+  52              	.LVL1:
+  53              	.L2:
+  54              		.loc 1 21 23 discriminator 5 view .LVU5
+  55 0010 54F82C3D 		ldr	r3, [r4, #-44]!
+  56 0014 1B68     		ldr	r3, [r3]
+  57 0016 2046     		mov	r0, r4
+  58 0018 9847     		blx	r3
+  59              	.LVL2:
+  60 001a A642     		cmp	r6, r4
+  61 001c F8D1     		bne	.L2
+  62              		.loc 1 21 23 discriminator 7 view .LVU6
+  63 001e 2846     		mov	r0, r5
+  64 0020 FFF7FEFF 		bl	_ZN9AlgorithmD2Ev
+  65              	.LVL3:
+  66              	.LBE9:
   22:Equalizer.cpp **** {
   23:Equalizer.cpp **** 
   24:Equalizer.cpp **** }
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 2
-
-
-  35              		.loc 1 24 1 is_stmt 0 view .LVU1
-  36 0000 7047     		bx	lr
-  37              		.cfi_endproc
-  38              	.LFE560:
-  40              		.global	_ZN9EqualizerD1Ev
-  41              		.thumb_set _ZN9EqualizerD1Ev,_ZN9EqualizerD2Ev
-  42 0002 00BF     		.section	.text._ZN9EqualizerD0Ev,"ax",%progbits
-  43              		.align	1
-  44              		.p2align 2,,3
-  45              		.global	_ZN9EqualizerD0Ev
-  46              		.syntax unified
-  47              		.thumb
-  48              		.thumb_func
-  49              		.fpu fpv5-d16
-  51              	_ZN9EqualizerD0Ev:
-  52              	.LVL1:
-  53              	.LFB562:
-  21:Equalizer.cpp **** {
-  54              		.loc 1 21 1 is_stmt 1 view -0
-  55              		.cfi_startproc
-  56              		@ args = 0, pretend = 0, frame = 0
-  57              		@ frame_needed = 0, uses_anonymous_args = 0
-  21:Equalizer.cpp **** {
-  58              		.loc 1 21 1 is_stmt 0 view .LVU3
-  59 0000 10B5     		push	{r4, lr}
-  60              		.cfi_def_cfa_offset 8
-  61              		.cfi_offset 4, -8
-  62              		.cfi_offset 14, -4
-  21:Equalizer.cpp **** {
-  63              		.loc 1 21 1 view .LVU4
-  64 0002 0446     		mov	r4, r0
-  65              	.LVL2:
-  66              	.LBB17:
-  67              	.LBI17:
-  21:Equalizer.cpp **** {
-  68              		.loc 1 21 1 is_stmt 1 view .LVU5
-  21:Equalizer.cpp **** {
-  69              		.loc 1 21 1 is_stmt 0 view .LVU6
-  70              	.LBE17:
-  71              		.loc 1 24 1 view .LVU7
-  72 0004 DC21     		movs	r1, #220
-  73 0006 FFF7FEFF 		bl	_ZdlPvj
-  74              	.LVL3:
-  75              		.loc 1 24 1 view .LVU8
-  76 000a 2046     		mov	r0, r4
-  77 000c 10BD     		pop	{r4, pc}
-  78              		.loc 1 24 1 view .LVU9
-  79              		.cfi_endproc
-  80              	.LFE562:
-  82 000e 00BF     		.section	.text._ZN9EqualizerC2Ev,"ax",%progbits
-  83              		.align	1
-  84              		.p2align 2,,3
-  85              		.global	_ZN9EqualizerC2Ev
-  86              		.syntax unified
-  87              		.thumb
-  88              		.thumb_func
-  89              		.fpu fpv5-d16
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 3
-
-
-  91              	_ZN9EqualizerC2Ev:
-  92              	.LVL4:
-  93              	.LFB557:
-  15:Equalizer.cpp **** {
-  94              		.loc 1 15 1 is_stmt 1 view -0
-  95              		.cfi_startproc
-  96              		@ args = 0, pretend = 0, frame = 0
-  97              		@ frame_needed = 0, uses_anonymous_args = 0
-  98              		@ link register save eliminated.
-  99              	.LBB18:
-  15:Equalizer.cpp **** {
- 100              		.loc 1 15 22 is_stmt 0 view .LVU11
- 101 0000 0249     		ldr	r1, .L6
-  18:Equalizer.cpp **** }
- 102              		.loc 1 18 12 view .LVU12
- 103 0002 0122     		movs	r2, #1
-  15:Equalizer.cpp **** {
- 104              		.loc 1 15 22 view .LVU13
- 105 0004 0160     		str	r1, [r0]
-  15:Equalizer.cpp **** {
- 106              		.loc 1 15 22 is_stmt 1 view .LVU14
-  18:Equalizer.cpp **** }
- 107              		.loc 1 18 2 view .LVU15
-  18:Equalizer.cpp **** }
- 108              		.loc 1 18 12 is_stmt 0 view .LVU16
- 109 0006 0272     		strb	r2, [r0, #8]
- 110              	.LBE18:
-  19:Equalizer.cpp **** 
- 111              		.loc 1 19 1 view .LVU17
- 112 0008 7047     		bx	lr
- 113              	.L7:
- 114 000a 00BF     		.align	2
- 115              	.L6:
- 116 000c 08000000 		.word	.LANCHOR0+8
- 117              		.cfi_endproc
- 118              	.LFE557:
- 120              		.global	_ZN9EqualizerC1Ev
- 121              		.thumb_set _ZN9EqualizerC1Ev,_ZN9EqualizerC2Ev
- 122              		.section	.text._ZN9Equalizer7ProcessEf,"ax",%progbits
- 123              		.align	1
- 124              		.p2align 2,,3
- 125              		.global	_ZN9Equalizer7ProcessEf
- 126              		.syntax unified
- 127              		.thumb
- 128              		.thumb_func
- 129              		.fpu fpv5-d16
- 131              	_ZN9Equalizer7ProcessEf:
- 132              	.LVL5:
- 133              	.LFB563:
+  67              		.loc 1 24 1 discriminator 7 view .LVU7
+  68 0024 2846     		mov	r0, r5
+  69 0026 70BD     		pop	{r4, r5, r6, pc}
+  70              	.LVL4:
+  71              	.L7:
+  72              		.loc 1 24 1 discriminator 7 view .LVU8
+  73              		.align	2
+  74              	.L6:
+  75 0028 08000000 		.word	.LANCHOR0+8
+  76              		.cfi_endproc
+  77              	.LFE550:
+  79              		.global	_ZN9EqualizerD1Ev
+  80              		.thumb_set _ZN9EqualizerD1Ev,_ZN9EqualizerD2Ev
+  81              		.section	.text._ZN9Equalizer7ProcessEf,"ax",%progbits
+  82              		.align	1
+  83              		.p2align 2,,3
+  84              		.global	_ZN9Equalizer7ProcessEf
+  85              		.syntax unified
+  86              		.thumb
+  87              		.thumb_func
+  88              		.fpu fpv5-d16
+  90              	_ZN9Equalizer7ProcessEf:
+  91              	.LVL5:
+  92              	.LFB553:
   25:Equalizer.cpp **** 
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 3
+
+
   26:Equalizer.cpp **** float Equalizer::Process(float input)
   27:Equalizer.cpp **** {
- 134              		.loc 1 27 1 is_stmt 1 view -0
- 135              		.cfi_startproc
- 136              		@ args = 0, pretend = 0, frame = 0
- 137              		@ frame_needed = 0, uses_anonymous_args = 0
- 138              		@ link register save eliminated.
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 4
+  93              		.loc 1 27 1 is_stmt 1 view -0
+  94              		.cfi_startproc
+  95              		@ args = 0, pretend = 0, frame = 0
+  96              		@ frame_needed = 0, uses_anonymous_args = 0
+  28:Equalizer.cpp **** 	if (!filterOn_) return input;
+  97              		.loc 1 28 2 view .LVU10
+  27:Equalizer.cpp **** 	if (!filterOn_) return input;
+  98              		.loc 1 27 1 is_stmt 0 view .LVU11
+  99 0000 38B5     		push	{r3, r4, r5, lr}
+ 100              		.cfi_def_cfa_offset 16
+ 101              		.cfi_offset 3, -16
+ 102              		.cfi_offset 4, -12
+ 103              		.cfi_offset 5, -8
+ 104              		.cfi_offset 14, -4
+ 105              		.loc 1 28 2 view .LVU12
+ 106 0002 037A     		ldrb	r3, [r0, #8]	@ zero_extendqisi2
+ 107 0004 53B1     		cbz	r3, .L8
+ 108 0006 00F13C05 		add	r5, r0, #60
+ 109 000a 00F14C04 		add	r4, r0, #76
+ 110              	.LVL6:
+ 111              	.L10:
+ 112              	.LBB14:
+ 113              	.LBB15:
+ 114              	.LBB16:
+  29:Equalizer.cpp **** 
+  30:Equalizer.cpp ****     float signal = input;
+  31:Equalizer.cpp ****     for (int i = 0; i < NUM_EQ_BANDS; i++) {
+  32:Equalizer.cpp ****         signal = m_filters[i]->Process(signal);  
+ 115              		.loc 1 32 9 is_stmt 1 view .LVU13
+ 116              		.loc 1 32 29 is_stmt 0 view .LVU14
+ 117 000e 55F8040B 		ldr	r0, [r5], #4
+ 118              		.loc 1 32 46 view .LVU15
+ 119 0012 0368     		ldr	r3, [r0]
+ 120              		.loc 1 32 39 view .LVU16
+ 121 0014 9B68     		ldr	r3, [r3, #8]
+ 122 0016 9847     		blx	r3
+ 123              	.LVL7:
+  31:Equalizer.cpp ****         signal = m_filters[i]->Process(signal);  
+ 124              		.loc 1 31 5 is_stmt 1 view .LVU17
+  31:Equalizer.cpp ****         signal = m_filters[i]->Process(signal);  
+ 125              		.loc 1 31 23 view .LVU18
+ 126 0018 A542     		cmp	r5, r4
+ 127 001a F8D1     		bne	.L10
+ 128              	.LVL8:
+ 129              	.L8:
+  31:Equalizer.cpp ****         signal = m_filters[i]->Process(signal);  
+ 130              		.loc 1 31 23 is_stmt 0 view .LVU19
+ 131              	.LBE16:
+ 132              	.LBE15:
+ 133              	.LBE14:
+  33:Equalizer.cpp ****     }
+  34:Equalizer.cpp ****     return signal;
+  35:Equalizer.cpp **** }
+ 134              		.loc 1 35 1 view .LVU20
+ 135 001c 38BD     		pop	{r3, r4, r5, pc}
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 4
 
 
-  28:Equalizer.cpp **** 	float output;
- 139              		.loc 1 28 2 view .LVU19
-  29:Equalizer.cpp **** 	float tmp; 
- 140              		.loc 1 29 2 view .LVU20
-  30:Equalizer.cpp **** 	output = input;
- 141              		.loc 1 30 2 view .LVU21
-  31:Equalizer.cpp **** 	
-  32:Equalizer.cpp **** 	// TODO change code to processing all IIR filters
-  33:Equalizer.cpp **** 	if (filterOn_) {
- 142              		.loc 1 33 2 view .LVU22
- 143 0000 037A     		ldrb	r3, [r0, #8]	@ zero_extendqisi2
- 144 0002 03B9     		cbnz	r3, .L13
-  34:Equalizer.cpp **** 		// KBE implementation
-  35:Equalizer.cpp **** 		tmp = m_IIRfilter[0].Process(input);
-  36:Equalizer.cpp **** 		output = m_IIRfilter[1].Process(tmp);
-  37:Equalizer.cpp **** 		tmp = m_IIRfilter[2].Process(output);
-  38:Equalizer.cpp **** 		output = m_IIRfilter[3].Process(tmp);
-  39:Equalizer.cpp **** 	}
-  40:Equalizer.cpp **** 		
-  41:Equalizer.cpp **** 	return output;
- 145              		.loc 1 41 2 view .LVU23
-  42:Equalizer.cpp **** }
- 146              		.loc 1 42 1 is_stmt 0 view .LVU24
- 147 0004 7047     		bx	lr
- 148              	.L13:
-  35:Equalizer.cpp **** 		output = m_IIRfilter[1].Process(tmp);
- 149              		.loc 1 35 3 is_stmt 1 view .LVU25
- 150              	.LVL6:
- 151              	.LBB27:
- 152              	.LBI27:
- 153              		.file 2 "IIRFilter.h"
-   1:IIRFilter.h   **** ///////////////////////////////////////////////////////////
-   2:IIRFilter.h   **** //  IIRFilter.h
-   3:IIRFilter.h   **** //  Implementation of the Class IIRFilter
-   4:IIRFilter.h   **** //  Created on:      27-nov-2025 09:31:01
-   5:IIRFilter.h   **** //  Modified:        27-nov-2025 20:01:00
-   6:IIRFilter.h   **** //  Original author: kbe
-   7:IIRFilter.h   **** ///////////////////////////////////////////////////////////
-   8:IIRFilter.h   **** #define float_PI 3.14159265359
-   9:IIRFilter.h   **** #define NUM_IIR_COEFFS 3
-  10:IIRFilter.h   **** 
-  11:IIRFilter.h   **** class IIRFilter {
-  12:IIRFilter.h   **** 
-  13:IIRFilter.h   **** 	public:
-  14:IIRFilter.h   **** 		IIRFilter() {}
-  15:IIRFilter.h   **** 		~IIRFilter() {}
-  16:IIRFilter.h   **** 
-  17:IIRFilter.h   **** 		void Init() 
-  18:IIRFilter.h   **** 		{
-  19:IIRFilter.h   **** 			for (int i = 0; i < NUM_IIR_COEFFS; i++) 
-  20:IIRFilter.h   **** 			{
-  21:IIRFilter.h   **** 				a[i] = 0;
-  22:IIRFilter.h   **** 				b[i] = 0;
-  23:IIRFilter.h   **** 			}
-  24:IIRFilter.h   **** 			a[0] = 1.0;
-  25:IIRFilter.h   **** 			b[0] = 1.0;
-  26:IIRFilter.h   **** 			x1_ = x2_ = y1_ = y2_ = 0.0;
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 5
+ 136              		.cfi_endproc
+ 137              	.LFE553:
+ 139 001e 00BF     		.section	.text._ZN9EqualizerD0Ev,"ax",%progbits
+ 140              		.align	1
+ 141              		.p2align 2,,3
+ 142              		.global	_ZN9EqualizerD0Ev
+ 143              		.syntax unified
+ 144              		.thumb
+ 145              		.thumb_func
+ 146              		.fpu fpv5-d16
+ 148              	_ZN9EqualizerD0Ev:
+ 149              	.LVL9:
+ 150              	.LFB552:
+  21:Equalizer.cpp **** {
+ 151              		.loc 1 21 1 is_stmt 1 view -0
+ 152              		.cfi_startproc
+ 153              		@ args = 0, pretend = 0, frame = 0
+ 154              		@ frame_needed = 0, uses_anonymous_args = 0
+  21:Equalizer.cpp **** {
+ 155              		.loc 1 21 1 is_stmt 0 view .LVU22
+ 156 0000 70B5     		push	{r4, r5, r6, lr}
+ 157              		.cfi_def_cfa_offset 16
+ 158              		.cfi_offset 4, -16
+ 159              		.cfi_offset 5, -12
+ 160              		.cfi_offset 6, -8
+ 161              		.cfi_offset 14, -4
+ 162              	.LBB20:
+ 163              	.LBB21:
+  21:Equalizer.cpp **** {
+ 164              		.loc 1 21 23 view .LVU23
+ 165 0002 0B4B     		ldr	r3, .L18
+ 166 0004 0446     		mov	r4, r0
+ 167              	.LBE21:
+ 168              	.LBE20:
+  21:Equalizer.cpp **** {
+ 169              		.loc 1 21 1 view .LVU24
+ 170 0006 0546     		mov	r5, r0
+ 171              	.LVL10:
+ 172              	.LBB23:
+ 173              	.LBI20:
+  21:Equalizer.cpp **** {
+ 174              		.loc 1 21 1 is_stmt 1 view .LVU25
+ 175 0008 00F14C06 		add	r6, r0, #76
+ 176              	.LBB22:
+  21:Equalizer.cpp **** {
+ 177              		.loc 1 21 23 is_stmt 0 view .LVU26
+ 178 000c 44F8FC3B 		str	r3, [r4], #252
+ 179              	.LVL11:
+ 180              	.L15:
+  21:Equalizer.cpp **** {
+ 181              		.loc 1 21 23 view .LVU27
+ 182 0010 54F82C3D 		ldr	r3, [r4, #-44]!
+ 183 0014 1B68     		ldr	r3, [r3]
+ 184 0016 2046     		mov	r0, r4
+ 185 0018 9847     		blx	r3
+ 186              	.LVL12:
+ 187 001a A642     		cmp	r6, r4
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 5
 
 
-  27:IIRFilter.h   **** 		}
-  28:IIRFilter.h   **** 
-  29:IIRFilter.h   **** 		void Init(float* a_coeffs, float* b_coeffs) 
-  30:IIRFilter.h   **** 		{
-  31:IIRFilter.h   **** 			for (int i = 0; i < NUM_IIR_COEFFS; i++) 
-  32:IIRFilter.h   **** 			{
-  33:IIRFilter.h   **** 				a[i] = a_coeffs[i];
-  34:IIRFilter.h   **** 				b[i] = b_coeffs[i];
-  35:IIRFilter.h   **** 			}
-  36:IIRFilter.h   **** 			x1_ = x2_ = y1_ = y2_ = 0.0;
-  37:IIRFilter.h   **** 		}
-  38:IIRFilter.h   **** 
-  39:IIRFilter.h   **** 		inline float Process(float x) 
- 154              		.loc 2 39 16 view .LVU26
- 155              	.LBB28:
-  40:IIRFilter.h   **** 		{
-  41:IIRFilter.h   **** 			float res = b[0]*x + b[1]*x1_ + b[2]*x2_ - a[1]*y1_ - a[2]*y2_;
- 156              		.loc 2 41 4 view .LVU27
- 157              		.loc 2 41 30 is_stmt 0 view .LVU28
- 158 0006 D0ED154A 		vldr.32	s9, [r0, #84]
- 159              		.loc 2 41 29 view .LVU29
- 160 000a D0ED136A 		vldr.32	s13, [r0, #76]
- 161              		.loc 2 41 23 view .LVU30
- 162 000e D0ED127A 		vldr.32	s15, [r0, #72]
- 163              		.loc 2 41 29 view .LVU31
- 164 0012 64EEA66A 		vmul.f32	s13, s9, s13
- 165              		.loc 2 41 34 view .LVU32
- 166 0016 D0ED165A 		vldr.32	s11, [r0, #88]
- 167 001a 90ED143A 		vldr.32	s6, [r0, #80]
- 168              		.loc 2 41 52 view .LVU33
- 169 001e 90ED176A 		vldr.32	s12, [r0, #92]
- 170              		.loc 2 41 23 view .LVU34
- 171 0022 E0EE276A 		vfma.f32	s13, s0, s15
-  42:IIRFilter.h   **** 
-  43:IIRFilter.h   **** 			y2_ = y1_;
-  44:IIRFilter.h   **** 			y1_ = res;
-  45:IIRFilter.h   **** 			x2_ = x1_;
- 172              		.loc 2 45 8 view .LVU35
- 173 0026 C0ED164A 		vstr.32	s9, [r0, #88]
-  41:IIRFilter.h   **** 
- 174              		.loc 2 41 45 view .LVU36
- 175 002a D0ED104A 		vldr.32	s9, [r0, #64]
-  41:IIRFilter.h   **** 
- 176              		.loc 2 41 10 view .LVU37
- 177 002e 90ED184A 		vldr.32	s8, [r0, #96]
- 178 0032 D0ED113A 		vldr.32	s7, [r0, #68]
- 179              	.LBE28:
- 180              	.LBE27:
- 181              	.LBB34:
- 182              	.LBB35:
-  41:IIRFilter.h   **** 
- 183              		.loc 2 41 30 view .LVU38
- 184 0036 D0ED1F7A 		vldr.32	s15, [r0, #124]
-  41:IIRFilter.h   **** 
- 185              		.loc 2 41 29 view .LVU39
- 186 003a 90ED1D7A 		vldr.32	s14, [r0, #116]
- 187              	.LBE35:
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 6
+ 188 001c F8D1     		bne	.L15
+ 189 001e 2846     		mov	r0, r5
+ 190 0020 FFF7FEFF 		bl	_ZN9AlgorithmD2Ev
+ 191              	.LVL13:
+  21:Equalizer.cpp **** {
+ 192              		.loc 1 21 23 view .LVU28
+ 193              	.LBE22:
+ 194              	.LBE23:
+  24:Equalizer.cpp **** 
+ 195              		.loc 1 24 1 view .LVU29
+ 196 0024 2846     		mov	r0, r5
+ 197 0026 FC21     		movs	r1, #252
+ 198 0028 FFF7FEFF 		bl	_ZdlPvj
+ 199              	.LVL14:
+ 200 002c 2846     		mov	r0, r5
+ 201 002e 70BD     		pop	{r4, r5, r6, pc}
+ 202              	.LVL15:
+ 203              	.L19:
+  24:Equalizer.cpp **** 
+ 204              		.loc 1 24 1 view .LVU30
+ 205              		.align	2
+ 206              	.L18:
+ 207 0030 08000000 		.word	.LANCHOR0+8
+ 208              		.cfi_endproc
+ 209              	.LFE552:
+ 211              		.section	.text._ZN9EqualizerC2Ev,"ax",%progbits
+ 212              		.align	1
+ 213              		.p2align 2,,3
+ 214              		.global	_ZN9EqualizerC2Ev
+ 215              		.syntax unified
+ 216              		.thumb
+ 217              		.thumb_func
+ 218              		.fpu fpv5-d16
+ 220              	_ZN9EqualizerC2Ev:
+ 221              	.LVL16:
+ 222              	.LFB547:
+  15:Equalizer.cpp **** {
+ 223              		.loc 1 15 1 is_stmt 1 view -0
+ 224              		.cfi_startproc
+ 225              		@ args = 0, pretend = 0, frame = 0
+ 226              		@ frame_needed = 0, uses_anonymous_args = 0
+  15:Equalizer.cpp **** {
+ 227              		.loc 1 15 1 is_stmt 0 view .LVU32
+ 228 0000 70B5     		push	{r4, r5, r6, lr}
+ 229              		.cfi_def_cfa_offset 16
+ 230              		.cfi_offset 4, -16
+ 231              		.cfi_offset 5, -12
+ 232              		.cfi_offset 6, -8
+ 233              		.cfi_offset 14, -4
+  15:Equalizer.cpp **** {
+ 234              		.loc 1 15 1 view .LVU33
+ 235 0002 0546     		mov	r5, r0
+ 236              	.LBB24:
+  15:Equalizer.cpp **** {
+ 237              		.loc 1 15 22 view .LVU34
+ 238 0004 FFF7FEFF 		bl	_ZN9AlgorithmC2Ev
+ 239              	.LVL17:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 6
 
 
- 188              	.LBE34:
- 189              	.LBB43:
- 190              	.LBB29:
-  41:IIRFilter.h   **** 
- 191              		.loc 2 41 34 view .LVU40
- 192 003e E3EE256A 		vfma.f32	s13, s6, s11
- 193              	.LBE29:
- 194              	.LBE43:
- 195              	.LBB44:
- 196              	.LBB36:
-  41:IIRFilter.h   **** 
- 197              		.loc 2 41 23 view .LVU41
- 198 0042 D0ED1C0A 		vldr.32	s1, [r0, #112]
-  41:IIRFilter.h   **** 
- 199              		.loc 2 41 29 view .LVU42
- 200 0046 27EE877A 		vmul.f32	s14, s15, s14
-  41:IIRFilter.h   **** 
- 201              		.loc 2 41 34 view .LVU43
- 202 004a D0ED201A 		vldr.32	s3, [r0, #128]
- 203 004e 90ED1E1A 		vldr.32	s2, [r0, #120]
-  41:IIRFilter.h   **** 
- 204              		.loc 2 41 52 view .LVU44
- 205 0052 90ED215A 		vldr.32	s10, [r0, #132]
-  41:IIRFilter.h   **** 
- 206              		.loc 2 41 45 view .LVU45
- 207 0056 90ED1A2A 		vldr.32	s4, [r0, #104]
-  41:IIRFilter.h   **** 
- 208              		.loc 2 41 10 view .LVU46
- 209 005a 90ED223A 		vldr.32	s6, [r0, #136]
- 210              	.LBE36:
- 211              	.LBE44:
- 212              	.LBB45:
- 213              	.LBB30:
-  41:IIRFilter.h   **** 
- 214              		.loc 2 41 45 view .LVU47
- 215 005e E4EEC66A 		vfms.f32	s13, s9, s12
- 216              	.LBE30:
- 217              	.LBE45:
- 218              	.LBB46:
- 219              	.LBB37:
-  41:IIRFilter.h   **** 
- 220              		.loc 2 41 10 view .LVU48
- 221 0062 D0ED1B2A 		vldr.32	s5, [r0, #108]
- 222              	.LBE37:
- 223              	.LBE46:
- 224              	.LBB47:
- 225              	.LBB48:
-  41:IIRFilter.h   **** 
- 226              		.loc 2 41 30 view .LVU49
- 227 0066 D0ED295A 		vldr.32	s11, [r0, #164]
- 228              	.LBE48:
- 229              	.LBE47:
- 230              	.LBB59:
- 231              	.LBB38:
- 232              		.loc 2 45 8 view .LVU50
- 233 006a C0ED207A 		vstr.32	s15, [r0, #128]
- 234              	.LBE38:
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 7
+  15:Equalizer.cpp **** {
+ 240              		.loc 1 15 22 view .LVU35
+ 241 0008 074B     		ldr	r3, .L24
+ 242 000a 2C46     		mov	r4, r5
+ 243 000c 05F1FC06 		add	r6, r5, #252
+ 244 0010 44F84C3B 		str	r3, [r4], #76
+  15:Equalizer.cpp **** {
+ 245              		.loc 1 15 22 is_stmt 1 view .LVU36
+ 246              	.L21:
+  15:Equalizer.cpp **** {
+ 247              		.loc 1 15 22 is_stmt 0 discriminator 3 view .LVU37
+ 248 0014 2046     		mov	r0, r4
+ 249 0016 2C34     		adds	r4, r4, #44
+ 250 0018 FFF7FEFF 		bl	_ZN9IIRFilterC1Ev
+ 251              	.LVL18:
+  15:Equalizer.cpp **** {
+ 252              		.loc 1 15 22 is_stmt 1 discriminator 3 view .LVU38
+  15:Equalizer.cpp **** {
+ 253              		.loc 1 15 22 discriminator 3 view .LVU39
+ 254 001c A642     		cmp	r6, r4
+ 255 001e F9D1     		bne	.L21
+  18:Equalizer.cpp **** }
+ 256              		.loc 1 18 2 discriminator 2 view .LVU40
+  18:Equalizer.cpp **** }
+ 257              		.loc 1 18 12 is_stmt 0 discriminator 2 view .LVU41
+ 258 0020 0123     		movs	r3, #1
+ 259              	.LBE24:
+  19:Equalizer.cpp **** 
+ 260              		.loc 1 19 1 discriminator 2 view .LVU42
+ 261 0022 2846     		mov	r0, r5
+ 262              	.LBB25:
+  18:Equalizer.cpp **** }
+ 263              		.loc 1 18 12 discriminator 2 view .LVU43
+ 264 0024 2B72     		strb	r3, [r5, #8]
+ 265              	.LBE25:
+  19:Equalizer.cpp **** 
+ 266              		.loc 1 19 1 discriminator 2 view .LVU44
+ 267 0026 70BD     		pop	{r4, r5, r6, pc}
+ 268              	.LVL19:
+ 269              	.L25:
+  19:Equalizer.cpp **** 
+ 270              		.loc 1 19 1 discriminator 2 view .LVU45
+ 271              		.align	2
+ 272              	.L24:
+ 273 0028 08000000 		.word	.LANCHOR0+8
+ 274              		.cfi_endproc
+ 275              	.LFE547:
+ 277              		.global	_ZN9EqualizerC1Ev
+ 278              		.thumb_set _ZN9EqualizerC1Ev,_ZN9EqualizerC2Ev
+ 279              		.section	.text._ZN9Equalizer18updateEQParametersEs,"ax",%progbits
+ 280              		.align	1
+ 281              		.p2align 2,,3
+ 282              		.global	_ZN9Equalizer18updateEQParametersEs
+ 283              		.syntax unified
+ 284              		.thumb
+ 285              		.thumb_func
+ 286              		.fpu fpv5-d16
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 7
 
 
- 235              	.LBE59:
- 236              	.LBB60:
- 237              	.LBB49:
-  41:IIRFilter.h   **** 
- 238              		.loc 2 41 29 view .LVU51
- 239 006e D0ED277A 		vldr.32	s15, [r0, #156]
-  41:IIRFilter.h   **** 
- 240              		.loc 2 41 34 view .LVU52
- 241 0072 D0ED2A4A 		vldr.32	s9, [r0, #168]
-  41:IIRFilter.h   **** 
- 242              		.loc 2 41 29 view .LVU53
- 243 0076 65EEA77A 		vmul.f32	s15, s11, s15
- 244              	.LBE49:
- 245              	.LBE60:
- 246              	.LBB61:
- 247              	.LBB31:
-  46:IIRFilter.h   **** 			x1_ = x;
- 248              		.loc 2 46 8 view .LVU54
- 249 007a 80ED150A 		vstr.32	s0, [r0, #84]
-  41:IIRFilter.h   **** 
- 250              		.loc 2 41 10 view .LVU55
- 251 007e E3EEC46A 		vfms.f32	s13, s7, s8
- 252              	.LVL7:
-  43:IIRFilter.h   **** 			y1_ = res;
- 253              		.loc 2 43 4 is_stmt 1 view .LVU56
-  44:IIRFilter.h   **** 			x2_ = x1_;
- 254              		.loc 2 44 4 view .LVU57
- 255              	.LBE31:
- 256              	.LBE61:
- 257              	.LBB62:
- 258              	.LBB50:
-  41:IIRFilter.h   **** 
- 259              		.loc 2 41 23 is_stmt 0 view .LVU58
- 260 0082 D0ED263A 		vldr.32	s7, [r0, #152]
-  41:IIRFilter.h   **** 
- 261              		.loc 2 41 34 view .LVU59
- 262 0086 90ED284A 		vldr.32	s8, [r0, #160]
- 263              	.LBE50:
- 264              	.LBE62:
- 265              	.LBB63:
- 266              	.LBB32:
-  43:IIRFilter.h   **** 			y1_ = res;
- 267              		.loc 2 43 8 view .LVU60
- 268 008a 80ED186A 		vstr.32	s12, [r0, #96]
- 269              	.LBE32:
- 270              	.LBE63:
- 271              	.LBB64:
- 272              	.LBB39:
- 273 008e 80ED225A 		vstr.32	s10, [r0, #136]
- 274              	.LBE39:
- 275              	.LBE64:
- 276              	.LBB65:
- 277              	.LBB51:
-  41:IIRFilter.h   **** 
- 278              		.loc 2 41 52 view .LVU61
- 279 0092 90ED2B6A 		vldr.32	s12, [r0, #172]
- 280              	.LBE51:
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 8
+ 288              	_ZN9Equalizer18updateEQParametersEs:
+ 289              	.LVL20:
+ 290              	.LFB558:
+  36:Equalizer.cpp **** 
+  37:Equalizer.cpp **** void Equalizer::Init(int sampleRate)
+  38:Equalizer.cpp **** {
+  39:Equalizer.cpp **** 	sampleRate_ = sampleRate;
+  40:Equalizer.cpp **** 
+  41:Equalizer.cpp **** 	// KBE changed to update filters
+  42:Equalizer.cpp **** 	// Setting default peak bands center frequency
+  43:Equalizer.cpp **** 	m_EQParams[0].fc = 100.0;
+  44:Equalizer.cpp **** 	m_EQParams[0].gain = 5.0;
+  45:Equalizer.cpp **** 	m_EQParams[1].fc = 500.0;
+  46:Equalizer.cpp **** 	m_EQParams[1].gain = 2.0; 
+  47:Equalizer.cpp **** 	m_EQParams[2].fc = 2000.0;
+  48:Equalizer.cpp **** 	m_EQParams[2].gain = 0.5; 
+  49:Equalizer.cpp **** 	m_EQParams[3].fc = 8000.0;
+  50:Equalizer.cpp **** 	m_EQParams[3].gain = 2.0; 
+  51:Equalizer.cpp **** 
+  52:Equalizer.cpp **** 	for (short band = 0; band < NUM_EQ_BANDS; band++)
+  53:Equalizer.cpp **** 	{
+  54:Equalizer.cpp **** 		m_IIRfilter[band].Init();
+  55:Equalizer.cpp **** 	    //m_EQParams[band].gain = 1.0; // Default gain
+  56:Equalizer.cpp **** 		m_EQParams[band].Q = 8.0; // Default Q
+  57:Equalizer.cpp **** 		m_filters[band] = &m_IIRfilter[band];
+  58:Equalizer.cpp **** 		updateEQParameters(band);
+  59:Equalizer.cpp **** 	}
+  60:Equalizer.cpp **** }
+  61:Equalizer.cpp **** 
+  62:Equalizer.cpp **** float Equalizer::incParameter(short band, PARAMETER param, float delta)
+  63:Equalizer.cpp **** {
+  64:Equalizer.cpp **** 	// TODO change code to increment parameter for IIR filters (See slides) - call updateEQParamters
+  65:Equalizer.cpp ****     //m_filterOn = true; // For test only
+  66:Equalizer.cpp ****     setParameter(band, param, m_EQParams[band].gain + delta);
+  67:Equalizer.cpp **** 	return m_EQParams[band].gain;
+  68:Equalizer.cpp **** }
+  69:Equalizer.cpp **** 
+  70:Equalizer.cpp **** float Equalizer::decParameter(short band, PARAMETER param, float delta)
+  71:Equalizer.cpp **** {
+  72:Equalizer.cpp **** 	// TODO change code to decrement parameter for IIR filters - call updateEQParamters
+  73:Equalizer.cpp ****     //m_filterOn = false; // For test only
+  74:Equalizer.cpp ****     setParameter(band, param, m_EQParams[band].gain - delta);
+  75:Equalizer.cpp **** 	return m_EQParams[band].gain;
+  76:Equalizer.cpp **** }
+  77:Equalizer.cpp **** 
+  78:Equalizer.cpp **** void Equalizer::setParameter(short band, PARAMETER param, float value)
+  79:Equalizer.cpp **** {
+  80:Equalizer.cpp ****     bool update = false;
+  81:Equalizer.cpp **** 
+  82:Equalizer.cpp **** 	if (band < NUM_EQ_BANDS)
+  83:Equalizer.cpp **** 	{
+  84:Equalizer.cpp **** 		switch (param)
+  85:Equalizer.cpp **** 		{
+  86:Equalizer.cpp **** 			case PM_GAIN:
+  87:Equalizer.cpp **** 				if (m_EQParams[band].gain != value) {
+  88:Equalizer.cpp **** 					m_EQParams[band].gain = value;
+  89:Equalizer.cpp **** 					update = true;
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 8
 
 
- 281              	.LBE65:
- 282              	.LBB66:
- 283              	.LBB40:
-  41:IIRFilter.h   **** 
- 284              		.loc 2 41 23 view .LVU62
- 285 0096 A0EEA67A 		vfma.f32	s14, s1, s13
- 286              	.LBE40:
- 287              	.LBE66:
- 288              	.LBB67:
- 289              	.LBB33:
-  44:IIRFilter.h   **** 			x2_ = x1_;
- 290              		.loc 2 44 8 view .LVU63
- 291 009a C0ED176A 		vstr.32	s13, [r0, #92]
-  45:IIRFilter.h   **** 			x1_ = x;
- 292              		.loc 2 45 4 is_stmt 1 view .LVU64
- 293              		.loc 2 46 4 view .LVU65
-  47:IIRFilter.h   **** 
-  48:IIRFilter.h   **** 			return res;
- 294              		.loc 2 48 4 view .LVU66
- 295              	.LVL8:
- 296              		.loc 2 48 4 is_stmt 0 view .LVU67
- 297              	.LBE33:
- 298              	.LBE67:
-  36:Equalizer.cpp **** 		tmp = m_IIRfilter[2].Process(output);
- 299              		.loc 1 36 3 is_stmt 1 view .LVU68
- 300              	.LBB68:
- 301              	.LBI34:
-  39:IIRFilter.h   **** 		{
- 302              		.loc 2 39 16 view .LVU69
- 303              	.LBB41:
-  41:IIRFilter.h   **** 
- 304              		.loc 2 41 4 view .LVU70
-  46:IIRFilter.h   **** 
- 305              		.loc 2 46 8 is_stmt 0 view .LVU71
- 306 009e C0ED1F6A 		vstr.32	s13, [r0, #124]
-  41:IIRFilter.h   **** 
- 307              		.loc 2 41 34 view .LVU72
- 308 00a2 A1EE217A 		vfma.f32	s14, s2, s3
-  41:IIRFilter.h   **** 
- 309              		.loc 2 41 45 view .LVU73
- 310 00a6 A2EE457A 		vfms.f32	s14, s4, s10
-  41:IIRFilter.h   **** 
- 311              		.loc 2 41 10 view .LVU74
- 312 00aa A2EEC37A 		vfms.f32	s14, s5, s6
- 313              	.LVL9:
-  43:IIRFilter.h   **** 			y1_ = res;
- 314              		.loc 2 43 4 is_stmt 1 view .LVU75
-  44:IIRFilter.h   **** 			x2_ = x1_;
- 315              		.loc 2 44 4 view .LVU76
- 316              	.LBE41:
- 317              	.LBE68:
- 318              	.LBB69:
- 319              	.LBB52:
-  41:IIRFilter.h   **** 
- 320              		.loc 2 41 23 is_stmt 0 view .LVU77
- 321 00ae E3EE877A 		vfma.f32	s15, s7, s14
- 322              	.LBE52:
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 9
-
-
- 323              	.LBE69:
- 324              	.LBB70:
- 325              	.LBB42:
-  44:IIRFilter.h   **** 			x2_ = x1_;
- 326              		.loc 2 44 8 view .LVU78
- 327 00b2 80ED217A 		vstr.32	s14, [r0, #132]
-  45:IIRFilter.h   **** 			x1_ = x;
- 328              		.loc 2 45 4 is_stmt 1 view .LVU79
-  46:IIRFilter.h   **** 
- 329              		.loc 2 46 4 view .LVU80
- 330              		.loc 2 48 4 view .LVU81
- 331              	.LVL10:
- 332              		.loc 2 48 4 is_stmt 0 view .LVU82
- 333              	.LBE42:
- 334              	.LBE70:
-  37:Equalizer.cpp **** 		output = m_IIRfilter[3].Process(tmp);
- 335              		.loc 1 37 3 is_stmt 1 view .LVU83
- 336              	.LBB71:
- 337              	.LBI47:
-  39:IIRFilter.h   **** 		{
- 338              		.loc 2 39 16 view .LVU84
- 339              	.LBB53:
-  41:IIRFilter.h   **** 
- 340              		.loc 2 41 4 view .LVU85
-  41:IIRFilter.h   **** 
- 341              		.loc 2 41 45 is_stmt 0 view .LVU86
- 342 00b6 90ED241A 		vldr.32	s2, [r0, #144]
-  41:IIRFilter.h   **** 
- 343              		.loc 2 41 10 view .LVU87
- 344 00ba 90ED2C2A 		vldr.32	s4, [r0, #176]
- 345 00be D0ED251A 		vldr.32	s3, [r0, #148]
- 346              	.LBE53:
- 347              	.LBE71:
- 348              	.LBB72:
- 349              	.LBB73:
-  41:IIRFilter.h   **** 
- 350              		.loc 2 41 30 view .LVU88
- 351 00c2 90ED335A 		vldr.32	s10, [r0, #204]
-  41:IIRFilter.h   **** 
- 352              		.loc 2 41 29 view .LVU89
- 353 00c6 90ED310A 		vldr.32	s0, [r0, #196]
- 354              	.LVL11:
-  41:IIRFilter.h   **** 
- 355              		.loc 2 41 29 view .LVU90
- 356              	.LBE73:
- 357              	.LBE72:
- 358              	.LBB79:
- 359              	.LBB54:
-  41:IIRFilter.h   **** 
- 360              		.loc 2 41 34 view .LVU91
- 361 00ca E4EE247A 		vfma.f32	s15, s8, s9
- 362              	.LBE54:
- 363              	.LBE79:
- 364              	.LBB80:
- 365              	.LBB74:
-  41:IIRFilter.h   **** 
- 366              		.loc 2 41 23 view .LVU92
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 10
-
-
- 367 00ce D0ED302A 		vldr.32	s5, [r0, #192]
-  41:IIRFilter.h   **** 
- 368              		.loc 2 41 29 view .LVU93
- 369 00d2 25EE000A 		vmul.f32	s0, s10, s0
-  41:IIRFilter.h   **** 
- 370              		.loc 2 41 34 view .LVU94
- 371 00d6 D0ED343A 		vldr.32	s7, [r0, #208]
- 372 00da 90ED323A 		vldr.32	s6, [r0, #200]
-  41:IIRFilter.h   **** 
- 373              		.loc 2 41 52 view .LVU95
- 374 00de D0ED356A 		vldr.32	s13, [r0, #212]
- 375              	.LVL12:
-  41:IIRFilter.h   **** 
- 376              		.loc 2 41 45 view .LVU96
- 377 00e2 90ED2E4A 		vldr.32	s8, [r0, #184]
-  41:IIRFilter.h   **** 
- 378              		.loc 2 41 10 view .LVU97
- 379 00e6 D0ED2F4A 		vldr.32	s9, [r0, #188]
- 380              	.LBE74:
- 381              	.LBE80:
- 382              	.LBB81:
- 383              	.LBB55:
-  41:IIRFilter.h   **** 
- 384              		.loc 2 41 45 view .LVU98
- 385 00ea E1EE467A 		vfms.f32	s15, s2, s12
- 386              	.LBE55:
- 387              	.LBE81:
- 388              	.LBB82:
- 389              	.LBB75:
-  45:IIRFilter.h   **** 			x1_ = x;
- 390              		.loc 2 45 8 view .LVU99
- 391 00ee 80ED345A 		vstr.32	s10, [r0, #208]
-  41:IIRFilter.h   **** 
- 392              		.loc 2 41 10 view .LVU100
- 393 00f2 90ED365A 		vldr.32	s10, [r0, #216]
- 394              	.LBE75:
- 395              	.LBE82:
- 396              	.LBB83:
- 397              	.LBB56:
-  43:IIRFilter.h   **** 			y1_ = res;
- 398              		.loc 2 43 8 view .LVU101
- 399 00f6 80ED2C6A 		vstr.32	s12, [r0, #176]
-  45:IIRFilter.h   **** 			x1_ = x;
- 400              		.loc 2 45 8 view .LVU102
- 401 00fa C0ED2A5A 		vstr.32	s11, [r0, #168]
-  46:IIRFilter.h   **** 
- 402              		.loc 2 46 8 view .LVU103
- 403 00fe 80ED297A 		vstr.32	s14, [r0, #164]
- 404              	.LBE56:
- 405              	.LBE83:
- 406              	.LBB84:
- 407              	.LBB76:
-  43:IIRFilter.h   **** 			y1_ = res;
- 408              		.loc 2 43 8 view .LVU104
- 409 0102 C0ED366A 		vstr.32	s13, [r0, #216]
- 410              	.LBE76:
- 411              	.LBE84:
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 11
-
-
- 412              	.LBB85:
- 413              	.LBB57:
-  41:IIRFilter.h   **** 
- 414              		.loc 2 41 10 view .LVU105
- 415 0106 E1EEC27A 		vfms.f32	s15, s3, s4
- 416              	.LVL13:
-  43:IIRFilter.h   **** 			y1_ = res;
- 417              		.loc 2 43 4 is_stmt 1 view .LVU106
-  44:IIRFilter.h   **** 			x2_ = x1_;
- 418              		.loc 2 44 4 view .LVU107
- 419              	.LBE57:
- 420              	.LBE85:
- 421              	.LBB86:
- 422              	.LBB77:
-  41:IIRFilter.h   **** 
- 423              		.loc 2 41 23 is_stmt 0 view .LVU108
- 424 010a A2EEA70A 		vfma.f32	s0, s5, s15
- 425              	.LBE77:
- 426              	.LBE86:
- 427              	.LBB87:
- 428              	.LBB58:
-  44:IIRFilter.h   **** 			x2_ = x1_;
- 429              		.loc 2 44 8 view .LVU109
- 430 010e C0ED2B7A 		vstr.32	s15, [r0, #172]
-  45:IIRFilter.h   **** 			x1_ = x;
- 431              		.loc 2 45 4 is_stmt 1 view .LVU110
-  46:IIRFilter.h   **** 
- 432              		.loc 2 46 4 view .LVU111
- 433              		.loc 2 48 4 view .LVU112
- 434              	.LVL14:
- 435              		.loc 2 48 4 is_stmt 0 view .LVU113
- 436              	.LBE58:
- 437              	.LBE87:
-  38:Equalizer.cpp **** 	}
- 438              		.loc 1 38 3 is_stmt 1 view .LVU114
- 439              	.LBB88:
- 440              	.LBI72:
-  39:IIRFilter.h   **** 		{
- 441              		.loc 2 39 16 view .LVU115
- 442              	.LBB78:
-  41:IIRFilter.h   **** 
- 443              		.loc 2 41 4 view .LVU116
-  46:IIRFilter.h   **** 
- 444              		.loc 2 46 8 is_stmt 0 view .LVU117
- 445 0112 C0ED337A 		vstr.32	s15, [r0, #204]
-  41:IIRFilter.h   **** 
- 446              		.loc 2 41 34 view .LVU118
- 447 0116 A3EE230A 		vfma.f32	s0, s6, s7
-  41:IIRFilter.h   **** 
- 448              		.loc 2 41 45 view .LVU119
- 449 011a A4EE660A 		vfms.f32	s0, s8, s13
-  41:IIRFilter.h   **** 
- 450              		.loc 2 41 10 view .LVU120
- 451 011e A4EEC50A 		vfms.f32	s0, s9, s10
- 452              	.LVL15:
-  43:IIRFilter.h   **** 			y1_ = res;
- 453              		.loc 2 43 4 is_stmt 1 view .LVU121
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 12
-
-
-  44:IIRFilter.h   **** 			x2_ = x1_;
- 454              		.loc 2 44 4 view .LVU122
-  44:IIRFilter.h   **** 			x2_ = x1_;
- 455              		.loc 2 44 8 is_stmt 0 view .LVU123
- 456 0122 80ED350A 		vstr.32	s0, [r0, #212]
-  45:IIRFilter.h   **** 			x1_ = x;
- 457              		.loc 2 45 4 is_stmt 1 view .LVU124
-  46:IIRFilter.h   **** 
- 458              		.loc 2 46 4 view .LVU125
- 459              		.loc 2 48 4 view .LVU126
- 460              	.LVL16:
- 461              		.loc 2 48 4 is_stmt 0 view .LVU127
- 462              	.LBE78:
- 463              	.LBE88:
-  41:Equalizer.cpp **** }
- 464              		.loc 1 41 2 is_stmt 1 view .LVU128
- 465              		.loc 1 42 1 is_stmt 0 view .LVU129
- 466 0126 7047     		bx	lr
- 467              		.cfi_endproc
- 468              	.LFE563:
- 470              		.section	.text._ZN9Equalizer18updateEQParametersEs,"ax",%progbits
- 471              		.align	1
- 472              		.p2align 2,,3
- 473              		.global	_ZN9Equalizer18updateEQParametersEs
- 474              		.syntax unified
- 475              		.thumb
- 476              		.thumb_func
- 477              		.fpu fpv5-d16
- 479              	_ZN9Equalizer18updateEQParametersEs:
- 480              	.LVL17:
- 481              	.LFB568:
-  43:Equalizer.cpp **** 
-  44:Equalizer.cpp **** void Equalizer::Init(int sampleRate)
-  45:Equalizer.cpp **** {
-  46:Equalizer.cpp **** 	sampleRate_ = sampleRate;
-  47:Equalizer.cpp **** 
-  48:Equalizer.cpp **** 	// KBE changed to update filters
-  49:Equalizer.cpp **** 	// Setting default peak bands center frequency
-  50:Equalizer.cpp **** 	m_EQParams[0].fc = 100.0;
-  51:Equalizer.cpp **** 	m_EQParams[0].gain = 5.0;
-  52:Equalizer.cpp **** 	m_EQParams[1].fc = 500.0;
-  53:Equalizer.cpp **** 	m_EQParams[1].gain = 2.0; 
-  54:Equalizer.cpp **** 	m_EQParams[2].fc = 2000.0;
-  55:Equalizer.cpp **** 	m_EQParams[2].gain = 0.5; 
-  56:Equalizer.cpp **** 	m_EQParams[3].fc = 8000.0;
-  57:Equalizer.cpp **** 	m_EQParams[3].gain = 2.0; 
-  58:Equalizer.cpp **** 
-  59:Equalizer.cpp **** 	for (short band = 0; band < NUM_EQ_BANDS; band++)
-  60:Equalizer.cpp **** 	{
-  61:Equalizer.cpp **** 		m_IIRfilter[band].Init();
-  62:Equalizer.cpp **** 	    //m_EQParams[band].gain = 1.0; // Default gain
-  63:Equalizer.cpp **** 		m_EQParams[band].Q = 8.0; // Default Q
-  64:Equalizer.cpp **** 		updateEQParameters(band);
-  65:Equalizer.cpp **** 	}
-  66:Equalizer.cpp **** }
-  67:Equalizer.cpp **** 
-  68:Equalizer.cpp **** float Equalizer::incParameter(short band, PARAMETER param, float delta)
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 13
-
-
-  69:Equalizer.cpp **** {
-  70:Equalizer.cpp **** 	// TODO change code to increment parameter for IIR filters (See slides) - call updateEQParamters
-  71:Equalizer.cpp ****     //m_filterOn = true; // For test only
-  72:Equalizer.cpp ****     setParameter(band, param, m_EQParams[band].gain + delta);
-  73:Equalizer.cpp **** 	return m_EQParams[band].gain;
-  74:Equalizer.cpp **** }
-  75:Equalizer.cpp **** 
-  76:Equalizer.cpp **** float Equalizer::decParameter(short band, PARAMETER param, float delta)
-  77:Equalizer.cpp **** {
-  78:Equalizer.cpp **** 	// TODO change code to decrement parameter for IIR filters - call updateEQParamters
-  79:Equalizer.cpp ****     //m_filterOn = false; // For test only
-  80:Equalizer.cpp ****     setParameter(band, param, m_EQParams[band].gain - delta);
-  81:Equalizer.cpp **** 	return m_EQParams[band].gain;
-  82:Equalizer.cpp **** }
-  83:Equalizer.cpp **** 
-  84:Equalizer.cpp **** void Equalizer::setParameter(short band, PARAMETER param, float value)
-  85:Equalizer.cpp **** {
-  86:Equalizer.cpp ****     bool update = false;
-  87:Equalizer.cpp **** 
-  88:Equalizer.cpp **** 	if (band < NUM_EQ_BANDS)
-  89:Equalizer.cpp **** 	{
-  90:Equalizer.cpp **** 		switch (param)
-  91:Equalizer.cpp **** 		{
-  92:Equalizer.cpp **** 			case PM_GAIN:
-  93:Equalizer.cpp **** 				if (m_EQParams[band].gain != value) {
-  94:Equalizer.cpp **** 					m_EQParams[band].gain = value;
+  90:Equalizer.cpp **** 				}
+  91:Equalizer.cpp **** 			  break;
+  92:Equalizer.cpp **** 			case PM_FREQ:
+  93:Equalizer.cpp **** 				if (m_EQParams[band].fc != value) {
+  94:Equalizer.cpp **** 					m_EQParams[band].fc = value;
   95:Equalizer.cpp **** 					update = true;
   96:Equalizer.cpp **** 				}
   97:Equalizer.cpp **** 			  break;
-  98:Equalizer.cpp **** 			case PM_FREQ:
-  99:Equalizer.cpp **** 				if (m_EQParams[band].fc != value) {
- 100:Equalizer.cpp **** 					m_EQParams[band].fc = value;
+  98:Equalizer.cpp **** 			case PM_Q:
+  99:Equalizer.cpp **** 				if (m_EQParams[band].Q != value) {
+ 100:Equalizer.cpp **** 					m_EQParams[band].Q = value;
  101:Equalizer.cpp **** 					update = true;
  102:Equalizer.cpp **** 				}
  103:Equalizer.cpp **** 			  break;
- 104:Equalizer.cpp **** 			case PM_Q:
- 105:Equalizer.cpp **** 				if (m_EQParams[band].Q != value) {
- 106:Equalizer.cpp **** 					m_EQParams[band].Q = value;
- 107:Equalizer.cpp **** 					update = true;
- 108:Equalizer.cpp **** 				}
- 109:Equalizer.cpp **** 			  break;
- 110:Equalizer.cpp **** 		}
- 111:Equalizer.cpp **** 		if (update) updateEQParameters(band);
- 112:Equalizer.cpp **** 	}
- 113:Equalizer.cpp **** }
- 114:Equalizer.cpp **** 
- 115:Equalizer.cpp **** void Equalizer::updateEQParameters(short band)
- 116:Equalizer.cpp **** {
- 482              		.loc 1 116 1 is_stmt 1 view -0
- 483              		.cfi_startproc
- 484              		@ args = 0, pretend = 0, frame = 0
- 485              		@ frame_needed = 0, uses_anonymous_args = 0
- 117:Equalizer.cpp **** 	// Parameter limitations
- 118:Equalizer.cpp **** 	if (m_EQParams[band].gain > MAX_GAIN)
- 486              		.loc 1 118 2 view .LVU131
- 487              		.loc 1 118 23 is_stmt 0 view .LVU132
- 488 0000 01EB4102 		add	r2, r1, r1, lsl #1
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 14
+ 104:Equalizer.cpp **** 		}
+ 105:Equalizer.cpp **** 		if (update) updateEQParameters(band);
+ 106:Equalizer.cpp **** 	}
+ 107:Equalizer.cpp **** }
+ 108:Equalizer.cpp **** 
+ 109:Equalizer.cpp **** void Equalizer::updateEQParameters(short band)
+ 110:Equalizer.cpp **** {
+ 291              		.loc 1 110 1 is_stmt 1 view -0
+ 292              		.cfi_startproc
+ 293              		@ args = 0, pretend = 0, frame = 0
+ 294              		@ frame_needed = 0, uses_anonymous_args = 0
+ 295              		@ link register save eliminated.
+ 111:Equalizer.cpp **** 	// Parameter limitations
+ 112:Equalizer.cpp **** 	if (m_EQParams[band].gain > MAX_GAIN)
+ 296              		.loc 1 112 2 view .LVU47
+ 297              		.loc 1 112 23 is_stmt 0 view .LVU48
+ 298 0000 01EB4102 		add	r2, r1, r1, lsl #1
+ 299              		.loc 1 112 2 view .LVU49
+ 300 0004 F1EE047A 		vmov.f32	s15, #5.0e+0
+ 301              		.loc 1 112 23 view .LVU50
+ 302 0008 4B00     		lsls	r3, r1, #1
+ 303 000a 00EB8202 		add	r2, r0, r2, lsl #2
+ 304 000e 92ED037A 		vldr.32	s14, [r2, #12]
+ 305              		.loc 1 112 2 view .LVU51
+ 306 0012 B4EEE77A 		vcmpe.f32	s14, s15
+ 307 0016 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 308 001a 3EDD     		ble	.L45
+ 113:Equalizer.cpp **** 		m_EQParams[band].gain = MAX_GAIN;
+ 309              		.loc 1 113 3 is_stmt 1 view .LVU52
+ 310              		.loc 1 113 25 is_stmt 0 view .LVU53
+ 311 001c C2ED037A 		vstr.32	s15, [r2, #12]
+ 114:Equalizer.cpp **** 	if (m_EQParams[band].gain < MIN_GAIN)
+ 312              		.loc 1 114 2 is_stmt 1 view .LVU54
+ 313              	.L29:
+ 115:Equalizer.cpp **** 		m_EQParams[band].gain = MIN_GAIN;
+ 116:Equalizer.cpp **** 	if (m_EQParams[band].fc > MAX_FREQ)
+ 314              		.loc 1 116 2 view .LVU55
+ 315              		.loc 1 116 23 is_stmt 0 view .LVU56
+ 316 0020 5A18     		adds	r2, r3, r1
+ 317              		.loc 1 116 2 view .LVU57
+ 318 0022 9FED277A 		vldr.32	s14, .L50+8
+ 319              		.loc 1 116 23 view .LVU58
+ 320 0026 00EB8202 		add	r2, r0, r2, lsl #2
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 9
 
 
- 489              		.loc 1 118 2 view .LVU133
- 490 0004 F1EE047A 		vmov.f32	s15, #5.0e+0
- 491              		.loc 1 118 23 view .LVU134
- 492 0008 4B00     		lsls	r3, r1, #1
- 493 000a 00EB8202 		add	r2, r0, r2, lsl #2
- 494 000e 92ED037A 		vldr.32	s14, [r2, #12]
- 495              		.loc 1 118 2 view .LVU135
- 496 0012 B4EEE77A 		vcmpe.f32	s14, s15
- 116:Equalizer.cpp **** 	// Parameter limitations
- 497              		.loc 1 116 1 view .LVU136
- 498 0016 70B5     		push	{r4, r5, r6, lr}
- 499              		.cfi_def_cfa_offset 16
- 500              		.cfi_offset 4, -16
- 501              		.cfi_offset 5, -12
- 502              		.cfi_offset 6, -8
- 503              		.cfi_offset 14, -4
- 504              		.loc 1 118 2 view .LVU137
- 505 0018 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 116:Equalizer.cpp **** 	// Parameter limitations
- 506              		.loc 1 116 1 view .LVU138
- 507 001c 0D46     		mov	r5, r1
- 508 001e 0446     		mov	r4, r0
- 509 0020 2DED068B 		vpush.64	{d8, d9, d10}
- 510              		.cfi_def_cfa_offset 40
- 511              		.cfi_offset 80, -40
- 512              		.cfi_offset 81, -36
- 513              		.cfi_offset 82, -32
- 514              		.cfi_offset 83, -28
- 515              		.cfi_offset 84, -24
- 516              		.cfi_offset 85, -20
- 517              		.loc 1 118 2 view .LVU139
- 518 0024 40F39380 		ble	.L34
- 119:Equalizer.cpp **** 		m_EQParams[band].gain = MAX_GAIN;
- 519              		.loc 1 119 3 is_stmt 1 view .LVU140
- 520              		.loc 1 119 25 is_stmt 0 view .LVU141
- 521 0028 C2ED037A 		vstr.32	s15, [r2, #12]
- 120:Equalizer.cpp **** 	if (m_EQParams[band].gain < MIN_GAIN)
- 522              		.loc 1 120 2 is_stmt 1 view .LVU142
- 523              	.LVL18:
- 524              	.L17:
- 121:Equalizer.cpp **** 		m_EQParams[band].gain = MIN_GAIN;
- 122:Equalizer.cpp **** 	if (m_EQParams[band].fc > MAX_FREQ)
- 525              		.loc 1 122 2 view .LVU143
- 526              		.loc 1 122 23 is_stmt 0 view .LVU144
- 527 002c 5A19     		adds	r2, r3, r5
- 528              		.loc 1 122 2 view .LVU145
- 529 002e 9FED587A 		vldr.32	s14, .L40+24
- 530              		.loc 1 122 23 view .LVU146
- 531 0032 04EB8202 		add	r2, r4, r2, lsl #2
- 532 0036 D2ED047A 		vldr.32	s15, [r2, #16]
- 533              		.loc 1 122 2 view .LVU147
- 534 003a F4EEC77A 		vcmpe.f32	s15, s14
- 535 003e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 536 0042 06DC     		bgt	.L38
- 123:Equalizer.cpp **** 		m_EQParams[band].fc = MAX_FREQ;
- 124:Equalizer.cpp **** 	if (m_EQParams[band].fc < MIN_FREQ)
- 537              		.loc 1 124 2 is_stmt 1 view .LVU148
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 15
+ 321 002a D2ED047A 		vldr.32	s15, [r2, #16]
+ 322              		.loc 1 116 2 view .LVU59
+ 323 002e F4EEC77A 		vcmpe.f32	s15, s14
+ 324 0032 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 325 0036 06DC     		bgt	.L48
+ 117:Equalizer.cpp **** 		m_EQParams[band].fc = MAX_FREQ;
+ 118:Equalizer.cpp **** 	if (m_EQParams[band].fc < MIN_FREQ)
+ 326              		.loc 1 118 2 is_stmt 1 view .LVU60
+ 327 0038 B0EE007A 		vmov.f32	s14, #2.0e+0
+ 328 003c F4EEC77A 		vcmpe.f32	s15, s14
+ 329 0040 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 330 0044 01D5     		bpl	.L33
+ 331              	.L48:
+ 119:Equalizer.cpp **** 		m_EQParams[band].fc = MIN_FREQ;
+ 332              		.loc 1 119 3 view .LVU61
+ 333              		.loc 1 119 23 is_stmt 0 view .LVU62
+ 334 0046 82ED047A 		vstr.32	s14, [r2, #16]
+ 335              	.L33:
+ 120:Equalizer.cpp **** 	if (m_EQParams[band].Q > MAX_Q)
+ 336              		.loc 1 120 2 is_stmt 1 view .LVU63
+ 337              		.loc 1 120 23 is_stmt 0 view .LVU64
+ 338 004a 5A18     		adds	r2, r3, r1
+ 339              		.loc 1 120 2 view .LVU65
+ 340 004c F3EE047A 		vmov.f32	s15, #2.0e+1
+ 341              		.loc 1 120 23 view .LVU66
+ 342 0050 00EB8202 		add	r2, r0, r2, lsl #2
+ 343 0054 92ED051A 		vldr.32	s2, [r2, #20]
+ 344              		.loc 1 120 2 view .LVU67
+ 345 0058 B4EEE71A 		vcmpe.f32	s2, s15
+ 346 005c F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 347 0060 06DC     		bgt	.L49
+ 121:Equalizer.cpp **** 		m_EQParams[band].Q = MAX_Q;
+ 122:Equalizer.cpp **** 	if (m_EQParams[band].Q < MIN_Q)
+ 348              		.loc 1 122 2 is_stmt 1 view .LVU68
+ 349 0062 F7EE007A 		vmov.f32	s15, #1.0e+0
+ 350 0066 B4EEE71A 		vcmpe.f32	s2, s15
+ 351 006a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 352 006e 03D5     		bpl	.L37
+ 353              	.L49:
+ 123:Equalizer.cpp **** 		m_EQParams[band].Q = MIN_Q;
+ 354              		.loc 1 123 3 view .LVU69
+ 355 0070 B0EE671A 		vmov.f32	s2, s15
+ 356              		.loc 1 123 22 is_stmt 0 view .LVU70
+ 357 0074 C2ED057A 		vstr.32	s15, [r2, #20]
+ 358              	.L37:
+ 124:Equalizer.cpp **** 
+ 125:Equalizer.cpp **** 	// Call creating peaking filter for IIR filter band
+ 126:Equalizer.cpp **** 	m_IIRfilter[band].makePeakEQ(sampleRate_,
+ 359              		.loc 1 126 2 is_stmt 1 view .LVU71
+ 360              		.loc 1 126 30 is_stmt 0 view .LVU72
+ 361 0078 0B44     		add	r3, r3, r1
+ 362 007a 2C22     		movs	r2, #44
+ 363 007c 90ED010A 		vldr.32	s0, [r0, #4]	@ int
+ 364 0080 00EB8303 		add	r3, r0, r3, lsl #2
+ 365 0084 01FB0200 		mla	r0, r1, r2, r0
+ 366              	.LVL21:
+ 367              		.loc 1 126 30 view .LVU73
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 10
 
 
- 538 0044 B0EE007A 		vmov.f32	s14, #2.0e+0
- 539 0048 F4EEC77A 		vcmpe.f32	s15, s14
- 540 004c F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 541 0050 01D5     		bpl	.L21
- 542              	.L38:
- 125:Equalizer.cpp **** 		m_EQParams[band].fc = MIN_FREQ;
- 543              		.loc 1 125 3 view .LVU149
- 544              		.loc 1 125 23 is_stmt 0 view .LVU150
- 545 0052 82ED047A 		vstr.32	s14, [r2, #16]
- 546              	.L21:
- 126:Equalizer.cpp **** 	if (m_EQParams[band].Q > MAX_Q)
- 547              		.loc 1 126 2 is_stmt 1 view .LVU151
- 548              		.loc 1 126 23 is_stmt 0 view .LVU152
- 549 0056 5A19     		adds	r2, r3, r5
- 550              		.loc 1 126 2 view .LVU153
- 551 0058 F3EE047A 		vmov.f32	s15, #2.0e+1
- 552              		.loc 1 126 23 view .LVU154
- 553 005c 04EB8202 		add	r2, r4, r2, lsl #2
- 554 0060 92ED059A 		vldr.32	s18, [r2, #20]
- 555              		.loc 1 126 2 view .LVU155
- 556 0064 B4EEE79A 		vcmpe.f32	s18, s15
- 557 0068 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 558 006c 63DD     		ble	.L36
- 127:Equalizer.cpp **** 		m_EQParams[band].Q = MAX_Q;
- 559              		.loc 1 127 3 is_stmt 1 view .LVU156
- 560              		.loc 1 127 22 is_stmt 0 view .LVU157
- 561 006e C2ED057A 		vstr.32	s15, [r2, #20]
- 128:Equalizer.cpp **** 	if (m_EQParams[band].Q < MIN_Q)
- 562              		.loc 1 128 2 is_stmt 1 view .LVU158
- 127:Equalizer.cpp **** 		m_EQParams[band].Q = MAX_Q;
- 563              		.loc 1 127 22 is_stmt 0 view .LVU159
- 564 0072 9FED419B 		vldr.64	d9, .L40
- 565              	.L25:
- 129:Equalizer.cpp **** 		m_EQParams[band].Q = MIN_Q;
+ 368 0088 B8EEC00A 		vcvt.f32.s32	s0, s0
+ 369 008c D3ED031A 		vldr.32	s3, [r3, #12]
+ 370 0090 4C30     		adds	r0, r0, #76
+ 371 0092 D3ED040A 		vldr.32	s1, [r3, #16]
+ 372 0096 FFF7FEBF 		b	_ZN9IIRFilter10makePeakEQEffff
+ 373              	.LVL22:
+ 374              	.L45:
+ 114:Equalizer.cpp **** 		m_EQParams[band].gain = MIN_GAIN;
+ 375              		.loc 1 114 2 is_stmt 1 view .LVU74
+ 114:Equalizer.cpp **** 		m_EQParams[band].gain = MIN_GAIN;
+ 376              		.loc 1 114 23 is_stmt 0 view .LVU75
+ 377 009a B7EEC77A 		vcvt.f64.f32	d7, s14
+ 114:Equalizer.cpp **** 		m_EQParams[band].gain = MIN_GAIN;
+ 378              		.loc 1 114 2 view .LVU76
+ 379 009e 9FED066B 		vldr.64	d6, .L50
+ 380 00a2 B4EEC67B 		vcmpe.f64	d7, d6
+ 381 00a6 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 382 00aa B9D5     		bpl	.L29
+ 115:Equalizer.cpp **** 	if (m_EQParams[band].fc > MAX_FREQ)
+ 383              		.loc 1 115 3 is_stmt 1 view .LVU77
+ 115:Equalizer.cpp **** 	if (m_EQParams[band].fc > MAX_FREQ)
+ 384              		.loc 1 115 25 is_stmt 0 view .LVU78
+ 385 00ac DFF814C0 		ldr	ip, .L50+12
+ 386 00b0 C2F80CC0 		str	ip, [r2, #12]	@ float
+ 387 00b4 B4E7     		b	.L29
+ 388              	.L51:
+ 389 00b6 00BF     		.align	3
+ 390              	.L50:
+ 391 00b8 9A999999 		.word	-1717986918
+ 392 00bc 9999B93F 		.word	1069128089
+ 393 00c0 00409C46 		.word	1184645120
+ 394 00c4 CDCCCC3D 		.word	1036831949
+ 395              		.cfi_endproc
+ 396              	.LFE558:
+ 398              		.section	.text._ZN9Equalizer4InitEi,"ax",%progbits
+ 399              		.align	1
+ 400              		.p2align 2,,3
+ 401              		.global	_ZN9Equalizer4InitEi
+ 402              		.syntax unified
+ 403              		.thumb
+ 404              		.thumb_func
+ 405              		.fpu fpv5-d16
+ 407              	_ZN9Equalizer4InitEi:
+ 408              	.LVL23:
+ 409              	.LFB554:
+  38:Equalizer.cpp **** 	sampleRate_ = sampleRate;
+ 410              		.loc 1 38 1 is_stmt 1 view -0
+ 411              		.cfi_startproc
+ 412              		@ args = 0, pretend = 0, frame = 0
+ 413              		@ frame_needed = 0, uses_anonymous_args = 0
+  39:Equalizer.cpp **** 
+ 414              		.loc 1 39 2 view .LVU80
+  43:Equalizer.cpp **** 	m_EQParams[0].gain = 5.0;
+ 415              		.loc 1 43 19 is_stmt 0 view .LVU81
+ 416 0000 174A     		ldr	r2, .L56
+  46:Equalizer.cpp **** 	m_EQParams[2].fc = 2000.0;
+ 417              		.loc 1 46 21 view .LVU82
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 11
+
+
+ 418 0002 4FF08043 		mov	r3, #1073741824
+  38:Equalizer.cpp **** 	sampleRate_ = sampleRate;
+ 419              		.loc 1 38 1 view .LVU83
+ 420 0006 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
+ 421              		.cfi_def_cfa_offset 24
+ 422              		.cfi_offset 4, -24
+ 423              		.cfi_offset 5, -20
+ 424              		.cfi_offset 6, -16
+ 425              		.cfi_offset 7, -12
+ 426              		.cfi_offset 8, -8
+ 427              		.cfi_offset 14, -4
+  38:Equalizer.cpp **** 	sampleRate_ = sampleRate;
+ 428              		.loc 1 38 1 view .LVU84
+ 429 000a 0546     		mov	r5, r0
+  43:Equalizer.cpp **** 	m_EQParams[0].gain = 5.0;
+ 430              		.loc 1 43 19 view .LVU85
+ 431 000c 0261     		str	r2, [r0, #16]	@ float
+  44:Equalizer.cpp **** 	m_EQParams[1].fc = 500.0;
+ 432              		.loc 1 44 21 view .LVU86
+ 433 000e 154E     		ldr	r6, .L56+4
+  48:Equalizer.cpp **** 	m_EQParams[3].fc = 8000.0;
+ 434              		.loc 1 48 21 view .LVU87
+ 435 0010 4FF07C54 		mov	r4, #1056964608
+  45:Equalizer.cpp **** 	m_EQParams[1].gain = 2.0; 
+ 436              		.loc 1 45 19 view .LVU88
+ 437 0014 144A     		ldr	r2, .L56+8
+ 438 0016 2F46     		mov	r7, r5
+  44:Equalizer.cpp **** 	m_EQParams[1].fc = 500.0;
+ 439              		.loc 1 44 21 view .LVU89
+ 440 0018 C660     		str	r6, [r0, #12]	@ float
+ 441 001a 05F13C08 		add	r8, r5, #60
+  48:Equalizer.cpp **** 	m_EQParams[3].fc = 8000.0;
+ 442              		.loc 1 48 21 view .LVU90
+ 443 001e 4462     		str	r4, [r0, #36]	@ float
+  50:Equalizer.cpp **** 
+ 444              		.loc 1 50 21 view .LVU91
+ 445 0020 0026     		movs	r6, #0
+  47:Equalizer.cpp **** 	m_EQParams[2].gain = 0.5; 
+ 446              		.loc 1 47 19 view .LVU92
+ 447 0022 1248     		ldr	r0, .L56+12
+ 448              	.LVL24:
+  47:Equalizer.cpp **** 	m_EQParams[2].gain = 0.5; 
+ 449              		.loc 1 47 19 view .LVU93
+ 450 0024 05F14C04 		add	r4, r5, #76
+  45:Equalizer.cpp **** 	m_EQParams[1].gain = 2.0; 
+ 451              		.loc 1 45 19 view .LVU94
+ 452 0028 EA61     		str	r2, [r5, #28]	@ float
+  49:Equalizer.cpp **** 	m_EQParams[3].gain = 2.0; 
+ 453              		.loc 1 49 19 view .LVU95
+ 454 002a 114A     		ldr	r2, .L56+16
+  39:Equalizer.cpp **** 
+ 455              		.loc 1 39 14 view .LVU96
+ 456 002c 6960     		str	r1, [r5, #4]
+  43:Equalizer.cpp **** 	m_EQParams[0].gain = 5.0;
+ 457              		.loc 1 43 2 is_stmt 1 view .LVU97
+  44:Equalizer.cpp **** 	m_EQParams[1].fc = 500.0;
+ 458              		.loc 1 44 2 view .LVU98
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 12
+
+
+  45:Equalizer.cpp **** 	m_EQParams[1].gain = 2.0; 
+ 459              		.loc 1 45 2 view .LVU99
+  46:Equalizer.cpp **** 	m_EQParams[2].fc = 2000.0;
+ 460              		.loc 1 46 2 view .LVU100
+  46:Equalizer.cpp **** 	m_EQParams[2].fc = 2000.0;
+ 461              		.loc 1 46 21 is_stmt 0 view .LVU101
+ 462 002e AB61     		str	r3, [r5, #24]	@ float
+  47:Equalizer.cpp **** 	m_EQParams[2].gain = 0.5; 
+ 463              		.loc 1 47 2 is_stmt 1 view .LVU102
+  47:Equalizer.cpp **** 	m_EQParams[2].gain = 0.5; 
+ 464              		.loc 1 47 19 is_stmt 0 view .LVU103
+ 465 0030 A862     		str	r0, [r5, #40]	@ float
+  48:Equalizer.cpp **** 	m_EQParams[3].fc = 8000.0;
+ 466              		.loc 1 48 2 is_stmt 1 view .LVU104
+  49:Equalizer.cpp **** 	m_EQParams[3].gain = 2.0; 
+ 467              		.loc 1 49 2 view .LVU105
+  49:Equalizer.cpp **** 	m_EQParams[3].gain = 2.0; 
+ 468              		.loc 1 49 19 is_stmt 0 view .LVU106
+ 469 0032 6A63     		str	r2, [r5, #52]	@ float
+  50:Equalizer.cpp **** 
+ 470              		.loc 1 50 2 is_stmt 1 view .LVU107
+  50:Equalizer.cpp **** 
+ 471              		.loc 1 50 21 is_stmt 0 view .LVU108
+ 472 0034 2B63     		str	r3, [r5, #48]	@ float
+  52:Equalizer.cpp **** 	{
+ 473              		.loc 1 52 2 is_stmt 1 view .LVU109
+ 474              	.LVL25:
+ 475              	.LBB26:
+  52:Equalizer.cpp **** 	{
+ 476              		.loc 1 52 28 view .LVU110
+ 477              	.L53:
+  54:Equalizer.cpp **** 	    //m_EQParams[band].gain = 1.0; // Default gain
+ 478              		.loc 1 54 3 discriminator 2 view .LVU111
+  54:Equalizer.cpp **** 	    //m_EQParams[band].gain = 1.0; // Default gain
+ 479              		.loc 1 54 26 is_stmt 0 discriminator 2 view .LVU112
+ 480 0036 2368     		ldr	r3, [r4]
+  54:Equalizer.cpp **** 	    //m_EQParams[band].gain = 1.0; // Default gain
+ 481              		.loc 1 54 25 discriminator 2 view .LVU113
+ 482 0038 2046     		mov	r0, r4
+  52:Equalizer.cpp **** 	{
+ 483              		.loc 1 52 28 discriminator 2 view .LVU114
+ 484 003a 0C37     		adds	r7, r7, #12
+  54:Equalizer.cpp **** 	    //m_EQParams[band].gain = 1.0; // Default gain
+ 485              		.loc 1 54 25 discriminator 2 view .LVU115
+ 486 003c DB68     		ldr	r3, [r3, #12]
+ 487 003e 9847     		blx	r3
+ 488              	.LVL26:
+  56:Equalizer.cpp **** 		m_filters[band] = &m_IIRfilter[band];
+ 489              		.loc 1 56 3 is_stmt 1 discriminator 2 view .LVU116
+  56:Equalizer.cpp **** 		m_filters[band] = &m_IIRfilter[band];
+ 490              		.loc 1 56 22 is_stmt 0 discriminator 2 view .LVU117
+ 491 0040 4FF08243 		mov	r3, #1090519040
+  58:Equalizer.cpp **** 	}
+ 492              		.loc 1 58 21 discriminator 2 view .LVU118
+ 493 0044 31B2     		sxth	r1, r6
+  52:Equalizer.cpp **** 	{
+ 494              		.loc 1 52 28 discriminator 2 view .LVU119
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 13
+
+
+ 495 0046 0136     		adds	r6, r6, #1
+ 496              	.LVL27:
+  56:Equalizer.cpp **** 		m_filters[band] = &m_IIRfilter[band];
+ 497              		.loc 1 56 22 discriminator 2 view .LVU120
+ 498 0048 BB60     		str	r3, [r7, #8]	@ float
+  57:Equalizer.cpp **** 		updateEQParameters(band);
+ 499              		.loc 1 57 3 is_stmt 1 discriminator 2 view .LVU121
+  58:Equalizer.cpp **** 	}
+ 500              		.loc 1 58 21 is_stmt 0 discriminator 2 view .LVU122
+ 501 004a 2846     		mov	r0, r5
+  57:Equalizer.cpp **** 		updateEQParameters(band);
+ 502              		.loc 1 57 19 discriminator 2 view .LVU123
+ 503 004c 48F8044B 		str	r4, [r8], #4
+  58:Equalizer.cpp **** 	}
+ 504              		.loc 1 58 3 is_stmt 1 discriminator 2 view .LVU124
+  52:Equalizer.cpp **** 	{
+ 505              		.loc 1 52 28 is_stmt 0 discriminator 2 view .LVU125
+ 506 0050 2C34     		adds	r4, r4, #44
+  58:Equalizer.cpp **** 	}
+ 507              		.loc 1 58 21 discriminator 2 view .LVU126
+ 508 0052 FFF7FEFF 		bl	_ZN9Equalizer18updateEQParametersEs
+ 509              	.LVL28:
+  52:Equalizer.cpp **** 	{
+ 510              		.loc 1 52 2 is_stmt 1 discriminator 2 view .LVU127
+  52:Equalizer.cpp **** 	{
+ 511              		.loc 1 52 28 discriminator 2 view .LVU128
+ 512 0056 042E     		cmp	r6, #4
+ 513 0058 EDD1     		bne	.L53
+ 514              	.LBE26:
+  60:Equalizer.cpp **** 
+ 515              		.loc 1 60 1 is_stmt 0 view .LVU129
+ 516 005a BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
+ 517              	.LVL29:
+ 518              	.L57:
+  60:Equalizer.cpp **** 
+ 519              		.loc 1 60 1 view .LVU130
+ 520 005e 00BF     		.align	2
+ 521              	.L56:
+ 522 0060 0000C842 		.word	1120403456
+ 523 0064 0000A040 		.word	1084227584
+ 524 0068 0000FA43 		.word	1140457472
+ 525 006c 0000FA44 		.word	1157234688
+ 526 0070 0000FA45 		.word	1174011904
+ 527              		.cfi_endproc
+ 528              	.LFE554:
+ 530              		.section	.text._ZN9Equalizer12decParameterEs9PARAMETERf,"ax",%progbits
+ 531              		.align	1
+ 532              		.p2align 2,,3
+ 533              		.global	_ZN9Equalizer12decParameterEs9PARAMETERf
+ 534              		.syntax unified
+ 535              		.thumb
+ 536              		.thumb_func
+ 537              		.fpu fpv5-d16
+ 539              	_ZN9Equalizer12decParameterEs9PARAMETERf:
+ 540              	.LVL30:
+ 541              	.LFB556:
+  71:Equalizer.cpp **** 	// TODO change code to decrement parameter for IIR filters - call updateEQParamters
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 14
+
+
+ 542              		.loc 1 71 1 is_stmt 1 view -0
+ 543              		.cfi_startproc
+ 544              		@ args = 0, pretend = 0, frame = 0
+ 545              		@ frame_needed = 0, uses_anonymous_args = 0
+  74:Equalizer.cpp **** 	return m_EQParams[band].gain;
+ 546              		.loc 1 74 5 view .LVU132
+  74:Equalizer.cpp **** 	return m_EQParams[band].gain;
+ 547              		.loc 1 74 48 is_stmt 0 view .LVU133
+ 548 0000 01EB4103 		add	r3, r1, r1, lsl #1
+ 549              	.LBB31:
+ 550              	.LBB32:
+  82:Equalizer.cpp **** 	{
+ 551              		.loc 1 82 2 view .LVU134
+ 552 0004 0329     		cmp	r1, #3
+ 553              	.LBE32:
+ 554              	.LBE31:
+  71:Equalizer.cpp **** 	// TODO change code to decrement parameter for IIR filters - call updateEQParamters
+ 555              		.loc 1 71 1 view .LVU135
+ 556 0006 F0EE407A 		vmov.f32	s15, s0
+  74:Equalizer.cpp **** 	return m_EQParams[band].gain;
+ 557              		.loc 1 74 48 view .LVU136
+ 558 000a 00EB8303 		add	r3, r0, r3, lsl #2
+ 559 000e 93ED030A 		vldr.32	s0, [r3, #12]
+ 560              	.LVL31:
+ 561              	.LBB45:
+ 562              	.LBI31:
+  78:Equalizer.cpp **** {
+ 563              		.loc 1 78 6 is_stmt 1 view .LVU137
+ 564              	.LBB41:
+  80:Equalizer.cpp **** 
+ 565              		.loc 1 80 5 view .LVU138
+  82:Equalizer.cpp **** 	{
+ 566              		.loc 1 82 2 view .LVU139
+ 567 0012 0CDC     		bgt	.L64
+ 568              	.LBB33:
+ 569              	.LBB34:
+  84:Equalizer.cpp **** 		{
+ 570              		.loc 1 84 3 is_stmt 0 view .LVU140
+ 571 0014 012A     		cmp	r2, #1
+ 572              	.LBE34:
+ 573              	.LBE33:
+ 574              	.LBE41:
+ 575              	.LBE45:
+  74:Equalizer.cpp **** 	return m_EQParams[band].gain;
+ 576              		.loc 1 74 17 view .LVU141
+ 577 0016 70EE677A 		vsub.f32	s15, s0, s15
+ 578              	.LVL32:
+  71:Equalizer.cpp **** 	// TODO change code to decrement parameter for IIR filters - call updateEQParamters
+ 579              		.loc 1 71 1 view .LVU142
+ 580 001a 70B5     		push	{r4, r5, r6, lr}
+ 581              		.cfi_def_cfa_offset 16
+ 582              		.cfi_offset 4, -16
+ 583              		.cfi_offset 5, -12
+ 584              		.cfi_offset 6, -8
+ 585              		.cfi_offset 14, -4
+ 586 001c 0E46     		mov	r6, r1
+ 587 001e 0546     		mov	r5, r0
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 15
+
+
+ 588              	.LVL33:
+ 589              	.LBB46:
+ 590              	.LBB42:
+ 591              	.LBB38:
+ 592              	.LBI33:
+  78:Equalizer.cpp **** {
+ 593              		.loc 1 78 6 is_stmt 1 view .LVU143
+ 594              	.LBB35:
+  84:Equalizer.cpp **** 		{
+ 595              		.loc 1 84 3 view .LVU144
+ 596 0020 4FEA4104 		lsl	r4, r1, #1
+ 597 0024 1FD0     		beq	.L60
+ 598 0026 022A     		cmp	r2, #2
+ 599 0028 13D0     		beq	.L61
+ 600 002a 0AB1     		cbz	r2, .L67
+ 601              	.L58:
+ 602              	.LBE35:
+ 603              	.LBE38:
+ 604              	.LBE42:
+ 605              	.LBE46:
+  76:Equalizer.cpp **** 
+ 606              		.loc 1 76 1 is_stmt 0 view .LVU145
+ 607 002c 70BD     		pop	{r4, r5, r6, pc}
+ 608              	.LVL34:
+ 609              	.L64:
+ 610              		.cfi_def_cfa_offset 0
+ 611              		.cfi_restore 4
+ 612              		.cfi_restore 5
+ 613              		.cfi_restore 6
+ 614              		.cfi_restore 14
+  76:Equalizer.cpp **** 
+ 615              		.loc 1 76 1 view .LVU146
+ 616 002e 7047     		bx	lr
+ 617              	.LVL35:
+ 618              	.L67:
+ 619              		.cfi_def_cfa_offset 16
+ 620              		.cfi_offset 4, -16
+ 621              		.cfi_offset 5, -12
+ 622              		.cfi_offset 6, -8
+ 623              		.cfi_offset 14, -4
+ 624              	.LBB47:
+ 625              	.LBB43:
+ 626              	.LBB39:
+ 627              	.LBB36:
+  86:Equalizer.cpp **** 				if (m_EQParams[band].gain != value) {
+ 628              		.loc 1 86 4 is_stmt 1 view .LVU147
+  87:Equalizer.cpp **** 					m_EQParams[band].gain = value;
+ 629              		.loc 1 87 5 view .LVU148
+ 630 0030 B4EE670A 		vcmp.f32	s0, s15
+ 631 0034 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 632 0038 F8D0     		beq	.L58
+  88:Equalizer.cpp **** 					update = true;
+ 633              		.loc 1 88 6 view .LVU149
+  88:Equalizer.cpp **** 					update = true;
+ 634              		.loc 1 88 28 is_stmt 0 view .LVU150
+ 635 003a C3ED037A 		vstr.32	s15, [r3, #12]
+  89:Equalizer.cpp **** 				}
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 16
+
+
+ 636              		.loc 1 89 6 is_stmt 1 view .LVU151
+ 637              	.LVL36:
+ 105:Equalizer.cpp **** 	}
+ 638              		.loc 1 105 3 view .LVU152
+ 639              	.L62:
+ 105:Equalizer.cpp **** 	}
+ 640              		.loc 1 105 15 view .LVU153
+ 105:Equalizer.cpp **** 	}
+ 641              		.loc 1 105 33 is_stmt 0 view .LVU154
+ 642 003e 3146     		mov	r1, r6
+ 643              	.LVL37:
+ 105:Equalizer.cpp **** 	}
+ 644              		.loc 1 105 33 view .LVU155
+ 645 0040 2846     		mov	r0, r5
+ 646              	.LVL38:
+ 105:Equalizer.cpp **** 	}
+ 647              		.loc 1 105 33 view .LVU156
+ 648 0042 FFF7FEFF 		bl	_ZN9Equalizer18updateEQParametersEs
+ 649              	.LVL39:
+ 105:Equalizer.cpp **** 	}
+ 650              		.loc 1 105 33 view .LVU157
+ 651              	.LBE36:
+ 652              	.LBE39:
+ 653              	.LBE43:
+ 654              	.LBE47:
+  75:Equalizer.cpp **** }
+ 655              		.loc 1 75 26 view .LVU158
+ 656 0046 A119     		adds	r1, r4, r6
+ 657 0048 05EB8100 		add	r0, r5, r1, lsl #2
+ 658 004c 90ED030A 		vldr.32	s0, [r0, #12]
+ 659              	.LVL40:
+  75:Equalizer.cpp **** }
+ 660              		.loc 1 75 2 is_stmt 1 view .LVU159
+  76:Equalizer.cpp **** 
+ 661              		.loc 1 76 1 is_stmt 0 view .LVU160
+ 662 0050 70BD     		pop	{r4, r5, r6, pc}
+ 663              	.LVL41:
+ 664              	.L61:
+ 665              	.LBB48:
+ 666              	.LBB44:
+ 667              	.LBB40:
+ 668              	.LBB37:
+  98:Equalizer.cpp **** 				if (m_EQParams[band].Q != value) {
+ 669              		.loc 1 98 4 is_stmt 1 view .LVU161
+  99:Equalizer.cpp **** 					m_EQParams[band].Q = value;
+ 670              		.loc 1 99 5 view .LVU162
+ 671 0052 93ED057A 		vldr.32	s14, [r3, #20]
+ 672 0056 F4EE477A 		vcmp.f32	s15, s14
+ 673 005a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 674 005e E5D0     		beq	.L58
+ 100:Equalizer.cpp **** 					update = true;
+ 675              		.loc 1 100 6 view .LVU163
+ 100:Equalizer.cpp **** 					update = true;
+ 676              		.loc 1 100 25 is_stmt 0 view .LVU164
+ 677 0060 C3ED057A 		vstr.32	s15, [r3, #20]
+ 101:Equalizer.cpp **** 				}
+ 678              		.loc 1 101 6 is_stmt 1 view .LVU165
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 17
+
+
+ 679              	.LVL42:
+ 105:Equalizer.cpp **** 	}
+ 680              		.loc 1 105 3 view .LVU166
+ 681 0064 EBE7     		b	.L62
+ 682              	.LVL43:
+ 683              	.L60:
+  92:Equalizer.cpp **** 				if (m_EQParams[band].fc != value) {
+ 684              		.loc 1 92 4 view .LVU167
+  93:Equalizer.cpp **** 					m_EQParams[band].fc = value;
+ 685              		.loc 1 93 5 view .LVU168
+ 686 0066 93ED047A 		vldr.32	s14, [r3, #16]
+ 687 006a F4EE477A 		vcmp.f32	s15, s14
+ 688 006e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 689 0072 DBD0     		beq	.L58
+  94:Equalizer.cpp **** 					update = true;
+ 690              		.loc 1 94 6 view .LVU169
+  94:Equalizer.cpp **** 					update = true;
+ 691              		.loc 1 94 26 is_stmt 0 view .LVU170
+ 692 0074 C3ED047A 		vstr.32	s15, [r3, #16]
+  95:Equalizer.cpp **** 				}
+ 693              		.loc 1 95 6 is_stmt 1 view .LVU171
+ 694              	.LVL44:
+ 105:Equalizer.cpp **** 	}
+ 695              		.loc 1 105 3 view .LVU172
+ 696 0078 E1E7     		b	.L62
+ 697              	.LBE37:
+ 698              	.LBE40:
+ 699              	.LBE44:
+ 700              	.LBE48:
+ 701              		.cfi_endproc
+ 702              	.LFE556:
+ 704 007a 00BF     		.section	.text._ZN9Equalizer12setParameterEs9PARAMETERf,"ax",%progbits
+ 705              		.align	1
+ 706              		.p2align 2,,3
+ 707              		.global	_ZN9Equalizer12setParameterEs9PARAMETERf
+ 708              		.syntax unified
+ 709              		.thumb
+ 710              		.thumb_func
+ 711              		.fpu fpv5-d16
+ 713              	_ZN9Equalizer12setParameterEs9PARAMETERf:
+ 714              	.LVL45:
+ 715              	.LFB557:
+  79:Equalizer.cpp ****     bool update = false;
+ 716              		.loc 1 79 1 view -0
+ 717              		.cfi_startproc
+ 718              		@ args = 0, pretend = 0, frame = 0
+ 719              		@ frame_needed = 0, uses_anonymous_args = 0
+ 720              		@ link register save eliminated.
+  80:Equalizer.cpp **** 
+ 721              		.loc 1 80 5 view .LVU174
+  82:Equalizer.cpp **** 	{
+ 722              		.loc 1 82 2 view .LVU175
+ 723 0000 0329     		cmp	r1, #3
+ 724 0002 04DC     		bgt	.L68
+ 725              	.LVL46:
+ 726              	.LBB51:
+ 727              	.LBI51:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 18
+
+
+  78:Equalizer.cpp **** {
+ 728              		.loc 1 78 6 view .LVU176
+ 729              	.LBB52:
+  84:Equalizer.cpp **** 		{
+ 730              		.loc 1 84 3 view .LVU177
+ 731 0004 012A     		cmp	r2, #1
+ 732 0006 20D0     		beq	.L70
+ 733 0008 022A     		cmp	r2, #2
+ 734 000a 10D0     		beq	.L71
+ 735 000c 02B1     		cbz	r2, .L73
+ 736              	.LVL47:
+ 737              	.L68:
+  84:Equalizer.cpp **** 		{
+ 738              		.loc 1 84 3 is_stmt 0 view .LVU178
+ 739              	.LBE52:
+ 740              	.LBE51:
+ 107:Equalizer.cpp **** 
+ 741              		.loc 1 107 1 view .LVU179
+ 742 000e 7047     		bx	lr
+ 743              	.LVL48:
+ 744              	.L73:
+ 745              	.LBB54:
+ 746              	.LBB53:
+  86:Equalizer.cpp **** 				if (m_EQParams[band].gain != value) {
+ 747              		.loc 1 86 4 is_stmt 1 view .LVU180
+  87:Equalizer.cpp **** 					m_EQParams[band].gain = value;
+ 748              		.loc 1 87 5 view .LVU181
+  87:Equalizer.cpp **** 					m_EQParams[band].gain = value;
+ 749              		.loc 1 87 26 is_stmt 0 view .LVU182
+ 750 0010 01EB4103 		add	r3, r1, r1, lsl #1
+ 751 0014 00EB8303 		add	r3, r0, r3, lsl #2
+  87:Equalizer.cpp **** 					m_EQParams[band].gain = value;
+ 752              		.loc 1 87 5 view .LVU183
+ 753 0018 D3ED037A 		vldr.32	s15, [r3, #12]
+ 754 001c B4EE670A 		vcmp.f32	s0, s15
+ 755 0020 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 756 0024 F3D0     		beq	.L68
+  88:Equalizer.cpp **** 					update = true;
+ 757              		.loc 1 88 6 is_stmt 1 view .LVU184
+  88:Equalizer.cpp **** 					update = true;
+ 758              		.loc 1 88 28 is_stmt 0 view .LVU185
+ 759 0026 83ED030A 		vstr.32	s0, [r3, #12]
+  89:Equalizer.cpp **** 				}
+ 760              		.loc 1 89 6 is_stmt 1 view .LVU186
+ 761              	.LVL49:
+ 105:Equalizer.cpp **** 	}
+ 762              		.loc 1 105 3 view .LVU187
+ 763              	.L72:
+ 105:Equalizer.cpp **** 	}
+ 764              		.loc 1 105 15 view .LVU188
+ 105:Equalizer.cpp **** 	}
+ 765              		.loc 1 105 33 is_stmt 0 view .LVU189
+ 766 002a FFF7FEBF 		b	_ZN9Equalizer18updateEQParametersEs
+ 767              	.LVL50:
+ 768              	.L71:
+  98:Equalizer.cpp **** 				if (m_EQParams[band].Q != value) {
+ 769              		.loc 1 98 4 is_stmt 1 view .LVU190
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 19
+
+
+  99:Equalizer.cpp **** 					m_EQParams[band].Q = value;
+ 770              		.loc 1 99 5 view .LVU191
+  99:Equalizer.cpp **** 					m_EQParams[band].Q = value;
+ 771              		.loc 1 99 26 is_stmt 0 view .LVU192
+ 772 002e 01EB4103 		add	r3, r1, r1, lsl #1
+ 773 0032 00EB8303 		add	r3, r0, r3, lsl #2
+  99:Equalizer.cpp **** 					m_EQParams[band].Q = value;
+ 774              		.loc 1 99 5 view .LVU193
+ 775 0036 D3ED057A 		vldr.32	s15, [r3, #20]
+ 776 003a B4EE670A 		vcmp.f32	s0, s15
+ 777 003e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 778 0042 E4D0     		beq	.L68
+ 100:Equalizer.cpp **** 					update = true;
+ 779              		.loc 1 100 6 is_stmt 1 view .LVU194
+ 100:Equalizer.cpp **** 					update = true;
+ 780              		.loc 1 100 25 is_stmt 0 view .LVU195
+ 781 0044 83ED050A 		vstr.32	s0, [r3, #20]
+ 101:Equalizer.cpp **** 				}
+ 782              		.loc 1 101 6 is_stmt 1 view .LVU196
+ 783              	.LVL51:
+ 105:Equalizer.cpp **** 	}
+ 784              		.loc 1 105 3 view .LVU197
+ 785 0048 EFE7     		b	.L72
+ 786              	.LVL52:
+ 787              	.L70:
+  92:Equalizer.cpp **** 				if (m_EQParams[band].fc != value) {
+ 788              		.loc 1 92 4 view .LVU198
+  93:Equalizer.cpp **** 					m_EQParams[band].fc = value;
+ 789              		.loc 1 93 5 view .LVU199
+  93:Equalizer.cpp **** 					m_EQParams[band].fc = value;
+ 790              		.loc 1 93 26 is_stmt 0 view .LVU200
+ 791 004a 01EB4103 		add	r3, r1, r1, lsl #1
+ 792 004e 00EB8303 		add	r3, r0, r3, lsl #2
+  93:Equalizer.cpp **** 					m_EQParams[band].fc = value;
+ 793              		.loc 1 93 5 view .LVU201
+ 794 0052 D3ED047A 		vldr.32	s15, [r3, #16]
+ 795 0056 B4EE670A 		vcmp.f32	s0, s15
+ 796 005a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 797 005e D6D0     		beq	.L68
+  94:Equalizer.cpp **** 					update = true;
+ 798              		.loc 1 94 6 is_stmt 1 view .LVU202
+  94:Equalizer.cpp **** 					update = true;
+ 799              		.loc 1 94 26 is_stmt 0 view .LVU203
+ 800 0060 83ED040A 		vstr.32	s0, [r3, #16]
+  95:Equalizer.cpp **** 				}
+ 801              		.loc 1 95 6 is_stmt 1 view .LVU204
+ 802              	.LVL53:
+ 105:Equalizer.cpp **** 	}
+ 803              		.loc 1 105 3 view .LVU205
+ 804 0064 E1E7     		b	.L72
+ 805              	.LBE53:
+ 806              	.LBE54:
+ 807              		.cfi_endproc
+ 808              	.LFE557:
+ 810              		.section	.text._ZN9Equalizer12incParameterEs9PARAMETERf,"ax",%progbits
+ 811              		.align	1
+ 812              		.p2align 2,,3
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 20
+
+
+ 813              		.global	_ZN9Equalizer12incParameterEs9PARAMETERf
+ 814              		.syntax unified
+ 815              		.thumb
+ 816              		.thumb_func
+ 817              		.fpu fpv5-d16
+ 819              	_ZN9Equalizer12incParameterEs9PARAMETERf:
+ 820              	.LVL54:
+ 821              	.LFB555:
+  63:Equalizer.cpp **** 	// TODO change code to increment parameter for IIR filters (See slides) - call updateEQParamters
+ 822              		.loc 1 63 1 view -0
+ 823              		.cfi_startproc
+ 824              		@ args = 0, pretend = 0, frame = 0
+ 825              		@ frame_needed = 0, uses_anonymous_args = 0
+  66:Equalizer.cpp **** 	return m_EQParams[band].gain;
+ 826              		.loc 1 66 5 view .LVU207
+  66:Equalizer.cpp **** 	return m_EQParams[band].gain;
+ 827              		.loc 1 66 48 is_stmt 0 view .LVU208
+ 828 0000 01EB4103 		add	r3, r1, r1, lsl #1
+ 829              	.LBB59:
+ 830              	.LBB60:
+  82:Equalizer.cpp **** 	{
+ 831              		.loc 1 82 2 view .LVU209
+ 832 0004 0329     		cmp	r1, #3
+ 833              	.LBE60:
+ 834              	.LBE59:
+  63:Equalizer.cpp **** 	// TODO change code to increment parameter for IIR filters (See slides) - call updateEQParamters
+ 835              		.loc 1 63 1 view .LVU210
+ 836 0006 F0EE407A 		vmov.f32	s15, s0
+  66:Equalizer.cpp **** 	return m_EQParams[band].gain;
+ 837              		.loc 1 66 48 view .LVU211
+ 838 000a 00EB8303 		add	r3, r0, r3, lsl #2
+ 839 000e 93ED030A 		vldr.32	s0, [r3, #12]
+ 840              	.LVL55:
+ 841              	.LBB73:
+ 842              	.LBI59:
+  78:Equalizer.cpp **** {
+ 843              		.loc 1 78 6 is_stmt 1 view .LVU212
+ 844              	.LBB69:
+  80:Equalizer.cpp **** 
+ 845              		.loc 1 80 5 view .LVU213
+  82:Equalizer.cpp **** 	{
+ 846              		.loc 1 82 2 view .LVU214
+ 847 0012 0CDC     		bgt	.L80
+ 848              	.LBB61:
+ 849              	.LBB62:
+  84:Equalizer.cpp **** 		{
+ 850              		.loc 1 84 3 is_stmt 0 view .LVU215
+ 851 0014 012A     		cmp	r2, #1
+ 852              	.LBE62:
+ 853              	.LBE61:
+ 854              	.LBE69:
+ 855              	.LBE73:
+  66:Equalizer.cpp **** 	return m_EQParams[band].gain;
+ 856              		.loc 1 66 17 view .LVU216
+ 857 0016 70EE277A 		vadd.f32	s15, s0, s15
+ 858              	.LVL56:
+  63:Equalizer.cpp **** 	// TODO change code to increment parameter for IIR filters (See slides) - call updateEQParamters
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 21
+
+
+ 859              		.loc 1 63 1 view .LVU217
+ 860 001a 70B5     		push	{r4, r5, r6, lr}
+ 861              		.cfi_def_cfa_offset 16
+ 862              		.cfi_offset 4, -16
+ 863              		.cfi_offset 5, -12
+ 864              		.cfi_offset 6, -8
+ 865              		.cfi_offset 14, -4
+ 866 001c 0E46     		mov	r6, r1
+ 867 001e 0546     		mov	r5, r0
+ 868              	.LVL57:
+ 869              	.LBB74:
+ 870              	.LBB70:
+ 871              	.LBB66:
+ 872              	.LBI61:
+  78:Equalizer.cpp **** {
+ 873              		.loc 1 78 6 is_stmt 1 view .LVU218
+ 874              	.LBB63:
+  84:Equalizer.cpp **** 		{
+ 875              		.loc 1 84 3 view .LVU219
+ 876 0020 4FEA4104 		lsl	r4, r1, #1
+ 877 0024 1FD0     		beq	.L76
+ 878 0026 022A     		cmp	r2, #2
+ 879 0028 13D0     		beq	.L77
+ 880 002a 0AB1     		cbz	r2, .L83
+ 881              	.L74:
+ 882              	.LBE63:
+ 883              	.LBE66:
+ 884              	.LBE70:
+ 885              	.LBE74:
+  68:Equalizer.cpp **** 
+ 886              		.loc 1 68 1 is_stmt 0 view .LVU220
+ 887 002c 70BD     		pop	{r4, r5, r6, pc}
+ 888              	.LVL58:
+ 889              	.L80:
+ 890              		.cfi_def_cfa_offset 0
+ 891              		.cfi_restore 4
+ 892              		.cfi_restore 5
+ 893              		.cfi_restore 6
+ 894              		.cfi_restore 14
+  68:Equalizer.cpp **** 
+ 895              		.loc 1 68 1 view .LVU221
+ 896 002e 7047     		bx	lr
+ 897              	.LVL59:
+ 898              	.L83:
+ 899              		.cfi_def_cfa_offset 16
+ 900              		.cfi_offset 4, -16
+ 901              		.cfi_offset 5, -12
+ 902              		.cfi_offset 6, -8
+ 903              		.cfi_offset 14, -4
+ 904              	.LBB75:
+ 905              	.LBB71:
+ 906              	.LBB67:
+ 907              	.LBB64:
+  86:Equalizer.cpp **** 				if (m_EQParams[band].gain != value) {
+ 908              		.loc 1 86 4 is_stmt 1 view .LVU222
+  87:Equalizer.cpp **** 					m_EQParams[band].gain = value;
+ 909              		.loc 1 87 5 view .LVU223
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 22
+
+
+ 910 0030 B4EE670A 		vcmp.f32	s0, s15
+ 911 0034 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 912 0038 F8D0     		beq	.L74
+  88:Equalizer.cpp **** 					update = true;
+ 913              		.loc 1 88 6 view .LVU224
+  88:Equalizer.cpp **** 					update = true;
+ 914              		.loc 1 88 28 is_stmt 0 view .LVU225
+ 915 003a C3ED037A 		vstr.32	s15, [r3, #12]
+  89:Equalizer.cpp **** 				}
+ 916              		.loc 1 89 6 is_stmt 1 view .LVU226
+ 917              	.LVL60:
+ 105:Equalizer.cpp **** 	}
+ 918              		.loc 1 105 3 view .LVU227
+ 919              	.L78:
+ 105:Equalizer.cpp **** 	}
+ 920              		.loc 1 105 15 view .LVU228
+ 105:Equalizer.cpp **** 	}
+ 921              		.loc 1 105 33 is_stmt 0 view .LVU229
+ 922 003e 3146     		mov	r1, r6
+ 923              	.LVL61:
+ 105:Equalizer.cpp **** 	}
+ 924              		.loc 1 105 33 view .LVU230
+ 925 0040 2846     		mov	r0, r5
+ 926              	.LVL62:
+ 105:Equalizer.cpp **** 	}
+ 927              		.loc 1 105 33 view .LVU231
+ 928 0042 FFF7FEFF 		bl	_ZN9Equalizer18updateEQParametersEs
+ 929              	.LVL63:
+ 105:Equalizer.cpp **** 	}
+ 930              		.loc 1 105 33 view .LVU232
+ 931              	.LBE64:
+ 932              	.LBE67:
+ 933              	.LBE71:
+ 934              	.LBE75:
+  67:Equalizer.cpp **** }
+ 935              		.loc 1 67 26 view .LVU233
+ 936 0046 A119     		adds	r1, r4, r6
+ 937 0048 05EB8100 		add	r0, r5, r1, lsl #2
+ 938 004c 90ED030A 		vldr.32	s0, [r0, #12]
+ 939              	.LVL64:
+  67:Equalizer.cpp **** }
+ 940              		.loc 1 67 2 is_stmt 1 view .LVU234
+  68:Equalizer.cpp **** 
+ 941              		.loc 1 68 1 is_stmt 0 view .LVU235
+ 942 0050 70BD     		pop	{r4, r5, r6, pc}
+ 943              	.LVL65:
+ 944              	.L77:
+ 945              	.LBB76:
+ 946              	.LBB72:
+ 947              	.LBB68:
+ 948              	.LBB65:
+  98:Equalizer.cpp **** 				if (m_EQParams[band].Q != value) {
+ 949              		.loc 1 98 4 is_stmt 1 view .LVU236
+  99:Equalizer.cpp **** 					m_EQParams[band].Q = value;
+ 950              		.loc 1 99 5 view .LVU237
+ 951 0052 93ED057A 		vldr.32	s14, [r3, #20]
+ 952 0056 F4EE477A 		vcmp.f32	s15, s14
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 23
+
+
+ 953 005a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 954 005e E5D0     		beq	.L74
+ 100:Equalizer.cpp **** 					update = true;
+ 955              		.loc 1 100 6 view .LVU238
+ 100:Equalizer.cpp **** 					update = true;
+ 956              		.loc 1 100 25 is_stmt 0 view .LVU239
+ 957 0060 C3ED057A 		vstr.32	s15, [r3, #20]
+ 101:Equalizer.cpp **** 				}
+ 958              		.loc 1 101 6 is_stmt 1 view .LVU240
+ 959              	.LVL66:
+ 105:Equalizer.cpp **** 	}
+ 960              		.loc 1 105 3 view .LVU241
+ 961 0064 EBE7     		b	.L78
+ 962              	.LVL67:
+ 963              	.L76:
+  92:Equalizer.cpp **** 				if (m_EQParams[band].fc != value) {
+ 964              		.loc 1 92 4 view .LVU242
+  93:Equalizer.cpp **** 					m_EQParams[band].fc = value;
+ 965              		.loc 1 93 5 view .LVU243
+ 966 0066 93ED047A 		vldr.32	s14, [r3, #16]
+ 967 006a F4EE477A 		vcmp.f32	s15, s14
+ 968 006e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 969 0072 DBD0     		beq	.L74
+  94:Equalizer.cpp **** 					update = true;
+ 970              		.loc 1 94 6 view .LVU244
+  94:Equalizer.cpp **** 					update = true;
+ 971              		.loc 1 94 26 is_stmt 0 view .LVU245
+ 972 0074 C3ED047A 		vstr.32	s15, [r3, #16]
+  95:Equalizer.cpp **** 				}
+ 973              		.loc 1 95 6 is_stmt 1 view .LVU246
+ 974              	.LVL68:
+ 105:Equalizer.cpp **** 	}
+ 975              		.loc 1 105 3 view .LVU247
+ 976 0078 E1E7     		b	.L78
+ 977              	.LBE65:
+ 978              	.LBE68:
+ 979              	.LBE72:
+ 980              	.LBE76:
+ 981              		.cfi_endproc
+ 982              	.LFE555:
+ 984 007a 00BF     		.section	.text._ZN9Equalizer12getParameterEs9PARAMETER,"ax",%progbits
+ 985              		.align	1
+ 986              		.p2align 2,,3
+ 987              		.global	_ZN9Equalizer12getParameterEs9PARAMETER
+ 988              		.syntax unified
+ 989              		.thumb
+ 990              		.thumb_func
+ 991              		.fpu fpv5-d16
+ 993              	_ZN9Equalizer12getParameterEs9PARAMETER:
+ 994              	.LVL69:
+ 995              	.LFB559:
+ 127:Equalizer.cpp **** 							      m_EQParams[band].fc,
+ 128:Equalizer.cpp **** 								  m_EQParams[band].Q,
+ 129:Equalizer.cpp **** 								  m_EQParams[band].gain);
  130:Equalizer.cpp **** 
- 131:Equalizer.cpp **** 	// Call creating peaking filter for IIR filter band
- 132:Equalizer.cpp **** 	m_IIRfilter[band].makePeakEQ(sampleRate_,
- 566              		.loc 1 132 2 is_stmt 1 view .LVU160
- 567              		.loc 1 132 30 is_stmt 0 view .LVU161
- 568 0076 2B44     		add	r3, r3, r5
- 569 0078 D4ED017A 		vldr.32	s15, [r4, #4]	@ int
- 570              	.LBB92:
- 571              	.LBB93:
-  49:IIRFilter.h   **** 		}
-  50:IIRFilter.h   **** 
-  51:IIRFilter.h   **** 		void makePeakEQ (const float fs,
-  52:IIRFilter.h   ****                          const float fc,
-  53:IIRFilter.h   ****                          const float Q,
-  54:IIRFilter.h   ****                          const float A)
-  55:IIRFilter.h   **** 		{
-  56:IIRFilter.h   **** 			float omega =  2.0 * float_PI * (fc / fs);
-  57:IIRFilter.h   **** 			float alpha = sinf (omega) / (2.0 * Q);
-  58:IIRFilter.h   **** 
-  59:IIRFilter.h   **** 			b[0] = 1.0 + alpha * A;
- 572              		.loc 2 59 15 view .LVU162
- 573 007c F7EE008A 		vmov.f32	s17, #1.0e+0
- 574              		.loc 2 59 9 view .LVU163
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 16
+ 131:Equalizer.cpp **** }
+ 132:Equalizer.cpp **** 
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 24
 
 
- 575 0080 05EB8505 		add	r5, r5, r5, lsl #2
- 576              	.LBE93:
- 577              	.LBE92:
- 578              		.loc 1 132 30 view .LVU164
- 579 0084 04EB8303 		add	r3, r4, r3, lsl #2
- 580 0088 F8EEE77A 		vcvt.f32.s32	s15, s15
- 581              	.LBB98:
- 582              	.LBB95:
- 583              		.loc 2 59 9 view .LVU165
- 584 008c 04EBC506 		add	r6, r4, r5, lsl #3
-  56:IIRFilter.h   **** 			float alpha = sinf (omega) / (2.0 * Q);
- 585              		.loc 2 56 40 view .LVU166
- 586 0090 93ED047A 		vldr.32	s14, [r3, #16]
- 587              		.loc 2 59 9 view .LVU167
- 588 0094 ED00     		lsls	r5, r5, #3
- 589              	.LBE95:
- 590              	.LBE98:
- 591              		.loc 1 132 30 view .LVU168
- 592 0096 93ED03AA 		vldr.32	s20, [r3, #12]
- 593              	.LVL19:
- 594              	.LBB99:
- 595              	.LBI92:
-  51:IIRFilter.h   ****                          const float fc,
- 596              		.loc 2 51 8 is_stmt 1 view .LVU169
- 597              	.LBB96:
-  56:IIRFilter.h   **** 			float alpha = sinf (omega) / (2.0 * Q);
- 598              		.loc 2 56 4 view .LVU170
-  56:IIRFilter.h   **** 			float alpha = sinf (omega) / (2.0 * Q);
- 599              		.loc 2 56 40 is_stmt 0 view .LVU171
- 600 009a 87EE270A 		vdiv.f32	s0, s14, s15
-  56:IIRFilter.h   **** 			float alpha = sinf (omega) / (2.0 * Q);
- 601              		.loc 2 56 34 view .LVU172
- 602 009e 9FED386B 		vldr.64	d6, .L40+8
-  56:IIRFilter.h   **** 			float alpha = sinf (omega) / (2.0 * Q);
- 603              		.loc 2 56 40 view .LVU173
- 604 00a2 B7EEC00A 		vcvt.f64.f32	d0, s0
-  56:IIRFilter.h   **** 			float alpha = sinf (omega) / (2.0 * Q);
- 605              		.loc 2 56 34 view .LVU174
- 606 00a6 20EE060B 		vmul.f64	d0, d0, d6
-  56:IIRFilter.h   **** 			float alpha = sinf (omega) / (2.0 * Q);
- 607              		.loc 2 56 10 view .LVU175
- 608 00aa B7EEC08B 		vcvt.f32.f64	s16, d0
- 609              	.LVL20:
-  57:IIRFilter.h   **** 
- 610              		.loc 2 57 4 is_stmt 1 view .LVU176
-  57:IIRFilter.h   **** 
- 611              		.loc 2 57 23 is_stmt 0 view .LVU177
- 612 00ae B0EE480A 		vmov.f32	s0, s16
- 613 00b2 FFF7FEFF 		bl	sinf
- 614              	.LVL21:
-  57:IIRFilter.h   **** 
- 615              		.loc 2 57 23 view .LVU178
- 616 00b6 B0EE406A 		vmov.f32	s12, s0
-  60:IIRFilter.h   **** 			b[1] = -2.0 * cosf (omega);
- 617              		.loc 2 60 23 view .LVU179
- 618 00ba B0EE480A 		vmov.f32	s0, s16
-  57:IIRFilter.h   **** 
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 17
+ 133:Equalizer.cpp **** float Equalizer::getParameter(short band, PARAMETER param) 
+ 134:Equalizer.cpp **** {
+ 996              		.loc 1 134 1 view -0
+ 997              		.cfi_startproc
+ 998              		@ args = 0, pretend = 0, frame = 0
+ 999              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1000              		@ link register save eliminated.
+ 135:Equalizer.cpp **** 		switch (param) 
+ 1001              		.loc 1 135 3 view .LVU249
+ 1002 0000 012A     		cmp	r2, #1
+ 1003 0002 05D0     		beq	.L85
+ 1004 0004 022A     		cmp	r2, #2
+ 1005 0006 11D0     		beq	.L86
+ 1006 0008 4AB1     		cbz	r2, .L89
+ 1007 000a 9FED0C0A 		vldr.32	s0, .L90
+ 136:Equalizer.cpp **** 		{
+ 137:Equalizer.cpp **** 			case PM_GAIN:
+ 138:Equalizer.cpp **** 				return m_EQParams[band].gain;
+ 139:Equalizer.cpp **** 			case PM_FREQ:
+ 140:Equalizer.cpp **** 				return m_EQParams[band].fc;
+ 141:Equalizer.cpp **** 			case PM_Q:
+ 142:Equalizer.cpp **** 				return m_EQParams[band].Q;
+ 143:Equalizer.cpp **** 			default:
+ 144:Equalizer.cpp **** 				return 0.0;
+ 145:Equalizer.cpp **** 		}
+ 146:Equalizer.cpp **** 	}...
+ 1008              		.loc 1 146 2 is_stmt 0 view .LVU250
+ 1009 000e 7047     		bx	lr
+ 1010              	.L85:
+ 139:Equalizer.cpp **** 			case PM_FREQ:
+ 1011              		.loc 1 139 4 is_stmt 1 view .LVU251
+ 140:Equalizer.cpp **** 				return m_EQParams[band].fc;
+ 1012              		.loc 1 140 5 view .LVU252
+ 140:Equalizer.cpp **** 				return m_EQParams[band].fc;
+ 1013              		.loc 1 140 29 is_stmt 0 view .LVU253
+ 1014 0010 01EB4101 		add	r1, r1, r1, lsl #1
+ 1015              	.LVL70:
+ 140:Equalizer.cpp **** 				return m_EQParams[band].fc;
+ 1016              		.loc 1 140 29 view .LVU254
+ 1017 0014 00EB8100 		add	r0, r0, r1, lsl #2
+ 1018              	.LVL71:
+ 140:Equalizer.cpp **** 				return m_EQParams[band].fc;
+ 1019              		.loc 1 140 29 view .LVU255
+ 1020 0018 90ED040A 		vldr.32	s0, [r0, #16]
+ 1021 001c 7047     		bx	lr
+ 1022              	.LVL72:
+ 1023              	.L89:
+ 137:Equalizer.cpp **** 			case PM_GAIN:
+ 1024              		.loc 1 137 4 is_stmt 1 view .LVU256
+ 138:Equalizer.cpp **** 				return m_EQParams[band].gain;
+ 1025              		.loc 1 138 5 view .LVU257
+ 138:Equalizer.cpp **** 				return m_EQParams[band].gain;
+ 1026              		.loc 1 138 29 is_stmt 0 view .LVU258
+ 1027 001e 01EB4101 		add	r1, r1, r1, lsl #1
+ 1028              	.LVL73:
+ 138:Equalizer.cpp **** 				return m_EQParams[band].gain;
+ 1029              		.loc 1 138 29 view .LVU259
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 25
 
 
- 619              		.loc 2 57 23 view .LVU180
- 620 00be B7EEC66A 		vcvt.f64.f32	d6, s12
-  57:IIRFilter.h   **** 
- 621              		.loc 2 57 31 view .LVU181
- 622 00c2 86EE097B 		vdiv.f64	d7, d6, d9
-  57:IIRFilter.h   **** 
- 623              		.loc 2 57 10 view .LVU182
- 624 00c6 B7EEC78B 		vcvt.f32.f64	s16, d7
- 625              	.LVL22:
-  59:IIRFilter.h   **** 			b[1] = -2.0 * cosf (omega);
- 626              		.loc 2 59 4 is_stmt 1 view .LVU183
-  59:IIRFilter.h   **** 			b[1] = -2.0 * cosf (omega);
- 627              		.loc 2 59 15 is_stmt 0 view .LVU184
- 628 00ca F0EE687A 		vmov.f32	s15, s17
- 629 00ce EAEE087A 		vfma.f32	s15, s20, s16
-  59:IIRFilter.h   **** 			b[1] = -2.0 * cosf (omega);
- 630              		.loc 2 59 9 view .LVU185
- 631 00d2 C6ED127A 		vstr.32	s15, [r6, #72]
- 632              		.loc 2 60 4 is_stmt 1 view .LVU186
- 633              		.loc 2 60 23 is_stmt 0 view .LVU187
- 634 00d6 FFF7FEFF 		bl	cosf
- 635              	.LVL23:
-  61:IIRFilter.h   **** 			b[2] = 1.0 - alpha * A;
-  62:IIRFilter.h   **** 			a[0] = 1.0 + alpha / A;
- 636              		.loc 2 62 23 view .LVU188
- 637 00da 88EE0A7A 		vdiv.f32	s14, s16, s20
- 638 00de 05F13C03 		add	r3, r5, #60
- 639 00e2 2344     		add	r3, r3, r4
- 640 00e4 4834     		adds	r4, r4, #72
- 641              	.LVL24:
-  61:IIRFilter.h   **** 			b[2] = 1.0 - alpha * A;
- 642              		.loc 2 61 15 view .LVU189
- 643 00e6 F0EE687A 		vmov.f32	s15, s17
- 644 00ea 2C44     		add	r4, r4, r5
- 645              	.LVL25:
-  60:IIRFilter.h   **** 			b[2] = 1.0 - alpha * A;
- 646              		.loc 2 60 16 view .LVU190
- 647 00ec F8EE006A 		vmov.f32	s13, #-2.0e+0
-  61:IIRFilter.h   **** 			b[2] = 1.0 - alpha * A;
- 648              		.loc 2 61 15 view .LVU191
- 649 00f0 EAEE487A 		vfms.f32	s15, s20, s16
-  60:IIRFilter.h   **** 			b[2] = 1.0 - alpha * A;
- 650              		.loc 2 60 16 view .LVU192
- 651 00f4 20EE260A 		vmul.f32	s0, s0, s13
-  60:IIRFilter.h   **** 			b[2] = 1.0 - alpha * A;
- 652              		.loc 2 60 9 view .LVU193
- 653 00f8 86ED130A 		vstr.32	s0, [r6, #76]
-  61:IIRFilter.h   **** 			b[2] = 1.0 - alpha * A;
- 654              		.loc 2 61 4 is_stmt 1 view .LVU194
- 655              		.loc 2 62 4 view .LVU195
-  63:IIRFilter.h   **** 			a[1] = -2.0 * cosf (omega);
- 656              		.loc 2 63 9 is_stmt 0 view .LVU196
- 657 00fc 86ED100A 		vstr.32	s0, [r6, #64]
-  61:IIRFilter.h   **** 			b[2] = 1.0 - alpha * A;
- 658              		.loc 2 61 9 view .LVU197
- 659 0100 C6ED147A 		vstr.32	s15, [r6, #80]
-  62:IIRFilter.h   **** 			a[1] = -2.0 * cosf (omega);
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 18
-
-
- 660              		.loc 2 62 15 view .LVU198
- 661 0104 77EE287A 		vadd.f32	s15, s14, s17
-  64:IIRFilter.h   **** 			a[2] = 1.0 - alpha / A;
- 662              		.loc 2 64 15 view .LVU199
- 663 0108 78EEC78A 		vsub.f32	s17, s17, s14
-  62:IIRFilter.h   **** 			a[1] = -2.0 * cosf (omega);
- 664              		.loc 2 62 9 view .LVU200
- 665 010c C6ED0F7A 		vstr.32	s15, [r6, #60]
-  63:IIRFilter.h   **** 			a[1] = -2.0 * cosf (omega);
- 666              		.loc 2 63 4 is_stmt 1 view .LVU201
- 667              		.loc 2 64 4 view .LVU202
- 668              		.loc 2 64 9 is_stmt 0 view .LVU203
- 669 0110 C6ED118A 		vstr.32	s17, [r6, #68]
-  65:IIRFilter.h   **** 
-  66:IIRFilter.h   **** 			// Normalize the coefficients
-  67:IIRFilter.h   **** 			float a0 = a[0];
- 670              		.loc 2 67 4 is_stmt 1 view .LVU204
- 671              	.LVL26:
-  68:IIRFilter.h   **** 			for (int i = 0; i < NUM_IIR_COEFFS; i++) {
- 672              		.loc 2 68 4 view .LVU205
- 673              	.LBB94:
- 674              		.loc 2 68 22 view .LVU206
- 675              	.L27:
-  69:IIRFilter.h   **** 				a[i] = a[i]/a0;
- 676              		.loc 2 69 5 view .LVU207
- 677              		.loc 2 69 15 is_stmt 0 view .LVU208
- 678 0114 D3ED006A 		vldr.32	s13, [r3]
- 679              		.loc 2 69 16 view .LVU209
- 680 0118 86EEA77A 		vdiv.f32	s14, s13, s15
- 681              		.loc 2 69 10 view .LVU210
- 682 011c A3EC017A 		vstmia.32	r3!, {s14}
-  70:IIRFilter.h   **** 				b[i] = b[i]/a0;
- 683              		.loc 2 70 5 is_stmt 1 view .LVU211
-  68:IIRFilter.h   **** 			for (int i = 0; i < NUM_IIR_COEFFS; i++) {
- 684              		.loc 2 68 22 is_stmt 0 view .LVU212
- 685 0120 A342     		cmp	r3, r4
- 686              		.loc 2 70 16 view .LVU213
- 687 0122 D3ED026A 		vldr.32	s13, [r3, #8]
- 688 0126 86EEA77A 		vdiv.f32	s14, s13, s15
- 689              		.loc 2 70 10 view .LVU214
- 690 012a 83ED027A 		vstr.32	s14, [r3, #8]
-  68:IIRFilter.h   **** 			for (int i = 0; i < NUM_IIR_COEFFS; i++) {
- 691              		.loc 2 68 4 is_stmt 1 view .LVU215
-  68:IIRFilter.h   **** 			for (int i = 0; i < NUM_IIR_COEFFS; i++) {
- 692              		.loc 2 68 22 view .LVU216
- 693 012e F1D1     		bne	.L27
- 694              	.LBE94:
- 695              	.LBE96:
- 696              	.LBE99:
- 133:Equalizer.cpp **** 							      m_EQParams[band].fc,
- 134:Equalizer.cpp **** 								  m_EQParams[band].Q,
- 135:Equalizer.cpp **** 								  m_EQParams[band].gain);
- 136:Equalizer.cpp **** 
- 137:Equalizer.cpp **** }
- 697              		.loc 1 137 1 is_stmt 0 view .LVU217
- 698 0130 BDEC068B 		vldm	sp!, {d8-d10}
- 699              		.cfi_remember_state
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 19
-
-
- 700              		.cfi_restore 84
- 701              		.cfi_restore 85
- 702              		.cfi_restore 82
- 703              		.cfi_restore 83
- 704              		.cfi_restore 80
- 705              		.cfi_restore 81
- 706              		.cfi_def_cfa_offset 16
- 707              	.LVL27:
- 708              		.loc 1 137 1 view .LVU218
- 709 0134 70BD     		pop	{r4, r5, r6, pc}
- 710              	.LVL28:
- 711              	.L36:
- 712              		.cfi_restore_state
- 128:Equalizer.cpp **** 		m_EQParams[band].Q = MIN_Q;
- 713              		.loc 1 128 2 is_stmt 1 view .LVU219
- 714 0136 F7EE007A 		vmov.f32	s15, #1.0e+0
- 715 013a B4EEE79A 		vcmpe.f32	s18, s15
- 716 013e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 717 0142 11D5     		bpl	.L39
- 129:Equalizer.cpp **** 
- 718              		.loc 1 129 3 view .LVU220
- 719 0144 B0EE009B 		vmov.f64	d9, #2.0e+0
- 129:Equalizer.cpp **** 
- 720              		.loc 1 129 22 is_stmt 0 view .LVU221
- 721 0148 C2ED057A 		vstr.32	s15, [r2, #20]
- 722 014c 93E7     		b	.L25
- 723              	.LVL29:
- 724              	.L34:
- 120:Equalizer.cpp **** 		m_EQParams[band].gain = MIN_GAIN;
- 725              		.loc 1 120 2 is_stmt 1 view .LVU222
- 120:Equalizer.cpp **** 		m_EQParams[band].gain = MIN_GAIN;
- 726              		.loc 1 120 23 is_stmt 0 view .LVU223
- 727 014e B7EEC77A 		vcvt.f64.f32	d7, s14
- 120:Equalizer.cpp **** 		m_EQParams[band].gain = MIN_GAIN;
- 728              		.loc 1 120 2 view .LVU224
- 729 0152 9FED0D6B 		vldr.64	d6, .L40+16
- 730 0156 B4EEC67B 		vcmpe.f64	d7, d6
- 731 015a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 732 015e 7FF565AF 		bpl	.L17
- 121:Equalizer.cpp **** 	if (m_EQParams[band].fc > MAX_FREQ)
- 733              		.loc 1 121 3 is_stmt 1 view .LVU225
- 121:Equalizer.cpp **** 	if (m_EQParams[band].fc > MAX_FREQ)
- 734              		.loc 1 121 25 is_stmt 0 view .LVU226
- 735 0162 0C49     		ldr	r1, .L40+28
- 736              	.LVL30:
- 121:Equalizer.cpp **** 	if (m_EQParams[band].fc > MAX_FREQ)
- 737              		.loc 1 121 25 view .LVU227
- 738 0164 D160     		str	r1, [r2, #12]	@ float
- 739 0166 61E7     		b	.L17
- 740              	.L39:
- 741              	.LBB100:
- 742              	.LBB97:
-  57:IIRFilter.h   **** 
- 743              		.loc 2 57 40 view .LVU228
- 744 0168 B7EEC99A 		vcvt.f64.f32	d9, s18
-  57:IIRFilter.h   **** 
- 745              		.loc 2 57 38 view .LVU229
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 20
-
-
- 746 016c 39EE099B 		vadd.f64	d9, d9, d9
- 747 0170 81E7     		b	.L25
- 748              	.L41:
- 749 0172 00BFAFF3 		.align	3
- 749      0080
- 750              	.L40:
- 751 0178 00000000 		.word	0
- 752 017c 00004440 		.word	1078198272
- 753 0180 EA2E4454 		.word	1413754602
- 754 0184 FB211940 		.word	1075388923
- 755 0188 9A999999 		.word	-1717986918
- 756 018c 9999B93F 		.word	1069128089
- 757 0190 00409C46 		.word	1184645120
- 758 0194 CDCCCC3D 		.word	1036831949
- 759              	.LBE97:
- 760              	.LBE100:
- 761              		.cfi_endproc
- 762              	.LFE568:
- 764              		.section	.text._ZN9Equalizer4InitEi,"ax",%progbits
- 765              		.align	1
- 766              		.p2align 2,,3
- 767              		.global	_ZN9Equalizer4InitEi
- 768              		.syntax unified
- 769              		.thumb
- 770              		.thumb_func
- 771              		.fpu fpv5-d16
- 773              	_ZN9Equalizer4InitEi:
- 774              	.LVL31:
- 775              	.LFB564:
-  45:Equalizer.cpp **** 	sampleRate_ = sampleRate;
- 776              		.loc 1 45 1 is_stmt 1 view -0
- 777              		.cfi_startproc
- 778              		@ args = 0, pretend = 0, frame = 0
- 779              		@ frame_needed = 0, uses_anonymous_args = 0
-  46:Equalizer.cpp **** 
- 780              		.loc 1 46 2 view .LVU231
-  50:Equalizer.cpp **** 	m_EQParams[0].gain = 5.0;
- 781              		.loc 1 50 19 is_stmt 0 view .LVU232
- 782 0000 184A     		ldr	r2, .L46
-  45:Equalizer.cpp **** 	sampleRate_ = sampleRate;
- 783              		.loc 1 45 1 view .LVU233
- 784 0002 F8B5     		push	{r3, r4, r5, r6, r7, lr}
- 785              		.cfi_def_cfa_offset 24
- 786              		.cfi_offset 3, -24
- 787              		.cfi_offset 4, -20
- 788              		.cfi_offset 5, -16
- 789              		.cfi_offset 6, -12
- 790              		.cfi_offset 7, -8
- 791              		.cfi_offset 14, -4
-  45:Equalizer.cpp **** 	sampleRate_ = sampleRate;
- 792              		.loc 1 45 1 view .LVU234
- 793 0004 0546     		mov	r5, r0
-  50:Equalizer.cpp **** 	m_EQParams[0].gain = 5.0;
- 794              		.loc 1 50 19 view .LVU235
- 795 0006 0261     		str	r2, [r0, #16]	@ float
-  51:Equalizer.cpp **** 	m_EQParams[1].fc = 500.0;
- 796              		.loc 1 51 21 view .LVU236
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 21
-
-
- 797 0008 174E     		ldr	r6, .L46+4
-  55:Equalizer.cpp **** 	m_EQParams[3].fc = 8000.0;
- 798              		.loc 1 55 21 view .LVU237
- 799 000a 4FF07C54 		mov	r4, #1056964608
-  52:Equalizer.cpp **** 	m_EQParams[1].gain = 2.0; 
- 800              		.loc 1 52 19 view .LVU238
- 801 000e 174A     		ldr	r2, .L46+8
-  53:Equalizer.cpp **** 	m_EQParams[2].fc = 2000.0;
- 802              		.loc 1 53 21 view .LVU239
- 803 0010 4FF08043 		mov	r3, #1073741824
-  51:Equalizer.cpp **** 	m_EQParams[1].fc = 500.0;
- 804              		.loc 1 51 21 view .LVU240
- 805 0014 C660     		str	r6, [r0, #12]	@ float
-  57:Equalizer.cpp **** 
- 806              		.loc 1 57 21 view .LVU241
- 807 0016 2F46     		mov	r7, r5
-  55:Equalizer.cpp **** 	m_EQParams[3].fc = 8000.0;
- 808              		.loc 1 55 21 view .LVU242
- 809 0018 4462     		str	r4, [r0, #36]	@ float
-  57:Equalizer.cpp **** 
- 810              		.loc 1 57 21 view .LVU243
- 811 001a 0026     		movs	r6, #0
-  54:Equalizer.cpp **** 	m_EQParams[2].gain = 0.5; 
- 812              		.loc 1 54 19 view .LVU244
- 813 001c 1448     		ldr	r0, .L46+12
- 814              	.LVL32:
-  54:Equalizer.cpp **** 	m_EQParams[2].gain = 0.5; 
- 815              		.loc 1 54 19 view .LVU245
- 816 001e 2C46     		mov	r4, r5
-  52:Equalizer.cpp **** 	m_EQParams[1].gain = 2.0; 
- 817              		.loc 1 52 19 view .LVU246
- 818 0020 EA61     		str	r2, [r5, #28]	@ float
-  56:Equalizer.cpp **** 	m_EQParams[3].gain = 2.0; 
- 819              		.loc 1 56 19 view .LVU247
- 820 0022 144A     		ldr	r2, .L46+16
-  46:Equalizer.cpp **** 
- 821              		.loc 1 46 14 view .LVU248
- 822 0024 6960     		str	r1, [r5, #4]
-  50:Equalizer.cpp **** 	m_EQParams[0].gain = 5.0;
- 823              		.loc 1 50 2 is_stmt 1 view .LVU249
-  51:Equalizer.cpp **** 	m_EQParams[1].fc = 500.0;
- 824              		.loc 1 51 2 view .LVU250
-  52:Equalizer.cpp **** 	m_EQParams[1].gain = 2.0; 
- 825              		.loc 1 52 2 view .LVU251
-  53:Equalizer.cpp **** 	m_EQParams[2].fc = 2000.0;
- 826              		.loc 1 53 2 view .LVU252
-  53:Equalizer.cpp **** 	m_EQParams[2].fc = 2000.0;
- 827              		.loc 1 53 21 is_stmt 0 view .LVU253
- 828 0026 AB61     		str	r3, [r5, #24]	@ float
-  54:Equalizer.cpp **** 	m_EQParams[2].gain = 0.5; 
- 829              		.loc 1 54 2 is_stmt 1 view .LVU254
-  54:Equalizer.cpp **** 	m_EQParams[2].gain = 0.5; 
- 830              		.loc 1 54 19 is_stmt 0 view .LVU255
- 831 0028 A862     		str	r0, [r5, #40]	@ float
-  55:Equalizer.cpp **** 	m_EQParams[3].fc = 8000.0;
- 832              		.loc 1 55 2 is_stmt 1 view .LVU256
-  56:Equalizer.cpp **** 	m_EQParams[3].gain = 2.0; 
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 22
-
-
- 833              		.loc 1 56 2 view .LVU257
-  56:Equalizer.cpp **** 	m_EQParams[3].gain = 2.0; 
- 834              		.loc 1 56 19 is_stmt 0 view .LVU258
- 835 002a 6A63     		str	r2, [r5, #52]	@ float
-  57:Equalizer.cpp **** 
- 836              		.loc 1 57 2 is_stmt 1 view .LVU259
-  57:Equalizer.cpp **** 
- 837              		.loc 1 57 21 is_stmt 0 view .LVU260
- 838 002c 2B63     		str	r3, [r5, #48]	@ float
-  59:Equalizer.cpp **** 	{
- 839              		.loc 1 59 2 is_stmt 1 view .LVU261
- 840              	.LVL33:
- 841              	.LBB105:
-  59:Equalizer.cpp **** 	{
- 842              		.loc 1 59 28 view .LVU262
- 843              	.L43:
-  61:Equalizer.cpp **** 	    //m_EQParams[band].gain = 1.0; // Default gain
- 844              		.loc 1 61 3 discriminator 2 view .LVU263
- 845              	.LBB106:
- 846              	.LBI106:
-  17:IIRFilter.h   **** 		{
- 847              		.loc 2 17 8 discriminator 2 view .LVU264
- 848              	.LBB107:
-  19:IIRFilter.h   **** 			{
- 849              		.loc 2 19 4 discriminator 2 view .LVU265
- 850              	.LBB108:
-  19:IIRFilter.h   **** 			{
- 851              		.loc 2 19 22 discriminator 2 view .LVU266
-  21:IIRFilter.h   **** 				b[i] = 0;
- 852              		.loc 2 21 5 discriminator 2 view .LVU267
-  22:IIRFilter.h   **** 			}
- 853              		.loc 2 22 5 discriminator 2 view .LVU268
-  19:IIRFilter.h   **** 			{
- 854              		.loc 2 19 4 discriminator 2 view .LVU269
-  19:IIRFilter.h   **** 			{
- 855              		.loc 2 19 22 discriminator 2 view .LVU270
-  21:IIRFilter.h   **** 				b[i] = 0;
- 856              		.loc 2 21 5 discriminator 2 view .LVU271
-  21:IIRFilter.h   **** 				b[i] = 0;
- 857              		.loc 2 21 10 is_stmt 0 discriminator 2 view .LVU272
- 858 002e 0023     		movs	r3, #0
- 859              	.LBE108:
-  24:IIRFilter.h   **** 			b[0] = 1.0;
- 860              		.loc 2 24 9 discriminator 2 view .LVU273
- 861 0030 4FF07E52 		mov	r2, #1065353216
- 862              	.LBE107:
- 863              	.LBE106:
-  63:Equalizer.cpp **** 		updateEQParameters(band);
- 864              		.loc 1 63 22 discriminator 2 view .LVU274
- 865 0034 4FF0824C 		mov	ip, #1090519040
-  64:Equalizer.cpp **** 	}
- 866              		.loc 1 64 21 discriminator 2 view .LVU275
- 867 0038 31B2     		sxth	r1, r6
-  59:Equalizer.cpp **** 	{
- 868              		.loc 1 59 28 discriminator 2 view .LVU276
- 869 003a 0136     		adds	r6, r6, #1
- 870              	.LVL34:
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 23
-
-
- 871              	.LBB116:
- 872              	.LBB112:
- 873              	.LBB109:
-  21:IIRFilter.h   **** 				b[i] = 0;
- 874              		.loc 2 21 10 discriminator 2 view .LVU277
- 875 003c 2364     		str	r3, [r4, #64]	@ float
-  22:IIRFilter.h   **** 			}
- 876              		.loc 2 22 5 is_stmt 1 discriminator 2 view .LVU278
-  22:IIRFilter.h   **** 			}
- 877              		.loc 2 22 10 is_stmt 0 discriminator 2 view .LVU279
- 878 003e E364     		str	r3, [r4, #76]	@ float
-  19:IIRFilter.h   **** 			{
- 879              		.loc 2 19 4 is_stmt 1 discriminator 2 view .LVU280
- 880              	.LVL35:
-  19:IIRFilter.h   **** 			{
- 881              		.loc 2 19 22 discriminator 2 view .LVU281
-  21:IIRFilter.h   **** 				b[i] = 0;
- 882              		.loc 2 21 5 discriminator 2 view .LVU282
- 883              	.LBE109:
- 884              	.LBE112:
- 885              	.LBE116:
-  64:Equalizer.cpp **** 	}
- 886              		.loc 1 64 21 is_stmt 0 discriminator 2 view .LVU283
- 887 0040 2846     		mov	r0, r5
- 888              	.LBB117:
- 889              	.LBB113:
- 890              	.LBB110:
-  21:IIRFilter.h   **** 				b[i] = 0;
- 891              		.loc 2 21 10 discriminator 2 view .LVU284
- 892 0042 6364     		str	r3, [r4, #68]	@ float
-  22:IIRFilter.h   **** 			}
- 893              		.loc 2 22 5 is_stmt 1 discriminator 2 view .LVU285
- 894              	.LBE110:
- 895              	.LBE113:
- 896              	.LBE117:
-  59:Equalizer.cpp **** 	{
- 897              		.loc 1 59 28 is_stmt 0 discriminator 2 view .LVU286
- 898 0044 0C37     		adds	r7, r7, #12
- 899              	.LBB118:
- 900              	.LBB114:
- 901              	.LBB111:
-  22:IIRFilter.h   **** 			}
- 902              		.loc 2 22 10 discriminator 2 view .LVU287
- 903 0046 2365     		str	r3, [r4, #80]	@ float
-  19:IIRFilter.h   **** 			{
- 904              		.loc 2 19 4 is_stmt 1 discriminator 2 view .LVU288
- 905              	.LVL36:
-  19:IIRFilter.h   **** 			{
- 906              		.loc 2 19 22 discriminator 2 view .LVU289
- 907              	.LBE111:
-  24:IIRFilter.h   **** 			b[0] = 1.0;
- 908              		.loc 2 24 4 discriminator 2 view .LVU290
- 909              	.LBE114:
- 910              	.LBE118:
-  59:Equalizer.cpp **** 	{
- 911              		.loc 1 59 28 is_stmt 0 discriminator 2 view .LVU291
- 912 0048 2834     		adds	r4, r4, #40
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 24
-
-
- 913              	.LBB119:
- 914              	.LBB115:
-  24:IIRFilter.h   **** 			b[0] = 1.0;
- 915              		.loc 2 24 9 discriminator 2 view .LVU292
- 916 004a 6261     		str	r2, [r4, #20]	@ float
-  25:IIRFilter.h   **** 			x1_ = x2_ = y1_ = y2_ = 0.0;
- 917              		.loc 2 25 4 is_stmt 1 discriminator 2 view .LVU293
-  25:IIRFilter.h   **** 			x1_ = x2_ = y1_ = y2_ = 0.0;
- 918              		.loc 2 25 9 is_stmt 0 discriminator 2 view .LVU294
- 919 004c 2262     		str	r2, [r4, #32]	@ float
-  26:IIRFilter.h   **** 		}
- 920              		.loc 2 26 4 is_stmt 1 discriminator 2 view .LVU295
-  26:IIRFilter.h   **** 		}
- 921              		.loc 2 26 26 is_stmt 0 discriminator 2 view .LVU296
- 922 004e A363     		str	r3, [r4, #56]	@ float
-  26:IIRFilter.h   **** 		}
- 923              		.loc 2 26 20 discriminator 2 view .LVU297
- 924 0050 6363     		str	r3, [r4, #52]	@ float
-  26:IIRFilter.h   **** 		}
- 925              		.loc 2 26 14 discriminator 2 view .LVU298
- 926 0052 2363     		str	r3, [r4, #48]	@ float
-  26:IIRFilter.h   **** 		}
- 927              		.loc 2 26 8 discriminator 2 view .LVU299
- 928 0054 E362     		str	r3, [r4, #44]	@ float
- 929              	.LVL37:
-  26:IIRFilter.h   **** 		}
- 930              		.loc 2 26 8 discriminator 2 view .LVU300
- 931              	.LBE115:
- 932              	.LBE119:
-  63:Equalizer.cpp **** 		updateEQParameters(band);
- 933              		.loc 1 63 3 is_stmt 1 discriminator 2 view .LVU301
-  63:Equalizer.cpp **** 		updateEQParameters(band);
- 934              		.loc 1 63 22 is_stmt 0 discriminator 2 view .LVU302
- 935 0056 C7F808C0 		str	ip, [r7, #8]	@ float
-  64:Equalizer.cpp **** 	}
- 936              		.loc 1 64 3 is_stmt 1 discriminator 2 view .LVU303
-  64:Equalizer.cpp **** 	}
- 937              		.loc 1 64 21 is_stmt 0 discriminator 2 view .LVU304
- 938 005a FFF7FEFF 		bl	_ZN9Equalizer18updateEQParametersEs
- 939              	.LVL38:
-  59:Equalizer.cpp **** 	{
- 940              		.loc 1 59 2 is_stmt 1 discriminator 2 view .LVU305
-  59:Equalizer.cpp **** 	{
- 941              		.loc 1 59 28 discriminator 2 view .LVU306
- 942 005e 042E     		cmp	r6, #4
- 943 0060 E5D1     		bne	.L43
- 944              	.LBE105:
-  66:Equalizer.cpp **** 
- 945              		.loc 1 66 1 is_stmt 0 view .LVU307
- 946 0062 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 947              	.LVL39:
- 948              	.L47:
-  66:Equalizer.cpp **** 
- 949              		.loc 1 66 1 view .LVU308
- 950              		.align	2
- 951              	.L46:
- 952 0064 0000C842 		.word	1120403456
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 25
-
-
- 953 0068 0000A040 		.word	1084227584
- 954 006c 0000FA43 		.word	1140457472
- 955 0070 0000FA44 		.word	1157234688
- 956 0074 0000FA45 		.word	1174011904
- 957              		.cfi_endproc
- 958              	.LFE564:
- 960              		.section	.text._ZN9Equalizer12decParameterEs9PARAMETERf,"ax",%progbits
- 961              		.align	1
- 962              		.p2align 2,,3
- 963              		.global	_ZN9Equalizer12decParameterEs9PARAMETERf
- 964              		.syntax unified
- 965              		.thumb
- 966              		.thumb_func
- 967              		.fpu fpv5-d16
- 969              	_ZN9Equalizer12decParameterEs9PARAMETERf:
- 970              	.LVL40:
- 971              	.LFB566:
-  77:Equalizer.cpp **** 	// TODO change code to decrement parameter for IIR filters - call updateEQParamters
- 972              		.loc 1 77 1 is_stmt 1 view -0
- 973              		.cfi_startproc
- 974              		@ args = 0, pretend = 0, frame = 0
- 975              		@ frame_needed = 0, uses_anonymous_args = 0
-  80:Equalizer.cpp **** 	return m_EQParams[band].gain;
- 976              		.loc 1 80 5 view .LVU310
-  80:Equalizer.cpp **** 	return m_EQParams[band].gain;
- 977              		.loc 1 80 48 is_stmt 0 view .LVU311
- 978 0000 01EB4103 		add	r3, r1, r1, lsl #1
- 979              	.LBB124:
- 980              	.LBB125:
-  88:Equalizer.cpp **** 	{
- 981              		.loc 1 88 2 view .LVU312
- 982 0004 0329     		cmp	r1, #3
- 983              	.LBE125:
- 984              	.LBE124:
-  77:Equalizer.cpp **** 	// TODO change code to decrement parameter for IIR filters - call updateEQParamters
- 985              		.loc 1 77 1 view .LVU313
- 986 0006 F0EE407A 		vmov.f32	s15, s0
-  80:Equalizer.cpp **** 	return m_EQParams[band].gain;
- 987              		.loc 1 80 48 view .LVU314
- 988 000a 00EB8303 		add	r3, r0, r3, lsl #2
- 989 000e 93ED030A 		vldr.32	s0, [r3, #12]
- 990              	.LVL41:
- 991              	.LBB138:
- 992              	.LBI124:
-  84:Equalizer.cpp **** {
- 993              		.loc 1 84 6 is_stmt 1 view .LVU315
- 994              	.LBB134:
-  86:Equalizer.cpp **** 
- 995              		.loc 1 86 5 view .LVU316
-  88:Equalizer.cpp **** 	{
- 996              		.loc 1 88 2 view .LVU317
- 997 0012 0CDC     		bgt	.L54
- 998              	.LBB126:
- 999              	.LBB127:
-  90:Equalizer.cpp **** 		{
- 1000              		.loc 1 90 3 is_stmt 0 view .LVU318
- 1001 0014 012A     		cmp	r2, #1
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 26
-
-
- 1002              	.LBE127:
- 1003              	.LBE126:
- 1004              	.LBE134:
- 1005              	.LBE138:
-  80:Equalizer.cpp **** 	return m_EQParams[band].gain;
- 1006              		.loc 1 80 17 view .LVU319
- 1007 0016 70EE677A 		vsub.f32	s15, s0, s15
- 1008              	.LVL42:
-  77:Equalizer.cpp **** 	// TODO change code to decrement parameter for IIR filters - call updateEQParamters
- 1009              		.loc 1 77 1 view .LVU320
- 1010 001a 70B5     		push	{r4, r5, r6, lr}
- 1011              		.cfi_def_cfa_offset 16
- 1012              		.cfi_offset 4, -16
- 1013              		.cfi_offset 5, -12
- 1014              		.cfi_offset 6, -8
- 1015              		.cfi_offset 14, -4
- 1016 001c 0E46     		mov	r6, r1
- 1017 001e 0546     		mov	r5, r0
- 1018              	.LVL43:
- 1019              	.LBB139:
- 1020              	.LBB135:
- 1021              	.LBB131:
- 1022              	.LBI126:
-  84:Equalizer.cpp **** {
- 1023              		.loc 1 84 6 is_stmt 1 view .LVU321
- 1024              	.LBB128:
-  90:Equalizer.cpp **** 		{
- 1025              		.loc 1 90 3 view .LVU322
- 1026 0020 4FEA4104 		lsl	r4, r1, #1
- 1027 0024 1FD0     		beq	.L50
- 1028 0026 022A     		cmp	r2, #2
- 1029 0028 13D0     		beq	.L51
- 1030 002a 0AB1     		cbz	r2, .L57
- 1031              	.L48:
- 1032              	.LBE128:
- 1033              	.LBE131:
- 1034              	.LBE135:
- 1035              	.LBE139:
-  82:Equalizer.cpp **** 
- 1036              		.loc 1 82 1 is_stmt 0 view .LVU323
- 1037 002c 70BD     		pop	{r4, r5, r6, pc}
- 1038              	.LVL44:
- 1039              	.L54:
- 1040              		.cfi_def_cfa_offset 0
- 1041              		.cfi_restore 4
- 1042              		.cfi_restore 5
- 1043              		.cfi_restore 6
- 1044              		.cfi_restore 14
-  82:Equalizer.cpp **** 
- 1045              		.loc 1 82 1 view .LVU324
- 1046 002e 7047     		bx	lr
- 1047              	.LVL45:
- 1048              	.L57:
- 1049              		.cfi_def_cfa_offset 16
- 1050              		.cfi_offset 4, -16
- 1051              		.cfi_offset 5, -12
- 1052              		.cfi_offset 6, -8
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 27
-
-
- 1053              		.cfi_offset 14, -4
- 1054              	.LBB140:
- 1055              	.LBB136:
- 1056              	.LBB132:
- 1057              	.LBB129:
-  92:Equalizer.cpp **** 				if (m_EQParams[band].gain != value) {
- 1058              		.loc 1 92 4 is_stmt 1 view .LVU325
-  93:Equalizer.cpp **** 					m_EQParams[band].gain = value;
- 1059              		.loc 1 93 5 view .LVU326
- 1060 0030 B4EE670A 		vcmp.f32	s0, s15
- 1061 0034 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 1062 0038 F8D0     		beq	.L48
-  94:Equalizer.cpp **** 					update = true;
- 1063              		.loc 1 94 6 view .LVU327
-  94:Equalizer.cpp **** 					update = true;
- 1064              		.loc 1 94 28 is_stmt 0 view .LVU328
- 1065 003a C3ED037A 		vstr.32	s15, [r3, #12]
-  95:Equalizer.cpp **** 				}
- 1066              		.loc 1 95 6 is_stmt 1 view .LVU329
- 1067              	.LVL46:
- 111:Equalizer.cpp **** 	}
- 1068              		.loc 1 111 3 view .LVU330
- 1069              	.L52:
- 111:Equalizer.cpp **** 	}
- 1070              		.loc 1 111 15 view .LVU331
- 111:Equalizer.cpp **** 	}
- 1071              		.loc 1 111 33 is_stmt 0 view .LVU332
- 1072 003e 3146     		mov	r1, r6
- 1073              	.LVL47:
- 111:Equalizer.cpp **** 	}
- 1074              		.loc 1 111 33 view .LVU333
- 1075 0040 2846     		mov	r0, r5
- 1076              	.LVL48:
- 111:Equalizer.cpp **** 	}
- 1077              		.loc 1 111 33 view .LVU334
- 1078 0042 FFF7FEFF 		bl	_ZN9Equalizer18updateEQParametersEs
- 1079              	.LVL49:
- 111:Equalizer.cpp **** 	}
- 1080              		.loc 1 111 33 view .LVU335
- 1081              	.LBE129:
- 1082              	.LBE132:
- 1083              	.LBE136:
- 1084              	.LBE140:
-  81:Equalizer.cpp **** }
- 1085              		.loc 1 81 26 view .LVU336
- 1086 0046 A119     		adds	r1, r4, r6
- 1087 0048 05EB8100 		add	r0, r5, r1, lsl #2
- 1088 004c 90ED030A 		vldr.32	s0, [r0, #12]
- 1089              	.LVL50:
-  81:Equalizer.cpp **** }
- 1090              		.loc 1 81 2 is_stmt 1 view .LVU337
-  82:Equalizer.cpp **** 
- 1091              		.loc 1 82 1 is_stmt 0 view .LVU338
- 1092 0050 70BD     		pop	{r4, r5, r6, pc}
- 1093              	.LVL51:
- 1094              	.L51:
- 1095              	.LBB141:
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 28
-
-
- 1096              	.LBB137:
- 1097              	.LBB133:
- 1098              	.LBB130:
- 104:Equalizer.cpp **** 				if (m_EQParams[band].Q != value) {
- 1099              		.loc 1 104 4 is_stmt 1 view .LVU339
- 105:Equalizer.cpp **** 					m_EQParams[band].Q = value;
- 1100              		.loc 1 105 5 view .LVU340
- 1101 0052 93ED057A 		vldr.32	s14, [r3, #20]
- 1102 0056 F4EE477A 		vcmp.f32	s15, s14
- 1103 005a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 1104 005e E5D0     		beq	.L48
- 106:Equalizer.cpp **** 					update = true;
- 1105              		.loc 1 106 6 view .LVU341
- 106:Equalizer.cpp **** 					update = true;
- 1106              		.loc 1 106 25 is_stmt 0 view .LVU342
- 1107 0060 C3ED057A 		vstr.32	s15, [r3, #20]
- 107:Equalizer.cpp **** 				}
- 1108              		.loc 1 107 6 is_stmt 1 view .LVU343
- 1109              	.LVL52:
- 111:Equalizer.cpp **** 	}
- 1110              		.loc 1 111 3 view .LVU344
- 1111 0064 EBE7     		b	.L52
- 1112              	.LVL53:
- 1113              	.L50:
-  98:Equalizer.cpp **** 				if (m_EQParams[band].fc != value) {
- 1114              		.loc 1 98 4 view .LVU345
-  99:Equalizer.cpp **** 					m_EQParams[band].fc = value;
- 1115              		.loc 1 99 5 view .LVU346
- 1116 0066 93ED047A 		vldr.32	s14, [r3, #16]
- 1117 006a F4EE477A 		vcmp.f32	s15, s14
- 1118 006e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 1119 0072 DBD0     		beq	.L48
- 100:Equalizer.cpp **** 					update = true;
- 1120              		.loc 1 100 6 view .LVU347
- 100:Equalizer.cpp **** 					update = true;
- 1121              		.loc 1 100 26 is_stmt 0 view .LVU348
- 1122 0074 C3ED047A 		vstr.32	s15, [r3, #16]
- 101:Equalizer.cpp **** 				}
- 1123              		.loc 1 101 6 is_stmt 1 view .LVU349
- 1124              	.LVL54:
- 111:Equalizer.cpp **** 	}
- 1125              		.loc 1 111 3 view .LVU350
- 1126 0078 E1E7     		b	.L52
- 1127              	.LBE130:
- 1128              	.LBE133:
- 1129              	.LBE137:
- 1130              	.LBE141:
- 1131              		.cfi_endproc
- 1132              	.LFE566:
- 1134 007a 00BF     		.section	.text._ZN9Equalizer12setParameterEs9PARAMETERf,"ax",%progbits
- 1135              		.align	1
- 1136              		.p2align 2,,3
- 1137              		.global	_ZN9Equalizer12setParameterEs9PARAMETERf
- 1138              		.syntax unified
- 1139              		.thumb
- 1140              		.thumb_func
- 1141              		.fpu fpv5-d16
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 29
-
-
- 1143              	_ZN9Equalizer12setParameterEs9PARAMETERf:
- 1144              	.LVL55:
- 1145              	.LFB567:
-  85:Equalizer.cpp ****     bool update = false;
- 1146              		.loc 1 85 1 view -0
- 1147              		.cfi_startproc
- 1148              		@ args = 0, pretend = 0, frame = 0
- 1149              		@ frame_needed = 0, uses_anonymous_args = 0
- 1150              		@ link register save eliminated.
-  86:Equalizer.cpp **** 
- 1151              		.loc 1 86 5 view .LVU352
-  88:Equalizer.cpp **** 	{
- 1152              		.loc 1 88 2 view .LVU353
- 1153 0000 0329     		cmp	r1, #3
- 1154 0002 04DC     		bgt	.L58
- 1155              	.LVL56:
- 1156              	.LBB144:
- 1157              	.LBI144:
-  84:Equalizer.cpp **** {
- 1158              		.loc 1 84 6 view .LVU354
- 1159              	.LBB145:
-  90:Equalizer.cpp **** 		{
- 1160              		.loc 1 90 3 view .LVU355
- 1161 0004 012A     		cmp	r2, #1
- 1162 0006 20D0     		beq	.L60
- 1163 0008 022A     		cmp	r2, #2
- 1164 000a 10D0     		beq	.L61
- 1165 000c 02B1     		cbz	r2, .L63
- 1166              	.LVL57:
- 1167              	.L58:
-  90:Equalizer.cpp **** 		{
- 1168              		.loc 1 90 3 is_stmt 0 view .LVU356
- 1169              	.LBE145:
- 1170              	.LBE144:
- 113:Equalizer.cpp **** 
- 1171              		.loc 1 113 1 view .LVU357
- 1172 000e 7047     		bx	lr
- 1173              	.LVL58:
- 1174              	.L63:
- 1175              	.LBB147:
- 1176              	.LBB146:
-  92:Equalizer.cpp **** 				if (m_EQParams[band].gain != value) {
- 1177              		.loc 1 92 4 is_stmt 1 view .LVU358
-  93:Equalizer.cpp **** 					m_EQParams[band].gain = value;
- 1178              		.loc 1 93 5 view .LVU359
-  93:Equalizer.cpp **** 					m_EQParams[band].gain = value;
- 1179              		.loc 1 93 26 is_stmt 0 view .LVU360
- 1180 0010 01EB4103 		add	r3, r1, r1, lsl #1
- 1181 0014 00EB8303 		add	r3, r0, r3, lsl #2
-  93:Equalizer.cpp **** 					m_EQParams[band].gain = value;
- 1182              		.loc 1 93 5 view .LVU361
- 1183 0018 D3ED037A 		vldr.32	s15, [r3, #12]
- 1184 001c B4EE670A 		vcmp.f32	s0, s15
- 1185 0020 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 1186 0024 F3D0     		beq	.L58
-  94:Equalizer.cpp **** 					update = true;
- 1187              		.loc 1 94 6 is_stmt 1 view .LVU362
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 30
-
-
-  94:Equalizer.cpp **** 					update = true;
- 1188              		.loc 1 94 28 is_stmt 0 view .LVU363
- 1189 0026 83ED030A 		vstr.32	s0, [r3, #12]
-  95:Equalizer.cpp **** 				}
- 1190              		.loc 1 95 6 is_stmt 1 view .LVU364
- 1191              	.LVL59:
- 111:Equalizer.cpp **** 	}
- 1192              		.loc 1 111 3 view .LVU365
- 1193              	.L62:
- 111:Equalizer.cpp **** 	}
- 1194              		.loc 1 111 15 view .LVU366
- 111:Equalizer.cpp **** 	}
- 1195              		.loc 1 111 33 is_stmt 0 view .LVU367
- 1196 002a FFF7FEBF 		b	_ZN9Equalizer18updateEQParametersEs
- 1197              	.LVL60:
- 1198              	.L61:
- 104:Equalizer.cpp **** 				if (m_EQParams[band].Q != value) {
- 1199              		.loc 1 104 4 is_stmt 1 view .LVU368
- 105:Equalizer.cpp **** 					m_EQParams[band].Q = value;
- 1200              		.loc 1 105 5 view .LVU369
- 105:Equalizer.cpp **** 					m_EQParams[band].Q = value;
- 1201              		.loc 1 105 26 is_stmt 0 view .LVU370
- 1202 002e 01EB4103 		add	r3, r1, r1, lsl #1
- 1203 0032 00EB8303 		add	r3, r0, r3, lsl #2
- 105:Equalizer.cpp **** 					m_EQParams[band].Q = value;
- 1204              		.loc 1 105 5 view .LVU371
- 1205 0036 D3ED057A 		vldr.32	s15, [r3, #20]
- 1206 003a B4EE670A 		vcmp.f32	s0, s15
- 1207 003e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 1208 0042 E4D0     		beq	.L58
- 106:Equalizer.cpp **** 					update = true;
- 1209              		.loc 1 106 6 is_stmt 1 view .LVU372
- 106:Equalizer.cpp **** 					update = true;
- 1210              		.loc 1 106 25 is_stmt 0 view .LVU373
- 1211 0044 83ED050A 		vstr.32	s0, [r3, #20]
- 107:Equalizer.cpp **** 				}
- 1212              		.loc 1 107 6 is_stmt 1 view .LVU374
- 1213              	.LVL61:
- 111:Equalizer.cpp **** 	}
- 1214              		.loc 1 111 3 view .LVU375
- 1215 0048 EFE7     		b	.L62
- 1216              	.LVL62:
- 1217              	.L60:
-  98:Equalizer.cpp **** 				if (m_EQParams[band].fc != value) {
- 1218              		.loc 1 98 4 view .LVU376
-  99:Equalizer.cpp **** 					m_EQParams[band].fc = value;
- 1219              		.loc 1 99 5 view .LVU377
-  99:Equalizer.cpp **** 					m_EQParams[band].fc = value;
- 1220              		.loc 1 99 26 is_stmt 0 view .LVU378
- 1221 004a 01EB4103 		add	r3, r1, r1, lsl #1
- 1222 004e 00EB8303 		add	r3, r0, r3, lsl #2
-  99:Equalizer.cpp **** 					m_EQParams[band].fc = value;
- 1223              		.loc 1 99 5 view .LVU379
- 1224 0052 D3ED047A 		vldr.32	s15, [r3, #16]
- 1225 0056 B4EE670A 		vcmp.f32	s0, s15
- 1226 005a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 1227 005e D6D0     		beq	.L58
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 31
-
-
- 100:Equalizer.cpp **** 					update = true;
- 1228              		.loc 1 100 6 is_stmt 1 view .LVU380
- 100:Equalizer.cpp **** 					update = true;
- 1229              		.loc 1 100 26 is_stmt 0 view .LVU381
- 1230 0060 83ED040A 		vstr.32	s0, [r3, #16]
- 101:Equalizer.cpp **** 				}
- 1231              		.loc 1 101 6 is_stmt 1 view .LVU382
- 1232              	.LVL63:
- 111:Equalizer.cpp **** 	}
- 1233              		.loc 1 111 3 view .LVU383
- 1234 0064 E1E7     		b	.L62
- 1235              	.LBE146:
- 1236              	.LBE147:
- 1237              		.cfi_endproc
- 1238              	.LFE567:
- 1240              		.section	.text._ZN9Equalizer12incParameterEs9PARAMETERf,"ax",%progbits
- 1241              		.align	1
- 1242              		.p2align 2,,3
- 1243              		.global	_ZN9Equalizer12incParameterEs9PARAMETERf
- 1244              		.syntax unified
- 1245              		.thumb
- 1246              		.thumb_func
- 1247              		.fpu fpv5-d16
- 1249              	_ZN9Equalizer12incParameterEs9PARAMETERf:
- 1250              	.LVL64:
- 1251              	.LFB565:
-  69:Equalizer.cpp **** 	// TODO change code to increment parameter for IIR filters (See slides) - call updateEQParamters
- 1252              		.loc 1 69 1 view -0
- 1253              		.cfi_startproc
- 1254              		@ args = 0, pretend = 0, frame = 0
- 1255              		@ frame_needed = 0, uses_anonymous_args = 0
-  72:Equalizer.cpp **** 	return m_EQParams[band].gain;
- 1256              		.loc 1 72 5 view .LVU385
-  72:Equalizer.cpp **** 	return m_EQParams[band].gain;
- 1257              		.loc 1 72 48 is_stmt 0 view .LVU386
- 1258 0000 01EB4103 		add	r3, r1, r1, lsl #1
- 1259              	.LBB152:
- 1260              	.LBB153:
-  88:Equalizer.cpp **** 	{
- 1261              		.loc 1 88 2 view .LVU387
- 1262 0004 0329     		cmp	r1, #3
- 1263              	.LBE153:
- 1264              	.LBE152:
-  69:Equalizer.cpp **** 	// TODO change code to increment parameter for IIR filters (See slides) - call updateEQParamters
- 1265              		.loc 1 69 1 view .LVU388
- 1266 0006 F0EE407A 		vmov.f32	s15, s0
-  72:Equalizer.cpp **** 	return m_EQParams[band].gain;
- 1267              		.loc 1 72 48 view .LVU389
- 1268 000a 00EB8303 		add	r3, r0, r3, lsl #2
- 1269 000e 93ED030A 		vldr.32	s0, [r3, #12]
- 1270              	.LVL65:
- 1271              	.LBB166:
- 1272              	.LBI152:
-  84:Equalizer.cpp **** {
- 1273              		.loc 1 84 6 is_stmt 1 view .LVU390
- 1274              	.LBB162:
-  86:Equalizer.cpp **** 
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 32
-
-
- 1275              		.loc 1 86 5 view .LVU391
-  88:Equalizer.cpp **** 	{
- 1276              		.loc 1 88 2 view .LVU392
- 1277 0012 0CDC     		bgt	.L70
- 1278              	.LBB154:
- 1279              	.LBB155:
-  90:Equalizer.cpp **** 		{
- 1280              		.loc 1 90 3 is_stmt 0 view .LVU393
- 1281 0014 012A     		cmp	r2, #1
- 1282              	.LBE155:
- 1283              	.LBE154:
- 1284              	.LBE162:
- 1285              	.LBE166:
-  72:Equalizer.cpp **** 	return m_EQParams[band].gain;
- 1286              		.loc 1 72 17 view .LVU394
- 1287 0016 70EE277A 		vadd.f32	s15, s0, s15
- 1288              	.LVL66:
-  69:Equalizer.cpp **** 	// TODO change code to increment parameter for IIR filters (See slides) - call updateEQParamters
- 1289              		.loc 1 69 1 view .LVU395
- 1290 001a 70B5     		push	{r4, r5, r6, lr}
- 1291              		.cfi_def_cfa_offset 16
- 1292              		.cfi_offset 4, -16
- 1293              		.cfi_offset 5, -12
- 1294              		.cfi_offset 6, -8
- 1295              		.cfi_offset 14, -4
- 1296 001c 0E46     		mov	r6, r1
- 1297 001e 0546     		mov	r5, r0
- 1298              	.LVL67:
- 1299              	.LBB167:
- 1300              	.LBB163:
- 1301              	.LBB159:
- 1302              	.LBI154:
-  84:Equalizer.cpp **** {
- 1303              		.loc 1 84 6 is_stmt 1 view .LVU396
- 1304              	.LBB156:
-  90:Equalizer.cpp **** 		{
- 1305              		.loc 1 90 3 view .LVU397
- 1306 0020 4FEA4104 		lsl	r4, r1, #1
- 1307 0024 1FD0     		beq	.L66
- 1308 0026 022A     		cmp	r2, #2
- 1309 0028 13D0     		beq	.L67
- 1310 002a 0AB1     		cbz	r2, .L73
- 1311              	.L64:
- 1312              	.LBE156:
- 1313              	.LBE159:
- 1314              	.LBE163:
- 1315              	.LBE167:
-  74:Equalizer.cpp **** 
- 1316              		.loc 1 74 1 is_stmt 0 view .LVU398
- 1317 002c 70BD     		pop	{r4, r5, r6, pc}
- 1318              	.LVL68:
- 1319              	.L70:
- 1320              		.cfi_def_cfa_offset 0
- 1321              		.cfi_restore 4
- 1322              		.cfi_restore 5
- 1323              		.cfi_restore 6
- 1324              		.cfi_restore 14
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 33
-
-
-  74:Equalizer.cpp **** 
- 1325              		.loc 1 74 1 view .LVU399
- 1326 002e 7047     		bx	lr
- 1327              	.LVL69:
- 1328              	.L73:
- 1329              		.cfi_def_cfa_offset 16
- 1330              		.cfi_offset 4, -16
- 1331              		.cfi_offset 5, -12
- 1332              		.cfi_offset 6, -8
- 1333              		.cfi_offset 14, -4
- 1334              	.LBB168:
- 1335              	.LBB164:
- 1336              	.LBB160:
- 1337              	.LBB157:
-  92:Equalizer.cpp **** 				if (m_EQParams[band].gain != value) {
- 1338              		.loc 1 92 4 is_stmt 1 view .LVU400
-  93:Equalizer.cpp **** 					m_EQParams[band].gain = value;
- 1339              		.loc 1 93 5 view .LVU401
- 1340 0030 B4EE670A 		vcmp.f32	s0, s15
- 1341 0034 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 1342 0038 F8D0     		beq	.L64
-  94:Equalizer.cpp **** 					update = true;
- 1343              		.loc 1 94 6 view .LVU402
-  94:Equalizer.cpp **** 					update = true;
- 1344              		.loc 1 94 28 is_stmt 0 view .LVU403
- 1345 003a C3ED037A 		vstr.32	s15, [r3, #12]
-  95:Equalizer.cpp **** 				}
- 1346              		.loc 1 95 6 is_stmt 1 view .LVU404
- 1347              	.LVL70:
- 111:Equalizer.cpp **** 	}
- 1348              		.loc 1 111 3 view .LVU405
- 1349              	.L68:
- 111:Equalizer.cpp **** 	}
- 1350              		.loc 1 111 15 view .LVU406
- 111:Equalizer.cpp **** 	}
- 1351              		.loc 1 111 33 is_stmt 0 view .LVU407
- 1352 003e 3146     		mov	r1, r6
- 1353              	.LVL71:
- 111:Equalizer.cpp **** 	}
- 1354              		.loc 1 111 33 view .LVU408
- 1355 0040 2846     		mov	r0, r5
- 1356              	.LVL72:
- 111:Equalizer.cpp **** 	}
- 1357              		.loc 1 111 33 view .LVU409
- 1358 0042 FFF7FEFF 		bl	_ZN9Equalizer18updateEQParametersEs
- 1359              	.LVL73:
- 111:Equalizer.cpp **** 	}
- 1360              		.loc 1 111 33 view .LVU410
- 1361              	.LBE157:
- 1362              	.LBE160:
- 1363              	.LBE164:
- 1364              	.LBE168:
-  73:Equalizer.cpp **** }
- 1365              		.loc 1 73 26 view .LVU411
- 1366 0046 A119     		adds	r1, r4, r6
- 1367 0048 05EB8100 		add	r0, r5, r1, lsl #2
- 1368 004c 90ED030A 		vldr.32	s0, [r0, #12]
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 34
-
-
- 1369              	.LVL74:
-  73:Equalizer.cpp **** }
- 1370              		.loc 1 73 2 is_stmt 1 view .LVU412
-  74:Equalizer.cpp **** 
- 1371              		.loc 1 74 1 is_stmt 0 view .LVU413
- 1372 0050 70BD     		pop	{r4, r5, r6, pc}
- 1373              	.LVL75:
- 1374              	.L67:
- 1375              	.LBB169:
- 1376              	.LBB165:
- 1377              	.LBB161:
- 1378              	.LBB158:
- 104:Equalizer.cpp **** 				if (m_EQParams[band].Q != value) {
- 1379              		.loc 1 104 4 is_stmt 1 view .LVU414
- 105:Equalizer.cpp **** 					m_EQParams[band].Q = value;
- 1380              		.loc 1 105 5 view .LVU415
- 1381 0052 93ED057A 		vldr.32	s14, [r3, #20]
- 1382 0056 F4EE477A 		vcmp.f32	s15, s14
- 1383 005a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 1384 005e E5D0     		beq	.L64
- 106:Equalizer.cpp **** 					update = true;
- 1385              		.loc 1 106 6 view .LVU416
- 106:Equalizer.cpp **** 					update = true;
- 1386              		.loc 1 106 25 is_stmt 0 view .LVU417
- 1387 0060 C3ED057A 		vstr.32	s15, [r3, #20]
- 107:Equalizer.cpp **** 				}
- 1388              		.loc 1 107 6 is_stmt 1 view .LVU418
- 1389              	.LVL76:
- 111:Equalizer.cpp **** 	}
- 1390              		.loc 1 111 3 view .LVU419
- 1391 0064 EBE7     		b	.L68
- 1392              	.LVL77:
- 1393              	.L66:
-  98:Equalizer.cpp **** 				if (m_EQParams[band].fc != value) {
- 1394              		.loc 1 98 4 view .LVU420
-  99:Equalizer.cpp **** 					m_EQParams[band].fc = value;
- 1395              		.loc 1 99 5 view .LVU421
- 1396 0066 93ED047A 		vldr.32	s14, [r3, #16]
- 1397 006a F4EE477A 		vcmp.f32	s15, s14
- 1398 006e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 1399 0072 DBD0     		beq	.L64
- 100:Equalizer.cpp **** 					update = true;
- 1400              		.loc 1 100 6 view .LVU422
- 100:Equalizer.cpp **** 					update = true;
- 1401              		.loc 1 100 26 is_stmt 0 view .LVU423
- 1402 0074 C3ED047A 		vstr.32	s15, [r3, #16]
- 101:Equalizer.cpp **** 				}
- 1403              		.loc 1 101 6 is_stmt 1 view .LVU424
- 1404              	.LVL78:
- 111:Equalizer.cpp **** 	}
- 1405              		.loc 1 111 3 view .LVU425
- 1406 0078 E1E7     		b	.L68
- 1407              	.LBE158:
- 1408              	.LBE161:
- 1409              	.LBE165:
- 1410              	.LBE169:
- 1411              		.cfi_endproc
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 35
-
-
- 1412              	.LFE565:
- 1414 007a 00BF     		.section	.text._ZN9Equalizer12getParameterEs9PARAMETER,"ax",%progbits
- 1415              		.align	1
- 1416              		.p2align 2,,3
- 1417              		.global	_ZN9Equalizer12getParameterEs9PARAMETER
- 1418              		.syntax unified
- 1419              		.thumb
- 1420              		.thumb_func
- 1421              		.fpu fpv5-d16
- 1423              	_ZN9Equalizer12getParameterEs9PARAMETER:
- 1424              	.LVL79:
- 1425              	.LFB569:
- 138:Equalizer.cpp **** 
- 139:Equalizer.cpp **** float Equalizer::getParameter(short band, PARAMETER param) 
- 140:Equalizer.cpp **** {
- 1426              		.loc 1 140 1 view -0
- 1427              		.cfi_startproc
- 1428              		@ args = 0, pretend = 0, frame = 0
- 1429              		@ frame_needed = 0, uses_anonymous_args = 0
- 1430              		@ link register save eliminated.
- 141:Equalizer.cpp **** 		switch (param) 
- 1431              		.loc 1 141 3 view .LVU427
- 1432 0000 012A     		cmp	r2, #1
- 1433 0002 05D0     		beq	.L75
- 1434 0004 022A     		cmp	r2, #2
- 1435 0006 11D0     		beq	.L76
- 1436 0008 4AB1     		cbz	r2, .L79
- 1437 000a 9FED0C0A 		vldr.32	s0, .L80
- 142:Equalizer.cpp **** 		{
- 143:Equalizer.cpp **** 			case PM_GAIN:
- 144:Equalizer.cpp **** 				return m_EQParams[band].gain;
- 145:Equalizer.cpp **** 			case PM_FREQ:
- 146:Equalizer.cpp **** 				return m_EQParams[band].fc;
- 147:Equalizer.cpp **** 			case PM_Q:
- 148:Equalizer.cpp **** 				return m_EQParams[band].Q;
- 149:Equalizer.cpp **** 			default:
- 150:Equalizer.cpp **** 				return 0.0;
- 151:Equalizer.cpp **** 		}
- 152:Equalizer.cpp **** 	}...
- 1438              		.loc 1 152 2 is_stmt 0 view .LVU428
- 1439 000e 7047     		bx	lr
- 1440              	.L75:
- 145:Equalizer.cpp **** 			case PM_FREQ:
- 1441              		.loc 1 145 4 is_stmt 1 view .LVU429
- 146:Equalizer.cpp **** 				return m_EQParams[band].fc;
- 1442              		.loc 1 146 5 view .LVU430
- 146:Equalizer.cpp **** 				return m_EQParams[band].fc;
- 1443              		.loc 1 146 29 is_stmt 0 view .LVU431
- 1444 0010 01EB4101 		add	r1, r1, r1, lsl #1
- 1445              	.LVL80:
- 146:Equalizer.cpp **** 				return m_EQParams[band].fc;
- 1446              		.loc 1 146 29 view .LVU432
- 1447 0014 00EB8100 		add	r0, r0, r1, lsl #2
- 1448              	.LVL81:
- 146:Equalizer.cpp **** 				return m_EQParams[band].fc;
- 1449              		.loc 1 146 29 view .LVU433
- 1450 0018 90ED040A 		vldr.32	s0, [r0, #16]
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 36
-
-
- 1451 001c 7047     		bx	lr
- 1452              	.LVL82:
- 1453              	.L79:
- 143:Equalizer.cpp **** 			case PM_GAIN:
- 1454              		.loc 1 143 4 is_stmt 1 view .LVU434
- 144:Equalizer.cpp **** 				return m_EQParams[band].gain;
- 1455              		.loc 1 144 5 view .LVU435
- 144:Equalizer.cpp **** 				return m_EQParams[band].gain;
- 1456              		.loc 1 144 29 is_stmt 0 view .LVU436
- 1457 001e 01EB4101 		add	r1, r1, r1, lsl #1
- 1458              	.LVL83:
- 144:Equalizer.cpp **** 				return m_EQParams[band].gain;
- 1459              		.loc 1 144 29 view .LVU437
- 1460 0022 00EB8100 		add	r0, r0, r1, lsl #2
- 1461              	.LVL84:
- 144:Equalizer.cpp **** 				return m_EQParams[band].gain;
- 1462              		.loc 1 144 29 view .LVU438
- 1463 0026 90ED030A 		vldr.32	s0, [r0, #12]
- 1464 002a 7047     		bx	lr
- 1465              	.LVL85:
- 1466              	.L76:
- 147:Equalizer.cpp **** 			case PM_Q:
- 1467              		.loc 1 147 4 is_stmt 1 view .LVU439
- 148:Equalizer.cpp **** 				return m_EQParams[band].Q;
- 1468              		.loc 1 148 5 view .LVU440
- 148:Equalizer.cpp **** 				return m_EQParams[band].Q;
- 1469              		.loc 1 148 29 is_stmt 0 view .LVU441
- 1470 002c 01EB4101 		add	r1, r1, r1, lsl #1
- 1471              	.LVL86:
- 148:Equalizer.cpp **** 				return m_EQParams[band].Q;
- 1472              		.loc 1 148 29 view .LVU442
- 1473 0030 00EB8100 		add	r0, r0, r1, lsl #2
- 1474              	.LVL87:
- 148:Equalizer.cpp **** 				return m_EQParams[band].Q;
- 1475              		.loc 1 148 29 view .LVU443
- 1476 0034 90ED050A 		vldr.32	s0, [r0, #20]
- 1477 0038 7047     		bx	lr
- 1478              	.L81:
- 1479 003a 00BF     		.align	2
- 1480              	.L80:
- 1481 003c 00000000 		.word	0
- 1482              		.cfi_endproc
- 1483              	.LFE569:
- 1485              		.global	_ZTV9Equalizer
- 1486              		.section	.rodata._ZTV9Equalizer,"a"
- 1487              		.align	2
- 1488              		.set	.LANCHOR0,. + 0
- 1491              	_ZTV9Equalizer:
- 1492 0000 00000000 		.word	0
- 1493 0004 00000000 		.word	0
- 1494 0008 00000000 		.word	_ZN9EqualizerD1Ev
- 1495 000c 00000000 		.word	_ZN9EqualizerD0Ev
- 1496              		.text
- 1497              	.Letext0:
- 1498              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
- 1499              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
- 1500              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\th
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 37
-
-
- 1501              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
- 1502              		.file 7 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
- 1503              		.file 8 "Equalizer.h"
- 1504              		.file 9 "<built-in>"
-ARM GAS  C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s 			page 38
+ 1030 0022 00EB8100 		add	r0, r0, r1, lsl #2
+ 1031              	.LVL74:
+ 138:Equalizer.cpp **** 				return m_EQParams[band].gain;
+ 1032              		.loc 1 138 29 view .LVU260
+ 1033 0026 90ED030A 		vldr.32	s0, [r0, #12]
+ 1034 002a 7047     		bx	lr
+ 1035              	.LVL75:
+ 1036              	.L86:
+ 141:Equalizer.cpp **** 			case PM_Q:
+ 1037              		.loc 1 141 4 is_stmt 1 view .LVU261
+ 142:Equalizer.cpp **** 				return m_EQParams[band].Q;
+ 1038              		.loc 1 142 5 view .LVU262
+ 142:Equalizer.cpp **** 				return m_EQParams[band].Q;
+ 1039              		.loc 1 142 29 is_stmt 0 view .LVU263
+ 1040 002c 01EB4101 		add	r1, r1, r1, lsl #1
+ 1041              	.LVL76:
+ 142:Equalizer.cpp **** 				return m_EQParams[band].Q;
+ 1042              		.loc 1 142 29 view .LVU264
+ 1043 0030 00EB8100 		add	r0, r0, r1, lsl #2
+ 1044              	.LVL77:
+ 142:Equalizer.cpp **** 				return m_EQParams[band].Q;
+ 1045              		.loc 1 142 29 view .LVU265
+ 1046 0034 90ED050A 		vldr.32	s0, [r0, #20]
+ 1047 0038 7047     		bx	lr
+ 1048              	.L91:
+ 1049 003a 00BF     		.align	2
+ 1050              	.L90:
+ 1051 003c 00000000 		.word	0
+ 1052              		.cfi_endproc
+ 1053              	.LFE559:
+ 1055              		.global	_ZTV9Equalizer
+ 1056              		.section	.rodata._ZTV9Equalizer,"a"
+ 1057              		.align	2
+ 1058              		.set	.LANCHOR0,. + 0
+ 1061              	_ZTV9Equalizer:
+ 1062 0000 00000000 		.word	0
+ 1063 0004 00000000 		.word	0
+ 1064 0008 00000000 		.word	_ZN9EqualizerD1Ev
+ 1065 000c 00000000 		.word	_ZN9EqualizerD0Ev
+ 1066 0010 00000000 		.word	_ZN9Equalizer7ProcessEf
+ 1067 0014 00000000 		.word	_ZN9Equalizer4InitEv
+ 1068              		.text
+ 1069              	.Letext0:
+ 1070              		.file 2 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 1071              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 1072              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\th
+ 1073              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 1074              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 1075              		.file 7 "Equalizer.h"
+ 1076              		.file 8 "<built-in>"
+ 1077              		.file 9 "IIRFilter.h"
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc52QvG4.s 			page 26
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 Equalizer.cpp
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:17     .text._ZN9EqualizerD2Ev:00000000 $t
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:26     .text._ZN9EqualizerD2Ev:00000000 _ZN9EqualizerD2Ev
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:26     .text._ZN9EqualizerD2Ev:00000000 _ZN9EqualizerD1Ev
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:43     .text._ZN9EqualizerD0Ev:00000000 $t
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:51     .text._ZN9EqualizerD0Ev:00000000 _ZN9EqualizerD0Ev
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:83     .text._ZN9EqualizerC2Ev:00000000 $t
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:91     .text._ZN9EqualizerC2Ev:00000000 _ZN9EqualizerC2Ev
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:116    .text._ZN9EqualizerC2Ev:0000000c $d
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:91     .text._ZN9EqualizerC2Ev:00000000 _ZN9EqualizerC1Ev
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:123    .text._ZN9Equalizer7ProcessEf:00000000 $t
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:131    .text._ZN9Equalizer7ProcessEf:00000000 _ZN9Equalizer7ProcessEf
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:471    .text._ZN9Equalizer18updateEQParametersEs:00000000 $t
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:479    .text._ZN9Equalizer18updateEQParametersEs:00000000 _ZN9Equalizer18updateEQParametersEs
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:751    .text._ZN9Equalizer18updateEQParametersEs:00000178 $d
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:765    .text._ZN9Equalizer4InitEi:00000000 $t
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:773    .text._ZN9Equalizer4InitEi:00000000 _ZN9Equalizer4InitEi
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:952    .text._ZN9Equalizer4InitEi:00000064 $d
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:961    .text._ZN9Equalizer12decParameterEs9PARAMETERf:00000000 $t
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:969    .text._ZN9Equalizer12decParameterEs9PARAMETERf:00000000 _ZN9Equalizer12decParameterEs9PARAMETERf
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:1135   .text._ZN9Equalizer12setParameterEs9PARAMETERf:00000000 $t
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:1143   .text._ZN9Equalizer12setParameterEs9PARAMETERf:00000000 _ZN9Equalizer12setParameterEs9PARAMETERf
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:1241   .text._ZN9Equalizer12incParameterEs9PARAMETERf:00000000 $t
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:1249   .text._ZN9Equalizer12incParameterEs9PARAMETERf:00000000 _ZN9Equalizer12incParameterEs9PARAMETERf
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:1415   .text._ZN9Equalizer12getParameterEs9PARAMETER:00000000 $t
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:1423   .text._ZN9Equalizer12getParameterEs9PARAMETER:00000000 _ZN9Equalizer12getParameterEs9PARAMETER
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:1481   .text._ZN9Equalizer12getParameterEs9PARAMETER:0000003c $d
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:1491   .rodata._ZTV9Equalizer:00000000 _ZTV9Equalizer
-C:\Users\Mickey\AppData\Local\Temp\cc3AAka3.s:1487   .rodata._ZTV9Equalizer:00000000 $d
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:17     .text._ZN9EqualizerD2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:26     .text._ZN9EqualizerD2Ev:00000000 _ZN9EqualizerD2Ev
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:75     .text._ZN9EqualizerD2Ev:00000028 $d
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:26     .text._ZN9EqualizerD2Ev:00000000 _ZN9EqualizerD1Ev
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:82     .text._ZN9Equalizer7ProcessEf:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:90     .text._ZN9Equalizer7ProcessEf:00000000 _ZN9Equalizer7ProcessEf
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:140    .text._ZN9EqualizerD0Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:148    .text._ZN9EqualizerD0Ev:00000000 _ZN9EqualizerD0Ev
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:207    .text._ZN9EqualizerD0Ev:00000030 $d
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:212    .text._ZN9EqualizerC2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:220    .text._ZN9EqualizerC2Ev:00000000 _ZN9EqualizerC2Ev
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:273    .text._ZN9EqualizerC2Ev:00000028 $d
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:220    .text._ZN9EqualizerC2Ev:00000000 _ZN9EqualizerC1Ev
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:280    .text._ZN9Equalizer18updateEQParametersEs:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:288    .text._ZN9Equalizer18updateEQParametersEs:00000000 _ZN9Equalizer18updateEQParametersEs
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:391    .text._ZN9Equalizer18updateEQParametersEs:000000b8 $d
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:399    .text._ZN9Equalizer4InitEi:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:407    .text._ZN9Equalizer4InitEi:00000000 _ZN9Equalizer4InitEi
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:522    .text._ZN9Equalizer4InitEi:00000060 $d
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:531    .text._ZN9Equalizer12decParameterEs9PARAMETERf:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:539    .text._ZN9Equalizer12decParameterEs9PARAMETERf:00000000 _ZN9Equalizer12decParameterEs9PARAMETERf
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:705    .text._ZN9Equalizer12setParameterEs9PARAMETERf:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:713    .text._ZN9Equalizer12setParameterEs9PARAMETERf:00000000 _ZN9Equalizer12setParameterEs9PARAMETERf
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:811    .text._ZN9Equalizer12incParameterEs9PARAMETERf:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:819    .text._ZN9Equalizer12incParameterEs9PARAMETERf:00000000 _ZN9Equalizer12incParameterEs9PARAMETERf
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:985    .text._ZN9Equalizer12getParameterEs9PARAMETER:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:993    .text._ZN9Equalizer12getParameterEs9PARAMETER:00000000 _ZN9Equalizer12getParameterEs9PARAMETER
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:1051   .text._ZN9Equalizer12getParameterEs9PARAMETER:0000003c $d
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:1061   .rodata._ZTV9Equalizer:00000000 _ZTV9Equalizer
+C:\Users\micke\AppData\Local\Temp\cc52QvG4.s:1057   .rodata._ZTV9Equalizer:00000000 $d
 
 UNDEFINED SYMBOLS
+_ZN9AlgorithmD2Ev
 _ZdlPvj
-sinf
-cosf
+_ZN9AlgorithmC2Ev
+_ZN9IIRFilterC1Ev
+_ZN9IIRFilter10makePeakEQEffff
+_ZN9Equalizer4InitEv

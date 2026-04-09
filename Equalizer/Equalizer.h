@@ -11,6 +11,7 @@
 #define EQUALIZER_INCLUDED_
 
 #include "IIRFilter.h"
+#include "Algorithm.h"
 
 #define NUM_EQ_BANDS 4 
 
@@ -27,15 +28,15 @@ enum PARAMETER {
 	PM_Q = 2
 };
 
-class Equalizer //: public Algorithm
+class Equalizer : public Algorithm
 {
-
 public:
 
 	Equalizer();
 	virtual ~Equalizer();
 
-	float Process(float input);
+	float Process(float input) override;
+	void Init() override;
 	void Init(int SampleRate);
 
 	void setParameter(short band, PARAMETER param, float value);
@@ -58,6 +59,7 @@ protected:
 	} EQParams;
 
 	EQParams m_EQParams[NUM_EQ_BANDS];
+	Algorithm* m_filters[NUM_EQ_BANDS];
 	IIRFilter m_IIRfilter[NUM_EQ_BANDS];
 };
 

@@ -1,0 +1,162 @@
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"Algorithm.cpp"
+  13              		.text
+  14              	.Ltext0:
+  15              		.cfi_sections	.debug_frame
+  16              		.section	.text._ZN9AlgorithmC2Ev,"ax",%progbits
+  17              		.align	1
+  18              		.p2align 2,,3
+  19              		.global	_ZN9AlgorithmC2Ev
+  20              		.arch armv7e-m
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  24              		.fpu fpv5-d16
+  26              	_ZN9AlgorithmC2Ev:
+  27              	.LVL0:
+  28              	.LFB545:
+  29              		.file 1 "Algorithm.cpp"
+   1:Algorithm.cpp **** #include "Algorithm.h"
+   2:Algorithm.cpp **** 
+   3:Algorithm.cpp **** Algorithm::Algorithm() {}
+  30              		.loc 1 3 1 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		@ link register save eliminated.
+  35              	.LBB5:
+  36              		.loc 1 3 22 is_stmt 0 view .LVU1
+  37 0000 014B     		ldr	r3, .L3
+  38 0002 0360     		str	r3, [r0]
+  39              	.LBE5:
+  40              		.loc 1 3 25 view .LVU2
+  41 0004 7047     		bx	lr
+  42              	.L4:
+  43 0006 00BF     		.align	2
+  44              	.L3:
+  45 0008 08000000 		.word	.LANCHOR0+8
+  46              		.cfi_endproc
+  47              	.LFE545:
+  49              		.global	_ZN9AlgorithmC1Ev
+  50              		.thumb_set _ZN9AlgorithmC1Ev,_ZN9AlgorithmC2Ev
+  51              		.section	.text._ZN9AlgorithmD2Ev,"ax",%progbits
+  52              		.align	1
+  53              		.p2align 2,,3
+  54              		.global	_ZN9AlgorithmD2Ev
+  55              		.syntax unified
+  56              		.thumb
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s 			page 2
+
+
+  57              		.thumb_func
+  58              		.fpu fpv5-d16
+  60              	_ZN9AlgorithmD2Ev:
+  61              	.LVL1:
+  62              	.LFB548:
+   4:Algorithm.cpp **** 
+   5:Algorithm.cpp **** Algorithm::~Algorithm() {}
+  63              		.loc 1 5 1 is_stmt 1 view -0
+  64              		.cfi_startproc
+  65              		@ args = 0, pretend = 0, frame = 0
+  66              		@ frame_needed = 0, uses_anonymous_args = 0
+  67              		@ link register save eliminated.
+  68              		.loc 1 5 26 is_stmt 0 view .LVU4
+  69 0000 7047     		bx	lr
+  70              		.cfi_endproc
+  71              	.LFE548:
+  73              		.global	_ZN9AlgorithmD1Ev
+  74              		.thumb_set _ZN9AlgorithmD1Ev,_ZN9AlgorithmD2Ev
+  75 0002 00BF     		.section	.text._ZN9AlgorithmD0Ev,"ax",%progbits
+  76              		.align	1
+  77              		.p2align 2,,3
+  78              		.global	_ZN9AlgorithmD0Ev
+  79              		.syntax unified
+  80              		.thumb
+  81              		.thumb_func
+  82              		.fpu fpv5-d16
+  84              	_ZN9AlgorithmD0Ev:
+  85              	.LVL2:
+  86              	.LFB550:
+  87              		.loc 1 5 1 is_stmt 1 view -0
+  88              		.cfi_startproc
+  89              		@ args = 0, pretend = 0, frame = 0
+  90              		@ frame_needed = 0, uses_anonymous_args = 0
+  91              		.loc 1 5 1 is_stmt 0 view .LVU6
+  92 0000 10B5     		push	{r4, lr}
+  93              		.cfi_def_cfa_offset 8
+  94              		.cfi_offset 4, -8
+  95              		.cfi_offset 14, -4
+  96              		.loc 1 5 1 view .LVU7
+  97 0002 0446     		mov	r4, r0
+  98              	.LVL3:
+  99              	.LBB6:
+ 100              	.LBI6:
+ 101              		.loc 1 5 1 is_stmt 1 view .LVU8
+ 102              		.loc 1 5 1 is_stmt 0 view .LVU9
+ 103              	.LBE6:
+ 104              		.loc 1 5 26 view .LVU10
+ 105 0004 0421     		movs	r1, #4
+ 106 0006 FFF7FEFF 		bl	_ZdlPvj
+ 107              	.LVL4:
+ 108              		.loc 1 5 26 view .LVU11
+ 109 000a 2046     		mov	r0, r4
+ 110 000c 10BD     		pop	{r4, pc}
+ 111              		.loc 1 5 26 view .LVU12
+ 112              		.cfi_endproc
+ 113              	.LFE550:
+ 115              		.global	_ZTV9Algorithm
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s 			page 3
+
+
+ 116 000e 00BF     		.section	.rodata._ZTV9Algorithm,"a"
+ 117              		.align	2
+ 118              		.set	.LANCHOR0,. + 0
+ 121              	_ZTV9Algorithm:
+ 122 0000 00000000 		.word	0
+ 123 0004 00000000 		.word	0
+ 124 0008 00000000 		.word	0
+ 125 000c 00000000 		.word	0
+ 126 0010 00000000 		.word	__cxa_pure_virtual
+ 127 0014 00000000 		.word	__cxa_pure_virtual
+ 128              		.text
+ 129              	.Letext0:
+ 130              		.file 2 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 131              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 132              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\th
+ 133              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 134              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 135              		.file 7 "<built-in>"
+ 136              		.file 8 "Algorithm.h"
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 Algorithm.cpp
+C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s:17     .text._ZN9AlgorithmC2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s:26     .text._ZN9AlgorithmC2Ev:00000000 _ZN9AlgorithmC2Ev
+C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s:45     .text._ZN9AlgorithmC2Ev:00000008 $d
+C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s:26     .text._ZN9AlgorithmC2Ev:00000000 _ZN9AlgorithmC1Ev
+C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s:52     .text._ZN9AlgorithmD2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s:60     .text._ZN9AlgorithmD2Ev:00000000 _ZN9AlgorithmD2Ev
+C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s:60     .text._ZN9AlgorithmD2Ev:00000000 _ZN9AlgorithmD1Ev
+C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s:76     .text._ZN9AlgorithmD0Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s:84     .text._ZN9AlgorithmD0Ev:00000000 _ZN9AlgorithmD0Ev
+C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s:121    .rodata._ZTV9Algorithm:00000000 _ZTV9Algorithm
+C:\Users\micke\AppData\Local\Temp\cc6QU1Ru.s:117    .rodata._ZTV9Algorithm:00000000 $d
+
+UNDEFINED SYMBOLS
+_ZdlPvj
+__cxa_pure_virtual

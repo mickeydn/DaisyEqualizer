@@ -25,20 +25,13 @@ Equalizer::~Equalizer()
 
 float Equalizer::Process(float input)
 {
-	float output;
-	float tmp; 
-	output = input;
-	
-	// TODO change code to processing all IIR filters
-	if (filterOn_) {
-		// KBE implementation
-		tmp = m_IIRfilter[0].Process(input);
-		output = m_IIRfilter[1].Process(tmp);
-		tmp = m_IIRfilter[2].Process(output);
-		output = m_IIRfilter[3].Process(tmp);
-	}
-		
-	return output;
+	if (!filterOn_) return input;
+
+    float signal = input;
+    for (int i = 0; i < NUM_EQ_BANDS; i++) {
+        signal = m_filters[i]->Process(signal);  
+    }
+    return signal;
 }
 
 void Equalizer::Init(int sampleRate)
@@ -61,6 +54,7 @@ void Equalizer::Init(int sampleRate)
 		m_IIRfilter[band].Init();
 	    //m_EQParams[band].gain = 1.0; // Default gain
 		m_EQParams[band].Q = 8.0; // Default Q
+		m_filters[band] = &m_IIRfilter[band];
 		updateEQParameters(band);
 	}
 }

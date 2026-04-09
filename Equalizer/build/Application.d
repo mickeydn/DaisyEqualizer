@@ -201,7 +201,7 @@ build/Application.o: Application.cpp \
  ../../DaisySP//Source/Utility/metro.h \
  ../../DaisySP//Source/Utility/samplehold.h \
  ../../DaisySP//Source/Utility/smooth_random.h Equalizer.h IIRFilter.h \
- Controller.h
+ Algorithm.h Controller.h
 ../../libDaisy//Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:
 ../../libDaisy//Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h:
 ../../libDaisy//Drivers/CMSIS/Include/core_cm7.h:
@@ -440,4 +440,5 @@ build/Application.o: Application.cpp \
 ../../DaisySP//Source/Utility/smooth_random.h:
 Equalizer.h:
 IIRFilter.h:
+Algorithm.h:
 Controller.h:

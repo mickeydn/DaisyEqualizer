@@ -1,0 +1,765 @@
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"IIRFilter.cpp"
+  13              		.text
+  14              	.Ltext0:
+  15              		.cfi_sections	.debug_frame
+  16              		.section	.text._ZN9IIRFilter4InitEv,"ax",%progbits
+  17              		.align	1
+  18              		.p2align 2,,3
+  19              		.global	_ZN9IIRFilter4InitEv
+  20              		.arch armv7e-m
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  24              		.fpu fpv5-d16
+  26              	_ZN9IIRFilter4InitEv:
+  27              	.LVL0:
+  28              	.LFB551:
+  29              		.file 1 "IIRFilter.cpp"
+   1:IIRFilter.cpp **** #include "IIRFilter.h"
+   2:IIRFilter.cpp **** #include <math.h>
+   3:IIRFilter.cpp **** 
+   4:IIRFilter.cpp ****         IIRFilter::IIRFilter() {}
+   5:IIRFilter.cpp **** 
+   6:IIRFilter.cpp ****         IIRFilter::~IIRFilter() {}
+   7:IIRFilter.cpp **** 
+   8:IIRFilter.cpp ****         void IIRFilter::Init() 
+   9:IIRFilter.cpp ****         {
+  30              		.loc 1 9 9 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		@ link register save eliminated.
+  10:IIRFilter.cpp ****             for (int i = 0; i < NUM_IIR_COEFFS; i++) 
+  35              		.loc 1 10 13 view .LVU1
+  36              	.LBB5:
+  37              		.loc 1 10 31 view .LVU2
+  11:IIRFilter.cpp ****                         {
+  12:IIRFilter.cpp ****                             a[i] = 0;
+  38              		.loc 1 12 29 view .LVU3
+  13:IIRFilter.cpp ****                             b[i] = 0;
+  39              		.loc 1 13 29 view .LVU4
+  10:IIRFilter.cpp ****             for (int i = 0; i < NUM_IIR_COEFFS; i++) 
+  40              		.loc 1 10 13 view .LVU5
+  10:IIRFilter.cpp ****             for (int i = 0; i < NUM_IIR_COEFFS; i++) 
+  41              		.loc 1 10 31 view .LVU6
+  12:IIRFilter.cpp ****                             b[i] = 0;
+  42              		.loc 1 12 29 view .LVU7
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 2
+
+
+  12:IIRFilter.cpp ****                             b[i] = 0;
+  43              		.loc 1 12 34 is_stmt 0 view .LVU8
+  44 0000 0023     		movs	r3, #0
+  45              	.LBE5:
+  14:IIRFilter.cpp ****                         }
+  15:IIRFilter.cpp ****                         a[0] = 1.0;
+  46              		.loc 1 15 30 view .LVU9
+  47 0002 4FF07E52 		mov	r2, #1065353216
+  48              	.LBB6:
+  12:IIRFilter.cpp ****                             b[i] = 0;
+  49              		.loc 1 12 34 view .LVU10
+  50 0006 8360     		str	r3, [r0, #8]	@ float
+  13:IIRFilter.cpp ****                         }
+  51              		.loc 1 13 29 is_stmt 1 view .LVU11
+  13:IIRFilter.cpp ****                         }
+  52              		.loc 1 13 34 is_stmt 0 view .LVU12
+  53 0008 4361     		str	r3, [r0, #20]	@ float
+  10:IIRFilter.cpp ****                         {
+  54              		.loc 1 10 13 is_stmt 1 view .LVU13
+  55              	.LVL1:
+  10:IIRFilter.cpp ****                         {
+  56              		.loc 1 10 31 view .LVU14
+  12:IIRFilter.cpp ****                             b[i] = 0;
+  57              		.loc 1 12 29 view .LVU15
+  12:IIRFilter.cpp ****                             b[i] = 0;
+  58              		.loc 1 12 34 is_stmt 0 view .LVU16
+  59 000a C360     		str	r3, [r0, #12]	@ float
+  13:IIRFilter.cpp ****                         }
+  60              		.loc 1 13 29 is_stmt 1 view .LVU17
+  13:IIRFilter.cpp ****                         }
+  61              		.loc 1 13 34 is_stmt 0 view .LVU18
+  62 000c 8361     		str	r3, [r0, #24]	@ float
+  10:IIRFilter.cpp ****                         {
+  63              		.loc 1 10 13 is_stmt 1 view .LVU19
+  64              	.LVL2:
+  10:IIRFilter.cpp ****                         {
+  65              		.loc 1 10 31 view .LVU20
+  66              	.LBE6:
+  67              		.loc 1 15 25 view .LVU21
+  68              		.loc 1 15 30 is_stmt 0 view .LVU22
+  69 000e 4260     		str	r2, [r0, #4]	@ float
+  16:IIRFilter.cpp ****                         b[0] = 1.0;
+  70              		.loc 1 16 25 is_stmt 1 view .LVU23
+  71              		.loc 1 16 30 is_stmt 0 view .LVU24
+  72 0010 0261     		str	r2, [r0, #16]	@ float
+  17:IIRFilter.cpp ****                         x1_ = x2_ = y1_ = y2_ = 0.0;
+  73              		.loc 1 17 25 is_stmt 1 view .LVU25
+  74              		.loc 1 17 47 is_stmt 0 view .LVU26
+  75 0012 8362     		str	r3, [r0, #40]	@ float
+  76              		.loc 1 17 41 view .LVU27
+  77 0014 4362     		str	r3, [r0, #36]	@ float
+  78              		.loc 1 17 35 view .LVU28
+  79 0016 0362     		str	r3, [r0, #32]	@ float
+  80              		.loc 1 17 29 view .LVU29
+  81 0018 C361     		str	r3, [r0, #28]	@ float
+  18:IIRFilter.cpp ****         }
+  82              		.loc 1 18 9 view .LVU30
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 3
+
+
+  83 001a 7047     		bx	lr
+  84              		.cfi_endproc
+  85              	.LFE551:
+  87              		.section	.text._ZN9IIRFilter7ProcessEf,"ax",%progbits
+  88              		.align	1
+  89              		.p2align 2,,3
+  90              		.global	_ZN9IIRFilter7ProcessEf
+  91              		.syntax unified
+  92              		.thumb
+  93              		.thumb_func
+  94              		.fpu fpv5-d16
+  96              	_ZN9IIRFilter7ProcessEf:
+  97              	.LVL3:
+  98              	.LFB553:
+  19:IIRFilter.cpp **** 
+  20:IIRFilter.cpp ****         void IIRFilter::Init(float* a_coeffs, float* b_coeffs) 
+  21:IIRFilter.cpp ****         {
+  22:IIRFilter.cpp ****             for (int i = 0; i < NUM_IIR_COEFFS; i++) 
+  23:IIRFilter.cpp **** 			{
+  24:IIRFilter.cpp **** 				a[i] = a_coeffs[i];
+  25:IIRFilter.cpp **** 				b[i] = b_coeffs[i];
+  26:IIRFilter.cpp **** 			}
+  27:IIRFilter.cpp **** 			x1_ = x2_ = y1_ = y2_ = 0.0;
+  28:IIRFilter.cpp ****         }
+  29:IIRFilter.cpp **** 
+  30:IIRFilter.cpp ****         float IIRFilter::Process(float x)
+  31:IIRFilter.cpp ****         { 
+  99              		.loc 1 31 9 is_stmt 1 view -0
+ 100              		.cfi_startproc
+ 101              		@ args = 0, pretend = 0, frame = 0
+ 102              		@ frame_needed = 0, uses_anonymous_args = 0
+ 103              		@ link register save eliminated.
+  32:IIRFilter.cpp ****             float res = b[0]*x + b[1]*x1_ + b[2]*x2_ - a[1]*y1_ - a[2]*y2_;
+ 104              		.loc 1 32 13 view .LVU32
+ 105              		.loc 1 32 39 is_stmt 0 view .LVU33
+ 106 0000 D0ED076A 		vldr.32	s13, [r0, #28]
+  31:IIRFilter.cpp ****             float res = b[0]*x + b[1]*x1_ + b[2]*x2_ - a[1]*y1_ - a[2]*y2_;
+ 107              		.loc 1 31 9 view .LVU34
+ 108 0004 B0EE407A 		vmov.f32	s14, s0
+ 109              		.loc 1 32 38 view .LVU35
+ 110 0008 D0ED057A 		vldr.32	s15, [r0, #20]
+ 111              		.loc 1 32 32 view .LVU36
+ 112 000c D0ED043A 		vldr.32	s7, [r0, #16]
+ 113              		.loc 1 32 38 view .LVU37
+ 114 0010 26EEA70A 		vmul.f32	s0, s13, s15
+ 115              	.LVL4:
+ 116              		.loc 1 32 43 view .LVU38
+ 117 0014 D0ED084A 		vldr.32	s9, [r0, #32]
+ 118 0018 90ED064A 		vldr.32	s8, [r0, #24]
+ 119              		.loc 1 32 61 view .LVU39
+ 120 001c D0ED097A 		vldr.32	s15, [r0, #36]
+ 121              		.loc 1 32 32 view .LVU40
+ 122 0020 A3EE870A 		vfma.f32	s0, s7, s14
+ 123              		.loc 1 32 54 view .LVU41
+ 124 0024 90ED025A 		vldr.32	s10, [r0, #8]
+ 125              		.loc 1 32 19 view .LVU42
+ 126 0028 90ED0A6A 		vldr.32	s12, [r0, #40]
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 4
+
+
+ 127 002c D0ED035A 		vldr.32	s11, [r0, #12]
+  33:IIRFilter.cpp **** 
+  34:IIRFilter.cpp **** 			y2_ = y1_;
+ 128              		.loc 1 34 8 view .LVU43
+ 129 0030 C0ED0A7A 		vstr.32	s15, [r0, #40]
+  35:IIRFilter.cpp **** 			y1_ = res;
+  36:IIRFilter.cpp **** 			x2_ = x1_;
+ 130              		.loc 1 36 8 view .LVU44
+ 131 0034 C0ED086A 		vstr.32	s13, [r0, #32]
+  37:IIRFilter.cpp **** 			x1_ = x;
+ 132              		.loc 1 37 8 view .LVU45
+ 133 0038 80ED077A 		vstr.32	s14, [r0, #28]
+  32:IIRFilter.cpp **** 
+ 134              		.loc 1 32 43 view .LVU46
+ 135 003c A4EE240A 		vfma.f32	s0, s8, s9
+  32:IIRFilter.cpp **** 
+ 136              		.loc 1 32 54 view .LVU47
+ 137 0040 A5EE670A 		vfms.f32	s0, s10, s15
+  32:IIRFilter.cpp **** 
+ 138              		.loc 1 32 19 view .LVU48
+ 139 0044 A5EEC60A 		vfms.f32	s0, s11, s12
+ 140              	.LVL5:
+  34:IIRFilter.cpp **** 			y1_ = res;
+ 141              		.loc 1 34 4 is_stmt 1 view .LVU49
+  35:IIRFilter.cpp **** 			x2_ = x1_;
+ 142              		.loc 1 35 4 view .LVU50
+  35:IIRFilter.cpp **** 			x2_ = x1_;
+ 143              		.loc 1 35 8 is_stmt 0 view .LVU51
+ 144 0048 80ED090A 		vstr.32	s0, [r0, #36]
+  36:IIRFilter.cpp **** 			x1_ = x;
+ 145              		.loc 1 36 4 is_stmt 1 view .LVU52
+ 146              		.loc 1 37 4 view .LVU53
+  38:IIRFilter.cpp **** 
+  39:IIRFilter.cpp **** 			return res;
+ 147              		.loc 1 39 4 view .LVU54
+  40:IIRFilter.cpp ****         }
+ 148              		.loc 1 40 9 is_stmt 0 view .LVU55
+ 149 004c 7047     		bx	lr
+ 150              		.cfi_endproc
+ 151              	.LFE553:
+ 153 004e 00BF     		.section	.text._ZN9IIRFilterD2Ev,"ax",%progbits
+ 154              		.align	1
+ 155              		.p2align 2,,3
+ 156              		.global	_ZN9IIRFilterD2Ev
+ 157              		.syntax unified
+ 158              		.thumb
+ 159              		.thumb_func
+ 160              		.fpu fpv5-d16
+ 162              	_ZN9IIRFilterD2Ev:
+ 163              	.LVL6:
+ 164              	.LFB548:
+   6:IIRFilter.cpp **** 
+ 165              		.loc 1 6 9 is_stmt 1 view -0
+ 166              		.cfi_startproc
+ 167              		@ args = 0, pretend = 0, frame = 0
+ 168              		@ frame_needed = 0, uses_anonymous_args = 0
+ 169              	.LBB7:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 5
+
+
+   6:IIRFilter.cpp **** 
+ 170              		.loc 1 6 31 is_stmt 0 view .LVU57
+ 171 0000 034B     		ldr	r3, .L6
+ 172              	.LBE7:
+   6:IIRFilter.cpp **** 
+ 173              		.loc 1 6 9 view .LVU58
+ 174 0002 10B5     		push	{r4, lr}
+ 175              		.cfi_def_cfa_offset 8
+ 176              		.cfi_offset 4, -8
+ 177              		.cfi_offset 14, -4
+   6:IIRFilter.cpp **** 
+ 178              		.loc 1 6 9 view .LVU59
+ 179 0004 0446     		mov	r4, r0
+ 180              	.LBB8:
+   6:IIRFilter.cpp **** 
+ 181              		.loc 1 6 31 view .LVU60
+ 182 0006 0360     		str	r3, [r0]
+ 183 0008 FFF7FEFF 		bl	_ZN9AlgorithmD2Ev
+ 184              	.LVL7:
+   6:IIRFilter.cpp **** 
+ 185              		.loc 1 6 31 view .LVU61
+ 186              	.LBE8:
+   6:IIRFilter.cpp **** 
+ 187              		.loc 1 6 34 view .LVU62
+ 188 000c 2046     		mov	r0, r4
+ 189 000e 10BD     		pop	{r4, pc}
+ 190              	.LVL8:
+ 191              	.L7:
+   6:IIRFilter.cpp **** 
+ 192              		.loc 1 6 34 view .LVU63
+ 193              		.align	2
+ 194              	.L6:
+ 195 0010 08000000 		.word	.LANCHOR0+8
+ 196              		.cfi_endproc
+ 197              	.LFE548:
+ 199              		.global	_ZN9IIRFilterD1Ev
+ 200              		.thumb_set _ZN9IIRFilterD1Ev,_ZN9IIRFilterD2Ev
+ 201              		.section	.text._ZN9IIRFilterD0Ev,"ax",%progbits
+ 202              		.align	1
+ 203              		.p2align 2,,3
+ 204              		.global	_ZN9IIRFilterD0Ev
+ 205              		.syntax unified
+ 206              		.thumb
+ 207              		.thumb_func
+ 208              		.fpu fpv5-d16
+ 210              	_ZN9IIRFilterD0Ev:
+ 211              	.LVL9:
+ 212              	.LFB550:
+   6:IIRFilter.cpp **** 
+ 213              		.loc 1 6 9 is_stmt 1 view -0
+ 214              		.cfi_startproc
+ 215              		@ args = 0, pretend = 0, frame = 0
+ 216              		@ frame_needed = 0, uses_anonymous_args = 0
+ 217              	.LBB9:
+ 218              	.LBB10:
+   6:IIRFilter.cpp **** 
+ 219              		.loc 1 6 31 is_stmt 0 view .LVU65
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 6
+
+
+ 220 0000 054B     		ldr	r3, .L10
+ 221              	.LBE10:
+ 222              	.LBE9:
+   6:IIRFilter.cpp **** 
+ 223              		.loc 1 6 9 view .LVU66
+ 224 0002 10B5     		push	{r4, lr}
+ 225              		.cfi_def_cfa_offset 8
+ 226              		.cfi_offset 4, -8
+ 227              		.cfi_offset 14, -4
+   6:IIRFilter.cpp **** 
+ 228              		.loc 1 6 9 view .LVU67
+ 229 0004 0446     		mov	r4, r0
+ 230              	.LVL10:
+ 231              	.LBB12:
+ 232              	.LBI9:
+   6:IIRFilter.cpp **** 
+ 233              		.loc 1 6 9 is_stmt 1 view .LVU68
+ 234              	.LBB11:
+   6:IIRFilter.cpp **** 
+ 235              		.loc 1 6 31 is_stmt 0 view .LVU69
+ 236 0006 0360     		str	r3, [r0]
+ 237 0008 FFF7FEFF 		bl	_ZN9AlgorithmD2Ev
+ 238              	.LVL11:
+   6:IIRFilter.cpp **** 
+ 239              		.loc 1 6 31 view .LVU70
+ 240              	.LBE11:
+ 241              	.LBE12:
+   6:IIRFilter.cpp **** 
+ 242              		.loc 1 6 34 view .LVU71
+ 243 000c 2C21     		movs	r1, #44
+ 244 000e 2046     		mov	r0, r4
+ 245 0010 FFF7FEFF 		bl	_ZdlPvj
+ 246              	.LVL12:
+ 247 0014 2046     		mov	r0, r4
+ 248 0016 10BD     		pop	{r4, pc}
+ 249              	.LVL13:
+ 250              	.L11:
+   6:IIRFilter.cpp **** 
+ 251              		.loc 1 6 34 view .LVU72
+ 252              		.align	2
+ 253              	.L10:
+ 254 0018 08000000 		.word	.LANCHOR0+8
+ 255              		.cfi_endproc
+ 256              	.LFE550:
+ 258              		.section	.text._ZN9IIRFilterC2Ev,"ax",%progbits
+ 259              		.align	1
+ 260              		.p2align 2,,3
+ 261              		.global	_ZN9IIRFilterC2Ev
+ 262              		.syntax unified
+ 263              		.thumb
+ 264              		.thumb_func
+ 265              		.fpu fpv5-d16
+ 267              	_ZN9IIRFilterC2Ev:
+ 268              	.LVL14:
+ 269              	.LFB545:
+   4:IIRFilter.cpp **** 
+ 270              		.loc 1 4 9 is_stmt 1 view -0
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 7
+
+
+ 271              		.cfi_startproc
+ 272              		@ args = 0, pretend = 0, frame = 0
+ 273              		@ frame_needed = 0, uses_anonymous_args = 0
+   4:IIRFilter.cpp **** 
+ 274              		.loc 1 4 9 is_stmt 0 view .LVU74
+ 275 0000 10B5     		push	{r4, lr}
+ 276              		.cfi_def_cfa_offset 8
+ 277              		.cfi_offset 4, -8
+ 278              		.cfi_offset 14, -4
+   4:IIRFilter.cpp **** 
+ 279              		.loc 1 4 9 view .LVU75
+ 280 0002 0446     		mov	r4, r0
+ 281              	.LBB13:
+   4:IIRFilter.cpp **** 
+ 282              		.loc 1 4 30 view .LVU76
+ 283 0004 FFF7FEFF 		bl	_ZN9AlgorithmC2Ev
+ 284              	.LVL15:
+   4:IIRFilter.cpp **** 
+ 285              		.loc 1 4 30 view .LVU77
+ 286 0008 014B     		ldr	r3, .L14
+ 287              	.LBE13:
+   4:IIRFilter.cpp **** 
+ 288              		.loc 1 4 33 view .LVU78
+ 289 000a 2046     		mov	r0, r4
+ 290              	.LBB14:
+   4:IIRFilter.cpp **** 
+ 291              		.loc 1 4 30 view .LVU79
+ 292 000c 2360     		str	r3, [r4]
+ 293              	.LBE14:
+   4:IIRFilter.cpp **** 
+ 294              		.loc 1 4 33 view .LVU80
+ 295 000e 10BD     		pop	{r4, pc}
+ 296              	.LVL16:
+ 297              	.L15:
+   4:IIRFilter.cpp **** 
+ 298              		.loc 1 4 33 view .LVU81
+ 299              		.align	2
+ 300              	.L14:
+ 301 0010 08000000 		.word	.LANCHOR0+8
+ 302              		.cfi_endproc
+ 303              	.LFE545:
+ 305              		.global	_ZN9IIRFilterC1Ev
+ 306              		.thumb_set _ZN9IIRFilterC1Ev,_ZN9IIRFilterC2Ev
+ 307              		.section	.text._ZN9IIRFilter4InitEPfS0_,"ax",%progbits
+ 308              		.align	1
+ 309              		.p2align 2,,3
+ 310              		.global	_ZN9IIRFilter4InitEPfS0_
+ 311              		.syntax unified
+ 312              		.thumb
+ 313              		.thumb_func
+ 314              		.fpu fpv5-d16
+ 316              	_ZN9IIRFilter4InitEPfS0_:
+ 317              	.LVL17:
+ 318              	.LFB552:
+  21:IIRFilter.cpp ****             for (int i = 0; i < NUM_IIR_COEFFS; i++) 
+ 319              		.loc 1 21 9 is_stmt 1 view -0
+ 320              		.cfi_startproc
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 8
+
+
+ 321              		@ args = 0, pretend = 0, frame = 0
+ 322              		@ frame_needed = 0, uses_anonymous_args = 0
+  22:IIRFilter.cpp **** 			{
+ 323              		.loc 1 22 13 view .LVU83
+ 324              	.LBB15:
+  22:IIRFilter.cpp **** 			{
+ 325              		.loc 1 22 31 view .LVU84
+ 326              	.LBE15:
+  21:IIRFilter.cpp ****             for (int i = 0; i < NUM_IIR_COEFFS; i++) 
+ 327              		.loc 1 21 9 is_stmt 0 view .LVU85
+ 328 0000 00B5     		push	{lr}
+ 329              		.cfi_def_cfa_offset 4
+ 330              		.cfi_offset 14, -4
+ 331 0002 031D     		adds	r3, r0, #4
+ 332 0004 01F10C0E 		add	lr, r1, #12
+ 333              	.LVL18:
+ 334              	.L17:
+ 335              	.LBB16:
+  24:IIRFilter.cpp **** 				b[i] = b_coeffs[i];
+ 336              		.loc 1 24 5 is_stmt 1 discriminator 2 view .LVU86
+  24:IIRFilter.cpp **** 				b[i] = b_coeffs[i];
+ 337              		.loc 1 24 22 is_stmt 0 discriminator 2 view .LVU87
+ 338 0008 51F804CB 		ldr	ip, [r1], #4	@ float
+  24:IIRFilter.cpp **** 				b[i] = b_coeffs[i];
+ 339              		.loc 1 24 10 discriminator 2 view .LVU88
+ 340 000c 43F804CB 		str	ip, [r3], #4	@ float
+  25:IIRFilter.cpp **** 			}
+ 341              		.loc 1 25 5 is_stmt 1 discriminator 2 view .LVU89
+  22:IIRFilter.cpp **** 			{
+ 342              		.loc 1 22 31 is_stmt 0 discriminator 2 view .LVU90
+ 343 0010 7145     		cmp	r1, lr
+  25:IIRFilter.cpp **** 			}
+ 344              		.loc 1 25 22 discriminator 2 view .LVU91
+ 345 0012 52F804CB 		ldr	ip, [r2], #4	@ float
+  25:IIRFilter.cpp **** 			}
+ 346              		.loc 1 25 10 discriminator 2 view .LVU92
+ 347 0016 C3F808C0 		str	ip, [r3, #8]	@ float
+  22:IIRFilter.cpp **** 			{
+ 348              		.loc 1 22 13 is_stmt 1 discriminator 2 view .LVU93
+  22:IIRFilter.cpp **** 			{
+ 349              		.loc 1 22 31 discriminator 2 view .LVU94
+ 350 001a F5D1     		bne	.L17
+ 351              	.LBE16:
+  27:IIRFilter.cpp ****         }
+ 352              		.loc 1 27 4 view .LVU95
+  27:IIRFilter.cpp ****         }
+ 353              		.loc 1 27 26 is_stmt 0 view .LVU96
+ 354 001c 0023     		movs	r3, #0
+ 355 001e 8362     		str	r3, [r0, #40]	@ float
+  27:IIRFilter.cpp ****         }
+ 356              		.loc 1 27 20 view .LVU97
+ 357 0020 4362     		str	r3, [r0, #36]	@ float
+  27:IIRFilter.cpp ****         }
+ 358              		.loc 1 27 14 view .LVU98
+ 359 0022 0362     		str	r3, [r0, #32]	@ float
+  27:IIRFilter.cpp ****         }
+ 360              		.loc 1 27 8 view .LVU99
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 9
+
+
+ 361 0024 C361     		str	r3, [r0, #28]	@ float
+  28:IIRFilter.cpp **** 
+ 362              		.loc 1 28 9 view .LVU100
+ 363 0026 5DF804FB 		ldr	pc, [sp], #4
+ 364              		.cfi_endproc
+ 365              	.LFE552:
+ 367 002a 00BF     		.section	.text._ZN9IIRFilter10makePeakEQEffff,"ax",%progbits
+ 368              		.align	1
+ 369              		.p2align 2,,3
+ 370              		.global	_ZN9IIRFilter10makePeakEQEffff
+ 371              		.syntax unified
+ 372              		.thumb
+ 373              		.thumb_func
+ 374              		.fpu fpv5-d16
+ 376              	_ZN9IIRFilter10makePeakEQEffff:
+ 377              	.LVL19:
+ 378              	.LFB554:
+  41:IIRFilter.cpp **** 
+  42:IIRFilter.cpp ****         void IIRFilter::makePeakEQ(const float fs,
+  43:IIRFilter.cpp ****                                    const float fc,
+  44:IIRFilter.cpp ****                                    const float Q,
+  45:IIRFilter.cpp ****                                    const float A)
+  46:IIRFilter.cpp ****         {
+ 379              		.loc 1 46 9 is_stmt 1 view -0
+ 380              		.cfi_startproc
+ 381              		@ args = 0, pretend = 0, frame = 0
+ 382              		@ frame_needed = 0, uses_anonymous_args = 0
+  47:IIRFilter.cpp ****             float omega =  2.0 * float_PI * (fc / fs);
+ 383              		.loc 1 47 13 view .LVU102
+ 384              		.loc 1 47 49 is_stmt 0 view .LVU103
+ 385 0000 C0EE807A 		vdiv.f32	s15, s1, s0
+ 386              		.loc 1 47 43 view .LVU104
+ 387 0004 9FED286B 		vldr.64	d6, .L22
+  46:IIRFilter.cpp ****             float omega =  2.0 * float_PI * (fc / fs);
+ 388              		.loc 1 46 9 view .LVU105
+ 389 0008 10B5     		push	{r4, lr}
+ 390              		.cfi_def_cfa_offset 8
+ 391              		.cfi_offset 4, -8
+ 392              		.cfi_offset 14, -4
+ 393 000a 2DED048B 		vpush.64	{d8, d9}
+ 394              		.cfi_def_cfa_offset 24
+ 395              		.cfi_offset 80, -24
+ 396              		.cfi_offset 81, -20
+ 397              		.cfi_offset 82, -16
+ 398              		.cfi_offset 83, -12
+  46:IIRFilter.cpp ****             float omega =  2.0 * float_PI * (fc / fs);
+ 399              		.loc 1 46 9 view .LVU106
+ 400 000e B0EE418A 		vmov.f32	s16, s2
+ 401 0012 0446     		mov	r4, r0
+ 402 0014 F0EE619A 		vmov.f32	s19, s3
+  48:IIRFilter.cpp **** 			float alpha = sinf (omega) / (2.0 * Q);
+  49:IIRFilter.cpp **** 
+  50:IIRFilter.cpp **** 			b[0] = 1.0 + alpha * A;
+ 403              		.loc 1 50 15 view .LVU107
+ 404 0018 B7EE009A 		vmov.f32	s18, #1.0e+0
+  47:IIRFilter.cpp **** 			float alpha = sinf (omega) / (2.0 * Q);
+ 405              		.loc 1 47 49 view .LVU108
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 10
+
+
+ 406 001c B7EEE70A 		vcvt.f64.f32	d0, s15
+ 407              	.LVL20:
+  47:IIRFilter.cpp **** 			float alpha = sinf (omega) / (2.0 * Q);
+ 408              		.loc 1 47 43 view .LVU109
+ 409 0020 20EE060B 		vmul.f64	d0, d0, d6
+  47:IIRFilter.cpp **** 			float alpha = sinf (omega) / (2.0 * Q);
+ 410              		.loc 1 47 19 view .LVU110
+ 411 0024 F7EEC08B 		vcvt.f32.f64	s17, d0
+ 412              	.LVL21:
+  48:IIRFilter.cpp **** 			float alpha = sinf (omega) / (2.0 * Q);
+ 413              		.loc 1 48 4 is_stmt 1 view .LVU111
+  48:IIRFilter.cpp **** 			float alpha = sinf (omega) / (2.0 * Q);
+ 414              		.loc 1 48 23 is_stmt 0 view .LVU112
+ 415 0028 B0EE680A 		vmov.f32	s0, s17
+ 416 002c FFF7FEFF 		bl	sinf
+ 417              	.LVL22:
+  48:IIRFilter.cpp **** 			float alpha = sinf (omega) / (2.0 * Q);
+ 418              		.loc 1 48 40 view .LVU113
+ 419 0030 B7EEC81A 		vcvt.f64.f32	d1, s16
+  48:IIRFilter.cpp **** 			float alpha = sinf (omega) / (2.0 * Q);
+ 420              		.loc 1 48 23 view .LVU114
+ 421 0034 B0EE406A 		vmov.f32	s12, s0
+  51:IIRFilter.cpp **** 			b[1] = -2.0 * cosf (omega);
+ 422              		.loc 1 51 23 view .LVU115
+ 423 0038 B0EE680A 		vmov.f32	s0, s17
+  48:IIRFilter.cpp **** 			float alpha = sinf (omega) / (2.0 * Q);
+ 424              		.loc 1 48 38 view .LVU116
+ 425 003c 31EE011B 		vadd.f64	d1, d1, d1
+  48:IIRFilter.cpp **** 			float alpha = sinf (omega) / (2.0 * Q);
+ 426              		.loc 1 48 23 view .LVU117
+ 427 0040 B7EEC66A 		vcvt.f64.f32	d6, s12
+  48:IIRFilter.cpp **** 			float alpha = sinf (omega) / (2.0 * Q);
+ 428              		.loc 1 48 31 view .LVU118
+ 429 0044 86EE018B 		vdiv.f64	d8, d6, d1
+ 430              	.LVL23:
+ 431              		.loc 1 51 23 view .LVU119
+ 432 0048 FFF7FEFF 		bl	cosf
+ 433              	.LVL24:
+  50:IIRFilter.cpp **** 			b[1] = -2.0 * cosf (omega);
+ 434              		.loc 1 50 15 view .LVU120
+ 435 004c F0EE496A 		vmov.f32	s13, s18
+  52:IIRFilter.cpp **** 			b[2] = 1.0 - alpha * A;
+ 436              		.loc 1 52 15 view .LVU121
+ 437 0050 F0EE494A 		vmov.f32	s9, s18
+  51:IIRFilter.cpp **** 			b[1] = -2.0 * cosf (omega);
+ 438              		.loc 1 51 16 view .LVU122
+ 439 0054 F8EE007A 		vmov.f32	s15, #-2.0e+0
+ 440 0058 20EE270A 		vmul.f32	s0, s0, s15
+  48:IIRFilter.cpp **** 
+ 441              		.loc 1 48 10 view .LVU123
+ 442 005c B7EEC88B 		vcvt.f32.f64	s16, d8
+ 443              	.LVL25:
+  50:IIRFilter.cpp **** 			b[1] = -2.0 * cosf (omega);
+ 444              		.loc 1 50 4 is_stmt 1 view .LVU124
+  53:IIRFilter.cpp **** 			a[0] = 1.0 + alpha / A;
+ 445              		.loc 1 53 23 is_stmt 0 view .LVU125
+ 446 0060 88EE297A 		vdiv.f32	s14, s16, s19
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 11
+
+
+  50:IIRFilter.cpp **** 			b[1] = -2.0 * cosf (omega);
+ 447              		.loc 1 50 15 view .LVU126
+ 448 0064 E8EE296A 		vfma.f32	s13, s16, s19
+  51:IIRFilter.cpp **** 			b[2] = 1.0 - alpha * A;
+ 449              		.loc 1 51 4 is_stmt 1 view .LVU127
+  52:IIRFilter.cpp **** 			a[0] = 1.0 + alpha / A;
+ 450              		.loc 1 52 4 view .LVU128
+ 451              		.loc 1 53 4 view .LVU129
+  52:IIRFilter.cpp **** 			a[0] = 1.0 + alpha / A;
+ 452              		.loc 1 52 15 is_stmt 0 view .LVU130
+ 453 0068 E8EE694A 		vfms.f32	s9, s16, s19
+ 454              		.loc 1 53 15 view .LVU131
+ 455 006c 77EE097A 		vadd.f32	s15, s14, s18
+  54:IIRFilter.cpp **** 			a[1] = -2.0 * cosf (omega);
+ 456              		.loc 1 54 4 is_stmt 1 view .LVU132
+  55:IIRFilter.cpp **** 			a[2] = 1.0 - alpha / A;
+ 457              		.loc 1 55 4 view .LVU133
+ 458              		.loc 1 55 15 is_stmt 0 view .LVU134
+ 459 0070 39EE479A 		vsub.f32	s18, s18, s14
+  56:IIRFilter.cpp **** 
+  57:IIRFilter.cpp **** 			// Normalize the coefficients
+  58:IIRFilter.cpp **** 			float a0 = a[0];
+ 460              		.loc 1 58 4 is_stmt 1 view .LVU135
+ 461              	.LVL26:
+  59:IIRFilter.cpp **** 			for (int i = 0; i < NUM_IIR_COEFFS; i++) {
+ 462              		.loc 1 59 4 view .LVU136
+ 463              	.LBB17:
+ 464              		.loc 1 59 22 view .LVU137
+  60:IIRFilter.cpp **** 				a[i] = a[i]/a0;
+ 465              		.loc 1 60 5 view .LVU138
+  61:IIRFilter.cpp **** 				b[i] = b[i]/a0;
+ 466              		.loc 1 61 16 is_stmt 0 view .LVU139
+ 467 0074 C6EEA75A 		vdiv.f32	s11, s13, s15
+  60:IIRFilter.cpp **** 				a[i] = a[i]/a0;
+ 468              		.loc 1 60 16 view .LVU140
+ 469 0078 80EE277A 		vdiv.f32	s14, s0, s15
+ 470 007c 89EE276A 		vdiv.f32	s12, s18, s15
+ 471 0080 87EEA75A 		vdiv.f32	s10, s15, s15
+ 472              		.loc 1 61 10 view .LVU141
+ 473 0084 C4ED045A 		vstr.32	s11, [r4, #16]
+ 474              		.loc 1 61 16 view .LVU142
+ 475 0088 C4EEA76A 		vdiv.f32	s13, s9, s15
+  60:IIRFilter.cpp **** 				a[i] = a[i]/a0;
+ 476              		.loc 1 60 10 view .LVU143
+ 477 008c 84ED027A 		vstr.32	s14, [r4, #8]
+ 478              		.loc 1 61 10 view .LVU144
+ 479 0090 84ED057A 		vstr.32	s14, [r4, #20]
+ 480              	.LBE17:
+  62:IIRFilter.cpp **** 			}
+  63:IIRFilter.cpp ****         }
+ 481              		.loc 1 63 9 view .LVU145
+ 482 0094 BDEC048B 		vldm	sp!, {d8-d9}
+ 483              		.cfi_restore 82
+ 484              		.cfi_restore 83
+ 485              		.cfi_restore 80
+ 486              		.cfi_restore 81
+ 487              		.cfi_def_cfa_offset 8
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 12
+
+
+ 488              	.LVL27:
+ 489              	.LBB18:
+  60:IIRFilter.cpp **** 				b[i] = b[i]/a0;
+ 490              		.loc 1 60 10 view .LVU146
+ 491 0098 84ED036A 		vstr.32	s12, [r4, #12]
+ 492 009c 84ED015A 		vstr.32	s10, [r4, #4]
+  61:IIRFilter.cpp **** 				b[i] = b[i]/a0;
+ 493              		.loc 1 61 5 is_stmt 1 view .LVU147
+  59:IIRFilter.cpp **** 				a[i] = a[i]/a0;
+ 494              		.loc 1 59 4 view .LVU148
+ 495              	.LVL28:
+  59:IIRFilter.cpp **** 				a[i] = a[i]/a0;
+ 496              		.loc 1 59 22 view .LVU149
+  60:IIRFilter.cpp **** 				b[i] = b[i]/a0;
+ 497              		.loc 1 60 5 view .LVU150
+  61:IIRFilter.cpp **** 			}
+ 498              		.loc 1 61 5 view .LVU151
+  59:IIRFilter.cpp **** 				a[i] = a[i]/a0;
+ 499              		.loc 1 59 4 view .LVU152
+  59:IIRFilter.cpp **** 				a[i] = a[i]/a0;
+ 500              		.loc 1 59 22 view .LVU153
+  60:IIRFilter.cpp **** 				b[i] = b[i]/a0;
+ 501              		.loc 1 60 5 view .LVU154
+  61:IIRFilter.cpp **** 			}
+ 502              		.loc 1 61 5 view .LVU155
+  61:IIRFilter.cpp **** 			}
+ 503              		.loc 1 61 10 is_stmt 0 view .LVU156
+ 504 00a0 C4ED066A 		vstr.32	s13, [r4, #24]
+  59:IIRFilter.cpp **** 				a[i] = a[i]/a0;
+ 505              		.loc 1 59 4 is_stmt 1 view .LVU157
+ 506              	.LVL29:
+  59:IIRFilter.cpp **** 				a[i] = a[i]/a0;
+ 507              		.loc 1 59 22 view .LVU158
+ 508              	.LBE18:
+ 509              		.loc 1 63 9 is_stmt 0 view .LVU159
+ 510 00a4 10BD     		pop	{r4, pc}
+ 511              	.LVL30:
+ 512              	.L23:
+ 513              		.loc 1 63 9 view .LVU160
+ 514 00a6 00BF     		.align	3
+ 515              	.L22:
+ 516 00a8 EA2E4454 		.word	1413754602
+ 517 00ac FB211940 		.word	1075388923
+ 518              		.cfi_endproc
+ 519              	.LFE554:
+ 521              		.global	_ZTV9IIRFilter
+ 522              		.section	.rodata._ZTV9IIRFilter,"a"
+ 523              		.align	2
+ 524              		.set	.LANCHOR0,. + 0
+ 527              	_ZTV9IIRFilter:
+ 528 0000 00000000 		.word	0
+ 529 0004 00000000 		.word	0
+ 530 0008 00000000 		.word	_ZN9IIRFilterD1Ev
+ 531 000c 00000000 		.word	_ZN9IIRFilterD0Ev
+ 532 0010 00000000 		.word	_ZN9IIRFilter7ProcessEf
+ 533 0014 00000000 		.word	_ZN9IIRFilter4InitEv
+ 534              		.text
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 13
+
+
+ 535              	.Letext0:
+ 536              		.file 2 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 537              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 538              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\th
+ 539              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 540              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 541              		.file 7 "IIRFilter.h"
+ 542              		.file 8 "<built-in>"
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s 			page 14
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 IIRFilter.cpp
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:17     .text._ZN9IIRFilter4InitEv:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:26     .text._ZN9IIRFilter4InitEv:00000000 _ZN9IIRFilter4InitEv
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:88     .text._ZN9IIRFilter7ProcessEf:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:96     .text._ZN9IIRFilter7ProcessEf:00000000 _ZN9IIRFilter7ProcessEf
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:154    .text._ZN9IIRFilterD2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:162    .text._ZN9IIRFilterD2Ev:00000000 _ZN9IIRFilterD2Ev
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:195    .text._ZN9IIRFilterD2Ev:00000010 $d
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:162    .text._ZN9IIRFilterD2Ev:00000000 _ZN9IIRFilterD1Ev
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:202    .text._ZN9IIRFilterD0Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:210    .text._ZN9IIRFilterD0Ev:00000000 _ZN9IIRFilterD0Ev
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:254    .text._ZN9IIRFilterD0Ev:00000018 $d
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:259    .text._ZN9IIRFilterC2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:267    .text._ZN9IIRFilterC2Ev:00000000 _ZN9IIRFilterC2Ev
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:301    .text._ZN9IIRFilterC2Ev:00000010 $d
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:267    .text._ZN9IIRFilterC2Ev:00000000 _ZN9IIRFilterC1Ev
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:308    .text._ZN9IIRFilter4InitEPfS0_:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:316    .text._ZN9IIRFilter4InitEPfS0_:00000000 _ZN9IIRFilter4InitEPfS0_
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:368    .text._ZN9IIRFilter10makePeakEQEffff:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:376    .text._ZN9IIRFilter10makePeakEQEffff:00000000 _ZN9IIRFilter10makePeakEQEffff
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:516    .text._ZN9IIRFilter10makePeakEQEffff:000000a8 $d
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:527    .rodata._ZTV9IIRFilter:00000000 _ZTV9IIRFilter
+C:\Users\micke\AppData\Local\Temp\ccwSBg0d.s:523    .rodata._ZTV9IIRFilter:00000000 $d
+
+UNDEFINED SYMBOLS
+_ZN9AlgorithmD2Ev
+_ZdlPvj
+_ZN9AlgorithmC2Ev
+sinf
+cosf
