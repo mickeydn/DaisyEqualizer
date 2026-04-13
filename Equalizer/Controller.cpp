@@ -1,10 +1,3 @@
-///////////////////////////////////////////////////////////
-//  Controller.cpp
-//  Implementation of the Class Controller
-//  Created on:      06-aug-2014 23:31:01
-//  Modified:        27-nov-2025 20:01:00
-//  Original author: kbe
-///////////////////////////////////////////////////////////
 
 #include "Controller.h"
 
