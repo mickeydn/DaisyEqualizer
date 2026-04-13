@@ -1,5 +1,3 @@
-// Kim Bjerge - 28. November 2025
-// Daisy Pod IIR Equalizer Example
 #include <string.h>
 #include <math.h>
 #include "daisy_pod.h"
@@ -16,7 +14,7 @@ using namespace daisysp;
 #define SAMPLE_RATE 		48000 // Set to 48000 or 96000
 #define SAMPLE_BUFFER_SIZE 		8
 #define SAMPLE_TIME_NS		(SAMPLE_BUFFER_SIZE/(float)SAMPLE_RATE*1000000000) // in ns
-#define NUM_COLORS 				5
+#define NUM_COLORS 				7
 
 static Color my_colors[NUM_COLORS];
 static DaisyPod hwPod; // Used for realtime audio and controls
@@ -35,14 +33,11 @@ void AudioCallback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, s
 		out[0][i] = equalizerLeft.Process(in[0][i]);
 		out[1][i] = equalizerRight.Process(in[0][i]);
 
-		// Bypass filter
-		//out[0][i] = in[0][i];
-		//out[1][i] = in[1][i];
 	}
 
 	end = System::GetTick();
 	dur = (end - start) * 5; // ns
-	//dur = (end - start) / 200; // us
+
 }
 
 #ifndef USE_HWPOD
@@ -110,7 +105,9 @@ int main(void)
     my_colors[1].Init(Color::PresetColor::GREEN);
     my_colors[2].Init(Color::PresetColor::BLUE);
     my_colors[3].Init(Color::PresetColor::WHITE);
-    my_colors[4].Init(Color::PresetColor::OFF);
+	my_colors[4].Init(Color::PresetColor::PURPLE);
+	my_colors[5].Init(Color::PresetColor::GOLD);
+    my_colors[6].Init(Color::PresetColor::OFF);
 
 	hwPod.Init();
 	hwPod.seed.StartLog();
@@ -130,8 +127,6 @@ int main(void)
     {
     	hwPod.ProcessAllControls(); 
 	
-		// Debounce the Encoder at a steady, fixed rate.
-		//hwPod.encoder.Debounce();
 		inc = hwPod.encoder.Increment();
 
 		if (inc < 0) {
@@ -155,7 +150,7 @@ int main(void)
 		}
 		
 		hwPod.ClearLeds();
-		int EqOn = eqOn ? 3 : 4; // LED White if on, Off if bypass
+		int EqOn = eqOn ? 3 : 6; // LED White if on, Off if bypass
 		hwPod.led1.SetColor(my_colors[EqOn]);
 		hwPod.led2.SetColor(my_colors[band]);
 		hwPod.UpdateLeds();

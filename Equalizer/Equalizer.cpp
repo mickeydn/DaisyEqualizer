@@ -1,6 +1,5 @@
 
 #include "Equalizer.h"
-
 #include <stdio.h>
 #include <string.h>
 #include <stdfix.h>
@@ -29,23 +28,27 @@ float Equalizer::Process(float input)
 
 void Equalizer::Init()
 {
-	Init(48000); // Default sample rate
+	Init(48000); 
 }
 
 void Equalizer::Init(int sampleRate)
 {
 	sampleRate_ = sampleRate;
 
-	// KBE changed to update filters
+	
 	// Setting default peak bands center frequency
-	m_EQParams[0].fc = 100.0;
-	m_EQParams[0].gain = 5.0;
-	m_EQParams[1].fc = 500.0;
-	m_EQParams[1].gain = 2.0; 
-	m_EQParams[2].fc = 2000.0;
-	m_EQParams[2].gain = 0.5; 
-	m_EQParams[3].fc = 4000.0;
+	m_EQParams[0].fc = 100.0;	//low shelf
+	m_EQParams[0].gain = 3.0;	//bass boost
+	m_EQParams[1].fc = 500.0;	//peak
+	m_EQParams[1].gain = 2.0;
+	m_EQParams[2].fc = 800.0;	//peak
+	m_EQParams[2].gain = 2.0;
+	m_EQParams[3].fc = 2000.0;	//peak
 	m_EQParams[3].gain = 2.0; 
+	m_EQParams[4].fc = 2800.0;	//peak
+	m_EQParams[4].gain = 0.5; 
+	m_EQParams[5].fc = 4000.0;	//high shelf
+	m_EQParams[5].gain = 2.0; 
 
 
 	for (short band = 0; band < NUM_EQ_BANDS; band++)

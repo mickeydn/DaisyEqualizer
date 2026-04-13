@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   27:../../libDaisy//src/daisy_pod.h ****     /** Knobs */
   28:../../libDaisy//src/daisy_pod.h ****     enum Knob
   29:../../libDaisy//src/daisy_pod.h ****     {
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 2
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 2
 
 
   30:../../libDaisy//src/daisy_pod.h ****         KNOB_1,    /** &  */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   40:../../libDaisy//src/hid/midi.h **** 
   41:../../libDaisy//src/hid/midi.h ****         /** Pointer to buffer for DMA UART rx byte transfer in background.
   42:../../libDaisy//src/hid/midi.h ****          *
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 3
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 3
 
 
   43:../../libDaisy//src/hid/midi.h ****          *  @details By default this uses a shared buffer in DMA_BUFFER_MEM_SECTION,
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   97:../../libDaisy//src/hid/midi.h ****     }
   98:../../libDaisy//src/hid/midi.h **** 
   99:../../libDaisy//src/hid/midi.h ****     /** @brief returns whether the UART peripheral is actively listening in the background or not *
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 4
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 4
 
 
  100:../../libDaisy//src/hid/midi.h ****     inline bool RxActive() { return uart_.IsListening(); }
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  154:../../libDaisy//src/hid/midi.h ****   public:
  155:../../libDaisy//src/hid/midi.h ****     MidiHandler() {}
  156:../../libDaisy//src/hid/midi.h ****     ~MidiHandler() {}
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 5
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 5
 
 
   38              		.loc 2 156 5 view .LVU1
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   51:../../libDaisy//src/util/FIFO.h ****         if(!IsFull())
   52:../../libDaisy//src/util/FIFO.h ****         {
   53:../../libDaisy//src/util/FIFO.h ****             buffer_[bufferIn_++] = elementToAdd;
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 6
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 6
 
 
   54:../../libDaisy//src/util/FIFO.h ****             if(bufferIn_ >= bufferSize_)
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  108:../../libDaisy//src/util/FIFO.h ****             bufferOut_++;
  109:../../libDaisy//src/util/FIFO.h ****             if(bufferOut_ >= bufferSize_)
  110:../../libDaisy//src/util/FIFO.h ****                 bufferOut_ -= bufferSize_;
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 7
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 7
 
 
  111:../../libDaisy//src/util/FIFO.h ****             return result;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  165:../../libDaisy//src/util/FIFO.h ****     bool IsEmpty() const { return bufferIn_ == bufferOut_; }
  166:../../libDaisy//src/util/FIFO.h **** 
  167:../../libDaisy//src/util/FIFO.h ****     /** returns true, if the buffer is Full */
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 8
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 8
 
 
  168:../../libDaisy//src/util/FIFO.h ****     bool IsFull() const { return GetNumElements() == bufferSize_ - 1; }
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  222:../../libDaisy//src/util/FIFO.h ****             if(nextIndex >= bufferSize_)
  223:../../libDaisy//src/util/FIFO.h ****                 nextIndex -= bufferSize_;
  224:../../libDaisy//src/util/FIFO.h ****         }
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 9
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 9
 
 
  225:../../libDaisy//src/util/FIFO.h **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  279:../../libDaisy//src/util/FIFO.h ****             index -= bufferSize_;
  280:../../libDaisy//src/util/FIFO.h ****         return buffer_[index];
  281:../../libDaisy//src/util/FIFO.h ****     }
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 10
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 10
 
 
  282:../../libDaisy//src/util/FIFO.h **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   57              		.loc 2 32 5 is_stmt 1 view .LVU7
   32:../../libDaisy//src/hid/midi.h **** 
   58              		.loc 2 32 5 is_stmt 0 view .LVU8
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 11
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 11
 
 
   59              	.LBE322:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   70              	.LBE324:
   71              	.LBB325:
   72              	.LBI325:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 12
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 12
 
 
   73              		.loc 6 25 5 is_stmt 1 view .LVU12
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   24:../../libDaisy//src/hid/switch.h ****         TYPE_MOMENTARY, /**< & */
   25:../../libDaisy//src/hid/switch.h ****     };
   26:../../libDaisy//src/hid/switch.h ****     /** Specifies whether the pressed is HIGH or LOW. */
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 13
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 13
 
 
   27:../../libDaisy//src/hid/switch.h ****     enum Polarity
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  119              	.LBI334:
  120              		.loc 8 23 5 is_stmt 1 view .LVU29
  121              		.loc 8 23 5 is_stmt 0 view .LVU30
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 14
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 14
 
 
  122              	.LBE334:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   20:../../libDaisy//src/daisy_seed.h ****   public:
   21:../../libDaisy//src/daisy_seed.h ****     DaisySeed() {}
   22:../../libDaisy//src/daisy_seed.h ****     ~DaisySeed() {}
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 15
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 15
 
 
  136              		.loc 10 22 5 is_stmt 1 view .LVU34
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   51:../../libDaisy//src/sys/system.h ****             use_icache  = true;
   52:../../libDaisy//src/sys/system.h ****             skip_clocks = false;
   53:../../libDaisy//src/sys/system.h ****         }
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 16
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 16
 
 
   54:../../libDaisy//src/sys/system.h **** 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
    5:../../libDaisy//src/hid/usb.h **** #include <stdlib.h>
    6:../../libDaisy//src/hid/usb.h **** 
    7:../../libDaisy//src/hid/usb.h **** namespace daisy
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 17
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 17
 
 
    8:../../libDaisy//src/hid/usb.h **** /** @addtogroup human_interface
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   14:../../libDaisy//src/per/adc.h ****     @{
   15:../../libDaisy//src/per/adc.h **** */
   16:../../libDaisy//src/per/adc.h **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 18
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 18
 
 
   17:../../libDaisy//src/per/adc.h **** /* While there may not be many configuration options here,
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   71:../../libDaisy//src/per/adc.h ****     \param mux_2 Third mux pin
   72:../../libDaisy//src/per/adc.h ****     \param speed conversion speed for this pin defaults to 8.5 cycles
   73:../../libDaisy//src/per/adc.h ****     */
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 19
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 19
 
 
   74:../../libDaisy//src/per/adc.h ****     void InitMux(dsy_gpio_pin    adc_pin,
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   12:../../libDaisy//src/hid/audio.h ****  *            board that includes one of those objects) then the intialization
   13:../../libDaisy//src/hid/audio.h ****  *            is already taken  care of.
   14:../../libDaisy//src/hid/audio.h ****  *           If you're setting up your own custom hardware, or need to make changes
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 20
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 20
 
 
   15:../../libDaisy//src/hid/audio.h ****  *           you will have to take the following steps:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   69:../../libDaisy//src/hid/audio.h **** 
   70:../../libDaisy//src/hid/audio.h ****     /** Type for a Non-Interleaving audio callback 
   71:../../libDaisy//src/hid/audio.h ****      * Non-Interleaving audio callbacks in daisy will be of this type
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 21
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 21
 
 
   72:../../libDaisy//src/hid/audio.h ****      */
@@ -1246,36 +1246,34 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  177              	__tcf_0:
  178              	.LFB5275:
  179              		.file 15 "Application.cpp"
-   1:Application.cpp **** // Kim Bjerge - 28. November 2025
-   2:Application.cpp **** // Daisy Pod IIR Equalizer Example
-   3:Application.cpp **** #include <string.h>
-   4:Application.cpp **** #include <math.h>
-   5:Application.cpp **** #include "daisy_pod.h"
-   6:Application.cpp **** #include "daisysp.h"
-   7:Application.cpp **** #include "Equalizer.h"
-   8:Application.cpp **** #include "Controller.h"
-   9:Application.cpp **** 
-  10:Application.cpp **** using namespace daisy;
-  11:Application.cpp **** using namespace daisysp;
-  12:Application.cpp **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 22
+   1:Application.cpp **** #include <string.h>
+   2:Application.cpp **** #include <math.h>
+   3:Application.cpp **** #include "daisy_pod.h"
+   4:Application.cpp **** #include "daisysp.h"
+   5:Application.cpp **** #include "Equalizer.h"
+   6:Application.cpp **** #include "Controller.h"
+   7:Application.cpp **** 
+   8:Application.cpp **** using namespace daisy;
+   9:Application.cpp **** using namespace daisysp;
+  10:Application.cpp **** 
+  11:Application.cpp **** // Use hwPod or hwSeed (Realtime or testing)
+  12:Application.cpp **** #define USE_HWPOD 
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 22
 
 
-  13:Application.cpp **** // Use hwPod or hwSeed (Realtime or testing)
-  14:Application.cpp **** #define USE_HWPOD 
-  15:Application.cpp **** 
-  16:Application.cpp **** #define SAMPLE_RATE 		48000 // Set to 48000 or 96000
-  17:Application.cpp **** #define SAMPLE_BUFFER_SIZE 		8
-  18:Application.cpp **** #define SAMPLE_TIME_NS		(SAMPLE_BUFFER_SIZE/(float)SAMPLE_RATE*1000000000) // in ns
-  19:Application.cpp **** #define NUM_COLORS 				5
-  20:Application.cpp **** 
-  21:Application.cpp **** static Color my_colors[NUM_COLORS];
- 180              		.loc 15 21 14 is_stmt 1 view -0
+  13:Application.cpp **** 
+  14:Application.cpp **** #define SAMPLE_RATE 		48000 // Set to 48000 or 96000
+  15:Application.cpp **** #define SAMPLE_BUFFER_SIZE 		8
+  16:Application.cpp **** #define SAMPLE_TIME_NS		(SAMPLE_BUFFER_SIZE/(float)SAMPLE_RATE*1000000000) // in ns
+  17:Application.cpp **** #define NUM_COLORS 				7
+  18:Application.cpp **** 
+  19:Application.cpp **** static Color my_colors[NUM_COLORS];
+ 180              		.loc 15 19 14 is_stmt 1 view -0
  181              		.cfi_startproc
  182              		@ args = 0, pretend = 0, frame = 0
  183              		@ frame_needed = 0, uses_anonymous_args = 0
  184              		@ link register save eliminated.
- 185              		.loc 15 21 14 is_stmt 0 view .LVU45
+ 185              		.loc 15 19 14 is_stmt 0 view .LVU45
  186 0000 7047     		bx	lr
  187              		.cfi_endproc
  188              	.LFE5275:
@@ -1298,95 +1296,92 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  202              		.fpu fpv5-d16
  204              	main:
  205              	.LFB4690:
-  22:Application.cpp **** static DaisyPod hwPod; // Used for realtime audio and controls
-  23:Application.cpp **** static uint32_t  start, end, dur;
-  24:Application.cpp **** 
-  25:Application.cpp **** static Equalizer equalizerLeft;
-  26:Application.cpp **** static Equalizer equalizerRight;
-  27:Application.cpp **** static Controller controller(&equalizerLeft, &equalizerRight, &hwPod);
-  28:Application.cpp **** 
-  29:Application.cpp **** void AudioCallback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, size_t size)
-  30:Application.cpp **** {
-  31:Application.cpp **** 	start = System::GetTick();
-  32:Application.cpp **** 
-  33:Application.cpp **** 	for (size_t i = 0; i < size; i++)
-  34:Application.cpp **** 	{
-  35:Application.cpp **** 		out[0][i] = equalizerLeft.Process(in[0][i]);
-  36:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
+  20:Application.cpp **** static DaisyPod hwPod; // Used for realtime audio and controls
+  21:Application.cpp **** static uint32_t  start, end, dur;
+  22:Application.cpp **** 
+  23:Application.cpp **** static Equalizer equalizerLeft;
+  24:Application.cpp **** static Equalizer equalizerRight;
+  25:Application.cpp **** static Controller controller(&equalizerLeft, &equalizerRight, &hwPod);
+  26:Application.cpp **** 
+  27:Application.cpp **** void AudioCallback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, size_t size)
+  28:Application.cpp **** {
+  29:Application.cpp **** 	start = System::GetTick();
+  30:Application.cpp **** 
+  31:Application.cpp **** 	for (size_t i = 0; i < size; i++)
+  32:Application.cpp **** 	{
+  33:Application.cpp **** 		out[0][i] = equalizerLeft.Process(in[0][i]);
+  34:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
+  35:Application.cpp **** 
+  36:Application.cpp **** 	}
   37:Application.cpp **** 
-  38:Application.cpp **** 		// Bypass filter
-  39:Application.cpp **** 		//out[0][i] = in[0][i];
-  40:Application.cpp **** 		//out[1][i] = in[1][i];
-  41:Application.cpp **** 	}
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 23
+  38:Application.cpp **** 	end = System::GetTick();
+  39:Application.cpp **** 	dur = (end - start) * 5; // ns
+  40:Application.cpp **** 
+  41:Application.cpp **** }
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 23
 
 
   42:Application.cpp **** 
-  43:Application.cpp **** 	end = System::GetTick();
-  44:Application.cpp **** 	dur = (end - start) * 5; // ns
-  45:Application.cpp **** 	//dur = (end - start) / 200; // us
-  46:Application.cpp **** }
+  43:Application.cpp **** #ifndef USE_HWPOD
+  44:Application.cpp **** 
+  45:Application.cpp **** static Oscillator osc; // Oscillator for testing
+  46:Application.cpp **** static DaisySeed hwSeed; // Used for testing and logging without hwPod
   47:Application.cpp **** 
-  48:Application.cpp **** #ifndef USE_HWPOD
-  49:Application.cpp **** 
-  50:Application.cpp **** static Oscillator osc; // Oscillator for testing
-  51:Application.cpp **** static DaisySeed hwSeed; // Used for testing and logging without hwPod
+  48:Application.cpp **** void algoTester(void)
+  49:Application.cpp **** {
+  50:Application.cpp **** 	// Placeholder for non-realtime testing of algorithms
+  51:Application.cpp **** 	float sample, res, sample_rate; 
   52:Application.cpp **** 
-  53:Application.cpp **** void algoTester(void)
-  54:Application.cpp **** {
-  55:Application.cpp **** 	// Placeholder for non-realtime testing of algorithms
-  56:Application.cpp **** 	float sample, res, sample_rate; 
-  57:Application.cpp **** 
-  58:Application.cpp ****     // Below code creates COM4 port and displays log messages
-  59:Application.cpp **** 	// hwSeed and hwPod do not work well together
-  60:Application.cpp **** 	hwSeed.Configure();
-  61:Application.cpp **** 	hwSeed.Init();
-  62:Application.cpp **** 	hwSeed.StartLog();
-  63:Application.cpp ****     System::Delay(5000); // Wait 5 second
-  64:Application.cpp **** 	hwSeed.PrintLine("Daisy Pod IIR Filter Example");
+  53:Application.cpp ****     // Below code creates COM4 port and displays log messages
+  54:Application.cpp **** 	// hwSeed and hwPod do not work well together
+  55:Application.cpp **** 	hwSeed.Configure();
+  56:Application.cpp **** 	hwSeed.Init();
+  57:Application.cpp **** 	hwSeed.StartLog();
+  58:Application.cpp ****     System::Delay(5000); // Wait 5 second
+  59:Application.cpp **** 	hwSeed.PrintLine("Daisy Pod IIR Filter Example");
+  60:Application.cpp **** 
+  61:Application.cpp ****     hwSeed.SetAudioBlockSize(SAMPLE_BUFFER_SIZE);
+  62:Application.cpp ****     sample_rate = hwSeed.AudioSampleRate();
+  63:Application.cpp ****     osc.Init(sample_rate);
+  64:Application.cpp **** 	hwSeed.PrintLine("Sample rate %.6f", sample_rate);	
   65:Application.cpp **** 
-  66:Application.cpp ****     hwSeed.SetAudioBlockSize(SAMPLE_BUFFER_SIZE);
-  67:Application.cpp ****     sample_rate = hwSeed.AudioSampleRate();
-  68:Application.cpp ****     osc.Init(sample_rate);
-  69:Application.cpp **** 	hwSeed.PrintLine("Sample rate %.6f", sample_rate);	
-  70:Application.cpp **** 
-  71:Application.cpp **** 	// Set parameters for oscillator
-  72:Application.cpp ****     osc.SetWaveform(osc.WAVE_SIN);
-  73:Application.cpp ****     osc.SetFreq(785); // Notch frequency Hz
-  74:Application.cpp ****     osc.SetAmp(0.5);
-  75:Application.cpp **** 	
-  76:Application.cpp **** 	equalizerLeft.setBypass(false);
-  77:Application.cpp **** 	while (1) {
-  78:Application.cpp **** 		//sample = 0.5f;
-  79:Application.cpp **** 		sample = osc.Process();
-  80:Application.cpp **** 		start = System::GetTick();
-  81:Application.cpp **** 		res = equalizerLeft.Process(sample);
-  82:Application.cpp **** 		end = System::GetTick();
-  83:Application.cpp **** 		dur = (end - start) * 5; // ps
-  84:Application.cpp **** 		//dur = (end - start) / 200; // us
-  85:Application.cpp **** 		//hwSeed.PrintLine("IIR filter duration = %u ns start = %u end = %u", dur, start, end);
-  86:Application.cpp **** 		//hwSeed.PrintLine("Sample input %.4f and output %.4f", sample, res);
-  87:Application.cpp **** 		hwSeed.PrintLine("%.6f,%.6f", sample, res);
-  88:Application.cpp **** 		System::Delay(100); // Wait 100 mseconds
-  89:Application.cpp **** 	}
-  90:Application.cpp **** 
-  91:Application.cpp **** }
-  92:Application.cpp **** 
-  93:Application.cpp **** #endif
-  94:Application.cpp **** 
-  95:Application.cpp **** int main(void)
-  96:Application.cpp **** {
- 206              		.loc 15 96 1 is_stmt 1 view -0
+  66:Application.cpp **** 	// Set parameters for oscillator
+  67:Application.cpp ****     osc.SetWaveform(osc.WAVE_SIN);
+  68:Application.cpp ****     osc.SetFreq(785); // Notch frequency Hz
+  69:Application.cpp ****     osc.SetAmp(0.5);
+  70:Application.cpp **** 	
+  71:Application.cpp **** 	equalizerLeft.setBypass(false);
+  72:Application.cpp **** 	while (1) {
+  73:Application.cpp **** 		//sample = 0.5f;
+  74:Application.cpp **** 		sample = osc.Process();
+  75:Application.cpp **** 		start = System::GetTick();
+  76:Application.cpp **** 		res = equalizerLeft.Process(sample);
+  77:Application.cpp **** 		end = System::GetTick();
+  78:Application.cpp **** 		dur = (end - start) * 5; // ps
+  79:Application.cpp **** 		//dur = (end - start) / 200; // us
+  80:Application.cpp **** 		//hwSeed.PrintLine("IIR filter duration = %u ns start = %u end = %u", dur, start, end);
+  81:Application.cpp **** 		//hwSeed.PrintLine("Sample input %.4f and output %.4f", sample, res);
+  82:Application.cpp **** 		hwSeed.PrintLine("%.6f,%.6f", sample, res);
+  83:Application.cpp **** 		System::Delay(100); // Wait 100 mseconds
+  84:Application.cpp **** 	}
+  85:Application.cpp **** 
+  86:Application.cpp **** }
+  87:Application.cpp **** 
+  88:Application.cpp **** #endif
+  89:Application.cpp **** 
+  90:Application.cpp **** int main(void)
+  91:Application.cpp **** {
+ 206              		.loc 15 91 1 is_stmt 1 view -0
  207              		.cfi_startproc
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 24
-
-
  208              		@ args = 0, pretend = 0, frame = 16
  209              		@ frame_needed = 0, uses_anonymous_args = 0
-  97:Application.cpp **** 	equalizerLeft.Init(SAMPLE_RATE);
- 210              		.loc 15 97 2 view .LVU47
-  96:Application.cpp **** 	equalizerLeft.Init(SAMPLE_RATE);
- 211              		.loc 15 96 1 is_stmt 0 view .LVU48
+  92:Application.cpp **** 	equalizerLeft.Init(SAMPLE_RATE);
+ 210              		.loc 15 92 2 view .LVU47
+  91:Application.cpp **** 	equalizerLeft.Init(SAMPLE_RATE);
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 24
+
+
+ 211              		.loc 15 91 1 is_stmt 0 view .LVU48
  212 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
  213              		.cfi_def_cfa_offset 36
  214              		.cfi_offset 4, -36
@@ -1398,16 +1393,16 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  220              		.cfi_offset 10, -12
  221              		.cfi_offset 11, -8
  222              		.cfi_offset 14, -4
- 223              		.loc 15 97 20 view .LVU49
- 224 0004 6E4E     		ldr	r6, .L31
-  96:Application.cpp **** 	equalizerLeft.Init(SAMPLE_RATE);
- 225              		.loc 15 96 1 view .LVU50
+ 223              		.loc 15 92 20 view .LVU49
+ 224 0004 724E     		ldr	r6, .L31
+  91:Application.cpp **** 	equalizerLeft.Init(SAMPLE_RATE);
+ 225              		.loc 15 91 1 view .LVU50
  226 0006 85B0     		sub	sp, sp, #20
  227              		.cfi_def_cfa_offset 56
-  98:Application.cpp **** 	equalizerLeft.setBypass(true);
-  99:Application.cpp **** 	equalizerRight.Init(SAMPLE_RATE);
- 228              		.loc 15 99 21 view .LVU51
- 229 0008 6E4D     		ldr	r5, .L31+4
+  93:Application.cpp **** 	equalizerLeft.setBypass(true);
+  94:Application.cpp **** 	equalizerRight.Init(SAMPLE_RATE);
+ 228              		.loc 15 94 21 view .LVU51
+ 229 0008 724D     		ldr	r5, .L31+4
  230              	.LBB342:
  231              	.LBB343:
  232              		.file 16 "Equalizer.h"
@@ -1419,7 +1414,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
    6:Equalizer.h   **** #include "HighShelfFilter.h"
    7:Equalizer.h   **** #include "LowShelfFilter.h"
    8:Equalizer.h   **** 
-   9:Equalizer.h   **** #define NUM_EQ_BANDS 4 
+   9:Equalizer.h   **** #define NUM_EQ_BANDS 6 
   10:Equalizer.h   **** 
   11:Equalizer.h   **** #define MAX_FREQ		20000.0
   12:Equalizer.h   **** #define MIN_FREQ        2.0
@@ -1438,166 +1433,182 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   25:Equalizer.h   **** 	BAND_LOW_SHELF,
   26:Equalizer.h   **** 	BAND_PEAK_EQ,
   27:Equalizer.h   **** 	BAND_HIGH_SHELF
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 25
-
-
   28:Equalizer.h   **** };
   29:Equalizer.h   **** 
   30:Equalizer.h   **** static const BANDTYPE BAND_TYPES[NUM_EQ_BANDS] = {
   31:Equalizer.h   ****     BAND_LOW_SHELF,
   32:Equalizer.h   ****     BAND_PEAK_EQ,
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 25
+
+
   33:Equalizer.h   ****     BAND_PEAK_EQ,
-  34:Equalizer.h   ****     BAND_HIGH_SHELF
-  35:Equalizer.h   **** };
-  36:Equalizer.h   **** class Equalizer : public Algorithm
-  37:Equalizer.h   **** {
-  38:Equalizer.h   **** public:
-  39:Equalizer.h   **** 
-  40:Equalizer.h   **** 	Equalizer();
-  41:Equalizer.h   **** 	virtual ~Equalizer();
-  42:Equalizer.h   **** 
-  43:Equalizer.h   **** 	float Process(float input) override;
-  44:Equalizer.h   **** 	void Init() override;
-  45:Equalizer.h   **** 	void Init(int SampleRate);
-  46:Equalizer.h   **** 
-  47:Equalizer.h   **** 	void setParameter(short band, PARAMETER param, float value);
-  48:Equalizer.h   **** 	float incParameter(short band, PARAMETER param, float delta);
-  49:Equalizer.h   **** 	float decParameter(short band, PARAMETER param, float delta);
-  50:Equalizer.h   **** 	float getParameter(short band, PARAMETER param);
-  51:Equalizer.h   **** 	void setBypass(bool val) { filterOn_ = !val; };
- 233              		.loc 16 51 39 view .LVU52
+  34:Equalizer.h   **** 	BAND_PEAK_EQ,
+  35:Equalizer.h   **** 	BAND_PEAK_EQ,
+  36:Equalizer.h   ****     BAND_HIGH_SHELF
+  37:Equalizer.h   **** };
+  38:Equalizer.h   **** class Equalizer : public Algorithm
+  39:Equalizer.h   **** {
+  40:Equalizer.h   **** public:
+  41:Equalizer.h   **** 
+  42:Equalizer.h   **** 	Equalizer();
+  43:Equalizer.h   **** 	virtual ~Equalizer();
+  44:Equalizer.h   **** 
+  45:Equalizer.h   **** 	float Process(float input) override;
+  46:Equalizer.h   **** 	void Init() override;
+  47:Equalizer.h   **** 	void Init(int SampleRate);
+  48:Equalizer.h   **** 
+  49:Equalizer.h   **** 	void setParameter(short band, PARAMETER param, float value);
+  50:Equalizer.h   **** 	float incParameter(short band, PARAMETER param, float delta);
+  51:Equalizer.h   **** 	float decParameter(short band, PARAMETER param, float delta);
+  52:Equalizer.h   **** 	float getParameter(short band, PARAMETER param);
+  53:Equalizer.h   **** 	void setBypass(bool val) { filterOn_ = !val; };
+ 233              		.loc 16 53 39 view .LVU52
  234 000a 0024     		movs	r4, #0
  235              	.LBE343:
  236              	.LBE342:
-  97:Application.cpp **** 	equalizerLeft.setBypass(true);
- 237              		.loc 15 97 20 view .LVU53
+  92:Application.cpp **** 	equalizerLeft.setBypass(true);
+ 237              		.loc 15 92 20 view .LVU53
  238 000c 3046     		mov	r0, r6
  239 000e 4BF68031 		movw	r1, #48000
  240 0012 FFF7FEFF 		bl	_ZN9Equalizer4InitEi
  241              	.LVL1:
-  98:Application.cpp **** 	equalizerLeft.setBypass(true);
- 242              		.loc 15 98 2 is_stmt 1 view .LVU54
+  93:Application.cpp **** 	equalizerLeft.setBypass(true);
+ 242              		.loc 15 93 2 is_stmt 1 view .LVU54
  243              	.LBB346:
  244              	.LBI342:
- 245              		.loc 16 51 7 view .LVU55
+ 245              		.loc 16 53 7 view .LVU55
  246              	.LBB344:
- 247              		.loc 16 51 29 view .LVU56
+ 247              		.loc 16 53 29 view .LVU56
  248              	.LBE344:
  249              	.LBE346:
- 250              		.loc 15 99 21 is_stmt 0 view .LVU57
+ 250              		.loc 15 94 21 is_stmt 0 view .LVU57
  251 0016 2846     		mov	r0, r5
  252 0018 4BF68031 		movw	r1, #48000
  253              	.LBB347:
  254              	.LBB345:
- 255              		.loc 16 51 39 view .LVU58
+ 255              		.loc 16 53 39 view .LVU58
  256 001c 3472     		strb	r4, [r6, #8]
  257              	.LVL2:
- 258              		.loc 16 51 39 view .LVU59
+ 258              		.loc 16 53 39 view .LVU59
  259              	.LBE345:
  260              	.LBE347:
- 261              		.loc 15 99 2 is_stmt 1 view .LVU60
- 262              		.loc 15 99 21 is_stmt 0 view .LVU61
+ 261              		.loc 15 94 2 is_stmt 1 view .LVU60
+ 262              		.loc 15 94 21 is_stmt 0 view .LVU61
  263 001e FFF7FEFF 		bl	_ZN9Equalizer4InitEi
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 26
-
-
  264              	.LVL3:
- 100:Application.cpp **** 	equalizerRight.setBypass(true);
- 265              		.loc 15 100 2 is_stmt 1 view .LVU62
+  95:Application.cpp **** 	equalizerRight.setBypass(true);
+ 265              		.loc 15 95 2 is_stmt 1 view .LVU62
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 26
+
+
  266              	.LBB348:
  267              	.LBI348:
- 268              		.loc 16 51 7 view .LVU63
+ 268              		.loc 16 53 7 view .LVU63
  269              	.LBB349:
- 270              		.loc 16 51 29 view .LVU64
+ 270              		.loc 16 53 29 view .LVU64
  271              	.LBE349:
  272              	.LBE348:
- 101:Application.cpp **** 
- 102:Application.cpp **** #ifdef USE_HWPOD // Realtime audio with Daisy Pod and IIR Filter bypass toggle
+  96:Application.cpp **** 
+  97:Application.cpp **** #ifdef USE_HWPOD // Realtime audio with Daisy Pod and IIR Filter bypass toggle
+  98:Application.cpp **** 
+  99:Application.cpp **** 	int32_t  inc;
+ 100:Application.cpp **** 	bool eqOn = false;
+ 101:Application.cpp **** 	int counter = 0;
+ 102:Application.cpp **** 	int band = 0;
  103:Application.cpp **** 
- 104:Application.cpp **** 	int32_t  inc;
- 105:Application.cpp **** 	bool eqOn = false;
- 106:Application.cpp **** 	int counter = 0;
- 107:Application.cpp **** 	int band = 0;
- 108:Application.cpp **** 
- 109:Application.cpp **** 	my_colors[0].Init(Color::PresetColor::RED);
- 273              		.loc 15 109 19 is_stmt 0 view .LVU65
+ 104:Application.cpp **** 	my_colors[0].Init(Color::PresetColor::RED);
+ 273              		.loc 15 104 19 is_stmt 0 view .LVU65
  274 0022 2146     		mov	r1, r4
- 275 0024 6848     		ldr	r0, .L31+8
- 107:Application.cpp **** 
- 276              		.loc 15 107 6 view .LVU66
+ 275 0024 6C48     		ldr	r0, .L31+8
+ 102:Application.cpp **** 
+ 276              		.loc 15 102 6 view .LVU66
  277 0026 2746     		mov	r7, r4
  278              	.LBB351:
  279              	.LBB350:
- 280              		.loc 16 51 39 view .LVU67
+ 280              		.loc 16 53 39 view .LVU67
  281 0028 2C72     		strb	r4, [r5, #8]
  282              	.LVL4:
- 283              		.loc 16 51 39 view .LVU68
+ 283              		.loc 16 53 39 view .LVU68
  284              	.LBE350:
  285              	.LBE351:
- 104:Application.cpp **** 	bool eqOn = false;
- 286              		.loc 15 104 2 is_stmt 1 view .LVU69
- 105:Application.cpp **** 	int counter = 0;
- 287              		.loc 15 105 2 view .LVU70
- 106:Application.cpp **** 	int band = 0;
- 288              		.loc 15 106 2 view .LVU71
- 107:Application.cpp **** 
- 289              		.loc 15 107 2 view .LVU72
- 290              		.loc 15 109 2 view .LVU73
- 291              		.loc 15 109 19 is_stmt 0 view .LVU74
+  99:Application.cpp **** 	bool eqOn = false;
+ 286              		.loc 15 99 2 is_stmt 1 view .LVU69
+ 100:Application.cpp **** 	int counter = 0;
+ 287              		.loc 15 100 2 view .LVU70
+ 101:Application.cpp **** 	int band = 0;
+ 288              		.loc 15 101 2 view .LVU71
+ 102:Application.cpp **** 
+ 289              		.loc 15 102 2 view .LVU72
+ 290              		.loc 15 104 2 view .LVU73
+ 291              		.loc 15 104 19 is_stmt 0 view .LVU74
  292 002a FFF7FEFF 		bl	_ZN5daisy5Color4InitENS0_11PresetColorE
  293              	.LVL5:
- 110:Application.cpp ****     my_colors[1].Init(Color::PresetColor::GREEN);
- 294              		.loc 15 110 5 is_stmt 1 view .LVU75
- 295              		.loc 15 110 22 is_stmt 0 view .LVU76
+ 105:Application.cpp ****     my_colors[1].Init(Color::PresetColor::GREEN);
+ 294              		.loc 15 105 5 is_stmt 1 view .LVU75
+ 295              		.loc 15 105 22 is_stmt 0 view .LVU76
  296 002e 0121     		movs	r1, #1
- 297 0030 6648     		ldr	r0, .L31+12
+ 297 0030 6A48     		ldr	r0, .L31+12
  298 0032 FFF7FEFF 		bl	_ZN5daisy5Color4InitENS0_11PresetColorE
  299              	.LVL6:
- 111:Application.cpp ****     my_colors[2].Init(Color::PresetColor::BLUE);
- 300              		.loc 15 111 5 is_stmt 1 view .LVU77
- 301              		.loc 15 111 22 is_stmt 0 view .LVU78
+ 106:Application.cpp ****     my_colors[2].Init(Color::PresetColor::BLUE);
+ 300              		.loc 15 106 5 is_stmt 1 view .LVU77
+ 301              		.loc 15 106 22 is_stmt 0 view .LVU78
  302 0036 0221     		movs	r1, #2
- 303 0038 6548     		ldr	r0, .L31+16
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 27
-
-
- 106:Application.cpp **** 	int band = 0;
- 304              		.loc 15 106 6 view .LVU79
+ 303 0038 6948     		ldr	r0, .L31+16
+ 101:Application.cpp **** 	int band = 0;
+ 304              		.loc 15 101 6 view .LVU79
  305 003a 2646     		mov	r6, r4
- 306              		.loc 15 111 22 view .LVU80
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 27
+
+
+ 306              		.loc 15 106 22 view .LVU80
  307 003c FFF7FEFF 		bl	_ZN5daisy5Color4InitENS0_11PresetColorE
  308              	.LVL7:
- 112:Application.cpp ****     my_colors[3].Init(Color::PresetColor::WHITE);
- 309              		.loc 15 112 5 is_stmt 1 view .LVU81
- 310              		.loc 15 112 22 is_stmt 0 view .LVU82
+ 107:Application.cpp ****     my_colors[3].Init(Color::PresetColor::WHITE);
+ 309              		.loc 15 107 5 is_stmt 1 view .LVU81
+ 310              		.loc 15 107 22 is_stmt 0 view .LVU82
  311 0040 0321     		movs	r1, #3
- 312 0042 6448     		ldr	r0, .L31+20
- 105:Application.cpp **** 	int counter = 0;
- 313              		.loc 15 105 7 view .LVU83
+ 312 0042 6848     		ldr	r0, .L31+20
+ 100:Application.cpp **** 	int counter = 0;
+ 313              		.loc 15 100 7 view .LVU83
  314 0044 A146     		mov	r9, r4
- 315              		.loc 15 112 22 view .LVU84
+ 315              		.loc 15 107 22 view .LVU84
  316 0046 FFF7FEFF 		bl	_ZN5daisy5Color4InitENS0_11PresetColorE
  317              	.LVL8:
- 113:Application.cpp ****     my_colors[4].Init(Color::PresetColor::OFF);
- 318              		.loc 15 113 5 is_stmt 1 view .LVU85
- 319              		.loc 15 113 22 is_stmt 0 view .LVU86
- 320 004a 6348     		ldr	r0, .L31+24
- 321 004c 0721     		movs	r1, #7
- 322 004e DFF87881 		ldr	r8, .L31+8
- 323 0052 FFF7FEFF 		bl	_ZN5daisy5Color4InitENS0_11PresetColorE
- 324              	.LVL9:
- 114:Application.cpp **** 
- 115:Application.cpp **** 	hwPod.Init();
- 325              		.loc 15 115 2 is_stmt 1 view .LVU87
- 326              		.loc 15 115 12 is_stmt 0 view .LVU88
- 327 0056 2146     		mov	r1, r4
- 328 0058 6048     		ldr	r0, .L31+28
- 329 005a FFF7FEFF 		bl	_ZN5daisy8DaisyPod4InitEb
- 330              	.LVL10:
- 116:Application.cpp **** 	hwPod.seed.StartLog();
- 331              		.loc 15 116 2 is_stmt 1 view .LVU89
- 332              	.LBB352:
- 333              	.LBI352:
+ 108:Application.cpp **** 	my_colors[4].Init(Color::PresetColor::PURPLE);
+ 318              		.loc 15 108 2 is_stmt 1 view .LVU85
+ 319              		.loc 15 108 19 is_stmt 0 view .LVU86
+ 320 004a 0421     		movs	r1, #4
+ 321 004c 6648     		ldr	r0, .L31+24
+ 322 004e FFF7FEFF 		bl	_ZN5daisy5Color4InitENS0_11PresetColorE
+ 323              	.LVL9:
+ 109:Application.cpp **** 	my_colors[5].Init(Color::PresetColor::GOLD);
+ 324              		.loc 15 109 2 is_stmt 1 view .LVU87
+ 325              		.loc 15 109 19 is_stmt 0 view .LVU88
+ 326 0052 0621     		movs	r1, #6
+ 327 0054 6548     		ldr	r0, .L31+28
+ 328 0056 FFF7FEFF 		bl	_ZN5daisy5Color4InitENS0_11PresetColorE
+ 329              	.LVL10:
+ 110:Application.cpp ****     my_colors[6].Init(Color::PresetColor::OFF);
+ 330              		.loc 15 110 5 is_stmt 1 view .LVU89
+ 331              		.loc 15 110 22 is_stmt 0 view .LVU90
+ 332 005a 6548     		ldr	r0, .L31+32
+ 333 005c 0721     		movs	r1, #7
+ 334 005e DFF87881 		ldr	r8, .L31+8
+ 335 0062 FFF7FEFF 		bl	_ZN5daisy5Color4InitENS0_11PresetColorE
+ 336              	.LVL11:
+ 111:Application.cpp **** 
+ 112:Application.cpp **** 	hwPod.Init();
+ 337              		.loc 15 112 2 is_stmt 1 view .LVU91
+ 338              		.loc 15 112 12 is_stmt 0 view .LVU92
+ 339 0066 2146     		mov	r1, r4
+ 340 0068 6248     		ldr	r0, .L31+36
+ 341 006a FFF7FEFF 		bl	_ZN5daisy8DaisyPod4InitEb
+ 342              	.LVL12:
+ 113:Application.cpp **** 	hwPod.seed.StartLog();
+ 343              		.loc 15 113 2 is_stmt 1 view .LVU93
+ 344              	.LBB352:
+ 345              	.LBI352:
   23:../../libDaisy//src/daisy_seed.h **** 
   24:../../libDaisy//src/daisy_seed.h ****     /** This function used to provide a pre-initialization configuraiton 
   25:../../libDaisy//src/daisy_seed.h ****      *  it has since been deprecated, and does nothing.
@@ -1607,6 +1618,9 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   29:../../libDaisy//src/daisy_seed.h ****     /** 
   30:../../libDaisy//src/daisy_seed.h ****     Initializes the Daisy Seed and the following peripherals:
   31:../../libDaisy//src/daisy_seed.h ****     SDRAM, QSPI, 24-bit 48kHz Audio via AK4556, Internal USB,
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 28
+
+
   32:../../libDaisy//src/daisy_seed.h ****     as well as the built-in LED and Testpoint.
   33:../../libDaisy//src/daisy_seed.h **** 
   34:../../libDaisy//src/daisy_seed.h ****     ADCs, DACs, and other special peripherals (such as I2C, SPI, etc.)
@@ -1618,9 +1632,6 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   40:../../libDaisy//src/daisy_seed.h ****     /** 
   41:../../libDaisy//src/daisy_seed.h ****     Deinitializes all peripherals automatically handled by `Init`.
   42:../../libDaisy//src/daisy_seed.h ****     */
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 28
-
-
   43:../../libDaisy//src/daisy_seed.h ****     void DeInit();
   44:../../libDaisy//src/daisy_seed.h **** 
   45:../../libDaisy//src/daisy_seed.h ****     /** 
@@ -1667,6 +1678,9 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   86:../../libDaisy//src/daisy_seed.h ****     /** Returns the audio sample rate in Hz as a floating point number.
   87:../../libDaisy//src/daisy_seed.h ****      */
   88:../../libDaisy//src/daisy_seed.h ****     float AudioSampleRate();
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 29
+
+
   89:../../libDaisy//src/daisy_seed.h **** 
   90:../../libDaisy//src/daisy_seed.h ****     /** Sets the number of samples processed per channel by the audio callback.
   91:../../libDaisy//src/daisy_seed.h ****      */
@@ -1678,9 +1692,6 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   97:../../libDaisy//src/daisy_seed.h ****     /** Returns the rate in Hz that the Audio callback is called */
   98:../../libDaisy//src/daisy_seed.h ****     float AudioCallbackRate() const;
   99:../../libDaisy//src/daisy_seed.h **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 29
-
-
  100:../../libDaisy//src/daisy_seed.h ****     /** Returns the SAI Handle for the Daisy Seed 
  101:../../libDaisy//src/daisy_seed.h ****      *  This can be useful when adding a secondary codec,
  102:../../libDaisy//src/daisy_seed.h ****      *  the result of this function can be passed to the audio reinit 
@@ -1715,69 +1726,69 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  131:../../libDaisy//src/daisy_seed.h ****     /** Start the logging session. Optionally wait for terminal connection before proceeding.
  132:../../libDaisy//src/daisy_seed.h ****     */
  133:../../libDaisy//src/daisy_seed.h ****     static void StartLog(bool wait_for_pc = false)
- 334              		.loc 10 133 17 view .LVU90
- 335              	.LBB353:
+ 346              		.loc 10 133 17 view .LVU94
+ 347              	.LBB353:
  134:../../libDaisy//src/daisy_seed.h ****     {
  135:../../libDaisy//src/daisy_seed.h ****         Log::StartLog(wait_for_pc);
- 336              		.loc 10 135 9 view .LVU91
- 337              		.loc 10 135 22 is_stmt 0 view .LVU92
- 338 005e 2046     		mov	r0, r4
- 339 0060 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE8StartLogEb
- 340              	.LVL11:
- 341              		.loc 10 135 22 view .LVU93
- 342              	.LBE353:
- 343              	.LBE352:
- 117:Application.cpp **** 	hwPod.SetAudioBlockSize(SAMPLE_BUFFER_SIZE); // number of samples handled per callback
- 344              		.loc 15 117 2 is_stmt 1 view .LVU94
- 345              		.loc 15 117 25 is_stmt 0 view .LVU95
- 346 0064 0821     		movs	r1, #8
- 347 0066 5D48     		ldr	r0, .L31+28
- 348 0068 01AC     		add	r4, sp, #4
- 349 006a FFF7FEFF 		bl	_ZN5daisy8DaisyPod17SetAudioBlockSizeEj
- 350              	.LVL12:
- 118:Application.cpp **** 	
- 119:Application.cpp **** 	if (SAMPLE_RATE == 48000)
- 351              		.loc 15 119 2 is_stmt 1 view .LVU96
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 30
+ 348              		.loc 10 135 9 view .LVU95
+ 349              		.loc 10 135 22 is_stmt 0 view .LVU96
+ 350 006e 2046     		mov	r0, r4
+ 351 0070 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE8StartLogEb
+ 352              	.LVL13:
+ 353              		.loc 10 135 22 view .LVU97
+ 354              	.LBE353:
+ 355              	.LBE352:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 30
 
 
- 120:Application.cpp **** 		hwPod.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_48KHZ);
- 352              		.loc 15 120 3 view .LVU97
- 353              		.loc 15 120 27 is_stmt 0 view .LVU98
- 354 006e 0321     		movs	r1, #3
- 355 0070 5A48     		ldr	r0, .L31+28
- 356 0072 FFF7FEFF 		bl	_ZN5daisy8DaisyPod18SetAudioSampleRateENS_9SaiHandle6Config10SampleRateE
- 357              	.LVL13:
- 121:Application.cpp **** 	else if (SAMPLE_RATE == 96000)
- 122:Application.cpp **** 		hwPod.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_96KHZ);
- 123:Application.cpp **** 	else
- 124:Application.cpp **** 		hwPod.seed.PrintLine("Unsupported sample rate %d", SAMPLE_RATE);		
+ 114:Application.cpp **** 	hwPod.SetAudioBlockSize(SAMPLE_BUFFER_SIZE); // number of samples handled per callback
+ 356              		.loc 15 114 2 is_stmt 1 view .LVU98
+ 357              		.loc 15 114 25 is_stmt 0 view .LVU99
+ 358 0074 0821     		movs	r1, #8
+ 359 0076 5F48     		ldr	r0, .L31+36
+ 360 0078 01AC     		add	r4, sp, #4
+ 361 007a FFF7FEFF 		bl	_ZN5daisy8DaisyPod17SetAudioBlockSizeEj
+ 362              	.LVL14:
+ 115:Application.cpp **** 	
+ 116:Application.cpp **** 	if (SAMPLE_RATE == 48000)
+ 363              		.loc 15 116 2 is_stmt 1 view .LVU100
+ 117:Application.cpp **** 		hwPod.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_48KHZ);
+ 364              		.loc 15 117 3 view .LVU101
+ 365              		.loc 15 117 27 is_stmt 0 view .LVU102
+ 366 007e 0321     		movs	r1, #3
+ 367 0080 5C48     		ldr	r0, .L31+36
+ 368 0082 FFF7FEFF 		bl	_ZN5daisy8DaisyPod18SetAudioSampleRateENS_9SaiHandle6Config10SampleRateE
+ 369              	.LVL15:
+ 118:Application.cpp **** 	else if (SAMPLE_RATE == 96000)
+ 119:Application.cpp **** 		hwPod.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_96KHZ);
+ 120:Application.cpp **** 	else
+ 121:Application.cpp **** 		hwPod.seed.PrintLine("Unsupported sample rate %d", SAMPLE_RATE);		
+ 122:Application.cpp **** 
+ 123:Application.cpp **** 	hwPod.StartAdc();
+ 370              		.loc 15 123 2 is_stmt 1 view .LVU103
+ 371 0086 5B4D     		ldr	r5, .L31+36
+ 372              		.loc 15 123 16 is_stmt 0 view .LVU104
+ 373 0088 5A48     		ldr	r0, .L31+36
+ 374 008a DFF88CA1 		ldr	r10, .L31+72
+ 375 008e FFF7FEFF 		bl	_ZN5daisy8DaisyPod8StartAdcEv
+ 376              	.LVL16:
+ 124:Application.cpp **** 	hwPod.StartAudio(AudioCallback);
+ 377              		.loc 15 124 2 is_stmt 1 view .LVU105
+ 378              		.loc 15 124 18 is_stmt 0 view .LVU106
+ 379 0092 5949     		ldr	r1, .L31+40
+ 380 0094 5748     		ldr	r0, .L31+36
+ 381 0096 FFF7FEFF 		bl	_ZN5daisy8DaisyPod10StartAudioEPFvPKPKfPPfjE
+ 382              	.LVL17:
+ 383              	.L14:
  125:Application.cpp **** 
- 126:Application.cpp **** 	hwPod.StartAdc();
- 358              		.loc 15 126 2 is_stmt 1 view .LVU99
- 359 0076 594D     		ldr	r5, .L31+28
- 360              		.loc 15 126 16 is_stmt 0 view .LVU100
- 361 0078 5848     		ldr	r0, .L31+28
- 362 007a DFF884A1 		ldr	r10, .L31+64
- 363 007e FFF7FEFF 		bl	_ZN5daisy8DaisyPod8StartAdcEv
- 364              	.LVL14:
- 127:Application.cpp **** 	hwPod.StartAudio(AudioCallback);
- 365              		.loc 15 127 2 is_stmt 1 view .LVU101
- 366              		.loc 15 127 18 is_stmt 0 view .LVU102
- 367 0082 5749     		ldr	r1, .L31+32
- 368 0084 5548     		ldr	r0, .L31+28
- 369 0086 FFF7FEFF 		bl	_ZN5daisy8DaisyPod10StartAudioEPFvPKPKfPPfjE
- 370              	.LVL15:
- 371              	.L14:
- 128:Application.cpp **** 
- 129:Application.cpp ****     while(1)
- 372              		.loc 15 129 5 is_stmt 1 view .LVU103
- 373              	.LBB354:
- 130:Application.cpp ****     {
- 131:Application.cpp ****     	hwPod.ProcessAllControls(); 
- 374              		.loc 15 131 6 view .LVU104
- 375              	.LBB355:
- 376              	.LBI355:
+ 126:Application.cpp ****     while(1)
+ 384              		.loc 15 126 5 is_stmt 1 view .LVU107
+ 385              	.LBB354:
+ 127:Application.cpp ****     {
+ 128:Application.cpp ****     	hwPod.ProcessAllControls(); 
+ 386              		.loc 15 128 6 view .LVU108
+ 387              	.LBB355:
+ 388              	.LBI355:
   37:../../libDaisy//src/daisy_pod.h **** 
   38:../../libDaisy//src/daisy_pod.h ****     /** Init related stuff. */
   39:../../libDaisy//src/daisy_pod.h ****     void Init(bool boost = false);
@@ -1787,6 +1798,9 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   43:../../libDaisy//src/daisy_pod.h ****     */
   44:../../libDaisy//src/daisy_pod.h ****     void DelayMs(size_t del);
   45:../../libDaisy//src/daisy_pod.h **** 
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 31
+
+
   46:../../libDaisy//src/daisy_pod.h ****     /** Starts the callback
   47:../../libDaisy//src/daisy_pod.h ****     \param cb Interleaved callback function
   48:../../libDaisy//src/daisy_pod.h ****     */
@@ -1798,9 +1812,6 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   54:../../libDaisy//src/daisy_pod.h ****     void StartAudio(AudioHandle::AudioCallback cb);
   55:../../libDaisy//src/daisy_pod.h **** 
   56:../../libDaisy//src/daisy_pod.h ****     /**
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 31
-
-
   57:../../libDaisy//src/daisy_pod.h ****        Switch callback functions
   58:../../libDaisy//src/daisy_pod.h ****        \param cb New interleaved callback function.
   59:../../libDaisy//src/daisy_pod.h ****     */
@@ -1847,34 +1858,32 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  100:../../libDaisy//src/daisy_pod.h **** 
  101:../../libDaisy//src/daisy_pod.h ****     /** Process Analog and Digital Controls */
  102:../../libDaisy//src/daisy_pod.h ****     inline void ProcessAllControls()
- 377              		.loc 1 102 17 view .LVU105
- 378              	.LBB356:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 32
+
+
+ 389              		.loc 1 102 17 view .LVU109
+ 390              	.LBB356:
  103:../../libDaisy//src/daisy_pod.h ****     {
  104:../../libDaisy//src/daisy_pod.h ****         ProcessAnalogControls();
- 379              		.loc 1 104 9 view .LVU106
- 380              		.loc 1 104 30 is_stmt 0 view .LVU107
- 381 008a 5448     		ldr	r0, .L31+28
- 382 008c FFF7FEFF 		bl	_ZN5daisy8DaisyPod21ProcessAnalogControlsEv
- 383              	.LVL16:
+ 391              		.loc 1 104 9 view .LVU110
+ 392              		.loc 1 104 30 is_stmt 0 view .LVU111
+ 393 009a 5648     		ldr	r0, .L31+36
+ 394 009c FFF7FEFF 		bl	_ZN5daisy8DaisyPod21ProcessAnalogControlsEv
+ 395              	.LVL18:
  105:../../libDaisy//src/daisy_pod.h ****         ProcessDigitalControls();
- 384              		.loc 1 105 9 is_stmt 1 view .LVU108
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 32
-
-
- 385              		.loc 1 105 31 is_stmt 0 view .LVU109
- 386 0090 5248     		ldr	r0, .L31+28
- 387 0092 FFF7FEFF 		bl	_ZN5daisy8DaisyPod22ProcessDigitalControlsEv
- 388              	.LVL17:
- 389              		.loc 1 105 31 view .LVU110
- 390              	.LBE356:
- 391              	.LBE355:
- 132:Application.cpp **** 	
- 133:Application.cpp **** 		// Debounce the Encoder at a steady, fixed rate.
- 134:Application.cpp **** 		//hwPod.encoder.Debounce();
- 135:Application.cpp **** 		inc = hwPod.encoder.Increment();
- 392              		.loc 15 135 3 is_stmt 1 view .LVU111
- 393              	.LBB357:
- 394              	.LBI357:
+ 396              		.loc 1 105 9 is_stmt 1 view .LVU112
+ 397              		.loc 1 105 31 is_stmt 0 view .LVU113
+ 398 00a0 5448     		ldr	r0, .L31+36
+ 399 00a2 FFF7FEFF 		bl	_ZN5daisy8DaisyPod22ProcessDigitalControlsEv
+ 400              	.LVL19:
+ 401              		.loc 1 105 31 view .LVU114
+ 402              	.LBE356:
+ 403              	.LBE355:
+ 129:Application.cpp **** 	
+ 130:Application.cpp **** 		inc = hwPod.encoder.Increment();
+ 404              		.loc 15 130 3 is_stmt 1 view .LVU115
+ 405              	.LBB357:
+ 406              	.LBI357:
   22:../../libDaisy//src/hid/encoder.h **** 
   23:../../libDaisy//src/hid/encoder.h ****     /** Initializes the encoder with the specified hardware pins.
   24:../../libDaisy//src/hid/encoder.h ****      * Update rate is to be deprecated in a future release
@@ -1890,46 +1899,46 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   34:../../libDaisy//src/hid/encoder.h **** 
   35:../../libDaisy//src/hid/encoder.h ****     /** Returns +1 if the encoder was turned clockwise, -1 if it was turned counter-clockwise, or 0
   36:../../libDaisy//src/hid/encoder.h ****     inline int32_t Increment() const { return updated_ ? inc_ : 0; }
- 395              		.loc 9 36 20 view .LVU112
- 396              	.LBB358:
- 397              		.loc 9 36 40 view .LVU113
- 398              		.loc 9 36 56 is_stmt 0 view .LVU114
- 399 0096 95F84430 		ldrb	r3, [r5, #68]	@ zero_extendqisi2
- 400 009a 43B1     		cbz	r3, .L5
- 401 009c 6B6E     		ldr	r3, [r5, #100]
- 402              	.LVL18:
- 403              		.loc 9 36 56 view .LVU115
- 404              	.LBE358:
- 405              	.LBE357:
- 136:Application.cpp **** 
- 137:Application.cpp **** 		if (inc < 0) {
- 406              		.loc 15 137 3 is_stmt 1 view .LVU116
- 407 009e 002B     		cmp	r3, #0
- 408 00a0 C0F28680 		blt	.L27
- 409              	.LVL19:
- 138:Application.cpp **** 			controller.adjust(DEC_PARAM_VALUE);
- 139:Application.cpp **** 		}
- 140:Application.cpp **** 		else if (inc > 0) {
- 410              		.loc 15 140 8 view .LVU117
- 411 00a4 03D0     		beq	.L5
- 141:Application.cpp **** 			controller.adjust(INC_PARAM_VALUE);
- 412              		.loc 15 141 4 view .LVU118
- 413              		.loc 15 141 21 is_stmt 0 view .LVU119
- 414 00a6 0021     		movs	r1, #0
- 415 00a8 4E48     		ldr	r0, .L31+36
- 416 00aa FFF7FEFF 		bl	_ZN10Controller6adjustEs
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 33
+ 407              		.loc 9 36 20 view .LVU116
+ 408              	.LBB358:
+ 409              		.loc 9 36 40 view .LVU117
+ 410              		.loc 9 36 56 is_stmt 0 view .LVU118
+ 411 00a6 95F84430 		ldrb	r3, [r5, #68]	@ zero_extendqisi2
+ 412 00aa 43B1     		cbz	r3, .L5
+ 413 00ac 6B6E     		ldr	r3, [r5, #100]
+ 414              	.LVL20:
+ 415              		.loc 9 36 56 view .LVU119
+ 416              	.LBE358:
+ 417              	.LBE357:
+ 131:Application.cpp **** 
+ 132:Application.cpp **** 		if (inc < 0) {
+ 418              		.loc 15 132 3 is_stmt 1 view .LVU120
+ 419 00ae 002B     		cmp	r3, #0
+ 420 00b0 C0F28680 		blt	.L27
+ 421              	.LVL21:
+ 133:Application.cpp **** 			controller.adjust(DEC_PARAM_VALUE);
+ 134:Application.cpp **** 		}
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 33
 
 
- 417              	.LVL20:
- 418              	.L5:
- 142:Application.cpp **** 		}
- 143:Application.cpp **** 	
- 144:Application.cpp ****         // using button1 turn EQ on/off
- 145:Application.cpp ****         if (hwPod.button1.RisingEdge()) {
- 419              		.loc 15 145 9 is_stmt 1 view .LVU120
- 420              	.LBB359:
- 421              	.LBI359:
+ 135:Application.cpp **** 		else if (inc > 0) {
+ 422              		.loc 15 135 8 view .LVU121
+ 423 00b4 03D0     		beq	.L5
+ 136:Application.cpp **** 			controller.adjust(INC_PARAM_VALUE);
+ 424              		.loc 15 136 4 view .LVU122
+ 425              		.loc 15 136 21 is_stmt 0 view .LVU123
+ 426 00b6 0021     		movs	r1, #0
+ 427 00b8 5048     		ldr	r0, .L31+44
+ 428 00ba FFF7FEFF 		bl	_ZN10Controller6adjustEs
+ 429              	.LVL22:
+ 430              	.L5:
+ 137:Application.cpp **** 		}
+ 138:Application.cpp **** 	
+ 139:Application.cpp ****         // using button1 turn EQ on/off
+ 140:Application.cpp ****         if (hwPod.button1.RisingEdge()) {
+ 431              		.loc 15 140 9 is_stmt 1 view .LVU124
+ 432              	.LBB359:
+ 433              	.LBI359:
   43:../../libDaisy//src/hid/switch.h **** 
   44:../../libDaisy//src/hid/switch.h ****     /** 
   45:../../libDaisy//src/hid/switch.h ****     Initializes the switch object with a given port/pin combo.
@@ -1958,115 +1967,115 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   68:../../libDaisy//src/hid/switch.h **** 
   69:../../libDaisy//src/hid/switch.h ****     /** \return true if a button was just pressed. */
   70:../../libDaisy//src/hid/switch.h ****     inline bool RisingEdge() const { return updated_ ? state_ == 0x7f : false; }
- 422              		.loc 7 70 17 view .LVU121
- 423              	.LBB360:
- 424              		.loc 7 70 38 view .LVU122
- 425              		.loc 7 70 54 is_stmt 0 view .LVU123
- 426 00ae 95F8B430 		ldrb	r3, [r5, #180]	@ zero_extendqisi2
- 427 00b2 1BB1     		cbz	r3, .L7
- 428              	.LVL21:
- 429              		.loc 7 70 54 view .LVU124
- 430              	.LBE360:
- 431              	.LBE359:
- 432              		.loc 15 145 9 view .LVU125
- 433 00b4 95F8BA30 		ldrb	r3, [r5, #186]	@ zero_extendqisi2
- 434 00b8 7F2B     		cmp	r3, #127
- 435 00ba 71D0     		beq	.L28
- 436              	.LVL22:
- 437              	.L7:
- 146:Application.cpp **** 			eqOn = !eqOn;
- 147:Application.cpp **** 			controller.setBypass(!eqOn);
- 148:Application.cpp **** 		}
- 149:Application.cpp **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 34
+ 434              		.loc 7 70 17 view .LVU125
+ 435              	.LBB360:
+ 436              		.loc 7 70 38 view .LVU126
+ 437              		.loc 7 70 54 is_stmt 0 view .LVU127
+ 438 00be 95F8B430 		ldrb	r3, [r5, #180]	@ zero_extendqisi2
+ 439 00c2 1BB1     		cbz	r3, .L7
+ 440              	.LVL23:
+ 441              		.loc 7 70 54 view .LVU128
+ 442              	.LBE360:
+ 443              	.LBE359:
+ 444              		.loc 15 140 9 view .LVU129
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 34
 
 
- 150:Application.cpp ****        // using button2 select eq band
- 151:Application.cpp ****  		if (hwPod.button2.RisingEdge()) {
- 438              		.loc 15 151 4 is_stmt 1 view .LVU126
- 439              	.LBB361:
- 440              	.LBI361:
- 441              		.loc 7 70 17 view .LVU127
- 442              	.LBB362:
- 443              		.loc 7 70 38 view .LVU128
- 444              		.loc 7 70 54 is_stmt 0 view .LVU129
- 445 00bc 95F8C430 		ldrb	r3, [r5, #196]	@ zero_extendqisi2
- 446 00c0 1BB1     		cbz	r3, .L8
- 447              	.LVL23:
- 448              		.loc 7 70 54 view .LVU130
- 449              	.LBE362:
- 450              	.LBE361:
- 451              		.loc 15 151 4 view .LVU131
- 452 00c2 95F8CA30 		ldrb	r3, [r5, #202]	@ zero_extendqisi2
- 453 00c6 7F2B     		cmp	r3, #127
- 454 00c8 3DD0     		beq	.L29
- 455              	.L8:
- 152:Application.cpp **** 			band = (int)controller.adjust(SEL_BAND);
- 153:Application.cpp **** 			hwPod.seed.PrintLine("Equalizer band %d                                    ", band);
- 154:Application.cpp **** 			counter = 1;
- 155:Application.cpp **** 		}
- 156:Application.cpp **** 		
- 157:Application.cpp **** 		hwPod.ClearLeds();
- 456              		.loc 15 157 3 is_stmt 1 view .LVU132
- 457              		.loc 15 157 18 is_stmt 0 view .LVU133
- 458 00ca 4448     		ldr	r0, .L31+28
- 459 00cc FFF7FEFF 		bl	_ZN5daisy8DaisyPod9ClearLedsEv
- 460              	.LVL24:
- 158:Application.cpp **** 		int EqOn = eqOn ? 3 : 4; // LED White if on, Off if bypass
- 461              		.loc 15 158 3 is_stmt 1 view .LVU134
- 159:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
- 160:Application.cpp **** 		hwPod.led2.SetColor(my_colors[band]);
- 161:Application.cpp **** 		hwPod.UpdateLeds();
- 162:Application.cpp **** 		
- 163:Application.cpp **** 		if (counter % 100000 == 0) { // Print every ~0.2 seconds
- 462              		.loc 15 163 15 is_stmt 0 view .LVU135
- 463 00d0 4548     		ldr	r0, .L31+40
- 464 00d2 7309     		lsrs	r3, r6, #5
- 465 00d4 4549     		ldr	r1, .L31+44
- 158:Application.cpp **** 		int EqOn = eqOn ? 3 : 4; // LED White if on, Off if bypass
- 466              		.loc 15 158 19 view .LVU136
- 467 00d6 B9F1000F 		cmp	r9, #0
- 468 00da 2BD1     		bne	.L11
- 469              		.loc 15 163 15 view .LVU137
- 470 00dc A0FB0303 		umull	r0, r3, r0, r3
- 158:Application.cpp **** 		int EqOn = eqOn ? 3 : 4; // LED White if on, Off if bypass
- 471              		.loc 15 158 19 view .LVU138
- 472 00e0 0422     		movs	r2, #4
- 473              		.loc 15 163 15 view .LVU139
- 474 00e2 4FEAD31B 		lsr	fp, r3, #7
- 475 00e6 01FB1B6B 		mls	fp, r1, fp, r6
- 164:Application.cpp **** 			//hwPod.seed.PrintLine("Daisy Pod IIR Filter Example");
- 165:Application.cpp **** 			//hwPod.seed.PrintLine("Equalizer duration = %u ns start = %u end = %u", dur, start, end);
- 166:Application.cpp **** 			controller.printState(dur, SAMPLE_TIME_NS);
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 35
+ 445 00c4 95F8BA30 		ldrb	r3, [r5, #186]	@ zero_extendqisi2
+ 446 00c8 7F2B     		cmp	r3, #127
+ 447 00ca 71D0     		beq	.L28
+ 448              	.LVL24:
+ 449              	.L7:
+ 141:Application.cpp **** 			eqOn = !eqOn;
+ 142:Application.cpp **** 			controller.setBypass(!eqOn);
+ 143:Application.cpp **** 		}
+ 144:Application.cpp **** 
+ 145:Application.cpp ****        // using button2 select eq band
+ 146:Application.cpp ****  		if (hwPod.button2.RisingEdge()) {
+ 450              		.loc 15 146 4 is_stmt 1 view .LVU130
+ 451              	.LBB361:
+ 452              	.LBI361:
+ 453              		.loc 7 70 17 view .LVU131
+ 454              	.LBB362:
+ 455              		.loc 7 70 38 view .LVU132
+ 456              		.loc 7 70 54 is_stmt 0 view .LVU133
+ 457 00cc 95F8C430 		ldrb	r3, [r5, #196]	@ zero_extendqisi2
+ 458 00d0 1BB1     		cbz	r3, .L8
+ 459              	.LVL25:
+ 460              		.loc 7 70 54 view .LVU134
+ 461              	.LBE362:
+ 462              	.LBE361:
+ 463              		.loc 15 146 4 view .LVU135
+ 464 00d2 95F8CA30 		ldrb	r3, [r5, #202]	@ zero_extendqisi2
+ 465 00d6 7F2B     		cmp	r3, #127
+ 466 00d8 3DD0     		beq	.L29
+ 467              	.L8:
+ 147:Application.cpp **** 			band = (int)controller.adjust(SEL_BAND);
+ 148:Application.cpp **** 			hwPod.seed.PrintLine("Equalizer band %d                                    ", band);
+ 149:Application.cpp **** 			counter = 1;
+ 150:Application.cpp **** 		}
+ 151:Application.cpp **** 		
+ 152:Application.cpp **** 		hwPod.ClearLeds();
+ 468              		.loc 15 152 3 is_stmt 1 view .LVU136
+ 469              		.loc 15 152 18 is_stmt 0 view .LVU137
+ 470 00da 4648     		ldr	r0, .L31+36
+ 471 00dc FFF7FEFF 		bl	_ZN5daisy8DaisyPod9ClearLedsEv
+ 472              	.LVL26:
+ 153:Application.cpp **** 		int EqOn = eqOn ? 3 : 6; // LED White if on, Off if bypass
+ 473              		.loc 15 153 3 is_stmt 1 view .LVU138
+ 154:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
+ 155:Application.cpp **** 		hwPod.led2.SetColor(my_colors[band]);
+ 156:Application.cpp **** 		hwPod.UpdateLeds();
+ 157:Application.cpp **** 		
+ 158:Application.cpp **** 		if (counter % 100000 == 0) { // Print every ~0.2 seconds
+ 474              		.loc 15 158 15 is_stmt 0 view .LVU139
+ 475 00e0 4748     		ldr	r0, .L31+48
+ 476 00e2 7309     		lsrs	r3, r6, #5
+ 477 00e4 4749     		ldr	r1, .L31+52
+ 153:Application.cpp **** 		int EqOn = eqOn ? 3 : 6; // LED White if on, Off if bypass
+ 478              		.loc 15 153 19 view .LVU140
+ 479 00e6 B9F1000F 		cmp	r9, #0
+ 480 00ea 2BD1     		bne	.L11
+ 481              		.loc 15 158 15 view .LVU141
+ 482 00ec A0FB0303 		umull	r0, r3, r0, r3
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 35
 
 
- 167:Application.cpp **** 		}
- 168:Application.cpp **** 		counter++;
- 476              		.loc 15 168 10 view .LVU140
- 477 00ea 0136     		adds	r6, r6, #1
- 478              	.LVL25:
- 479              	.L12:
- 159:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
- 480              		.loc 15 159 3 is_stmt 1 discriminator 4 view .LVU141
- 159:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
- 481              		.loc 15 159 37 is_stmt 0 discriminator 4 view .LVU142
- 482 00ec 02EB4202 		add	r2, r2, r2, lsl #1
- 483              	.LVL26:
- 159:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
- 484              		.loc 15 159 37 discriminator 4 view .LVU143
- 485 00f0 08EB8202 		add	r2, r8, r2, lsl #2
- 486 00f4 07CA     		ldm	r2, {r0, r1, r2}
- 487 00f6 84E80700 		stm	r4, {r0, r1, r2}
- 159:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
- 488              		.loc 15 159 22 discriminator 4 view .LVU144
- 489 00fa 2146     		mov	r1, r4
- 490 00fc 3C48     		ldr	r0, .L31+48
- 491 00fe FFF7FEFF 		bl	_ZN5daisy6RgbLed8SetColorENS_5ColorE
- 492              	.LVL27:
- 493              	.LBB363:
- 494              	.LBI363:
- 495              		.file 17 "../../libDaisy//src/util/color.h"
+ 153:Application.cpp **** 		int EqOn = eqOn ? 3 : 6; // LED White if on, Off if bypass
+ 483              		.loc 15 153 19 view .LVU142
+ 484 00f0 0622     		movs	r2, #6
+ 485              		.loc 15 158 15 view .LVU143
+ 486 00f2 4FEAD31B 		lsr	fp, r3, #7
+ 487 00f6 01FB1B6B 		mls	fp, r1, fp, r6
+ 159:Application.cpp **** 			//hwPod.seed.PrintLine("Daisy Pod IIR Filter Example");
+ 160:Application.cpp **** 			//hwPod.seed.PrintLine("Equalizer duration = %u ns start = %u end = %u", dur, start, end);
+ 161:Application.cpp **** 			controller.printState(dur, SAMPLE_TIME_NS);
+ 162:Application.cpp **** 		}
+ 163:Application.cpp **** 		counter++;
+ 488              		.loc 15 163 10 view .LVU144
+ 489 00fa 0136     		adds	r6, r6, #1
+ 490              	.LVL27:
+ 491              	.L12:
+ 154:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
+ 492              		.loc 15 154 3 is_stmt 1 discriminator 4 view .LVU145
+ 154:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
+ 493              		.loc 15 154 37 is_stmt 0 discriminator 4 view .LVU146
+ 494 00fc 02EB4202 		add	r2, r2, r2, lsl #1
+ 495              	.LVL28:
+ 154:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
+ 496              		.loc 15 154 37 discriminator 4 view .LVU147
+ 497 0100 08EB8202 		add	r2, r8, r2, lsl #2
+ 498 0104 07CA     		ldm	r2, {r0, r1, r2}
+ 499 0106 84E80700 		stm	r4, {r0, r1, r2}
+ 154:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
+ 500              		.loc 15 154 22 discriminator 4 view .LVU148
+ 501 010a 2146     		mov	r1, r4
+ 502 010c 3E48     		ldr	r0, .L31+56
+ 503 010e FFF7FEFF 		bl	_ZN5daisy6RgbLed8SetColorENS_5ColorE
+ 504              	.LVL29:
+ 505              	.LBB363:
+ 506              	.LBI363:
+ 507              		.file 17 "../../libDaisy//src/util/color.h"
    1:../../libDaisy//src/util/color.h **** /* 
    2:../../libDaisy//src/util/color.h **** TODO:
    3:../../libDaisy//src/util/color.h **** - Add Blend(), Scale(), etc.
@@ -2089,323 +2098,325 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   20:../../libDaisy//src/util/color.h **** */
   21:../../libDaisy//src/util/color.h **** 
   22:../../libDaisy//src/util/color.h **** /** Class for handling simple colors */
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 36
+
+
   23:../../libDaisy//src/util/color.h **** class Color
   24:../../libDaisy//src/util/color.h **** {
   25:../../libDaisy//src/util/color.h ****   public:
   26:../../libDaisy//src/util/color.h ****     Color() {}
   27:../../libDaisy//src/util/color.h ****     ~Color() {}
- 496              		.loc 17 27 5 is_stmt 1 discriminator 4 view .LVU145
- 497              		.loc 17 27 5 is_stmt 0 discriminator 4 view .LVU146
- 498              	.LBE363:
- 160:Application.cpp **** 		hwPod.UpdateLeds();
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 36
-
-
- 499              		.loc 15 160 3 is_stmt 1 discriminator 4 view .LVU147
- 160:Application.cpp **** 		hwPod.UpdateLeds();
- 500              		.loc 15 160 37 is_stmt 0 discriminator 4 view .LVU148
- 501 0102 07EB4702 		add	r2, r7, r7, lsl #1
- 502 0106 08EB8202 		add	r2, r8, r2, lsl #2
- 503 010a 07CA     		ldm	r2, {r0, r1, r2}
- 504 010c 84E80700 		stm	r4, {r0, r1, r2}
- 160:Application.cpp **** 		hwPod.UpdateLeds();
- 505              		.loc 15 160 22 discriminator 4 view .LVU149
- 506 0110 3848     		ldr	r0, .L31+52
- 507 0112 2146     		mov	r1, r4
- 508 0114 FFF7FEFF 		bl	_ZN5daisy6RgbLed8SetColorENS_5ColorE
- 509              	.LVL28:
- 510              	.LBB364:
- 511              	.LBI364:
- 512              		.loc 17 27 5 is_stmt 1 discriminator 4 view .LVU150
- 513              		.loc 17 27 5 is_stmt 0 discriminator 4 view .LVU151
- 514              	.LBE364:
- 161:Application.cpp **** 		
- 515              		.loc 15 161 3 is_stmt 1 discriminator 4 view .LVU152
- 161:Application.cpp **** 		
- 516              		.loc 15 161 19 is_stmt 0 discriminator 4 view .LVU153
- 517 0118 3048     		ldr	r0, .L31+28
- 518 011a FFF7FEFF 		bl	_ZN5daisy8DaisyPod10UpdateLedsEv
- 519              	.LVL29:
- 163:Application.cpp **** 			//hwPod.seed.PrintLine("Daisy Pod IIR Filter Example");
- 520              		.loc 15 163 3 is_stmt 1 discriminator 4 view .LVU154
- 521 011e BBF1000F 		cmp	fp, #0
- 522 0122 B2D1     		bne	.L14
- 166:Application.cpp **** 		}
- 523              		.loc 15 166 4 view .LVU155
- 166:Application.cpp **** 		}
- 524              		.loc 15 166 25 is_stmt 0 view .LVU156
- 525 0124 9FED340A 		vldr.32	s0, .L31+56
- 526 0128 DAF80010 		ldr	r1, [r10]
- 527 012c 2D48     		ldr	r0, .L31+36
- 528 012e FFF7FEFF 		bl	_ZN10Controller10printStateEmf
- 529              	.LVL30:
- 530 0132 AAE7     		b	.L14
+ 508              		.loc 17 27 5 is_stmt 1 discriminator 4 view .LVU149
+ 509              		.loc 17 27 5 is_stmt 0 discriminator 4 view .LVU150
+ 510              	.LBE363:
+ 155:Application.cpp **** 		hwPod.UpdateLeds();
+ 511              		.loc 15 155 3 is_stmt 1 discriminator 4 view .LVU151
+ 155:Application.cpp **** 		hwPod.UpdateLeds();
+ 512              		.loc 15 155 37 is_stmt 0 discriminator 4 view .LVU152
+ 513 0112 07EB4702 		add	r2, r7, r7, lsl #1
+ 514 0116 08EB8202 		add	r2, r8, r2, lsl #2
+ 515 011a 07CA     		ldm	r2, {r0, r1, r2}
+ 516 011c 84E80700 		stm	r4, {r0, r1, r2}
+ 155:Application.cpp **** 		hwPod.UpdateLeds();
+ 517              		.loc 15 155 22 discriminator 4 view .LVU153
+ 518 0120 3A48     		ldr	r0, .L31+60
+ 519 0122 2146     		mov	r1, r4
+ 520 0124 FFF7FEFF 		bl	_ZN5daisy6RgbLed8SetColorENS_5ColorE
+ 521              	.LVL30:
+ 522              	.LBB364:
+ 523              	.LBI364:
+ 524              		.loc 17 27 5 is_stmt 1 discriminator 4 view .LVU154
+ 525              		.loc 17 27 5 is_stmt 0 discriminator 4 view .LVU155
+ 526              	.LBE364:
+ 156:Application.cpp **** 		
+ 527              		.loc 15 156 3 is_stmt 1 discriminator 4 view .LVU156
+ 156:Application.cpp **** 		
+ 528              		.loc 15 156 19 is_stmt 0 discriminator 4 view .LVU157
+ 529 0128 3248     		ldr	r0, .L31+36
+ 530 012a FFF7FEFF 		bl	_ZN5daisy8DaisyPod10UpdateLedsEv
  531              	.LVL31:
- 532              	.L11:
- 163:Application.cpp **** 			//hwPod.seed.PrintLine("Daisy Pod IIR Filter Example");
- 533              		.loc 15 163 15 view .LVU157
- 534 0134 A0FB0303 		umull	r0, r3, r0, r3
- 158:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
- 535              		.loc 15 158 19 view .LVU158
- 536 0138 0322     		movs	r2, #3
- 163:Application.cpp **** 			//hwPod.seed.PrintLine("Daisy Pod IIR Filter Example");
- 537              		.loc 15 163 15 view .LVU159
- 538 013a 4FEAD31B 		lsr	fp, r3, #7
- 539 013e 01FB1B6B 		mls	fp, r1, fp, r6
- 540              		.loc 15 168 10 view .LVU160
- 541 0142 0136     		adds	r6, r6, #1
- 542              	.LVL32:
- 543              		.loc 15 168 10 view .LVU161
- 544 0144 D2E7     		b	.L12
- 545              	.LVL33:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 37
+ 158:Application.cpp **** 			//hwPod.seed.PrintLine("Daisy Pod IIR Filter Example");
+ 532              		.loc 15 158 3 is_stmt 1 discriminator 4 view .LVU158
+ 533 012e BBF1000F 		cmp	fp, #0
+ 534 0132 B2D1     		bne	.L14
+ 161:Application.cpp **** 		}
+ 535              		.loc 15 161 4 view .LVU159
+ 161:Application.cpp **** 		}
+ 536              		.loc 15 161 25 is_stmt 0 view .LVU160
+ 537 0134 9FED360A 		vldr.32	s0, .L31+64
+ 538 0138 DAF80010 		ldr	r1, [r10]
+ 539 013c 2F48     		ldr	r0, .L31+44
+ 540 013e FFF7FEFF 		bl	_ZN10Controller10printStateEmf
+ 541              	.LVL32:
+ 542 0142 AAE7     		b	.L14
+ 543              	.LVL33:
+ 544              	.L11:
+ 158:Application.cpp **** 			//hwPod.seed.PrintLine("Daisy Pod IIR Filter Example");
+ 545              		.loc 15 158 15 view .LVU161
+ 546 0144 A0FB0303 		umull	r0, r3, r0, r3
+ 153:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
+ 547              		.loc 15 153 19 view .LVU162
+ 548 0148 0322     		movs	r2, #3
+ 158:Application.cpp **** 			//hwPod.seed.PrintLine("Daisy Pod IIR Filter Example");
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 37
 
 
- 546              	.L29:
- 152:Application.cpp **** 			hwPod.seed.PrintLine("Equalizer band %d                                    ", band);
- 547              		.loc 15 152 4 is_stmt 1 view .LVU162
- 152:Application.cpp **** 			hwPod.seed.PrintLine("Equalizer band %d                                    ", band);
- 548              		.loc 15 152 33 is_stmt 0 view .LVU163
- 549 0146 0321     		movs	r1, #3
- 550 0148 2648     		ldr	r0, .L31+36
- 551 014a FFF7FEFF 		bl	_ZN10Controller6adjustEs
- 552              	.LVL34:
- 152:Application.cpp **** 			hwPod.seed.PrintLine("Equalizer band %d                                    ", band);
- 553              		.loc 15 152 9 view .LVU164
- 554 014e FDEEC07A 		vcvt.s32.f32	s15, s0
- 555              	.LBB365:
- 556              	.LBB366:
+ 549              		.loc 15 158 15 view .LVU163
+ 550 014a 4FEAD31B 		lsr	fp, r3, #7
+ 551 014e 01FB1B6B 		mls	fp, r1, fp, r6
+ 552              		.loc 15 163 10 view .LVU164
+ 553 0152 0136     		adds	r6, r6, #1
+ 554              	.LVL34:
+ 555              		.loc 15 163 10 view .LVU165
+ 556 0154 D2E7     		b	.L12
+ 557              	.LVL35:
+ 558              	.L29:
+ 147:Application.cpp **** 			hwPod.seed.PrintLine("Equalizer band %d                                    ", band);
+ 559              		.loc 15 147 4 is_stmt 1 view .LVU166
+ 147:Application.cpp **** 			hwPod.seed.PrintLine("Equalizer band %d                                    ", band);
+ 560              		.loc 15 147 33 is_stmt 0 view .LVU167
+ 561 0156 0321     		movs	r1, #3
+ 562 0158 2848     		ldr	r0, .L31+44
+ 563 015a FFF7FEFF 		bl	_ZN10Controller6adjustEs
+ 564              	.LVL36:
+ 147:Application.cpp **** 			hwPod.seed.PrintLine("Equalizer band %d                                    ", band);
+ 565              		.loc 15 147 9 view .LVU168
+ 566 015e FDEEC07A 		vcvt.s32.f32	s15, s0
+ 567              	.LBB365:
+ 568              	.LBB366:
  128:../../libDaisy//src/daisy_seed.h ****     }
- 557              		.loc 10 128 23 view .LVU165
- 558 0152 2A48     		ldr	r0, .L31+60
- 559 0154 17EE901A 		vmov	r1, s15	@ int
- 560              	.LBE366:
- 561              	.LBE365:
- 152:Application.cpp **** 			hwPod.seed.PrintLine("Equalizer band %d                                    ", band);
- 562              		.loc 15 152 9 view .LVU166
- 563 0158 17EE907A 		vmov	r7, s15	@ int
- 564              	.LVL35:
- 153:Application.cpp **** 			counter = 1;
- 565              		.loc 15 153 4 is_stmt 1 view .LVU167
- 566              	.LBB368:
- 567              	.LBI365:
+ 569              		.loc 10 128 23 view .LVU169
+ 570 0162 2C48     		ldr	r0, .L31+68
+ 571 0164 17EE901A 		vmov	r1, s15	@ int
+ 572              	.LBE366:
+ 573              	.LBE365:
+ 147:Application.cpp **** 			hwPod.seed.PrintLine("Equalizer band %d                                    ", band);
+ 574              		.loc 15 147 9 view .LVU170
+ 575 0168 17EE907A 		vmov	r7, s15	@ int
+ 576              	.LVL37:
+ 148:Application.cpp **** 			counter = 1;
+ 577              		.loc 15 148 4 is_stmt 1 view .LVU171
+ 578              	.LBB368:
+ 579              	.LBI365:
  126:../../libDaisy//src/daisy_seed.h ****     {
- 568              		.loc 10 126 17 view .LVU168
- 569              	.LBB367:
+ 580              		.loc 10 126 17 view .LVU172
+ 581              	.LBB367:
  128:../../libDaisy//src/daisy_seed.h ****     }
- 570              		.loc 10 128 23 is_stmt 0 view .LVU169
- 571 015c FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
- 572              	.LVL36:
+ 582              		.loc 10 128 23 is_stmt 0 view .LVU173
+ 583 016c FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
+ 584              	.LVL38:
  128:../../libDaisy//src/daisy_seed.h ****     }
- 573              		.loc 10 128 23 view .LVU170
- 574              	.LBE367:
- 575              	.LBE368:
- 154:Application.cpp **** 		}
- 576              		.loc 15 154 4 is_stmt 1 view .LVU171
- 157:Application.cpp **** 		int EqOn = eqOn ? 3 : 4; // LED White if on, Off if bypass
- 577              		.loc 15 157 3 view .LVU172
- 157:Application.cpp **** 		int EqOn = eqOn ? 3 : 4; // LED White if on, Off if bypass
- 578              		.loc 15 157 18 is_stmt 0 view .LVU173
- 579 0160 1E48     		ldr	r0, .L31+28
- 580 0162 FFF7FEFF 		bl	_ZN5daisy8DaisyPod9ClearLedsEv
- 581              	.LVL37:
- 158:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
- 582              		.loc 15 158 3 is_stmt 1 view .LVU174
- 158:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
- 583              		.loc 15 158 19 is_stmt 0 view .LVU175
- 584 0166 B9F1000F 		cmp	r9, #0
- 585 016a 26D0     		beq	.L30
- 586              	.LVL38:
- 159:Application.cpp **** 		hwPod.led2.SetColor(my_colors[band]);
- 587              		.loc 15 159 3 is_stmt 1 view .LVU176
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 38
+ 585              		.loc 10 128 23 view .LVU174
+ 586              	.LBE367:
+ 587              	.LBE368:
+ 149:Application.cpp **** 		}
+ 588              		.loc 15 149 4 is_stmt 1 view .LVU175
+ 152:Application.cpp **** 		int EqOn = eqOn ? 3 : 6; // LED White if on, Off if bypass
+ 589              		.loc 15 152 3 view .LVU176
+ 152:Application.cpp **** 		int EqOn = eqOn ? 3 : 6; // LED White if on, Off if bypass
+ 590              		.loc 15 152 18 is_stmt 0 view .LVU177
+ 591 0170 2048     		ldr	r0, .L31+36
+ 592 0172 FFF7FEFF 		bl	_ZN5daisy8DaisyPod9ClearLedsEv
+ 593              	.LVL39:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 38
 
 
- 159:Application.cpp **** 		hwPod.led2.SetColor(my_colors[band]);
- 588              		.loc 15 159 37 is_stmt 0 view .LVU177
- 589 016c 194B     		ldr	r3, .L31+20
- 590              	.LVL39:
- 591              	.L26:
- 161:Application.cpp **** 		
- 592              		.loc 15 161 19 view .LVU178
- 593 016e 0226     		movs	r6, #2
- 159:Application.cpp **** 		hwPod.led2.SetColor(my_colors[band]);
- 594              		.loc 15 159 37 view .LVU179
- 595 0170 93E80700 		ldm	r3, {r0, r1, r2}
- 596 0174 84E80700 		stm	r4, {r0, r1, r2}
- 159:Application.cpp **** 		hwPod.led2.SetColor(my_colors[band]);
- 597              		.loc 15 159 22 view .LVU180
- 598 0178 2146     		mov	r1, r4
- 599 017a 1D48     		ldr	r0, .L31+48
- 600 017c FFF7FEFF 		bl	_ZN5daisy6RgbLed8SetColorENS_5ColorE
- 601              	.LVL40:
- 602              	.LBB369:
- 603              		.loc 17 27 5 is_stmt 1 view .LVU181
- 604              		.loc 17 27 5 is_stmt 0 view .LVU182
- 605              	.LBE369:
- 160:Application.cpp **** 		hwPod.UpdateLeds();
- 606              		.loc 15 160 3 is_stmt 1 view .LVU183
- 160:Application.cpp **** 		hwPod.UpdateLeds();
- 607              		.loc 15 160 37 is_stmt 0 view .LVU184
- 608 0180 07EB4703 		add	r3, r7, r7, lsl #1
- 609 0184 08EB8303 		add	r3, r8, r3, lsl #2
- 610 0188 93E80700 		ldm	r3, {r0, r1, r2}
- 611 018c 84E80700 		stm	r4, {r0, r1, r2}
- 160:Application.cpp **** 		hwPod.UpdateLeds();
- 612              		.loc 15 160 22 view .LVU185
- 613 0190 2146     		mov	r1, r4
- 614 0192 1848     		ldr	r0, .L31+52
- 615 0194 FFF7FEFF 		bl	_ZN5daisy6RgbLed8SetColorENS_5ColorE
- 616              	.LVL41:
- 617              	.LBB370:
- 618              		.loc 17 27 5 is_stmt 1 view .LVU186
- 619              		.loc 17 27 5 is_stmt 0 view .LVU187
- 620              	.LBE370:
- 161:Application.cpp **** 		
- 621              		.loc 15 161 3 is_stmt 1 view .LVU188
- 161:Application.cpp **** 		
- 622              		.loc 15 161 19 is_stmt 0 view .LVU189
- 623 0198 1048     		ldr	r0, .L31+28
- 624 019a FFF7FEFF 		bl	_ZN5daisy8DaisyPod10UpdateLedsEv
- 625              	.LVL42:
- 163:Application.cpp **** 			//hwPod.seed.PrintLine("Daisy Pod IIR Filter Example");
- 626              		.loc 15 163 3 is_stmt 1 view .LVU190
- 627              		.loc 15 168 3 view .LVU191
- 628              		.loc 15 168 3 is_stmt 0 view .LVU192
- 629              	.LBE354:
- 129:Application.cpp ****     {
- 630              		.loc 15 129 5 is_stmt 1 view .LVU193
- 169:Application.cpp **** 		//System::Delay(1); // Wait 1 ms
- 170:Application.cpp ****     }
- 631              		.loc 15 170 5 is_stmt 0 view .LVU194
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 39
+ 153:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
+ 594              		.loc 15 153 3 is_stmt 1 view .LVU178
+ 153:Application.cpp **** 		hwPod.led1.SetColor(my_colors[EqOn]);
+ 595              		.loc 15 153 19 is_stmt 0 view .LVU179
+ 596 0176 B9F1000F 		cmp	r9, #0
+ 597 017a 26D0     		beq	.L30
+ 598              	.LVL40:
+ 154:Application.cpp **** 		hwPod.led2.SetColor(my_colors[band]);
+ 599              		.loc 15 154 3 is_stmt 1 view .LVU180
+ 154:Application.cpp **** 		hwPod.led2.SetColor(my_colors[band]);
+ 600              		.loc 15 154 37 is_stmt 0 view .LVU181
+ 601 017c 194B     		ldr	r3, .L31+20
+ 602              	.LVL41:
+ 603              	.L26:
+ 156:Application.cpp **** 		
+ 604              		.loc 15 156 19 view .LVU182
+ 605 017e 0226     		movs	r6, #2
+ 154:Application.cpp **** 		hwPod.led2.SetColor(my_colors[band]);
+ 606              		.loc 15 154 37 view .LVU183
+ 607 0180 93E80700 		ldm	r3, {r0, r1, r2}
+ 608 0184 84E80700 		stm	r4, {r0, r1, r2}
+ 154:Application.cpp **** 		hwPod.led2.SetColor(my_colors[band]);
+ 609              		.loc 15 154 22 view .LVU184
+ 610 0188 2146     		mov	r1, r4
+ 611 018a 1F48     		ldr	r0, .L31+56
+ 612 018c FFF7FEFF 		bl	_ZN5daisy6RgbLed8SetColorENS_5ColorE
+ 613              	.LVL42:
+ 614              	.LBB369:
+ 615              		.loc 17 27 5 is_stmt 1 view .LVU185
+ 616              		.loc 17 27 5 is_stmt 0 view .LVU186
+ 617              	.LBE369:
+ 155:Application.cpp **** 		hwPod.UpdateLeds();
+ 618              		.loc 15 155 3 is_stmt 1 view .LVU187
+ 155:Application.cpp **** 		hwPod.UpdateLeds();
+ 619              		.loc 15 155 37 is_stmt 0 view .LVU188
+ 620 0190 07EB4703 		add	r3, r7, r7, lsl #1
+ 621 0194 08EB8303 		add	r3, r8, r3, lsl #2
+ 622 0198 93E80700 		ldm	r3, {r0, r1, r2}
+ 623 019c 84E80700 		stm	r4, {r0, r1, r2}
+ 155:Application.cpp **** 		hwPod.UpdateLeds();
+ 624              		.loc 15 155 22 view .LVU189
+ 625 01a0 2146     		mov	r1, r4
+ 626 01a2 1A48     		ldr	r0, .L31+60
+ 627 01a4 FFF7FEFF 		bl	_ZN5daisy6RgbLed8SetColorENS_5ColorE
+ 628              	.LVL43:
+ 629              	.LBB370:
+ 630              		.loc 17 27 5 is_stmt 1 view .LVU190
+ 631              		.loc 17 27 5 is_stmt 0 view .LVU191
+ 632              	.LBE370:
+ 156:Application.cpp **** 		
+ 633              		.loc 15 156 3 is_stmt 1 view .LVU192
+ 156:Application.cpp **** 		
+ 634              		.loc 15 156 19 is_stmt 0 view .LVU193
+ 635 01a8 1248     		ldr	r0, .L31+36
+ 636 01aa FFF7FEFF 		bl	_ZN5daisy8DaisyPod10UpdateLedsEv
+ 637              	.LVL44:
+ 158:Application.cpp **** 			//hwPod.seed.PrintLine("Daisy Pod IIR Filter Example");
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 39
 
 
- 632 019e 74E7     		b	.L14
- 633              	.LVL43:
- 634              	.L28:
- 635              	.LBB371:
- 146:Application.cpp **** 			controller.setBypass(!eqOn);
- 636              		.loc 15 146 4 is_stmt 1 view .LVU195
- 146:Application.cpp **** 			controller.setBypass(!eqOn);
- 637              		.loc 15 146 9 is_stmt 0 view .LVU196
- 638 01a0 89F00103 		eor	r3, r9, #1
- 639              	.LVL44:
- 147:Application.cpp **** 		}
- 640              		.loc 15 147 4 is_stmt 1 view .LVU197
- 147:Application.cpp **** 		}
- 641              		.loc 15 147 24 is_stmt 0 view .LVU198
- 642 01a4 4946     		mov	r1, r9
- 643 01a6 0F48     		ldr	r0, .L31+36
- 146:Application.cpp **** 			controller.setBypass(!eqOn);
- 644              		.loc 15 146 9 view .LVU199
- 645 01a8 9946     		mov	r9, r3
- 147:Application.cpp **** 		}
- 646              		.loc 15 147 24 view .LVU200
- 647 01aa FFF7FEFF 		bl	_ZN10Controller9setBypassEb
- 648              	.LVL45:
- 147:Application.cpp **** 		}
- 649              		.loc 15 147 24 view .LVU201
- 650 01ae 85E7     		b	.L7
+ 638              		.loc 15 158 3 is_stmt 1 view .LVU194
+ 639              		.loc 15 163 3 view .LVU195
+ 640              		.loc 15 163 3 is_stmt 0 view .LVU196
+ 641              	.LBE354:
+ 126:Application.cpp ****     {
+ 642              		.loc 15 126 5 is_stmt 1 view .LVU197
+ 164:Application.cpp **** 		//System::Delay(1); // Wait 1 ms
+ 165:Application.cpp ****     }
+ 643              		.loc 15 165 5 is_stmt 0 view .LVU198
+ 644 01ae 74E7     		b	.L14
+ 645              	.LVL45:
+ 646              	.L28:
+ 647              	.LBB371:
+ 141:Application.cpp **** 			controller.setBypass(!eqOn);
+ 648              		.loc 15 141 4 is_stmt 1 view .LVU199
+ 141:Application.cpp **** 			controller.setBypass(!eqOn);
+ 649              		.loc 15 141 9 is_stmt 0 view .LVU200
+ 650 01b0 89F00103 		eor	r3, r9, #1
  651              	.LVL46:
- 652              	.L27:
- 138:Application.cpp **** 		}
- 653              		.loc 15 138 4 is_stmt 1 view .LVU202
- 138:Application.cpp **** 		}
- 654              		.loc 15 138 21 is_stmt 0 view .LVU203
- 655 01b0 0121     		movs	r1, #1
- 656 01b2 0C48     		ldr	r0, .L31+36
- 657 01b4 FFF7FEFF 		bl	_ZN10Controller6adjustEs
- 658              	.LVL47:
- 138:Application.cpp **** 		}
- 659              		.loc 15 138 21 view .LVU204
- 660 01b8 79E7     		b	.L5
- 661              	.LVL48:
- 662              	.L30:
- 159:Application.cpp **** 		hwPod.led2.SetColor(my_colors[band]);
- 663              		.loc 15 159 3 is_stmt 1 view .LVU205
- 159:Application.cpp **** 		hwPod.led2.SetColor(my_colors[band]);
- 664              		.loc 15 159 37 is_stmt 0 view .LVU206
- 665 01ba 074B     		ldr	r3, .L31+24
- 666 01bc D7E7     		b	.L26
- 667              	.L32:
- 668 01be 00BF     		.align	2
- 669              	.L31:
- 670 01c0 00000000 		.word	.LANCHOR0
- 671 01c4 00000000 		.word	.LANCHOR1
- 672 01c8 00000000 		.word	.LANCHOR2
- 673 01cc 0C000000 		.word	.LANCHOR2+12
- 674 01d0 18000000 		.word	.LANCHOR2+24
- 675 01d4 24000000 		.word	.LANCHOR2+36
- 676 01d8 30000000 		.word	.LANCHOR2+48
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 40
+ 142:Application.cpp **** 		}
+ 652              		.loc 15 142 4 is_stmt 1 view .LVU201
+ 142:Application.cpp **** 		}
+ 653              		.loc 15 142 24 is_stmt 0 view .LVU202
+ 654 01b4 4946     		mov	r1, r9
+ 655 01b6 1148     		ldr	r0, .L31+44
+ 141:Application.cpp **** 			controller.setBypass(!eqOn);
+ 656              		.loc 15 141 9 view .LVU203
+ 657 01b8 9946     		mov	r9, r3
+ 142:Application.cpp **** 		}
+ 658              		.loc 15 142 24 view .LVU204
+ 659 01ba FFF7FEFF 		bl	_ZN10Controller9setBypassEb
+ 660              	.LVL47:
+ 142:Application.cpp **** 		}
+ 661              		.loc 15 142 24 view .LVU205
+ 662 01be 85E7     		b	.L7
+ 663              	.LVL48:
+ 664              	.L27:
+ 133:Application.cpp **** 		}
+ 665              		.loc 15 133 4 is_stmt 1 view .LVU206
+ 133:Application.cpp **** 		}
+ 666              		.loc 15 133 21 is_stmt 0 view .LVU207
+ 667 01c0 0121     		movs	r1, #1
+ 668 01c2 0E48     		ldr	r0, .L31+44
+ 669 01c4 FFF7FEFF 		bl	_ZN10Controller6adjustEs
+ 670              	.LVL49:
+ 133:Application.cpp **** 		}
+ 671              		.loc 15 133 21 view .LVU208
+ 672 01c8 79E7     		b	.L5
+ 673              	.LVL50:
+ 674              	.L30:
+ 154:Application.cpp **** 		hwPod.led2.SetColor(my_colors[band]);
+ 675              		.loc 15 154 3 is_stmt 1 view .LVU209
+ 154:Application.cpp **** 		hwPod.led2.SetColor(my_colors[band]);
+ 676              		.loc 15 154 37 is_stmt 0 view .LVU210
+ 677 01ca 094B     		ldr	r3, .L31+32
+ 678 01cc D7E7     		b	.L26
+ 679              	.L32:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 40
 
 
- 677 01dc 00000000 		.word	_ZL5hwPod
- 678 01e0 00000000 		.word	_Z13AudioCallbackPKPKfPPfj
- 679 01e4 00000000 		.word	.LANCHOR3
- 680 01e8 C55A7C0A 		.word	175921861
- 681 01ec A0860100 		.word	100000
- 682 01f0 D8000000 		.word	_ZL5hwPod+216
- 683 01f4 2C010000 		.word	_ZL5hwPod+300
- 684 01f8 ABC22248 		.word	1210237611
- 685 01fc 00000000 		.word	.LC0
- 686 0200 00000000 		.word	.LANCHOR4
- 687              	.LBE371:
- 688              		.cfi_endproc
- 689              	.LFE4690:
- 691              		.section	.text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj,"ax",%progbits
- 692              		.align	1
- 693              		.p2align 2,,3
- 694              		.syntax unified
- 695              		.thumb
- 696              		.thumb_func
- 697              		.fpu fpv5-d16
- 699              	_GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:
- 700              	.LFB5276:
- 171:Application.cpp **** 
- 172:Application.cpp **** #else // Non-realtime test with Daisy Seed testing and logging
- 173:Application.cpp **** 
- 174:Application.cpp **** 	algoTester();
- 175:Application.cpp **** 
- 176:Application.cpp **** #endif
- 177:Application.cpp **** 
- 178:Application.cpp **** }
- 701              		.loc 15 178 1 is_stmt 1 view -0
- 702              		.cfi_startproc
- 703              		@ args = 0, pretend = 0, frame = 0
- 704              		@ frame_needed = 0, uses_anonymous_args = 0
- 705              	.LBB443:
- 706              	.LBI443:
- 707              		.loc 15 178 1 view .LVU208
- 708              	.LVL49:
- 709              	.LBB444:
-  21:Application.cpp **** static DaisyPod hwPod; // Used for realtime audio and controls
- 710              		.loc 15 21 34 view .LVU209
- 711              	.LBE444:
- 712              	.LBE443:
- 713              		.loc 15 178 1 is_stmt 0 view .LVU210
- 714 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
- 715              		.cfi_def_cfa_offset 24
- 716              		.cfi_offset 4, -24
- 717              		.cfi_offset 5, -20
- 718              		.cfi_offset 6, -16
- 719              		.cfi_offset 7, -12
- 720              		.cfi_offset 8, -8
- 721              		.cfi_offset 14, -4
- 722              	.LBB556:
- 723              	.LBB554:
- 724              	.LBB445:
- 725              	.LBB446:
- 726              	.LBB447:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 41
+ 680 01ce 00BF     		.align	2
+ 681              	.L31:
+ 682 01d0 00000000 		.word	.LANCHOR0
+ 683 01d4 00000000 		.word	.LANCHOR1
+ 684 01d8 00000000 		.word	.LANCHOR2
+ 685 01dc 0C000000 		.word	.LANCHOR2+12
+ 686 01e0 18000000 		.word	.LANCHOR2+24
+ 687 01e4 24000000 		.word	.LANCHOR2+36
+ 688 01e8 30000000 		.word	.LANCHOR2+48
+ 689 01ec 3C000000 		.word	.LANCHOR2+60
+ 690 01f0 48000000 		.word	.LANCHOR2+72
+ 691 01f4 00000000 		.word	_ZL5hwPod
+ 692 01f8 00000000 		.word	_Z13AudioCallbackPKPKfPPfj
+ 693 01fc 00000000 		.word	.LANCHOR3
+ 694 0200 C55A7C0A 		.word	175921861
+ 695 0204 A0860100 		.word	100000
+ 696 0208 D8000000 		.word	_ZL5hwPod+216
+ 697 020c 2C010000 		.word	_ZL5hwPod+300
+ 698 0210 ABC22248 		.word	1210237611
+ 699 0214 00000000 		.word	.LC0
+ 700 0218 00000000 		.word	.LANCHOR4
+ 701              	.LBE371:
+ 702              		.cfi_endproc
+ 703              	.LFE4690:
+ 705              		.section	.text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj,"ax",%progbits
+ 706              		.align	1
+ 707              		.p2align 2,,3
+ 708              		.syntax unified
+ 709              		.thumb
+ 710              		.thumb_func
+ 711              		.fpu fpv5-d16
+ 713              	_GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:
+ 714              	.LFB5276:
+ 166:Application.cpp **** 
+ 167:Application.cpp **** #else // Non-realtime test with Daisy Seed testing and logging
+ 168:Application.cpp **** 
+ 169:Application.cpp **** 	algoTester();
+ 170:Application.cpp **** 
+ 171:Application.cpp **** #endif
+ 172:Application.cpp **** 
+ 173:Application.cpp **** }
+ 715              		.loc 15 173 1 is_stmt 1 view -0
+ 716              		.cfi_startproc
+ 717              		@ args = 0, pretend = 0, frame = 0
+ 718              		@ frame_needed = 0, uses_anonymous_args = 0
+ 719              	.LBB443:
+ 720              	.LBI443:
+ 721              		.loc 15 173 1 view .LVU212
+ 722              	.LVL51:
+ 723              	.LBB444:
+  19:Application.cpp **** static DaisyPod hwPod; // Used for realtime audio and controls
+ 724              		.loc 15 19 34 view .LVU213
+ 725              	.LBE444:
+ 726              	.LBE443:
+ 727              		.loc 15 173 1 is_stmt 0 view .LVU214
+ 728 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
+ 729              		.cfi_def_cfa_offset 24
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 41
 
 
- 727              	.LBB448:
- 728              	.LBB449:
- 729              	.LBB450:
- 730              	.LBB451:
- 731              		.file 18 "../../libDaisy//src/per/qspi.h"
+ 730              		.cfi_offset 4, -24
+ 731              		.cfi_offset 5, -20
+ 732              		.cfi_offset 6, -16
+ 733              		.cfi_offset 7, -12
+ 734              		.cfi_offset 8, -8
+ 735              		.cfi_offset 14, -4
+ 736              	.LBB556:
+ 737              	.LBB554:
+ 738              	.LBB445:
+ 739              	.LBB446:
+ 740              	.LBB447:
+ 741              	.LBB448:
+ 742              	.LBB449:
+ 743              	.LBB450:
+ 744              	.LBB451:
+ 745              		.file 18 "../../libDaisy//src/per/qspi.h"
    1:../../libDaisy//src/per/qspi.h **** #ifndef DSY_QSPI
    2:../../libDaisy//src/per/qspi.h **** #define DSY_QSPI /**< Macro */
    3:../../libDaisy//src/per/qspi.h **** 
@@ -2447,6 +2458,9 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   39:../../libDaisy//src/per/qspi.h ****     /** Indicates the current status of the module. 
   40:../../libDaisy//src/per/qspi.h ****          *  Warnings are indicated by a leading W.
   41:../../libDaisy//src/per/qspi.h ****          *  Errors are indicated by a leading E and cause an immediate exit.
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 42
+
+
   42:../../libDaisy//src/per/qspi.h ****          * 
   43:../../libDaisy//src/per/qspi.h ****          *  \param GOOD - No errors have been reported.
   44:../../libDaisy//src/per/qspi.h ****          *  \param E_HAL_ERROR - HAL code did not return HAL_OK.
@@ -2458,9 +2472,6 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   50:../../libDaisy//src/per/qspi.h ****         GOOD = 0,
   51:../../libDaisy//src/per/qspi.h ****         E_HAL_ERROR,
   52:../../libDaisy//src/per/qspi.h ****         E_SWITCHING_MODES,
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 42
-
-
   53:../../libDaisy//src/per/qspi.h ****         E_INVALID_MODE,
   54:../../libDaisy//src/per/qspi.h ****     };
   55:../../libDaisy//src/per/qspi.h **** 
@@ -2507,6 +2518,9 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   96:../../libDaisy//src/per/qspi.h ****     /** 
   97:../../libDaisy//src/per/qspi.h ****         Initializes QSPI peripheral, and Resets, and prepares memory for access.
   98:../../libDaisy//src/per/qspi.h ****         \param config should be populated with the mode, device and pin_config before calling this 
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 43
+
+
   99:../../libDaisy//src/per/qspi.h ****         \return Result::OK or Result::ERR
  100:../../libDaisy//src/per/qspi.h ****         */
  101:../../libDaisy//src/per/qspi.h ****     Result Init(const Config& config);
@@ -2518,9 +2532,6 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  107:../../libDaisy//src/per/qspi.h ****     // would make manually calling it unnecessary.
  108:../../libDaisy//src/per/qspi.h ****     /** 
  109:../../libDaisy//src/per/qspi.h ****         Deinitializes the peripheral
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 43
-
-
  110:../../libDaisy//src/per/qspi.h ****         This should be called before reinitializing QSPI in a different mode.
  111:../../libDaisy//src/per/qspi.h ****         \return Result::OK or Result::ERR
  112:../../libDaisy//src/per/qspi.h ****         */
@@ -2567,6 +2578,9 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  153:../../libDaisy//src/per/qspi.h ****      *  \returns Status
  154:../../libDaisy//src/per/qspi.h ****      */
  155:../../libDaisy//src/per/qspi.h ****     Status GetStatus();
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 44
+
+
  156:../../libDaisy//src/per/qspi.h **** 
  157:../../libDaisy//src/per/qspi.h ****     /** Returns a pointer to the actual memory used 
  158:../../libDaisy//src/per/qspi.h ****      *  The memory at this address is read-only
@@ -2578,117 +2592,117 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  164:../../libDaisy//src/per/qspi.h ****     void* GetData(uint32_t offset = 0);
  165:../../libDaisy//src/per/qspi.h **** 
  166:../../libDaisy//src/per/qspi.h ****     QSPIHandle() : pimpl_(nullptr) {}
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 44
-
-
- 732              		.loc 18 166 34 view .LVU211
- 733 0004 0025     		movs	r5, #0
- 734              	.LBE451:
- 735              	.LBE450:
- 736              	.LBE449:
- 737              	.LBE448:
- 738              	.LBE447:
- 739              	.LBE446:
- 740              	.LBE445:
-  21:Application.cpp **** static DaisyPod hwPod; // Used for realtime audio and controls
- 741              		.loc 15 21 14 view .LVU212
- 742 0006 244E     		ldr	r6, .L35
- 743              	.LBB549:
- 744              	.LBB544:
- 745              	.LBB474:
- 746              	.LBB471:
- 747              	.LBB456:
- 748              	.LBB454:
- 749              	.LBB452:
- 750              		.loc 18 166 34 view .LVU213
- 751 0008 244C     		ldr	r4, .L35+4
- 752              	.LBE452:
- 753              	.LBE454:
- 754              	.LBE456:
- 755              	.LBE471:
- 756              	.LBE474:
- 757              	.LBE544:
- 758              	.LBE549:
-  21:Application.cpp **** static DaisyPod hwPod; // Used for realtime audio and controls
- 759              		.loc 15 21 14 view .LVU214
- 760 000a 3246     		mov	r2, r6
- 761 000c 2449     		ldr	r1, .L35+8
- 762 000e 2846     		mov	r0, r5
-  25:Application.cpp **** static Equalizer equalizerRight;
- 763              		.loc 15 25 18 view .LVU215
- 764 0010 244F     		ldr	r7, .L35+12
-  21:Application.cpp **** static DaisyPod hwPod; // Used for realtime audio and controls
- 765              		.loc 15 21 14 view .LVU216
- 766 0012 FFF7FEFF 		bl	__aeabi_atexit
- 767              	.LVL50:
- 768              	.LBB550:
- 769              	.LBI445:
+ 746              		.loc 18 166 34 view .LVU215
+ 747 0004 0025     		movs	r5, #0
+ 748              	.LBE451:
+ 749              	.LBE450:
+ 750              	.LBE449:
+ 751              	.LBE448:
+ 752              	.LBE447:
+ 753              	.LBE446:
+ 754              	.LBE445:
+  19:Application.cpp **** static DaisyPod hwPod; // Used for realtime audio and controls
+ 755              		.loc 15 19 14 view .LVU216
+ 756 0006 244E     		ldr	r6, .L35
+ 757              	.LBB549:
+ 758              	.LBB544:
+ 759              	.LBB474:
+ 760              	.LBB471:
+ 761              	.LBB456:
+ 762              	.LBB454:
+ 763              	.LBB452:
+ 764              		.loc 18 166 34 view .LVU217
+ 765 0008 244C     		ldr	r4, .L35+4
+ 766              	.LBE452:
+ 767              	.LBE454:
+ 768              	.LBE456:
+ 769              	.LBE471:
+ 770              	.LBE474:
+ 771              	.LBE544:
+ 772              	.LBE549:
+  19:Application.cpp **** static DaisyPod hwPod; // Used for realtime audio and controls
+ 773              		.loc 15 19 14 view .LVU218
+ 774 000a 3246     		mov	r2, r6
+ 775 000c 2449     		ldr	r1, .L35+8
+ 776 000e 2846     		mov	r0, r5
+  23:Application.cpp **** static Equalizer equalizerRight;
+ 777              		.loc 15 23 18 view .LVU219
+ 778 0010 244F     		ldr	r7, .L35+12
+  19:Application.cpp **** static DaisyPod hwPod; // Used for realtime audio and controls
+ 779              		.loc 15 19 14 view .LVU220
+ 780 0012 FFF7FEFF 		bl	__aeabi_atexit
+ 781              	.LVL52:
+ 782              	.LBB550:
+ 783              	.LBI445:
   35:../../libDaisy//src/daisy_pod.h ****     ~DaisyPod() {}
- 770              		.loc 1 35 5 is_stmt 1 view .LVU217
- 771              	.LBB545:
- 772              	.LBB475:
- 773              	.LBI447:
+ 784              		.loc 1 35 5 is_stmt 1 view .LVU221
+ 785              	.LBB545:
+ 786              	.LBB475:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 45
+
+
+ 787              	.LBI447:
   21:../../libDaisy//src/daisy_seed.h ****     ~DaisySeed() {}
- 774              		.loc 10 21 5 view .LVU218
- 775              	.LBB472:
- 776              	.LBB457:
- 777              	.LBI449:
- 778              		.loc 18 166 5 view .LVU219
- 779              	.LBE457:
- 780              	.LBE472:
- 781              	.LBE475:
- 782              	.LBB476:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 45
-
-
- 783              	.LBB477:
- 784              	.LBB478:
- 785              	.LBB479:
+ 788              		.loc 10 21 5 view .LVU222
+ 789              	.LBB472:
+ 790              	.LBB457:
+ 791              	.LBI449:
+ 792              		.loc 18 166 5 view .LVU223
+ 793              	.LBE457:
+ 794              	.LBE472:
+ 795              	.LBE475:
+ 796              	.LBB476:
+ 797              	.LBB477:
+ 798              	.LBB478:
+ 799              	.LBB479:
  157:../../libDaisy//src/hid/midi.h **** 
  158:../../libDaisy//src/hid/midi.h ****     struct Config
- 786              		.loc 2 158 12 is_stmt 0 view .LVU220
- 787 0016 04F5C070 		add	r0, r4, #384
- 788              	.LBE479:
- 789              	.LBE478:
- 790              	.LBE477:
- 791              	.LBE476:
- 792              	.LBB522:
- 793              	.LBB473:
- 794              	.LBB458:
- 795              	.LBB455:
- 796              	.LBB453:
- 797              		.loc 18 166 34 view .LVU221
- 798 001a 2560     		str	r5, [r4]
- 799              	.LVL51:
- 800              		.loc 18 166 34 view .LVU222
- 801              	.LBE453:
- 802              	.LBE455:
- 803              	.LBE458:
- 804              	.LBB459:
- 805              	.LBI459:
+ 800              		.loc 2 158 12 is_stmt 0 view .LVU224
+ 801 0016 04F5C070 		add	r0, r4, #384
+ 802              	.LBE479:
+ 803              	.LBE478:
+ 804              	.LBE477:
+ 805              	.LBE476:
+ 806              	.LBB522:
+ 807              	.LBB473:
+ 808              	.LBB458:
+ 809              	.LBB455:
+ 810              	.LBB453:
+ 811              		.loc 18 166 34 view .LVU225
+ 812 001a 2560     		str	r5, [r4]
+ 813              	.LVL53:
+ 814              		.loc 18 166 34 view .LVU226
+ 815              	.LBE453:
+ 816              	.LBE455:
+ 817              	.LBE458:
+ 818              	.LBB459:
+ 819              	.LBI459:
   95:../../libDaisy//src/hid/audio.h ****     ~AudioHandle() {}
- 806              		.loc 14 95 5 is_stmt 1 view .LVU223
- 807              	.LBB460:
- 808              	.LBB461:
+ 820              		.loc 14 95 5 is_stmt 1 view .LVU227
+ 821              	.LBB460:
+ 822              	.LBB461:
   95:../../libDaisy//src/hid/audio.h ****     ~AudioHandle() {}
- 809              		.loc 14 95 35 is_stmt 0 view .LVU224
- 810 001c 6561     		str	r5, [r4, #20]
- 811              	.LVL52:
+ 823              		.loc 14 95 35 is_stmt 0 view .LVU228
+ 824 001c 6561     		str	r5, [r4, #20]
+ 825              	.LVL54:
   95:../../libDaisy//src/hid/audio.h ****     ~AudioHandle() {}
- 812              		.loc 14 95 35 view .LVU225
- 813              	.LBE461:
- 814              	.LBE460:
- 815              	.LBE459:
- 816              	.LBB462:
- 817              	.LBI462:
+ 826              		.loc 14 95 35 view .LVU229
+ 827              	.LBE461:
+ 828              	.LBE460:
+ 829              	.LBE459:
+ 830              	.LBB462:
+ 831              	.LBI462:
  109:../../libDaisy//src/per/adc.h ****     ~AdcHandle() {}
- 818              		.loc 13 109 5 is_stmt 1 view .LVU226
+ 832              		.loc 13 109 5 is_stmt 1 view .LVU230
  109:../../libDaisy//src/per/adc.h ****     ~AdcHandle() {}
- 819              		.loc 13 109 5 is_stmt 0 view .LVU227
- 820              	.LBE462:
- 821              	.LBB463:
- 822              	.LBI463:
- 823              		.file 19 "../../libDaisy//src/per/dac.h"
+ 833              		.loc 13 109 5 is_stmt 0 view .LVU231
+ 834              	.LBE462:
+ 835              	.LBB463:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 46
+
+
+ 836              	.LBI463:
+ 837              		.file 19 "../../libDaisy//src/per/dac.h"
    1:../../libDaisy//src/per/dac.h **** #pragma once
    2:../../libDaisy//src/per/dac.h **** #ifndef DSY_DAC_H
    3:../../libDaisy//src/per/dac.h **** #define DSY_DAC_H
@@ -2698,9 +2712,6 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
    7:../../libDaisy//src/per/dac.h **** namespace daisy
    8:../../libDaisy//src/per/dac.h **** {
    9:../../libDaisy//src/per/dac.h **** /** @brief DAC handle for Built-in DAC Peripheral 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 46
-
-
   10:../../libDaisy//src/per/dac.h ****  *  @ingroup per_analog
   11:../../libDaisy//src/per/dac.h ****  ** 
   12:../../libDaisy//src/per/dac.h ****  ** For now only Normal Mode is supported,
@@ -2747,6 +2758,9 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   53:../../libDaisy//src/per/dac.h ****      ** The output range will be: 0V - VDDA
   54:../../libDaisy//src/per/dac.h ****      ** The resolution will be roughly: bitdepth / (VDDA - 0V) 
   55:../../libDaisy//src/per/dac.h ****      ***/
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 47
+
+
   56:../../libDaisy//src/per/dac.h ****     enum class BitDepth
   57:../../libDaisy//src/per/dac.h ****     {
   58:../../libDaisy//src/per/dac.h ****         BITS_8,
@@ -2758,9 +2772,6 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   64:../../libDaisy//src/per/dac.h ****     {
   65:../../libDaisy//src/per/dac.h ****         ENABLED,
   66:../../libDaisy//src/per/dac.h ****         DISABLED,
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 47
-
-
   67:../../libDaisy//src/per/dac.h ****     };
   68:../../libDaisy//src/per/dac.h **** 
   69:../../libDaisy//src/per/dac.h ****     /** Configuration structure for initializing the DAC structure. */
@@ -2779,34 +2790,37 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   82:../../libDaisy//src/per/dac.h ****     };
   83:../../libDaisy//src/per/dac.h **** 
   84:../../libDaisy//src/per/dac.h ****     DacHandle() : pimpl_(nullptr) {}
- 824              		.loc 19 84 5 is_stmt 1 view .LVU228
- 825              	.LBB464:
- 826              	.LBB465:
- 827              		.loc 19 84 33 is_stmt 0 view .LVU229
- 828 001e 2562     		str	r5, [r4, #32]
- 829              	.LVL53:
- 830              		.loc 19 84 33 view .LVU230
- 831              	.LBE465:
- 832              	.LBE464:
- 833              	.LBE463:
- 834              	.LBB466:
- 835              	.LBI466:
+ 838              		.loc 19 84 5 is_stmt 1 view .LVU232
+ 839              	.LBB464:
+ 840              	.LBB465:
+ 841              		.loc 19 84 33 is_stmt 0 view .LVU233
+ 842 001e 2562     		str	r5, [r4, #32]
+ 843              	.LVL55:
+ 844              		.loc 19 84 33 view .LVU234
+ 845              	.LBE465:
+ 846              	.LBE464:
+ 847              	.LBE463:
+ 848              	.LBB466:
+ 849              	.LBI466:
   40:../../libDaisy//src/hid/usb.h **** 
- 836              		.loc 12 40 5 is_stmt 1 view .LVU231
+ 850              		.loc 12 40 5 is_stmt 1 view .LVU235
   40:../../libDaisy//src/hid/usb.h **** 
- 837              		.loc 12 40 5 is_stmt 0 view .LVU232
- 838              	.LBE466:
- 839              	.LBB467:
- 840              	.LBI467:
+ 851              		.loc 12 40 5 is_stmt 0 view .LVU236
+ 852              	.LBE466:
+ 853              	.LBB467:
+ 854              	.LBI467:
   96:../../libDaisy//src/sys/system.h ****     ~System() {}
- 841              		.loc 11 96 5 is_stmt 1 view .LVU233
+ 855              		.loc 11 96 5 is_stmt 1 view .LVU237
   96:../../libDaisy//src/sys/system.h ****     ~System() {}
- 842              		.loc 11 96 5 is_stmt 0 view .LVU234
- 843              	.LBE467:
- 844              	.LBB468:
- 845              	.LBI468:
- 846              		.file 20 "../../libDaisy//src/per/sai.h"
+ 856              		.loc 11 96 5 is_stmt 0 view .LVU238
+ 857              	.LBE467:
+ 858              	.LBB468:
+ 859              	.LBI468:
+ 860              		.file 20 "../../libDaisy//src/per/sai.h"
    1:../../libDaisy//src/per/sai.h **** #pragma once
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 48
+
+
    2:../../libDaisy//src/per/sai.h **** #ifndef DSY_SAI_H
    3:../../libDaisy//src/per/sai.h **** #define DSY_SAI_H
    4:../../libDaisy//src/per/sai.h **** 
@@ -2818,9 +2832,6 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   10:../../libDaisy//src/per/sai.h ****  * Support for I2S Audio Protocol with different bit-depth, samplerate options
   11:../../libDaisy//src/per/sai.h ****  * Allows for master or slave, as well as freedom of selecting direction, 
   12:../../libDaisy//src/per/sai.h ****  * and other behavior for each peripheral, and block.
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 48
-
-
   13:../../libDaisy//src/per/sai.h ****  * 
   14:../../libDaisy//src/per/sai.h ****  * DMA Transfer commands must use buffers located within non-cached memory or use cache maintenance
   15:../../libDaisy//src/per/sai.h ****  * To declare an unitialized global element in the DMA memory section:
@@ -2867,6 +2878,9 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   56:../../libDaisy//src/per/sai.h ****         enum class SampleRate
   57:../../libDaisy//src/per/sai.h ****         {
   58:../../libDaisy//src/per/sai.h ****             SAI_8KHZ,
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 49
+
+
   59:../../libDaisy//src/per/sai.h ****             SAI_16KHZ,
   60:../../libDaisy//src/per/sai.h ****             SAI_32KHZ,
   61:../../libDaisy//src/per/sai.h ****             SAI_48KHZ,
@@ -2878,9 +2892,6 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   67:../../libDaisy//src/per/sai.h ****         {
   68:../../libDaisy//src/per/sai.h ****             SAI_16BIT,
   69:../../libDaisy//src/per/sai.h ****             SAI_24BIT,
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 49
-
-
   70:../../libDaisy//src/per/sai.h ****             SAI_32BIT,
   71:../../libDaisy//src/per/sai.h ****         };
   72:../../libDaisy//src/per/sai.h **** 
@@ -2920,147 +2931,147 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
  106:../../libDaisy//src/per/sai.h ****     };
  107:../../libDaisy//src/per/sai.h **** 
  108:../../libDaisy//src/per/sai.h ****     SaiHandle() : pimpl_(nullptr) {}
- 847              		.loc 20 108 5 is_stmt 1 view .LVU235
- 848              	.LBB469:
- 849              	.LBB470:
- 850              		.loc 20 108 33 is_stmt 0 view .LVU236
- 851 0020 E563     		str	r5, [r4, #60]
- 852              	.LVL54:
- 853              		.loc 20 108 33 view .LVU237
- 854              	.LBE470:
- 855              	.LBE469:
- 856              	.LBE468:
- 857              	.LBE473:
- 858              	.LBE522:
- 859              	.LBB523:
- 860              	.LBI523:
+ 861              		.loc 20 108 5 is_stmt 1 view .LVU239
+ 862              	.LBB469:
+ 863              	.LBB470:
+ 864              		.loc 20 108 33 is_stmt 0 view .LVU240
+ 865 0020 E563     		str	r5, [r4, #60]
+ 866              	.LVL56:
+ 867              		.loc 20 108 33 view .LVU241
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 50
+
+
+ 868              	.LBE470:
+ 869              	.LBE469:
+ 870              	.LBE468:
+ 871              	.LBE473:
+ 872              	.LBE522:
+ 873              	.LBB523:
+ 874              	.LBI523:
   20:../../libDaisy//src/hid/encoder.h ****     ~Encoder() {}
- 861              		.loc 9 20 5 is_stmt 1 view .LVU238
- 862              	.LBB524:
- 863              	.LBB525:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 50
-
-
- 864              	.LBI525:
+ 875              		.loc 9 20 5 is_stmt 1 view .LVU242
+ 876              	.LBB524:
+ 877              	.LBB525:
+ 878              	.LBI525:
   41:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
- 865              		.loc 7 41 5 view .LVU239
+ 879              		.loc 7 41 5 view .LVU243
   41:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
- 866              		.loc 7 41 5 is_stmt 0 view .LVU240
- 867              	.LBE525:
- 868              	.LBE524:
- 869              	.LBE523:
- 870              	.LBB526:
- 871              	.LBI526:
+ 880              		.loc 7 41 5 is_stmt 0 view .LVU244
+ 881              	.LBE525:
+ 882              	.LBE524:
+ 883              	.LBE523:
+ 884              	.LBB526:
+ 885              	.LBI526:
   21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
- 872              		.loc 8 21 5 is_stmt 1 view .LVU241
+ 886              		.loc 8 21 5 is_stmt 1 view .LVU245
   21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
- 873              		.loc 8 21 5 is_stmt 0 view .LVU242
- 874              	.LBE526:
- 875              	.LBB527:
- 876              	.LBI527:
+ 887              		.loc 8 21 5 is_stmt 0 view .LVU246
+ 888              	.LBE526:
+ 889              	.LBB527:
+ 890              	.LBI527:
   21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
- 877              		.loc 8 21 5 is_stmt 1 view .LVU243
+ 891              		.loc 8 21 5 is_stmt 1 view .LVU247
   21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
- 878              		.loc 8 21 5 is_stmt 0 view .LVU244
- 879              	.LBE527:
- 880              	.LBB528:
- 881              	.LBI528:
+ 892              		.loc 8 21 5 is_stmt 0 view .LVU248
+ 893              	.LBE527:
+ 894              	.LBB528:
+ 895              	.LBI528:
   41:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
- 882              		.loc 7 41 5 is_stmt 1 view .LVU245
+ 896              		.loc 7 41 5 is_stmt 1 view .LVU249
   41:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
- 883              		.loc 7 41 5 is_stmt 0 view .LVU246
- 884              	.LBE528:
- 885              	.LBB529:
- 886              	.LBI529:
+ 897              		.loc 7 41 5 is_stmt 0 view .LVU250
+ 898              	.LBE528:
+ 899              	.LBB529:
+ 900              	.LBI529:
   41:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
- 887              		.loc 7 41 5 is_stmt 1 view .LVU247
+ 901              		.loc 7 41 5 is_stmt 1 view .LVU251
   41:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
- 888              		.loc 7 41 5 is_stmt 0 view .LVU248
- 889              	.LBE529:
- 890              	.LBB530:
- 891              	.LBI530:
+ 902              		.loc 7 41 5 is_stmt 0 view .LVU252
+ 903              	.LBE529:
+ 904              	.LBB530:
+ 905              	.LBI530:
   17:../../libDaisy//src/hid/rgb_led.h ****     ~RgbLed() {}
- 892              		.loc 5 17 5 is_stmt 1 view .LVU249
- 893              	.LBB531:
- 894              	.LBB532:
- 895              	.LBI532:
+ 906              		.loc 5 17 5 is_stmt 1 view .LVU253
+ 907              	.LBB531:
+ 908              	.LBB532:
+ 909              	.LBI532:
   24:../../libDaisy//src/hid/led.h ****     ~Led() {}
- 896              		.loc 6 24 5 view .LVU250
+ 910              		.loc 6 24 5 view .LVU254
   24:../../libDaisy//src/hid/led.h ****     ~Led() {}
- 897              		.loc 6 24 5 is_stmt 0 view .LVU251
- 898              	.LBE532:
- 899              	.LBB533:
- 900              	.LBI533:
-  24:../../libDaisy//src/hid/led.h ****     ~Led() {}
- 901              		.loc 6 24 5 is_stmt 1 view .LVU252
-  24:../../libDaisy//src/hid/led.h ****     ~Led() {}
- 902              		.loc 6 24 5 is_stmt 0 view .LVU253
- 903              	.LBE533:
- 904              	.LBB534:
- 905              	.LBI534:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 51
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 51
 
 
+ 911              		.loc 6 24 5 is_stmt 0 view .LVU255
+ 912              	.LBE532:
+ 913              	.LBB533:
+ 914              	.LBI533:
   24:../../libDaisy//src/hid/led.h ****     ~Led() {}
- 906              		.loc 6 24 5 is_stmt 1 view .LVU254
+ 915              		.loc 6 24 5 is_stmt 1 view .LVU256
   24:../../libDaisy//src/hid/led.h ****     ~Led() {}
- 907              		.loc 6 24 5 is_stmt 0 view .LVU255
- 908              	.LBE534:
- 909              	.LBE531:
- 910              	.LBE530:
- 911              	.LBB535:
- 912              	.LBI535:
+ 916              		.loc 6 24 5 is_stmt 0 view .LVU257
+ 917              	.LBE533:
+ 918              	.LBB534:
+ 919              	.LBI534:
+  24:../../libDaisy//src/hid/led.h ****     ~Led() {}
+ 920              		.loc 6 24 5 is_stmt 1 view .LVU258
+  24:../../libDaisy//src/hid/led.h ****     ~Led() {}
+ 921              		.loc 6 24 5 is_stmt 0 view .LVU259
+ 922              	.LBE534:
+ 923              	.LBE531:
+ 924              	.LBE530:
+ 925              	.LBB535:
+ 926              	.LBI535:
   17:../../libDaisy//src/hid/rgb_led.h ****     ~RgbLed() {}
- 913              		.loc 5 17 5 is_stmt 1 view .LVU256
- 914              	.LBB536:
- 915              	.LBB537:
- 916              	.LBI537:
+ 927              		.loc 5 17 5 is_stmt 1 view .LVU260
+ 928              	.LBB536:
+ 929              	.LBB537:
+ 930              	.LBI537:
   24:../../libDaisy//src/hid/led.h ****     ~Led() {}
- 917              		.loc 6 24 5 view .LVU257
+ 931              		.loc 6 24 5 view .LVU261
   24:../../libDaisy//src/hid/led.h ****     ~Led() {}
- 918              		.loc 6 24 5 is_stmt 0 view .LVU258
- 919              	.LBE537:
- 920              	.LBB538:
- 921              	.LBI538:
+ 932              		.loc 6 24 5 is_stmt 0 view .LVU262
+ 933              	.LBE537:
+ 934              	.LBB538:
+ 935              	.LBI538:
   24:../../libDaisy//src/hid/led.h ****     ~Led() {}
- 922              		.loc 6 24 5 is_stmt 1 view .LVU259
+ 936              		.loc 6 24 5 is_stmt 1 view .LVU263
   24:../../libDaisy//src/hid/led.h ****     ~Led() {}
- 923              		.loc 6 24 5 is_stmt 0 view .LVU260
- 924              	.LBE538:
- 925              	.LBB539:
- 926              	.LBI539:
+ 937              		.loc 6 24 5 is_stmt 0 view .LVU264
+ 938              	.LBE538:
+ 939              	.LBB539:
+ 940              	.LBI539:
   24:../../libDaisy//src/hid/led.h ****     ~Led() {}
- 927              		.loc 6 24 5 is_stmt 1 view .LVU261
+ 941              		.loc 6 24 5 is_stmt 1 view .LVU265
   24:../../libDaisy//src/hid/led.h ****     ~Led() {}
- 928              		.loc 6 24 5 is_stmt 0 view .LVU262
- 929              	.LBE539:
- 930              	.LBE536:
- 931              	.LBE535:
- 932              	.LBB540:
- 933              	.LBI476:
+ 942              		.loc 6 24 5 is_stmt 0 view .LVU266
+ 943              	.LBE539:
+ 944              	.LBE536:
+ 945              	.LBE535:
+ 946              	.LBB540:
+ 947              	.LBI476:
  155:../../libDaisy//src/hid/midi.h ****     ~MidiHandler() {}
- 934              		.loc 2 155 5 is_stmt 1 view .LVU263
- 935              	.LBB518:
- 936              	.LBB481:
- 937              	.LBI478:
- 938              		.loc 2 158 12 view .LVU264
- 939              	.LBB480:
- 940 0022 FFF7FEFF 		bl	_ZN5daisy17MidiUartTransport6ConfigC1Ev
- 941              	.LVL55:
- 942              		.loc 2 158 12 is_stmt 0 view .LVU265
- 943              	.LBE480:
- 944              	.LBE481:
- 945              	.LBB482:
- 946              	.LBI482:
+ 948              		.loc 2 155 5 is_stmt 1 view .LVU267
+ 949              	.LBB518:
+ 950              	.LBB481:
+ 951              	.LBI478:
+ 952              		.loc 2 158 12 view .LVU268
+ 953              	.LBB480:
+ 954 0022 FFF7FEFF 		bl	_ZN5daisy17MidiUartTransport6ConfigC1Ev
+ 955              	.LVL57:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 52
+
+
+ 956              		.loc 2 158 12 is_stmt 0 view .LVU269
+ 957              	.LBE480:
+ 958              	.LBE481:
+ 959              	.LBB482:
+ 960              	.LBI482:
   31:../../libDaisy//src/hid/midi.h ****     ~MidiUartTransport() {}
- 947              		.loc 2 31 5 is_stmt 1 view .LVU266
- 948              	.LBB483:
- 949              	.LBB484:
- 950              	.LBI484:
- 951              		.file 21 "../../libDaisy//src/per/uart.h"
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 52
-
-
+ 961              		.loc 2 31 5 is_stmt 1 view .LVU270
+ 962              	.LBB483:
+ 963              	.LBB484:
+ 964              	.LBI484:
+ 965              		.file 21 "../../libDaisy//src/per/uart.h"
    1:../../libDaisy//src/per/uart.h **** /* 
    2:../../libDaisy//src/per/uart.h **** TODO
    3:../../libDaisy//src/per/uart.h **** - Overflow handling, etc. for Rx Queue.
@@ -3107,6 +3118,9 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   44:../../libDaisy//src/per/uart.h ****             BITS_1,
   45:../../libDaisy//src/per/uart.h ****             BITS_1_5,
   46:../../libDaisy//src/per/uart.h ****             BITS_2,
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 53
+
+
   47:../../libDaisy//src/per/uart.h ****         };
   48:../../libDaisy//src/per/uart.h **** 
   49:../../libDaisy//src/per/uart.h ****         enum class Parity
@@ -3118,9 +3132,6 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   55:../../libDaisy//src/per/uart.h **** 
   56:../../libDaisy//src/per/uart.h ****         enum class Mode
   57:../../libDaisy//src/per/uart.h ****         {
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 53
-
-
   58:../../libDaisy//src/per/uart.h ****             RX,
   59:../../libDaisy//src/per/uart.h ****             TX,
   60:../../libDaisy//src/per/uart.h ****             TX_RX,
@@ -3158,569 +3169,569 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 1
   92:../../libDaisy//src/per/uart.h **** 
   93:../../libDaisy//src/per/uart.h **** 
   94:../../libDaisy//src/per/uart.h ****     UartHandler() : pimpl_(nullptr) {}
- 952              		.loc 21 94 5 view .LVU267
- 953              		.loc 21 94 5 is_stmt 0 view .LVU268
- 954              	.LBE484:
- 955              	.LBE483:
- 956              	.LBE482:
- 957              	.LBB489:
- 958              	.LBI489:
+ 966              		.loc 21 94 5 view .LVU271
+ 967              		.loc 21 94 5 is_stmt 0 view .LVU272
+ 968              	.LBE484:
+ 969              	.LBE483:
+ 970              	.LBE482:
+ 971              	.LBB489:
+ 972              	.LBI489:
   18:../../libDaisy//src/hid/midi_parser.h ****     ~MidiParser() {}
- 959              		.loc 4 18 5 is_stmt 1 view .LVU269
- 960              	.LBB490:
-  18:../../libDaisy//src/hid/midi_parser.h ****     ~MidiParser() {}
- 961              		.loc 4 18 17 is_stmt 0 view .LVU270
- 962 0026 40F20F73 		movw	r3, #1807
- 963              	.LBE490:
- 964              	.LBE489:
- 965              	.LBB494:
- 966              	.LBB495:
- 967              	.LBB496:
- 968              	.LBB497:
- 969              	.LBB498:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 54
+ 973              		.loc 4 18 5 is_stmt 1 view .LVU273
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 54
 
 
+ 974              	.LBB490:
+  18:../../libDaisy//src/hid/midi_parser.h ****     ~MidiParser() {}
+ 975              		.loc 4 18 17 is_stmt 0 view .LVU274
+ 976 0026 40F20F73 		movw	r3, #1807
+ 977              	.LBE490:
+ 978              	.LBE489:
+ 979              	.LBB494:
+ 980              	.LBB495:
+ 981              	.LBB496:
+ 982              	.LBB497:
+ 983              	.LBB498:
   15:../../libDaisy//src/util/FIFO.h ****     {
- 970              		.loc 3 15 75 view .LVU271
- 971 002a 04F51471 		add	r1, r4, #592
- 972              	.LBE498:
- 973              	.LBE497:
- 974              	.LBE496:
- 975              	.LBE495:
- 976              	.LBE494:
- 977              	.LBB511:
- 978              	.LBB491:
+ 984              		.loc 3 15 75 view .LVU275
+ 985 002a 04F51471 		add	r1, r4, #592
+ 986              	.LBE498:
+ 987              	.LBE497:
+ 988              	.LBE496:
+ 989              	.LBE495:
+ 990              	.LBE494:
+ 991              	.LBB511:
+ 992              	.LBB491:
   18:../../libDaisy//src/hid/midi_parser.h ****     ~MidiParser() {}
- 979              		.loc 4 18 17 view .LVU272
- 980 002e 1E4A     		ldr	r2, .L35+16
- 981              	.LBE491:
- 982              	.LBE511:
- 983              	.LBE518:
- 984              	.LBE540:
- 985              	.LBE545:
- 986              	.LBE550:
-  22:Application.cpp **** static uint32_t  start, end, dur;
- 987              		.loc 15 22 17 view .LVU273
- 988 0030 2046     		mov	r0, r4
- 989              	.LBB551:
- 990              	.LBB546:
- 991              	.LBB541:
- 992              	.LBB519:
- 993              	.LBB512:
- 994              	.LBB492:
+ 993              		.loc 4 18 17 view .LVU276
+ 994 002e 1E4A     		ldr	r2, .L35+16
+ 995              	.LBE491:
+ 996              	.LBE511:
+ 997              	.LBE518:
+ 998              	.LBE540:
+ 999              	.LBE545:
+ 1000              	.LBE550:
+  20:Application.cpp **** static uint32_t  start, end, dur;
+ 1001              		.loc 15 20 17 view .LVU277
+ 1002 0030 2046     		mov	r0, r4
+ 1003              	.LBB551:
+ 1004              	.LBB546:
+ 1005              	.LBB541:
+ 1006              	.LBB519:
+ 1007              	.LBB512:
+ 1008              	.LBB492:
   18:../../libDaisy//src/hid/midi_parser.h ****     ~MidiParser() {}
- 995              		.loc 4 18 17 view .LVU274
- 996 0032 A4F83C32 		strh	r3, [r4, #572]	@ movhi
- 997              	.LVL56:
+ 1009              		.loc 4 18 17 view .LVU278
+ 1010 0032 A4F83C32 		strh	r3, [r4, #572]	@ movhi
+ 1011              	.LVL58:
   18:../../libDaisy//src/hid/midi_parser.h ****     ~MidiParser() {}
- 998              		.loc 4 18 17 view .LVU275
- 999              	.LBE492:
- 1000              	.LBE512:
- 1001              	.LBB513:
- 1002              	.LBI494:
+ 1012              		.loc 4 18 17 view .LVU279
+ 1013              	.LBE492:
+ 1014              	.LBE512:
+ 1015              	.LBB513:
+ 1016              	.LBI494:
  299:../../libDaisy//src/util/FIFO.h **** {
  300:../../libDaisy//src/util/FIFO.h ****   public:
  301:../../libDaisy//src/util/FIFO.h ****     /** Creates an empty FIFO */
  302:../../libDaisy//src/util/FIFO.h ****     FIFO() : FIFOBase<T>(buffer_, capacity + 1) {}
- 1003              		.loc 3 302 5 is_stmt 1 view .LVU276
- 1004              	.LBB508:
- 1005              	.LBB505:
- 1006              	.LBI496:
+ 1017              		.loc 3 302 5 is_stmt 1 view .LVU280
+ 1018              	.LBB508:
+ 1019              	.LBB505:
+ 1020              	.LBI496:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 55
+
+
   14:../../libDaisy//src/util/FIFO.h ****     : buffer_(buffer), bufferSize_(bufferSize), bufferIn_(0), bufferOut_(0)
- 1007              		.loc 3 14 5 view .LVU277
- 1008              	.LBB502:
- 1009              	.LBB499:
+ 1021              		.loc 3 14 5 view .LVU281
+ 1022              	.LBB502:
+ 1023              	.LBB499:
   15:../../libDaisy//src/util/FIFO.h ****     {
- 1010              		.loc 3 15 75 is_stmt 0 view .LVU278
- 1011 0036 40F20113 		movw	r3, #257
- 1012              	.LBE499:
- 1013              	.LBE502:
- 1014              	.LBE505:
- 1015              	.LBE508:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 55
-
-
- 1016              	.LBE513:
- 1017              	.LBB514:
- 1018              	.LBB493:
+ 1024              		.loc 3 15 75 is_stmt 0 view .LVU282
+ 1025 0036 40F20113 		movw	r3, #257
+ 1026              	.LBE499:
+ 1027              	.LBE502:
+ 1028              	.LBE505:
+ 1029              	.LBE508:
+ 1030              	.LBE513:
+ 1031              	.LBB514:
+ 1032              	.LBB493:
   18:../../libDaisy//src/hid/midi_parser.h ****     ~MidiParser() {}
- 1019              		.loc 4 18 17 view .LVU279
- 1020 003a C4F83822 		str	r2, [r4, #568]
- 1021              	.LBE493:
- 1022              	.LBE514:
- 1023              	.LBE519:
- 1024              	.LBE541:
- 1025              	.LBE546:
- 1026              	.LBE551:
-  22:Application.cpp **** static uint32_t  start, end, dur;
- 1027              		.loc 15 22 17 view .LVU280
- 1028 003e 3246     		mov	r2, r6
- 1029              	.LBB552:
- 1030              	.LBB547:
- 1031              	.LBB542:
- 1032              	.LBB520:
- 1033              	.LBB515:
- 1034              	.LBB488:
- 1035              	.LBB487:
- 1036              	.LBB485:
- 1037              	.LBB486:
- 1038              		.loc 21 94 35 view .LVU281
- 1039 0040 C4F89051 		str	r5, [r4, #400]
- 1040              	.LBE486:
- 1041              	.LBE485:
- 1042              	.LBE487:
- 1043              	.LBE488:
- 1044              	.LBE515:
- 1045              	.LBB516:
- 1046              	.LBB509:
- 1047              	.LBB506:
- 1048              	.LBB503:
- 1049              	.LBB500:
+ 1033              		.loc 4 18 17 view .LVU283
+ 1034 003a C4F83822 		str	r2, [r4, #568]
+ 1035              	.LBE493:
+ 1036              	.LBE514:
+ 1037              	.LBE519:
+ 1038              	.LBE541:
+ 1039              	.LBE546:
+ 1040              	.LBE551:
+  20:Application.cpp **** static uint32_t  start, end, dur;
+ 1041              		.loc 15 20 17 view .LVU284
+ 1042 003e 3246     		mov	r2, r6
+ 1043              	.LBB552:
+ 1044              	.LBB547:
+ 1045              	.LBB542:
+ 1046              	.LBB520:
+ 1047              	.LBB515:
+ 1048              	.LBB488:
+ 1049              	.LBB487:
+ 1050              	.LBB485:
+ 1051              	.LBB486:
+ 1052              		.loc 21 94 35 view .LVU285
+ 1053 0040 C4F89051 		str	r5, [r4, #400]
+ 1054              	.LBE486:
+ 1055              	.LBE485:
+ 1056              	.LBE487:
+ 1057              	.LBE488:
+ 1058              	.LBE515:
+ 1059              	.LBB516:
+ 1060              	.LBB509:
+ 1061              	.LBB506:
+ 1062              	.LBB503:
+ 1063              	.LBB500:
   15:../../libDaisy//src/util/FIFO.h ****     {
- 1050              		.loc 3 15 75 view .LVU282
- 1051 0044 C4F84852 		str	r5, [r4, #584]
- 1052 0048 C4F84C52 		str	r5, [r4, #588]
- 1053              	.LVL57:
+ 1064              		.loc 3 15 75 view .LVU286
+ 1065 0044 C4F84852 		str	r5, [r4, #584]
+ 1066 0048 C4F84C52 		str	r5, [r4, #588]
+ 1067              	.LVL59:
   15:../../libDaisy//src/util/FIFO.h ****     {
- 1054              		.loc 3 15 75 view .LVU283
- 1055              	.LBE500:
- 1056              	.LBE503:
- 1057              	.LBE506:
- 1058              	.LBE509:
- 1059              	.LBE516:
- 1060              	.LBE520:
- 1061              	.LBE542:
- 1062              	.LBE547:
- 1063              	.LBE552:
-  26:Application.cpp **** static Controller controller(&equalizerLeft, &equalizerRight, &hwPod);
- 1064              		.loc 15 26 18 view .LVU284
- 1065 004c 174D     		ldr	r5, .L35+20
-  27:Application.cpp **** 
- 1066              		.loc 15 27 69 view .LVU285
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 56
+ 1068              		.loc 3 15 75 view .LVU287
+ 1069              	.LBE500:
+ 1070              	.LBE503:
+ 1071              	.LBE506:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 56
 
 
- 1067 004e DFF86C80 		ldr	r8, .L35+36
- 1068              	.LBB553:
- 1069              	.LBB548:
- 1070              	.LBB543:
- 1071              	.LBB521:
- 1072              	.LBB517:
- 1073              	.LBB510:
- 1074              	.LBB507:
- 1075              	.LBB504:
- 1076              	.LBB501:
+ 1072              	.LBE509:
+ 1073              	.LBE516:
+ 1074              	.LBE520:
+ 1075              	.LBE542:
+ 1076              	.LBE547:
+ 1077              	.LBE552:
+  24:Application.cpp **** static Controller controller(&equalizerLeft, &equalizerRight, &hwPod);
+ 1078              		.loc 15 24 18 view .LVU288
+ 1079 004c 174D     		ldr	r5, .L35+20
+  25:Application.cpp **** 
+ 1080              		.loc 15 25 69 view .LVU289
+ 1081 004e DFF86C80 		ldr	r8, .L35+36
+ 1082              	.LBB553:
+ 1083              	.LBB548:
+ 1084              	.LBB543:
+ 1085              	.LBB521:
+ 1086              	.LBB517:
+ 1087              	.LBB510:
+ 1088              	.LBB507:
+ 1089              	.LBB504:
+ 1090              	.LBB501:
   15:../../libDaisy//src/util/FIFO.h ****     {
- 1077              		.loc 3 15 75 view .LVU286
- 1078 0052 C4E99013 		strd	r1, r3, [r4, #576]
- 1079              	.LBE501:
- 1080              	.LBE504:
- 1081              	.LBE507:
- 1082              	.LBE510:
- 1083              	.LBE517:
- 1084              	.LBE521:
- 1085              	.LBE543:
- 1086              	.LBE548:
- 1087              	.LBE553:
-  22:Application.cpp **** static uint32_t  start, end, dur;
- 1088              		.loc 15 22 17 view .LVU287
- 1089 0056 1649     		ldr	r1, .L35+24
- 1090 0058 FFF7FEFF 		bl	__aeabi_atexit
- 1091              	.LVL58:
-  25:Application.cpp **** static Equalizer equalizerRight;
- 1092              		.loc 15 25 18 view .LVU288
- 1093 005c 3846     		mov	r0, r7
- 1094 005e FFF7FEFF 		bl	_ZN9EqualizerC1Ev
- 1095              	.LVL59:
- 1096 0062 3246     		mov	r2, r6
- 1097 0064 1349     		ldr	r1, .L35+28
- 1098 0066 3846     		mov	r0, r7
- 1099 0068 FFF7FEFF 		bl	__aeabi_atexit
- 1100              	.LVL60:
-  26:Application.cpp **** static Controller controller(&equalizerLeft, &equalizerRight, &hwPod);
- 1101              		.loc 15 26 18 view .LVU289
- 1102 006c 2846     		mov	r0, r5
- 1103 006e FFF7FEFF 		bl	_ZN9EqualizerC1Ev
- 1104              	.LVL61:
- 1105 0072 3246     		mov	r2, r6
- 1106 0074 0F49     		ldr	r1, .L35+28
- 1107 0076 2846     		mov	r0, r5
- 1108 0078 FFF7FEFF 		bl	__aeabi_atexit
- 1109              	.LVL62:
-  27:Application.cpp **** 
- 1110              		.loc 15 27 69 view .LVU290
- 1111 007c 3946     		mov	r1, r7
- 1112 007e 2A46     		mov	r2, r5
- 1113 0080 2346     		mov	r3, r4
- 1114 0082 4046     		mov	r0, r8
- 1115 0084 FFF7FEFF 		bl	_ZN10ControllerC1EP9EqualizerS1_PN5daisy8DaisyPodE
- 1116              	.LVL63:
-  27:Application.cpp **** 
- 1117              		.loc 15 27 19 view .LVU291
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 57
+ 1091              		.loc 3 15 75 view .LVU290
+ 1092 0052 C4E99013 		strd	r1, r3, [r4, #576]
+ 1093              	.LBE501:
+ 1094              	.LBE504:
+ 1095              	.LBE507:
+ 1096              	.LBE510:
+ 1097              	.LBE517:
+ 1098              	.LBE521:
+ 1099              	.LBE543:
+ 1100              	.LBE548:
+ 1101              	.LBE553:
+  20:Application.cpp **** static uint32_t  start, end, dur;
+ 1102              		.loc 15 20 17 view .LVU291
+ 1103 0056 1649     		ldr	r1, .L35+24
+ 1104 0058 FFF7FEFF 		bl	__aeabi_atexit
+ 1105              	.LVL60:
+  23:Application.cpp **** static Equalizer equalizerRight;
+ 1106              		.loc 15 23 18 view .LVU292
+ 1107 005c 3846     		mov	r0, r7
+ 1108 005e FFF7FEFF 		bl	_ZN9EqualizerC1Ev
+ 1109              	.LVL61:
+ 1110 0062 3246     		mov	r2, r6
+ 1111 0064 1349     		ldr	r1, .L35+28
+ 1112 0066 3846     		mov	r0, r7
+ 1113 0068 FFF7FEFF 		bl	__aeabi_atexit
+ 1114              	.LVL62:
+  24:Application.cpp **** static Controller controller(&equalizerLeft, &equalizerRight, &hwPod);
+ 1115              		.loc 15 24 18 view .LVU293
+ 1116 006c 2846     		mov	r0, r5
+ 1117 006e FFF7FEFF 		bl	_ZN9EqualizerC1Ev
+ 1118              	.LVL63:
+ 1119 0072 3246     		mov	r2, r6
+ 1120 0074 0F49     		ldr	r1, .L35+28
+ 1121 0076 2846     		mov	r0, r5
+ 1122 0078 FFF7FEFF 		bl	__aeabi_atexit
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 57
 
 
- 1118 0088 3246     		mov	r2, r6
- 1119 008a 4046     		mov	r0, r8
- 1120 008c 0A49     		ldr	r1, .L35+32
- 1121              	.LBE554:
- 1122              	.LBE556:
- 1123              		.loc 15 178 1 view .LVU292
- 1124 008e BDE8F041 		pop	{r4, r5, r6, r7, r8, lr}
- 1125              		.cfi_restore 14
- 1126              		.cfi_restore 8
- 1127              		.cfi_restore 7
- 1128              		.cfi_restore 6
- 1129              		.cfi_restore 5
- 1130              		.cfi_restore 4
- 1131              		.cfi_def_cfa_offset 0
- 1132              	.LBB557:
- 1133              	.LBB555:
-  27:Application.cpp **** 
- 1134              		.loc 15 27 19 view .LVU293
- 1135 0092 FFF7FEBF 		b	__aeabi_atexit
- 1136              	.LVL64:
- 1137              	.L36:
- 1138 0096 00BF     		.align	2
- 1139              	.L35:
- 1140 0098 00000000 		.word	__dso_handle
- 1141 009c 00000000 		.word	_ZL5hwPod
- 1142 00a0 00000000 		.word	__tcf_0
- 1143 00a4 00000000 		.word	.LANCHOR0
- 1144 00a8 0080707F 		.word	2138079232
- 1145 00ac 00000000 		.word	.LANCHOR1
- 1146 00b0 00000000 		.word	_ZN5daisy8DaisyPodD1Ev
- 1147 00b4 00000000 		.word	_ZN9EqualizerD1Ev
- 1148 00b8 00000000 		.word	_ZN10ControllerD1Ev
- 1149 00bc 00000000 		.word	.LANCHOR3
- 1150              	.LBE555:
- 1151              	.LBE557:
- 1152              		.cfi_endproc
- 1153              	.LFE5276:
- 1155              		.section	.init_array,"aw",%init_array
- 1156              		.align	2
- 1157 0000 00000000 		.word	_GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj(target1)
- 1158              		.section	.text._Z13AudioCallbackPKPKfPPfj,"ax",%progbits
- 1159              		.align	1
- 1160              		.p2align 2,,3
- 1161              		.global	_Z13AudioCallbackPKPKfPPfj
- 1162              		.syntax unified
- 1163              		.thumb
- 1164              		.thumb_func
- 1165              		.fpu fpv5-d16
- 1167              	_Z13AudioCallbackPKPKfPPfj:
- 1168              	.LVL65:
- 1169              	.LFB4689:
-  30:Application.cpp **** 	start = System::GetTick();
- 1170              		.loc 15 30 1 is_stmt 1 view -0
- 1171              		.cfi_startproc
- 1172              		@ args = 0, pretend = 0, frame = 0
- 1173              		@ frame_needed = 0, uses_anonymous_args = 0
-  31:Application.cpp **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 58
+ 1123              	.LVL64:
+  25:Application.cpp **** 
+ 1124              		.loc 15 25 69 view .LVU294
+ 1125 007c 3946     		mov	r1, r7
+ 1126 007e 2A46     		mov	r2, r5
+ 1127 0080 2346     		mov	r3, r4
+ 1128 0082 4046     		mov	r0, r8
+ 1129 0084 FFF7FEFF 		bl	_ZN10ControllerC1EP9EqualizerS1_PN5daisy8DaisyPodE
+ 1130              	.LVL65:
+  25:Application.cpp **** 
+ 1131              		.loc 15 25 19 view .LVU295
+ 1132 0088 3246     		mov	r2, r6
+ 1133 008a 4046     		mov	r0, r8
+ 1134 008c 0A49     		ldr	r1, .L35+32
+ 1135              	.LBE554:
+ 1136              	.LBE556:
+ 1137              		.loc 15 173 1 view .LVU296
+ 1138 008e BDE8F041 		pop	{r4, r5, r6, r7, r8, lr}
+ 1139              		.cfi_restore 14
+ 1140              		.cfi_restore 8
+ 1141              		.cfi_restore 7
+ 1142              		.cfi_restore 6
+ 1143              		.cfi_restore 5
+ 1144              		.cfi_restore 4
+ 1145              		.cfi_def_cfa_offset 0
+ 1146              	.LBB557:
+ 1147              	.LBB555:
+  25:Application.cpp **** 
+ 1148              		.loc 15 25 19 view .LVU297
+ 1149 0092 FFF7FEBF 		b	__aeabi_atexit
+ 1150              	.LVL66:
+ 1151              	.L36:
+ 1152 0096 00BF     		.align	2
+ 1153              	.L35:
+ 1154 0098 00000000 		.word	__dso_handle
+ 1155 009c 00000000 		.word	_ZL5hwPod
+ 1156 00a0 00000000 		.word	__tcf_0
+ 1157 00a4 00000000 		.word	.LANCHOR0
+ 1158 00a8 0080707F 		.word	2138079232
+ 1159 00ac 00000000 		.word	.LANCHOR1
+ 1160 00b0 00000000 		.word	_ZN5daisy8DaisyPodD1Ev
+ 1161 00b4 00000000 		.word	_ZN9EqualizerD1Ev
+ 1162 00b8 00000000 		.word	_ZN10ControllerD1Ev
+ 1163 00bc 00000000 		.word	.LANCHOR3
+ 1164              	.LBE555:
+ 1165              	.LBE557:
+ 1166              		.cfi_endproc
+ 1167              	.LFE5276:
+ 1169              		.section	.init_array,"aw",%init_array
+ 1170              		.align	2
+ 1171 0000 00000000 		.word	_GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj(target1)
+ 1172              		.section	.text._Z13AudioCallbackPKPKfPPfj,"ax",%progbits
+ 1173              		.align	1
+ 1174              		.p2align 2,,3
+ 1175              		.global	_Z13AudioCallbackPKPKfPPfj
+ 1176              		.syntax unified
+ 1177              		.thumb
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 58
 
 
- 1174              		.loc 15 31 2 view .LVU295
-  30:Application.cpp **** 	start = System::GetTick();
- 1175              		.loc 15 30 1 is_stmt 0 view .LVU296
- 1176 0000 2DE9F84F 		push	{r3, r4, r5, r6, r7, r8, r9, r10, fp, lr}
- 1177              		.cfi_def_cfa_offset 40
- 1178              		.cfi_offset 3, -40
- 1179              		.cfi_offset 4, -36
- 1180              		.cfi_offset 5, -32
- 1181              		.cfi_offset 6, -28
- 1182              		.cfi_offset 7, -24
- 1183              		.cfi_offset 8, -20
- 1184              		.cfi_offset 9, -16
- 1185              		.cfi_offset 10, -12
- 1186              		.cfi_offset 11, -8
- 1187              		.cfi_offset 14, -4
-  31:Application.cpp **** 
- 1188              		.loc 15 31 8 view .LVU297
- 1189 0004 DFF87490 		ldr	r9, .L45+12
-  30:Application.cpp **** 	start = System::GetTick();
- 1190              		.loc 15 30 1 view .LVU298
- 1191 0008 9046     		mov	r8, r2
- 1192 000a 0646     		mov	r6, r0
- 1193 000c 0F46     		mov	r7, r1
-  31:Application.cpp **** 
- 1194              		.loc 15 31 25 view .LVU299
- 1195 000e FFF7FEFF 		bl	_ZN5daisy6System7GetTickEv
- 1196              	.LVL66:
-  31:Application.cpp **** 
- 1197              		.loc 15 31 8 view .LVU300
- 1198 0012 C9F80000 		str	r0, [r9]
-  33:Application.cpp **** 	{
- 1199              		.loc 15 33 2 is_stmt 1 view .LVU301
- 1200              	.LVL67:
- 1201              	.LBB558:
-  33:Application.cpp **** 	{
- 1202              		.loc 15 33 23 view .LVU302
- 1203 0016 B8F1000F 		cmp	r8, #0
- 1204 001a 1DD0     		beq	.L38
-  33:Application.cpp **** 	{
- 1205              		.loc 15 33 14 is_stmt 0 view .LVU303
- 1206 001c 0024     		movs	r4, #0
- 1207              	.LVL68:
- 1208              	.L39:
-  35:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
- 1209              		.loc 15 35 3 is_stmt 1 discriminator 2 view .LVU304
-  35:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
- 1210              		.loc 15 35 36 is_stmt 0 discriminator 2 view .LVU305
- 1211 001e 3268     		ldr	r2, [r6]
- 1212 0020 4FEA840A 		lsl	r10, r4, #2
-  35:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
- 1213              		.loc 15 35 11 discriminator 2 view .LVU306
- 1214 0024 3B68     		ldr	r3, [r7]
-  35:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
- 1215              		.loc 15 35 36 discriminator 2 view .LVU307
- 1216 0026 02EB8402 		add	r2, r2, r4, lsl #2
- 1217 002a 1148     		ldr	r0, .L45
-  35:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 59
+ 1178              		.thumb_func
+ 1179              		.fpu fpv5-d16
+ 1181              	_Z13AudioCallbackPKPKfPPfj:
+ 1182              	.LVL67:
+ 1183              	.LFB4689:
+  28:Application.cpp **** 	start = System::GetTick();
+ 1184              		.loc 15 28 1 is_stmt 1 view -0
+ 1185              		.cfi_startproc
+ 1186              		@ args = 0, pretend = 0, frame = 0
+ 1187              		@ frame_needed = 0, uses_anonymous_args = 0
+  29:Application.cpp **** 
+ 1188              		.loc 15 29 2 view .LVU299
+  28:Application.cpp **** 	start = System::GetTick();
+ 1189              		.loc 15 28 1 is_stmt 0 view .LVU300
+ 1190 0000 2DE9F84F 		push	{r3, r4, r5, r6, r7, r8, r9, r10, fp, lr}
+ 1191              		.cfi_def_cfa_offset 40
+ 1192              		.cfi_offset 3, -40
+ 1193              		.cfi_offset 4, -36
+ 1194              		.cfi_offset 5, -32
+ 1195              		.cfi_offset 6, -28
+ 1196              		.cfi_offset 7, -24
+ 1197              		.cfi_offset 8, -20
+ 1198              		.cfi_offset 9, -16
+ 1199              		.cfi_offset 10, -12
+ 1200              		.cfi_offset 11, -8
+ 1201              		.cfi_offset 14, -4
+  29:Application.cpp **** 
+ 1202              		.loc 15 29 8 view .LVU301
+ 1203 0004 DFF87490 		ldr	r9, .L45+12
+  28:Application.cpp **** 	start = System::GetTick();
+ 1204              		.loc 15 28 1 view .LVU302
+ 1205 0008 9046     		mov	r8, r2
+ 1206 000a 0646     		mov	r6, r0
+ 1207 000c 0F46     		mov	r7, r1
+  29:Application.cpp **** 
+ 1208              		.loc 15 29 25 view .LVU303
+ 1209 000e FFF7FEFF 		bl	_ZN5daisy6System7GetTickEv
+ 1210              	.LVL68:
+  29:Application.cpp **** 
+ 1211              		.loc 15 29 8 view .LVU304
+ 1212 0012 C9F80000 		str	r0, [r9]
+  31:Application.cpp **** 	{
+ 1213              		.loc 15 31 2 is_stmt 1 view .LVU305
+ 1214              	.LVL69:
+ 1215              	.LBB558:
+  31:Application.cpp **** 	{
+ 1216              		.loc 15 31 23 view .LVU306
+ 1217 0016 B8F1000F 		cmp	r8, #0
+ 1218 001a 1DD0     		beq	.L38
+  31:Application.cpp **** 	{
+ 1219              		.loc 15 31 14 is_stmt 0 view .LVU307
+ 1220 001c 0024     		movs	r4, #0
+ 1221              	.LVL70:
+ 1222              	.L39:
+  33:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
+ 1223              		.loc 15 33 3 is_stmt 1 discriminator 2 view .LVU308
+  33:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 59
 
 
- 1218              		.loc 15 35 11 discriminator 2 view .LVU308
- 1219 002c 03EB840B 		add	fp, r3, r4, lsl #2
-  33:Application.cpp **** 	{
- 1220              		.loc 15 33 2 discriminator 2 view .LVU309
- 1221 0030 0134     		adds	r4, r4, #1
- 1222              	.LVL69:
-  35:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
- 1223              		.loc 15 35 36 discriminator 2 view .LVU310
- 1224 0032 92ED000A 		vldr.32	s0, [r2]
- 1225 0036 FFF7FEFF 		bl	_ZN9Equalizer7ProcessEf
- 1226              	.LVL70:
-  36:Application.cpp **** 
- 1227              		.loc 15 36 37 discriminator 2 view .LVU311
- 1228 003a 3368     		ldr	r3, [r6]
-  36:Application.cpp **** 
- 1229              		.loc 15 36 11 discriminator 2 view .LVU312
- 1230 003c 7D68     		ldr	r5, [r7, #4]
-  36:Application.cpp **** 
- 1231              		.loc 15 36 37 discriminator 2 view .LVU313
- 1232 003e 5344     		add	r3, r3, r10
-  35:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
- 1233              		.loc 15 35 13 discriminator 2 view .LVU314
- 1234 0040 8BED000A 		vstr.32	s0, [fp]
-  36:Application.cpp **** 
- 1235              		.loc 15 36 3 is_stmt 1 discriminator 2 view .LVU315
-  36:Application.cpp **** 
- 1236              		.loc 15 36 37 is_stmt 0 discriminator 2 view .LVU316
- 1237 0044 0B48     		ldr	r0, .L45+4
-  36:Application.cpp **** 
- 1238              		.loc 15 36 11 discriminator 2 view .LVU317
- 1239 0046 5544     		add	r5, r5, r10
-  36:Application.cpp **** 
- 1240              		.loc 15 36 37 discriminator 2 view .LVU318
- 1241 0048 93ED000A 		vldr.32	s0, [r3]
- 1242 004c FFF7FEFF 		bl	_ZN9Equalizer7ProcessEf
- 1243              	.LVL71:
-  33:Application.cpp **** 	{
- 1244              		.loc 15 33 23 discriminator 2 view .LVU319
- 1245 0050 A045     		cmp	r8, r4
-  36:Application.cpp **** 
- 1246              		.loc 15 36 13 discriminator 2 view .LVU320
- 1247 0052 85ED000A 		vstr.32	s0, [r5]
-  33:Application.cpp **** 	{
- 1248              		.loc 15 33 2 is_stmt 1 discriminator 2 view .LVU321
- 1249              	.LVL72:
-  33:Application.cpp **** 	{
- 1250              		.loc 15 33 23 discriminator 2 view .LVU322
- 1251 0056 E2D1     		bne	.L39
- 1252              	.LVL73:
- 1253              	.L38:
-  33:Application.cpp **** 	{
- 1254              		.loc 15 33 23 is_stmt 0 discriminator 2 view .LVU323
- 1255              	.LBE558:
-  43:Application.cpp **** 	dur = (end - start) * 5; // ns
- 1256              		.loc 15 43 2 is_stmt 1 view .LVU324
-  43:Application.cpp **** 	dur = (end - start) * 5; // ns
- 1257              		.loc 15 43 23 is_stmt 0 view .LVU325
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 60
+ 1224              		.loc 15 33 36 is_stmt 0 discriminator 2 view .LVU309
+ 1225 001e 3268     		ldr	r2, [r6]
+ 1226 0020 4FEA840A 		lsl	r10, r4, #2
+  33:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
+ 1227              		.loc 15 33 11 discriminator 2 view .LVU310
+ 1228 0024 3B68     		ldr	r3, [r7]
+  33:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
+ 1229              		.loc 15 33 36 discriminator 2 view .LVU311
+ 1230 0026 02EB8402 		add	r2, r2, r4, lsl #2
+ 1231 002a 1148     		ldr	r0, .L45
+  33:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
+ 1232              		.loc 15 33 11 discriminator 2 view .LVU312
+ 1233 002c 03EB840B 		add	fp, r3, r4, lsl #2
+  31:Application.cpp **** 	{
+ 1234              		.loc 15 31 2 discriminator 2 view .LVU313
+ 1235 0030 0134     		adds	r4, r4, #1
+ 1236              	.LVL71:
+  33:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
+ 1237              		.loc 15 33 36 discriminator 2 view .LVU314
+ 1238 0032 92ED000A 		vldr.32	s0, [r2]
+ 1239 0036 FFF7FEFF 		bl	_ZN9Equalizer7ProcessEf
+ 1240              	.LVL72:
+  34:Application.cpp **** 
+ 1241              		.loc 15 34 37 discriminator 2 view .LVU315
+ 1242 003a 3368     		ldr	r3, [r6]
+  34:Application.cpp **** 
+ 1243              		.loc 15 34 11 discriminator 2 view .LVU316
+ 1244 003c 7D68     		ldr	r5, [r7, #4]
+  34:Application.cpp **** 
+ 1245              		.loc 15 34 37 discriminator 2 view .LVU317
+ 1246 003e 5344     		add	r3, r3, r10
+  33:Application.cpp **** 		out[1][i] = equalizerRight.Process(in[0][i]);
+ 1247              		.loc 15 33 13 discriminator 2 view .LVU318
+ 1248 0040 8BED000A 		vstr.32	s0, [fp]
+  34:Application.cpp **** 
+ 1249              		.loc 15 34 3 is_stmt 1 discriminator 2 view .LVU319
+  34:Application.cpp **** 
+ 1250              		.loc 15 34 37 is_stmt 0 discriminator 2 view .LVU320
+ 1251 0044 0B48     		ldr	r0, .L45+4
+  34:Application.cpp **** 
+ 1252              		.loc 15 34 11 discriminator 2 view .LVU321
+ 1253 0046 5544     		add	r5, r5, r10
+  34:Application.cpp **** 
+ 1254              		.loc 15 34 37 discriminator 2 view .LVU322
+ 1255 0048 93ED000A 		vldr.32	s0, [r3]
+ 1256 004c FFF7FEFF 		bl	_ZN9Equalizer7ProcessEf
+ 1257              	.LVL73:
+  31:Application.cpp **** 	{
+ 1258              		.loc 15 31 23 discriminator 2 view .LVU323
+ 1259 0050 A045     		cmp	r8, r4
+  34:Application.cpp **** 
+ 1260              		.loc 15 34 13 discriminator 2 view .LVU324
+ 1261 0052 85ED000A 		vstr.32	s0, [r5]
+  31:Application.cpp **** 	{
+ 1262              		.loc 15 31 2 is_stmt 1 discriminator 2 view .LVU325
+ 1263              	.LVL74:
+  31:Application.cpp **** 	{
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 60
 
 
- 1258 0058 FFF7FEFF 		bl	_ZN5daisy6System7GetTickEv
- 1259              	.LVL74:
-  44:Application.cpp **** 	//dur = (end - start) / 200; // us
- 1260              		.loc 15 44 2 is_stmt 1 view .LVU326
-  44:Application.cpp **** 	//dur = (end - start) / 200; // us
- 1261              		.loc 15 44 13 is_stmt 0 view .LVU327
- 1262 005c D9F80020 		ldr	r2, [r9]
-  44:Application.cpp **** 	//dur = (end - start) / 200; // us
- 1263              		.loc 15 44 6 view .LVU328
- 1264 0060 054B     		ldr	r3, .L45+8
-  44:Application.cpp **** 	//dur = (end - start) / 200; // us
- 1265              		.loc 15 44 13 view .LVU329
- 1266 0062 801A     		subs	r0, r0, r2
-  44:Application.cpp **** 	//dur = (end - start) / 200; // us
- 1267              		.loc 15 44 22 view .LVU330
- 1268 0064 00EB8000 		add	r0, r0, r0, lsl #2
-  44:Application.cpp **** 	//dur = (end - start) / 200; // us
- 1269              		.loc 15 44 6 view .LVU331
- 1270 0068 1860     		str	r0, [r3]
-  46:Application.cpp **** 
- 1271              		.loc 15 46 1 view .LVU332
- 1272 006a BDE8F88F 		pop	{r3, r4, r5, r6, r7, r8, r9, r10, fp, pc}
- 1273              	.LVL75:
- 1274              	.L46:
-  46:Application.cpp **** 
- 1275              		.loc 15 46 1 view .LVU333
- 1276 006e 00BF     		.align	2
- 1277              	.L45:
- 1278 0070 00000000 		.word	.LANCHOR0
- 1279 0074 00000000 		.word	.LANCHOR1
- 1280 0078 00000000 		.word	.LANCHOR4
- 1281 007c 00000000 		.word	.LANCHOR5
- 1282              		.cfi_endproc
- 1283              	.LFE4689:
- 1285              		.section	.bss._ZL10controller,"aw",%nobits
- 1286              		.align	2
- 1287              		.set	.LANCHOR3,. + 0
- 1290              	_ZL10controller:
- 1291 0000 00000000 		.space	20
- 1291      00000000 
- 1291      00000000 
- 1291      00000000 
- 1291      00000000 
- 1292              		.section	.bss._ZL13equalizerLeft,"aw",%nobits
- 1293              		.align	2
- 1294              		.set	.LANCHOR0,. + 0
- 1297              	_ZL13equalizerLeft:
- 1298 0000 00000000 		.space	340
- 1298      00000000 
- 1298      00000000 
- 1298      00000000 
- 1298      00000000 
- 1299              		.section	.bss._ZL14equalizerRight,"aw",%nobits
+ 1264              		.loc 15 31 23 discriminator 2 view .LVU326
+ 1265 0056 E2D1     		bne	.L39
+ 1266              	.LVL75:
+ 1267              	.L38:
+  31:Application.cpp **** 	{
+ 1268              		.loc 15 31 23 is_stmt 0 discriminator 2 view .LVU327
+ 1269              	.LBE558:
+  38:Application.cpp **** 	dur = (end - start) * 5; // ns
+ 1270              		.loc 15 38 2 is_stmt 1 view .LVU328
+  38:Application.cpp **** 	dur = (end - start) * 5; // ns
+ 1271              		.loc 15 38 23 is_stmt 0 view .LVU329
+ 1272 0058 FFF7FEFF 		bl	_ZN5daisy6System7GetTickEv
+ 1273              	.LVL76:
+  39:Application.cpp **** 
+ 1274              		.loc 15 39 2 is_stmt 1 view .LVU330
+  39:Application.cpp **** 
+ 1275              		.loc 15 39 13 is_stmt 0 view .LVU331
+ 1276 005c D9F80020 		ldr	r2, [r9]
+  39:Application.cpp **** 
+ 1277              		.loc 15 39 6 view .LVU332
+ 1278 0060 054B     		ldr	r3, .L45+8
+  39:Application.cpp **** 
+ 1279              		.loc 15 39 13 view .LVU333
+ 1280 0062 801A     		subs	r0, r0, r2
+  39:Application.cpp **** 
+ 1281              		.loc 15 39 22 view .LVU334
+ 1282 0064 00EB8000 		add	r0, r0, r0, lsl #2
+  39:Application.cpp **** 
+ 1283              		.loc 15 39 6 view .LVU335
+ 1284 0068 1860     		str	r0, [r3]
+  41:Application.cpp **** 
+ 1285              		.loc 15 41 1 view .LVU336
+ 1286 006a BDE8F88F 		pop	{r3, r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 1287              	.LVL77:
+ 1288              	.L46:
+  41:Application.cpp **** 
+ 1289              		.loc 15 41 1 view .LVU337
+ 1290 006e 00BF     		.align	2
+ 1291              	.L45:
+ 1292 0070 00000000 		.word	.LANCHOR0
+ 1293 0074 00000000 		.word	.LANCHOR1
+ 1294 0078 00000000 		.word	.LANCHOR4
+ 1295 007c 00000000 		.word	.LANCHOR5
+ 1296              		.cfi_endproc
+ 1297              	.LFE4689:
+ 1299              		.section	.bss._ZL10controller,"aw",%nobits
  1300              		.align	2
- 1301              		.set	.LANCHOR1,. + 0
- 1304              	_ZL14equalizerRight:
- 1305 0000 00000000 		.space	340
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 61
-
-
+ 1301              		.set	.LANCHOR3,. + 0
+ 1304              	_ZL10controller:
+ 1305 0000 00000000 		.space	20
  1305      00000000 
  1305      00000000 
  1305      00000000 
  1305      00000000 
- 1306              		.section	.bss._ZL3dur,"aw",%nobits
+ 1306              		.section	.bss._ZL13equalizerLeft,"aw",%nobits
  1307              		.align	2
- 1308              		.set	.LANCHOR4,. + 0
- 1311              	_ZL3dur:
- 1312 0000 00000000 		.space	4
- 1313              		.section	.bss._ZL5hwPod,"aw",%nobits
+ 1308              		.set	.LANCHOR0,. + 0
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 61
+
+
+ 1311              	_ZL13equalizerLeft:
+ 1312 0000 00000000 		.space	460
+ 1312      00000000 
+ 1312      00000000 
+ 1312      00000000 
+ 1312      00000000 
+ 1313              		.section	.bss._ZL14equalizerRight,"aw",%nobits
  1314              		.align	2
- 1317              	_ZL5hwPod:
- 1318 0000 00000000 		.space	37600
- 1318      00000000 
- 1318      00000000 
- 1318      00000000 
- 1318      00000000 
- 1319              		.section	.bss._ZL5start,"aw",%nobits
- 1320              		.align	2
- 1321              		.set	.LANCHOR5,. + 0
- 1324              	_ZL5start:
- 1325 0000 00000000 		.space	4
- 1326              		.section	.bss._ZL9my_colors,"aw",%nobits
- 1327              		.align	2
- 1328              		.set	.LANCHOR2,. + 0
- 1331              	_ZL9my_colors:
- 1332 0000 00000000 		.space	60
+ 1315              		.set	.LANCHOR1,. + 0
+ 1318              	_ZL14equalizerRight:
+ 1319 0000 00000000 		.space	460
+ 1319      00000000 
+ 1319      00000000 
+ 1319      00000000 
+ 1319      00000000 
+ 1320              		.section	.bss._ZL3dur,"aw",%nobits
+ 1321              		.align	2
+ 1322              		.set	.LANCHOR4,. + 0
+ 1325              	_ZL3dur:
+ 1326 0000 00000000 		.space	4
+ 1327              		.section	.bss._ZL5hwPod,"aw",%nobits
+ 1328              		.align	2
+ 1331              	_ZL5hwPod:
+ 1332 0000 00000000 		.space	37600
  1332      00000000 
  1332      00000000 
  1332      00000000 
  1332      00000000 
- 1333              		.text
- 1334              	.Letext0:
- 1335              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
- 1336              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
- 1337              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
- 1338              		.file 25 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
- 1339              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
- 1340              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
- 1341              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
- 1342              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
- 1343              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
- 1344              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
- 1345              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
- 1346              		.file 33 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
- 1347              		.file 34 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
- 1348              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
- 1349              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\initializer_list
- 1350              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
- 1351              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
- 1352              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
- 1353              		.file 40 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
- 1354              		.file 41 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
- 1355              		.file 42 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
- 1356              		.file 43 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_tempbu
- 1357              		.file 44 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
- 1358              		.file 45 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 62
+ 1333              		.section	.bss._ZL5start,"aw",%nobits
+ 1334              		.align	2
+ 1335              		.set	.LANCHOR5,. + 0
+ 1338              	_ZL5start:
+ 1339 0000 00000000 		.space	4
+ 1340              		.section	.bss._ZL9my_colors,"aw",%nobits
+ 1341              		.align	2
+ 1342              		.set	.LANCHOR2,. + 0
+ 1345              	_ZL9my_colors:
+ 1346 0000 00000000 		.space	84
+ 1346      00000000 
+ 1346      00000000 
+ 1346      00000000 
+ 1346      00000000 
+ 1347              		.text
+ 1348              	.Letext0:
+ 1349              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 1350              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 1351              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 1352              		.file 25 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 1353              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 1354              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 1355              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ 1356              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 1357              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 1358              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 1359              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 1360              		.file 33 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 1361              		.file 34 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 62
 
 
- 1359              		.file 46 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
- 1360              		.file 47 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
- 1361              		.file 48 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
- 1362              		.file 49 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
- 1363              		.file 50 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
- 1364              		.file 51 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
- 1365              		.file 52 "../../libDaisy//src/daisy_core.h"
- 1366              		.file 53 "../../libDaisy//src/per/tim.h"
- 1367              		.file 54 "../../libDaisy//src/hid/MidiEvent.h"
- 1368              		.file 55 "../../libDaisy//src/hid/logger_impl.h"
- 1369              		.file 56 "../../libDaisy//src/util/wav_format.h"
- 1370              		.file 57 "../../libDaisy//src/dev/max11300.h"
- 1371              		.file 58 "../../libDaisy//src/hid/logger.h"
- 1372              		.file 59 "../../libDaisy//src/per/gpio.h"
- 1373              		.file 60 "../../libDaisy//src/dev/sdram.h"
- 1374              		.file 61 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
- 1375              		.file 62 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
- 1376              		.file 63 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
- 1377              		.file 64 "../../DaisySP//Source/Control/adenv.h"
- 1378              		.file 65 "../../DaisySP//Source/Utility/dsp.h"
- 1379              		.file 66 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
- 1380              		.file 67 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
- 1381              		.file 68 "../../libDaisy//src/dev/sr_595.h"
- 1382              		.file 69 "Controller.h"
- 1383              		.file 70 "<built-in>"
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 63
+ 1362              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 1363              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\initializer_list
+ 1364              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+ 1365              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 1366              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 1367              		.file 40 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
+ 1368              		.file 41 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
+ 1369              		.file 42 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
+ 1370              		.file 43 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_tempbu
+ 1371              		.file 44 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 1372              		.file 45 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 1373              		.file 46 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 1374              		.file 47 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 1375              		.file 48 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 1376              		.file 49 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 1377              		.file 50 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 1378              		.file 51 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 1379              		.file 52 "../../libDaisy//src/daisy_core.h"
+ 1380              		.file 53 "../../libDaisy//src/per/tim.h"
+ 1381              		.file 54 "../../libDaisy//src/hid/MidiEvent.h"
+ 1382              		.file 55 "../../libDaisy//src/hid/logger_impl.h"
+ 1383              		.file 56 "../../libDaisy//src/util/wav_format.h"
+ 1384              		.file 57 "../../libDaisy//src/dev/max11300.h"
+ 1385              		.file 58 "../../libDaisy//src/hid/logger.h"
+ 1386              		.file 59 "../../libDaisy//src/per/gpio.h"
+ 1387              		.file 60 "../../libDaisy//src/dev/sdram.h"
+ 1388              		.file 61 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 1389              		.file 62 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 1390              		.file 63 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 1391              		.file 64 "../../DaisySP//Source/Control/adenv.h"
+ 1392              		.file 65 "../../DaisySP//Source/Utility/dsp.h"
+ 1393              		.file 66 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
+ 1394              		.file 67 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
+ 1395              		.file 68 "../../libDaisy//src/dev/sr_595.h"
+ 1396              		.file 69 "Controller.h"
+ 1397              		.file 70 "<built-in>"
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 63
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 Application.cpp
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:17     .text._ZN5daisy8DaisyPodD2Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:26     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD2Ev
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:26     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD1Ev
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:170    .text.__tcf_0:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:177    .text.__tcf_0:00000000 __tcf_0
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:191    .rodata.main.str1.4:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:196    .text.startup.main:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:204    .text.startup.main:00000000 main
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:670    .text.startup.main:000001c0 $d
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1317   .bss._ZL5hwPod:00000000 _ZL5hwPod
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1167   .text._Z13AudioCallbackPKPKfPPfj:00000000 _Z13AudioCallbackPKPKfPPfj
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:692    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:699    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:00000000 _GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1140   .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:00000098 $d
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1156   .init_array:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1159   .text._Z13AudioCallbackPKPKfPPfj:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1278   .text._Z13AudioCallbackPKPKfPPfj:00000070 $d
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1286   .bss._ZL10controller:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1290   .bss._ZL10controller:00000000 _ZL10controller
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1293   .bss._ZL13equalizerLeft:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1297   .bss._ZL13equalizerLeft:00000000 _ZL13equalizerLeft
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1300   .bss._ZL14equalizerRight:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1304   .bss._ZL14equalizerRight:00000000 _ZL14equalizerRight
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1307   .bss._ZL3dur:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1311   .bss._ZL3dur:00000000 _ZL3dur
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1314   .bss._ZL5hwPod:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1320   .bss._ZL5start:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1324   .bss._ZL5start:00000000 _ZL5start
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1327   .bss._ZL9my_colors:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s:1331   .bss._ZL9my_colors:00000000 _ZL9my_colors
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:17     .text._ZN5daisy8DaisyPodD2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:26     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD2Ev
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:26     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD1Ev
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:170    .text.__tcf_0:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:177    .text.__tcf_0:00000000 __tcf_0
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:191    .rodata.main.str1.4:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:196    .text.startup.main:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:204    .text.startup.main:00000000 main
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:682    .text.startup.main:000001d0 $d
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1331   .bss._ZL5hwPod:00000000 _ZL5hwPod
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1181   .text._Z13AudioCallbackPKPKfPPfj:00000000 _Z13AudioCallbackPKPKfPPfj
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:706    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:713    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:00000000 _GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1154   .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:00000098 $d
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1170   .init_array:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1173   .text._Z13AudioCallbackPKPKfPPfj:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1292   .text._Z13AudioCallbackPKPKfPPfj:00000070 $d
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1300   .bss._ZL10controller:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1304   .bss._ZL10controller:00000000 _ZL10controller
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1307   .bss._ZL13equalizerLeft:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1311   .bss._ZL13equalizerLeft:00000000 _ZL13equalizerLeft
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1314   .bss._ZL14equalizerRight:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1318   .bss._ZL14equalizerRight:00000000 _ZL14equalizerRight
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1321   .bss._ZL3dur:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1325   .bss._ZL3dur:00000000 _ZL3dur
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1328   .bss._ZL5hwPod:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1334   .bss._ZL5start:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1338   .bss._ZL5start:00000000 _ZL5start
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1341   .bss._ZL9my_colors:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s:1345   .bss._ZL9my_colors:00000000 _ZL9my_colors
                            .group:00000000 _ZN5daisy8DaisyPodD5Ev
 
 UNDEFINED SYMBOLS
@@ -3746,7 +3757,7 @@ _ZN5daisy17MidiUartTransport6ConfigC1Ev
 _ZN9EqualizerC1Ev
 _ZN10ControllerC1EP9EqualizerS1_PN5daisy8DaisyPodE
 __dso_handle
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccoKoKE3.s 			page 64
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccQP4LJJ.s 			page 64
 
 
 _ZN9EqualizerD1Ev

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 1
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cctryndr.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 1
   43              		.loc 1 13 14 is_stmt 0 view .LVU6
   44 0004 0361     		str	r3, [r0, #16]	@ float
   10:LowShelfFilter.cpp ****     for (int i = 0; i < NUM_LOW_SHELF_COEFFS; i++) 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 2
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cctryndr.s 			page 2
 
 
   45              		.loc 1 10 5 is_stmt 1 view .LVU7
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 1
   88              		.fpu fpv5-d16
   90              	_ZN14LowShelfFilter7ProcessEf:
   91              	.LVL4:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 3
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cctryndr.s 			page 3
 
 
   92              	.LFB553:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 1
  126              		.loc 1 35 9 view .LVU41
  127 0038 80ED077A 		vstr.32	s14, [r0, #28]
   30:LowShelfFilter.cpp **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 4
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cctryndr.s 			page 4
 
 
  128              		.loc 1 30 39 view .LVU42
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 1
    6:LowShelfFilter.cpp **** 
  172              		.loc 1 6 1 view .LVU55
  173 0004 0446     		mov	r4, r0
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 5
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cctryndr.s 			page 5
 
 
  174              	.LBB7:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 1
  222              		.loc 1 6 1 view .LVU63
  223 0004 0446     		mov	r4, r0
  224              	.LVL11:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 6
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cctryndr.s 			page 6
 
 
  225              	.LBB11:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 1
  273              		.loc 1 4 1 view .LVU71
  274 0002 0446     		mov	r4, r0
  275              	.LBB12:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 7
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cctryndr.s 			page 7
 
 
    4:LowShelfFilter.cpp **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 1
  322 0000 00B5     		push	{lr}
  323              		.cfi_def_cfa_offset 4
  324              		.cfi_offset 14, -4
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 8
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cctryndr.s 			page 8
 
 
  325 0002 031D     		adds	r3, r0, #4
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 1
  365              		.syntax unified
  366              		.thumb
  367              		.thumb_func
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 9
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cctryndr.s 			page 9
 
 
  368              		.fpu fpv5-d16
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 1
  412              		.loc 1 47 23 view .LVU109
  413 0030 B0EE490A 		vmov.f32	s0, s18
   46:LowShelfFilter.cpp ****     float cosW  = cosf(omega);
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 10
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cctryndr.s 			page 10
 
 
  414              		.loc 1 46 23 view .LVU110
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 1
   54:LowShelfFilter.cpp ****     a[1] =     -2 * ((A - 1) + (A + 1)*cosW);
  457              		.loc 1 54 30 view .LVU130
  458 007a B0EE656A 		vmov.f32	s12, s11
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 11
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cctryndr.s 			page 11
 
 
   52:LowShelfFilter.cpp ****     b[2] =      A * ((A + 1) - (A - 1)*cosW - 2*sqrtA*alpha);
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 1
  495              		.loc 1 55 5 view .LVU150
  496              		.loc 1 56 5 view .LVU151
   57:LowShelfFilter.cpp **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 12
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cctryndr.s 			page 12
 
 
   58:LowShelfFilter.cpp ****     float a0 = a[0];
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 1
   61:LowShelfFilter.cpp ****         b[i] /= a0;
  537              		.loc 1 61 9 view .LVU168
   62:LowShelfFilter.cpp ****     }
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 13
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cctryndr.s 			page 13
 
 
  538              		.loc 1 62 9 view .LVU169
@@ -775,33 +775,33 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 1
  584              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
  585              		.file 7 "LowShelfFilter.h"
  586              		.file 8 "<built-in>"
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccf5saxw.s 			page 14
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cctryndr.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 LowShelfFilter.cpp
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:17     .text._ZN14LowShelfFilter4InitEv:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:26     .text._ZN14LowShelfFilter4InitEv:00000000 _ZN14LowShelfFilter4InitEv
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:82     .text._ZN14LowShelfFilter7ProcessEf:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:90     .text._ZN14LowShelfFilter7ProcessEf:00000000 _ZN14LowShelfFilter7ProcessEf
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:148    .text._ZN14LowShelfFilterD2Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:156    .text._ZN14LowShelfFilterD2Ev:00000000 _ZN14LowShelfFilterD2Ev
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:189    .text._ZN14LowShelfFilterD2Ev:00000010 $d
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:156    .text._ZN14LowShelfFilterD2Ev:00000000 _ZN14LowShelfFilterD1Ev
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:196    .text._ZN14LowShelfFilterD0Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:204    .text._ZN14LowShelfFilterD0Ev:00000000 _ZN14LowShelfFilterD0Ev
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:248    .text._ZN14LowShelfFilterD0Ev:00000018 $d
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:253    .text._ZN14LowShelfFilterC2Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:261    .text._ZN14LowShelfFilterC2Ev:00000000 _ZN14LowShelfFilterC2Ev
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:295    .text._ZN14LowShelfFilterC2Ev:00000010 $d
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:261    .text._ZN14LowShelfFilterC2Ev:00000000 _ZN14LowShelfFilterC1Ev
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:302    .text._ZN14LowShelfFilter4InitEPfS0_:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:310    .text._ZN14LowShelfFilter4InitEPfS0_:00000000 _ZN14LowShelfFilter4InitEPfS0_
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:362    .text._ZN14LowShelfFilter12MakeLowShelfEffff:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:370    .text._ZN14LowShelfFilter12MakeLowShelfEffff:00000000 _ZN14LowShelfFilter12MakeLowShelfEffff
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:560    .text._ZN14LowShelfFilter12MakeLowShelfEffff:00000108 $d
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:571    .rodata._ZTV14LowShelfFilter:00000000 _ZTV14LowShelfFilter
-C:\Users\micke\AppData\Local\Temp\ccf5saxw.s:567    .rodata._ZTV14LowShelfFilter:00000000 $d
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:17     .text._ZN14LowShelfFilter4InitEv:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:26     .text._ZN14LowShelfFilter4InitEv:00000000 _ZN14LowShelfFilter4InitEv
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:82     .text._ZN14LowShelfFilter7ProcessEf:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:90     .text._ZN14LowShelfFilter7ProcessEf:00000000 _ZN14LowShelfFilter7ProcessEf
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:148    .text._ZN14LowShelfFilterD2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:156    .text._ZN14LowShelfFilterD2Ev:00000000 _ZN14LowShelfFilterD2Ev
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:189    .text._ZN14LowShelfFilterD2Ev:00000010 $d
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:156    .text._ZN14LowShelfFilterD2Ev:00000000 _ZN14LowShelfFilterD1Ev
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:196    .text._ZN14LowShelfFilterD0Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:204    .text._ZN14LowShelfFilterD0Ev:00000000 _ZN14LowShelfFilterD0Ev
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:248    .text._ZN14LowShelfFilterD0Ev:00000018 $d
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:253    .text._ZN14LowShelfFilterC2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:261    .text._ZN14LowShelfFilterC2Ev:00000000 _ZN14LowShelfFilterC2Ev
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:295    .text._ZN14LowShelfFilterC2Ev:00000010 $d
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:261    .text._ZN14LowShelfFilterC2Ev:00000000 _ZN14LowShelfFilterC1Ev
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:302    .text._ZN14LowShelfFilter4InitEPfS0_:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:310    .text._ZN14LowShelfFilter4InitEPfS0_:00000000 _ZN14LowShelfFilter4InitEPfS0_
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:362    .text._ZN14LowShelfFilter12MakeLowShelfEffff:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:370    .text._ZN14LowShelfFilter12MakeLowShelfEffff:00000000 _ZN14LowShelfFilter12MakeLowShelfEffff
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:560    .text._ZN14LowShelfFilter12MakeLowShelfEffff:00000108 $d
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:571    .rodata._ZTV14LowShelfFilter:00000000 _ZTV14LowShelfFilter
+C:\Users\micke\AppData\Local\Temp\cctryndr.s:567    .rodata._ZTV14LowShelfFilter:00000000 $d
 
 UNDEFINED SYMBOLS
 _ZN9AlgorithmD2Ev

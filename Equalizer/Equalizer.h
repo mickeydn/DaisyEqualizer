@@ -6,7 +6,7 @@
 #include "HighShelfFilter.h"
 #include "LowShelfFilter.h"
 
-#define NUM_EQ_BANDS 4 
+#define NUM_EQ_BANDS 6 
 
 #define MAX_FREQ		20000.0
 #define MIN_FREQ        2.0
@@ -31,6 +31,8 @@ static const BANDTYPE BAND_TYPES[NUM_EQ_BANDS] = {
     BAND_LOW_SHELF,
     BAND_PEAK_EQ,
     BAND_PEAK_EQ,
+	BAND_PEAK_EQ,
+	BAND_PEAK_EQ,
     BAND_HIGH_SHELF
 };
 class Equalizer : public Algorithm
