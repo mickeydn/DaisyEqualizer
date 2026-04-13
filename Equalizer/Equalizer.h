@@ -1,17 +1,10 @@
-///////////////////////////////////////////////////////////
-//  Equalizer.h
-//  Implementation of the Class Equalizer
-//  Created on:      06-aug-2014 09:31:01
-//  Modified:        28-feb-2018 09:32:00
-//  Modified:        27-nov-2025 20:01:00
-//  Original author: kbe
-///////////////////////////////////////////////////////////
-
 #if !defined(EQUALIZER_INCLUDED_)
 #define EQUALIZER_INCLUDED_
 
 #include "IIRFilter.h"
 #include "Algorithm.h"
+#include "HighShelfFilter.h"
+#include "LowShelfFilter.h"
 
 #define NUM_EQ_BANDS 4 
 
@@ -28,6 +21,18 @@ enum PARAMETER {
 	PM_Q = 2
 };
 
+enum BANDTYPE {
+	BAND_LOW_SHELF,
+	BAND_PEAK_EQ,
+	BAND_HIGH_SHELF
+};
+
+static const BANDTYPE BAND_TYPES[NUM_EQ_BANDS] = {
+    BAND_LOW_SHELF,
+    BAND_PEAK_EQ,
+    BAND_PEAK_EQ,
+    BAND_HIGH_SHELF
+};
 class Equalizer : public Algorithm
 {
 public:
@@ -61,6 +66,8 @@ protected:
 	EQParams m_EQParams[NUM_EQ_BANDS];
 	Algorithm* m_filters[NUM_EQ_BANDS];
 	IIRFilter m_IIRfilter[NUM_EQ_BANDS];
+	HighShelfFilter m_HighShelfFilter;
+	LowShelfFilter m_LowShelfFilter;
 };
 
 #endif // !defined(EQUALIZER_INCLUDED_)

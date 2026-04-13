@@ -2,7 +2,7 @@
 TARGET = Equalizer
 
 # Sources
-CPP_SOURCES = Application.cpp Controller.cpp Equalizer.cpp IIRFilter.cpp Algorithm.cpp
+CPP_SOURCES = Application.cpp Controller.cpp Equalizer.cpp IIRFilter.cpp Algorithm.cpp HighShelfFilter.cpp LowShelfFilter.cpp
 
 # Library Locations
 LIBDAISY_DIR = ../../libDaisy/

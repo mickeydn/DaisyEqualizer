@@ -1,0 +1,808 @@
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"HighShelfFilter.cpp"
+  13              		.text
+  14              	.Ltext0:
+  15              		.cfi_sections	.debug_frame
+  16              		.section	.text._ZN15HighShelfFilter4InitEv,"ax",%progbits
+  17              		.align	1
+  18              		.p2align 2,,3
+  19              		.global	_ZN15HighShelfFilter4InitEv
+  20              		.arch armv7e-m
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  24              		.fpu fpv5-d16
+  26              	_ZN15HighShelfFilter4InitEv:
+  27              	.LVL0:
+  28              	.LFB551:
+  29              		.file 1 "HighShelfFilter.cpp"
+   1:HighShelfFilter.cpp **** #include <math.h>
+   2:HighShelfFilter.cpp **** #include "HighShelfFilter.h"
+   3:HighShelfFilter.cpp **** 
+   4:HighShelfFilter.cpp **** HighShelfFilter::HighShelfFilter() {}
+   5:HighShelfFilter.cpp **** 
+   6:HighShelfFilter.cpp **** HighShelfFilter::~HighShelfFilter() {}
+   7:HighShelfFilter.cpp **** 
+   8:HighShelfFilter.cpp **** void HighShelfFilter::Init() 
+   9:HighShelfFilter.cpp **** {
+  30              		.loc 1 9 1 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		@ link register save eliminated.
+  10:HighShelfFilter.cpp ****     for (int i = 0; i < NUM_HIGH_SHELF_COEFFS; i++) 
+  35              		.loc 1 10 5 view .LVU1
+  36              	.LBB5:
+  37              		.loc 1 10 23 view .LVU2
+  11:HighShelfFilter.cpp ****     {
+  12:HighShelfFilter.cpp ****         a[i] = 0;
+  38              		.loc 1 12 9 view .LVU3
+  39              		.loc 1 12 14 is_stmt 0 view .LVU4
+  40 0000 0023     		movs	r3, #0
+  41 0002 4360     		str	r3, [r0, #4]	@ float
+  13:HighShelfFilter.cpp ****         b[i] = 0;
+  42              		.loc 1 13 9 is_stmt 1 view .LVU5
+  43              		.loc 1 13 14 is_stmt 0 view .LVU6
+  44 0004 0361     		str	r3, [r0, #16]	@ float
+  10:HighShelfFilter.cpp ****     for (int i = 0; i < NUM_HIGH_SHELF_COEFFS; i++) 
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s 			page 2
+
+
+  45              		.loc 1 10 5 is_stmt 1 view .LVU7
+  46              	.LVL1:
+  10:HighShelfFilter.cpp ****     for (int i = 0; i < NUM_HIGH_SHELF_COEFFS; i++) 
+  47              		.loc 1 10 23 view .LVU8
+  12:HighShelfFilter.cpp ****         b[i] = 0;
+  48              		.loc 1 12 9 view .LVU9
+  12:HighShelfFilter.cpp ****         b[i] = 0;
+  49              		.loc 1 12 14 is_stmt 0 view .LVU10
+  50 0006 8360     		str	r3, [r0, #8]	@ float
+  51              		.loc 1 13 9 is_stmt 1 view .LVU11
+  52              		.loc 1 13 14 is_stmt 0 view .LVU12
+  53 0008 4361     		str	r3, [r0, #20]	@ float
+  10:HighShelfFilter.cpp ****     {
+  54              		.loc 1 10 5 is_stmt 1 view .LVU13
+  55              	.LVL2:
+  10:HighShelfFilter.cpp ****     {
+  56              		.loc 1 10 23 view .LVU14
+  12:HighShelfFilter.cpp ****         b[i] = 0;
+  57              		.loc 1 12 9 view .LVU15
+  12:HighShelfFilter.cpp ****         b[i] = 0;
+  58              		.loc 1 12 14 is_stmt 0 view .LVU16
+  59 000a C360     		str	r3, [r0, #12]	@ float
+  60              		.loc 1 13 9 is_stmt 1 view .LVU17
+  61              		.loc 1 13 14 is_stmt 0 view .LVU18
+  62 000c 8361     		str	r3, [r0, #24]	@ float
+  10:HighShelfFilter.cpp ****     {
+  63              		.loc 1 10 5 is_stmt 1 view .LVU19
+  64              	.LVL3:
+  10:HighShelfFilter.cpp ****     {
+  65              		.loc 1 10 23 view .LVU20
+  66              	.LBE5:
+  14:HighShelfFilter.cpp ****     }
+  15:HighShelfFilter.cpp ****     x1_ = x2_ = y1_ = y2_ = 0.0;
+  67              		.loc 1 15 5 view .LVU21
+  68              		.loc 1 15 27 is_stmt 0 view .LVU22
+  69 000e 8362     		str	r3, [r0, #40]	@ float
+  70              		.loc 1 15 21 view .LVU23
+  71 0010 4362     		str	r3, [r0, #36]	@ float
+  72              		.loc 1 15 15 view .LVU24
+  73 0012 0362     		str	r3, [r0, #32]	@ float
+  74              		.loc 1 15 9 view .LVU25
+  75 0014 C361     		str	r3, [r0, #28]	@ float
+  16:HighShelfFilter.cpp **** }
+  76              		.loc 1 16 1 view .LVU26
+  77 0016 7047     		bx	lr
+  78              		.cfi_endproc
+  79              	.LFE551:
+  81              		.section	.text._ZN15HighShelfFilter7ProcessEf,"ax",%progbits
+  82              		.align	1
+  83              		.p2align 2,,3
+  84              		.global	_ZN15HighShelfFilter7ProcessEf
+  85              		.syntax unified
+  86              		.thumb
+  87              		.thumb_func
+  88              		.fpu fpv5-d16
+  90              	_ZN15HighShelfFilter7ProcessEf:
+  91              	.LVL4:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s 			page 3
+
+
+  92              	.LFB553:
+  17:HighShelfFilter.cpp **** 
+  18:HighShelfFilter.cpp **** void HighShelfFilter::Init(float *a_coeffs, float *b_coeffs) 
+  19:HighShelfFilter.cpp **** {
+  20:HighShelfFilter.cpp ****     for (int i = 0; i < NUM_HIGH_SHELF_COEFFS; i++) 
+  21:HighShelfFilter.cpp ****     {
+  22:HighShelfFilter.cpp ****         a[i] = a_coeffs[i];
+  23:HighShelfFilter.cpp ****         b[i] = b_coeffs[i];
+  24:HighShelfFilter.cpp ****     }
+  25:HighShelfFilter.cpp ****     x1_ = x2_ = y1_ = y2_ = 0.0;
+  26:HighShelfFilter.cpp **** }
+  27:HighShelfFilter.cpp **** 
+  28:HighShelfFilter.cpp **** float HighShelfFilter::Process(float input)
+  29:HighShelfFilter.cpp **** { 
+  93              		.loc 1 29 1 is_stmt 1 view -0
+  94              		.cfi_startproc
+  95              		@ args = 0, pretend = 0, frame = 0
+  96              		@ frame_needed = 0, uses_anonymous_args = 0
+  97              		@ link register save eliminated.
+  30:HighShelfFilter.cpp ****     float res = b[0]*input + b[1]*x1_ + b[2]*x2_ - a[1]*y1_ - a[2]*y2_;
+  98              		.loc 1 30 5 view .LVU28
+  99              		.loc 1 30 35 is_stmt 0 view .LVU29
+ 100 0000 D0ED076A 		vldr.32	s13, [r0, #28]
+  29:HighShelfFilter.cpp ****     float res = b[0]*input + b[1]*x1_ + b[2]*x2_ - a[1]*y1_ - a[2]*y2_;
+ 101              		.loc 1 29 1 view .LVU30
+ 102 0004 B0EE407A 		vmov.f32	s14, s0
+ 103              		.loc 1 30 34 view .LVU31
+ 104 0008 D0ED057A 		vldr.32	s15, [r0, #20]
+ 105              		.loc 1 30 28 view .LVU32
+ 106 000c D0ED043A 		vldr.32	s7, [r0, #16]
+ 107              		.loc 1 30 34 view .LVU33
+ 108 0010 26EEA70A 		vmul.f32	s0, s13, s15
+ 109              	.LVL5:
+ 110              		.loc 1 30 39 view .LVU34
+ 111 0014 D0ED084A 		vldr.32	s9, [r0, #32]
+ 112 0018 90ED064A 		vldr.32	s8, [r0, #24]
+ 113              		.loc 1 30 57 view .LVU35
+ 114 001c D0ED097A 		vldr.32	s15, [r0, #36]
+ 115              		.loc 1 30 28 view .LVU36
+ 116 0020 A3EE870A 		vfma.f32	s0, s7, s14
+ 117              		.loc 1 30 50 view .LVU37
+ 118 0024 90ED025A 		vldr.32	s10, [r0, #8]
+ 119              		.loc 1 30 11 view .LVU38
+ 120 0028 90ED0A6A 		vldr.32	s12, [r0, #40]
+ 121 002c D0ED035A 		vldr.32	s11, [r0, #12]
+  31:HighShelfFilter.cpp **** 
+  32:HighShelfFilter.cpp ****     y2_ = y1_;
+ 122              		.loc 1 32 9 view .LVU39
+ 123 0030 C0ED0A7A 		vstr.32	s15, [r0, #40]
+  33:HighShelfFilter.cpp ****     y1_ = res;
+  34:HighShelfFilter.cpp ****     x2_ = x1_;
+ 124              		.loc 1 34 9 view .LVU40
+ 125 0034 C0ED086A 		vstr.32	s13, [r0, #32]
+  35:HighShelfFilter.cpp ****     x1_ = input;
+ 126              		.loc 1 35 9 view .LVU41
+ 127 0038 80ED077A 		vstr.32	s14, [r0, #28]
+  30:HighShelfFilter.cpp **** 
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s 			page 4
+
+
+ 128              		.loc 1 30 39 view .LVU42
+ 129 003c A4EE240A 		vfma.f32	s0, s8, s9
+  30:HighShelfFilter.cpp **** 
+ 130              		.loc 1 30 50 view .LVU43
+ 131 0040 A5EE670A 		vfms.f32	s0, s10, s15
+  30:HighShelfFilter.cpp **** 
+ 132              		.loc 1 30 11 view .LVU44
+ 133 0044 A5EEC60A 		vfms.f32	s0, s11, s12
+ 134              	.LVL6:
+  32:HighShelfFilter.cpp ****     y1_ = res;
+ 135              		.loc 1 32 5 is_stmt 1 view .LVU45
+  33:HighShelfFilter.cpp ****     x2_ = x1_;
+ 136              		.loc 1 33 5 view .LVU46
+  33:HighShelfFilter.cpp ****     x2_ = x1_;
+ 137              		.loc 1 33 9 is_stmt 0 view .LVU47
+ 138 0048 80ED090A 		vstr.32	s0, [r0, #36]
+  34:HighShelfFilter.cpp ****     x1_ = input;
+ 139              		.loc 1 34 5 is_stmt 1 view .LVU48
+ 140              		.loc 1 35 5 view .LVU49
+  36:HighShelfFilter.cpp **** 
+  37:HighShelfFilter.cpp ****     return res;
+ 141              		.loc 1 37 5 view .LVU50
+  38:HighShelfFilter.cpp **** }
+ 142              		.loc 1 38 1 is_stmt 0 view .LVU51
+ 143 004c 7047     		bx	lr
+ 144              		.cfi_endproc
+ 145              	.LFE553:
+ 147 004e 00BF     		.section	.text._ZN15HighShelfFilterD2Ev,"ax",%progbits
+ 148              		.align	1
+ 149              		.p2align 2,,3
+ 150              		.global	_ZN15HighShelfFilterD2Ev
+ 151              		.syntax unified
+ 152              		.thumb
+ 153              		.thumb_func
+ 154              		.fpu fpv5-d16
+ 156              	_ZN15HighShelfFilterD2Ev:
+ 157              	.LVL7:
+ 158              	.LFB548:
+   6:HighShelfFilter.cpp **** 
+ 159              		.loc 1 6 1 is_stmt 1 view -0
+ 160              		.cfi_startproc
+ 161              		@ args = 0, pretend = 0, frame = 0
+ 162              		@ frame_needed = 0, uses_anonymous_args = 0
+ 163              	.LBB6:
+   6:HighShelfFilter.cpp **** 
+ 164              		.loc 1 6 35 is_stmt 0 view .LVU53
+ 165 0000 034B     		ldr	r3, .L6
+ 166              	.LBE6:
+   6:HighShelfFilter.cpp **** 
+ 167              		.loc 1 6 1 view .LVU54
+ 168 0002 10B5     		push	{r4, lr}
+ 169              		.cfi_def_cfa_offset 8
+ 170              		.cfi_offset 4, -8
+ 171              		.cfi_offset 14, -4
+   6:HighShelfFilter.cpp **** 
+ 172              		.loc 1 6 1 view .LVU55
+ 173 0004 0446     		mov	r4, r0
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s 			page 5
+
+
+ 174              	.LBB7:
+   6:HighShelfFilter.cpp **** 
+ 175              		.loc 1 6 35 view .LVU56
+ 176 0006 0360     		str	r3, [r0]
+ 177 0008 FFF7FEFF 		bl	_ZN9AlgorithmD2Ev
+ 178              	.LVL8:
+   6:HighShelfFilter.cpp **** 
+ 179              		.loc 1 6 35 view .LVU57
+ 180              	.LBE7:
+   6:HighShelfFilter.cpp **** 
+ 181              		.loc 1 6 38 view .LVU58
+ 182 000c 2046     		mov	r0, r4
+ 183 000e 10BD     		pop	{r4, pc}
+ 184              	.LVL9:
+ 185              	.L7:
+   6:HighShelfFilter.cpp **** 
+ 186              		.loc 1 6 38 view .LVU59
+ 187              		.align	2
+ 188              	.L6:
+ 189 0010 08000000 		.word	.LANCHOR0+8
+ 190              		.cfi_endproc
+ 191              	.LFE548:
+ 193              		.global	_ZN15HighShelfFilterD1Ev
+ 194              		.thumb_set _ZN15HighShelfFilterD1Ev,_ZN15HighShelfFilterD2Ev
+ 195              		.section	.text._ZN15HighShelfFilterD0Ev,"ax",%progbits
+ 196              		.align	1
+ 197              		.p2align 2,,3
+ 198              		.global	_ZN15HighShelfFilterD0Ev
+ 199              		.syntax unified
+ 200              		.thumb
+ 201              		.thumb_func
+ 202              		.fpu fpv5-d16
+ 204              	_ZN15HighShelfFilterD0Ev:
+ 205              	.LVL10:
+ 206              	.LFB550:
+   6:HighShelfFilter.cpp **** 
+ 207              		.loc 1 6 1 is_stmt 1 view -0
+ 208              		.cfi_startproc
+ 209              		@ args = 0, pretend = 0, frame = 0
+ 210              		@ frame_needed = 0, uses_anonymous_args = 0
+ 211              	.LBB8:
+ 212              	.LBB9:
+   6:HighShelfFilter.cpp **** 
+ 213              		.loc 1 6 35 is_stmt 0 view .LVU61
+ 214 0000 054B     		ldr	r3, .L10
+ 215              	.LBE9:
+ 216              	.LBE8:
+   6:HighShelfFilter.cpp **** 
+ 217              		.loc 1 6 1 view .LVU62
+ 218 0002 10B5     		push	{r4, lr}
+ 219              		.cfi_def_cfa_offset 8
+ 220              		.cfi_offset 4, -8
+ 221              		.cfi_offset 14, -4
+   6:HighShelfFilter.cpp **** 
+ 222              		.loc 1 6 1 view .LVU63
+ 223 0004 0446     		mov	r4, r0
+ 224              	.LVL11:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s 			page 6
+
+
+ 225              	.LBB11:
+ 226              	.LBI8:
+   6:HighShelfFilter.cpp **** 
+ 227              		.loc 1 6 1 is_stmt 1 view .LVU64
+ 228              	.LBB10:
+   6:HighShelfFilter.cpp **** 
+ 229              		.loc 1 6 35 is_stmt 0 view .LVU65
+ 230 0006 0360     		str	r3, [r0]
+ 231 0008 FFF7FEFF 		bl	_ZN9AlgorithmD2Ev
+ 232              	.LVL12:
+   6:HighShelfFilter.cpp **** 
+ 233              		.loc 1 6 35 view .LVU66
+ 234              	.LBE10:
+ 235              	.LBE11:
+   6:HighShelfFilter.cpp **** 
+ 236              		.loc 1 6 38 view .LVU67
+ 237 000c 2C21     		movs	r1, #44
+ 238 000e 2046     		mov	r0, r4
+ 239 0010 FFF7FEFF 		bl	_ZdlPvj
+ 240              	.LVL13:
+ 241 0014 2046     		mov	r0, r4
+ 242 0016 10BD     		pop	{r4, pc}
+ 243              	.LVL14:
+ 244              	.L11:
+   6:HighShelfFilter.cpp **** 
+ 245              		.loc 1 6 38 view .LVU68
+ 246              		.align	2
+ 247              	.L10:
+ 248 0018 08000000 		.word	.LANCHOR0+8
+ 249              		.cfi_endproc
+ 250              	.LFE550:
+ 252              		.section	.text._ZN15HighShelfFilterC2Ev,"ax",%progbits
+ 253              		.align	1
+ 254              		.p2align 2,,3
+ 255              		.global	_ZN15HighShelfFilterC2Ev
+ 256              		.syntax unified
+ 257              		.thumb
+ 258              		.thumb_func
+ 259              		.fpu fpv5-d16
+ 261              	_ZN15HighShelfFilterC2Ev:
+ 262              	.LVL15:
+ 263              	.LFB545:
+   4:HighShelfFilter.cpp **** 
+ 264              		.loc 1 4 1 is_stmt 1 view -0
+ 265              		.cfi_startproc
+ 266              		@ args = 0, pretend = 0, frame = 0
+ 267              		@ frame_needed = 0, uses_anonymous_args = 0
+   4:HighShelfFilter.cpp **** 
+ 268              		.loc 1 4 1 is_stmt 0 view .LVU70
+ 269 0000 10B5     		push	{r4, lr}
+ 270              		.cfi_def_cfa_offset 8
+ 271              		.cfi_offset 4, -8
+ 272              		.cfi_offset 14, -4
+   4:HighShelfFilter.cpp **** 
+ 273              		.loc 1 4 1 view .LVU71
+ 274 0002 0446     		mov	r4, r0
+ 275              	.LBB12:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s 			page 7
+
+
+   4:HighShelfFilter.cpp **** 
+ 276              		.loc 1 4 34 view .LVU72
+ 277 0004 FFF7FEFF 		bl	_ZN9AlgorithmC2Ev
+ 278              	.LVL16:
+   4:HighShelfFilter.cpp **** 
+ 279              		.loc 1 4 34 view .LVU73
+ 280 0008 014B     		ldr	r3, .L14
+ 281              	.LBE12:
+   4:HighShelfFilter.cpp **** 
+ 282              		.loc 1 4 37 view .LVU74
+ 283 000a 2046     		mov	r0, r4
+ 284              	.LBB13:
+   4:HighShelfFilter.cpp **** 
+ 285              		.loc 1 4 34 view .LVU75
+ 286 000c 2360     		str	r3, [r4]
+ 287              	.LBE13:
+   4:HighShelfFilter.cpp **** 
+ 288              		.loc 1 4 37 view .LVU76
+ 289 000e 10BD     		pop	{r4, pc}
+ 290              	.LVL17:
+ 291              	.L15:
+   4:HighShelfFilter.cpp **** 
+ 292              		.loc 1 4 37 view .LVU77
+ 293              		.align	2
+ 294              	.L14:
+ 295 0010 08000000 		.word	.LANCHOR0+8
+ 296              		.cfi_endproc
+ 297              	.LFE545:
+ 299              		.global	_ZN15HighShelfFilterC1Ev
+ 300              		.thumb_set _ZN15HighShelfFilterC1Ev,_ZN15HighShelfFilterC2Ev
+ 301              		.section	.text._ZN15HighShelfFilter4InitEPfS0_,"ax",%progbits
+ 302              		.align	1
+ 303              		.p2align 2,,3
+ 304              		.global	_ZN15HighShelfFilter4InitEPfS0_
+ 305              		.syntax unified
+ 306              		.thumb
+ 307              		.thumb_func
+ 308              		.fpu fpv5-d16
+ 310              	_ZN15HighShelfFilter4InitEPfS0_:
+ 311              	.LVL18:
+ 312              	.LFB552:
+  19:HighShelfFilter.cpp ****     for (int i = 0; i < NUM_HIGH_SHELF_COEFFS; i++) 
+ 313              		.loc 1 19 1 is_stmt 1 view -0
+ 314              		.cfi_startproc
+ 315              		@ args = 0, pretend = 0, frame = 0
+ 316              		@ frame_needed = 0, uses_anonymous_args = 0
+  20:HighShelfFilter.cpp ****     {
+ 317              		.loc 1 20 5 view .LVU79
+ 318              	.LBB14:
+  20:HighShelfFilter.cpp ****     {
+ 319              		.loc 1 20 23 view .LVU80
+ 320              	.LBE14:
+  19:HighShelfFilter.cpp ****     for (int i = 0; i < NUM_HIGH_SHELF_COEFFS; i++) 
+ 321              		.loc 1 19 1 is_stmt 0 view .LVU81
+ 322 0000 00B5     		push	{lr}
+ 323              		.cfi_def_cfa_offset 4
+ 324              		.cfi_offset 14, -4
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s 			page 8
+
+
+ 325 0002 031D     		adds	r3, r0, #4
+ 326 0004 01F10C0E 		add	lr, r1, #12
+ 327              	.LVL19:
+ 328              	.L17:
+ 329              	.LBB15:
+  22:HighShelfFilter.cpp ****         b[i] = b_coeffs[i];
+ 330              		.loc 1 22 9 is_stmt 1 discriminator 2 view .LVU82
+  22:HighShelfFilter.cpp ****         b[i] = b_coeffs[i];
+ 331              		.loc 1 22 26 is_stmt 0 discriminator 2 view .LVU83
+ 332 0008 51F804CB 		ldr	ip, [r1], #4	@ float
+  22:HighShelfFilter.cpp ****         b[i] = b_coeffs[i];
+ 333              		.loc 1 22 14 discriminator 2 view .LVU84
+ 334 000c 43F804CB 		str	ip, [r3], #4	@ float
+  23:HighShelfFilter.cpp ****     }
+ 335              		.loc 1 23 9 is_stmt 1 discriminator 2 view .LVU85
+  20:HighShelfFilter.cpp ****     {
+ 336              		.loc 1 20 23 is_stmt 0 discriminator 2 view .LVU86
+ 337 0010 7145     		cmp	r1, lr
+  23:HighShelfFilter.cpp ****     }
+ 338              		.loc 1 23 26 discriminator 2 view .LVU87
+ 339 0012 52F804CB 		ldr	ip, [r2], #4	@ float
+  23:HighShelfFilter.cpp ****     }
+ 340              		.loc 1 23 14 discriminator 2 view .LVU88
+ 341 0016 C3F808C0 		str	ip, [r3, #8]	@ float
+  20:HighShelfFilter.cpp ****     {
+ 342              		.loc 1 20 5 is_stmt 1 discriminator 2 view .LVU89
+  20:HighShelfFilter.cpp ****     {
+ 343              		.loc 1 20 23 discriminator 2 view .LVU90
+ 344 001a F5D1     		bne	.L17
+ 345              	.LBE15:
+  25:HighShelfFilter.cpp **** }
+ 346              		.loc 1 25 5 view .LVU91
+  25:HighShelfFilter.cpp **** }
+ 347              		.loc 1 25 27 is_stmt 0 view .LVU92
+ 348 001c 0023     		movs	r3, #0
+ 349 001e 8362     		str	r3, [r0, #40]	@ float
+  25:HighShelfFilter.cpp **** }
+ 350              		.loc 1 25 21 view .LVU93
+ 351 0020 4362     		str	r3, [r0, #36]	@ float
+  25:HighShelfFilter.cpp **** }
+ 352              		.loc 1 25 15 view .LVU94
+ 353 0022 0362     		str	r3, [r0, #32]	@ float
+  25:HighShelfFilter.cpp **** }
+ 354              		.loc 1 25 9 view .LVU95
+ 355 0024 C361     		str	r3, [r0, #28]	@ float
+  26:HighShelfFilter.cpp **** 
+ 356              		.loc 1 26 1 view .LVU96
+ 357 0026 5DF804FB 		ldr	pc, [sp], #4
+ 358              		.cfi_endproc
+ 359              	.LFE552:
+ 361 002a 00BF     		.section	.text._ZN15HighShelfFilter13MakeHighShelfEffff,"ax",%progbits
+ 362              		.align	1
+ 363              		.p2align 2,,3
+ 364              		.global	_ZN15HighShelfFilter13MakeHighShelfEffff
+ 365              		.syntax unified
+ 366              		.thumb
+ 367              		.thumb_func
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s 			page 9
+
+
+ 368              		.fpu fpv5-d16
+ 370              	_ZN15HighShelfFilter13MakeHighShelfEffff:
+ 371              	.LVL20:
+ 372              	.LFB554:
+  39:HighShelfFilter.cpp **** 
+  40:HighShelfFilter.cpp **** void HighShelfFilter::MakeHighShelf(const float fs,
+  41:HighShelfFilter.cpp ****                                     const float fc,
+  42:HighShelfFilter.cpp ****                                     const float Q,
+  43:HighShelfFilter.cpp ****                                     const float A)
+  44:HighShelfFilter.cpp **** {
+ 373              		.loc 1 44 1 is_stmt 1 view -0
+ 374              		.cfi_startproc
+ 375              		@ args = 0, pretend = 0, frame = 0
+ 376              		@ frame_needed = 0, uses_anonymous_args = 0
+  45:HighShelfFilter.cpp ****     float omega = 2.0 * float_PI * (fc / fs);
+ 377              		.loc 1 45 5 view .LVU98
+ 378              		.loc 1 45 40 is_stmt 0 view .LVU99
+ 379 0000 C0EE807A 		vdiv.f32	s15, s1, s0
+ 380              		.loc 1 45 34 view .LVU100
+ 381 0004 9FED406B 		vldr.64	d6, .L27
+  44:HighShelfFilter.cpp ****     float omega = 2.0 * float_PI * (fc / fs);
+ 382              		.loc 1 44 1 view .LVU101
+ 383 0008 10B5     		push	{r4, lr}
+ 384              		.cfi_def_cfa_offset 8
+ 385              		.cfi_offset 4, -8
+ 386              		.cfi_offset 14, -4
+ 387 000a 2DED048B 		vpush.64	{d8, d9}
+ 388              		.cfi_def_cfa_offset 24
+ 389              		.cfi_offset 80, -24
+ 390              		.cfi_offset 81, -20
+ 391              		.cfi_offset 82, -16
+ 392              		.cfi_offset 83, -12
+  44:HighShelfFilter.cpp ****     float omega = 2.0 * float_PI * (fc / fs);
+ 393              		.loc 1 44 1 view .LVU102
+ 394 000e 0446     		mov	r4, r0
+ 395 0010 F0EE418A 		vmov.f32	s17, s2
+ 396 0014 B0EE618A 		vmov.f32	s16, s3
+ 397              		.loc 1 45 40 view .LVU103
+ 398 0018 B7EEE70A 		vcvt.f64.f32	d0, s15
+ 399              	.LVL21:
+ 400              		.loc 1 45 34 view .LVU104
+ 401 001c 20EE060B 		vmul.f64	d0, d0, d6
+ 402              		.loc 1 45 11 view .LVU105
+ 403 0020 B7EEC09B 		vcvt.f32.f64	s18, d0
+ 404              	.LVL22:
+  46:HighShelfFilter.cpp ****         float cosW  = cosf(omega);
+ 405              		.loc 1 46 9 is_stmt 1 view .LVU106
+ 406              		.loc 1 46 27 is_stmt 0 view .LVU107
+ 407 0024 B0EE490A 		vmov.f32	s0, s18
+ 408 0028 FFF7FEFF 		bl	cosf
+ 409              	.LVL23:
+ 410              		.loc 1 46 27 view .LVU108
+ 411 002c F0EE407A 		vmov.f32	s15, s0
+  47:HighShelfFilter.cpp ****         float sinW  = sinf(omega);
+ 412              		.loc 1 47 27 view .LVU109
+ 413 0030 B0EE490A 		vmov.f32	s0, s18
+  46:HighShelfFilter.cpp ****         float cosW  = cosf(omega);
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s 			page 10
+
+
+ 414              		.loc 1 46 27 view .LVU110
+ 415 0034 B0EE679A 		vmov.f32	s18, s15
+ 416              	.LVL24:
+ 417              		.loc 1 47 9 is_stmt 1 view .LVU111
+ 418              		.loc 1 47 27 is_stmt 0 view .LVU112
+ 419 0038 FFF7FEFF 		bl	sinf
+ 420              	.LVL25:
+  48:HighShelfFilter.cpp ****         float alpha = sinW / (2.0 * Q);
+ 421              		.loc 1 48 9 is_stmt 1 view .LVU113
+ 422              		.loc 1 48 37 is_stmt 0 view .LVU114
+ 423 003c B7EEE81A 		vcvt.f64.f32	d1, s17
+ 424              		.loc 1 48 23 view .LVU115
+ 425 0040 B7EEC00A 		vcvt.f64.f32	d0, s0
+ 426              	.LVL26:
+ 427              		.loc 1 48 23 view .LVU116
+ 428 0044 B5EE408A 		vcmp.f32	s16, #0
+ 429              		.loc 1 48 35 view .LVU117
+ 430 0048 31EE011B 		vadd.f64	d1, d1, d1
+ 431 004c F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 432              		.loc 1 48 28 view .LVU118
+ 433 0050 80EE017B 		vdiv.f64	d7, d0, d1
+ 434              		.loc 1 48 15 view .LVU119
+ 435 0054 F7EEC78B 		vcvt.f32.f64	s17, d7
+ 436              	.LVL27:
+  49:HighShelfFilter.cpp ****         float sqrtA = sqrtf(A);
+ 437              		.loc 1 49 9 is_stmt 1 view .LVU120
+ 438 0058 4CD4     		bmi	.L25
+ 439              		.loc 1 49 28 is_stmt 0 view .LVU121
+ 440 005a B1EEC87A 		vsqrt.f32	s14, s16
+ 441              	.L23:
+  50:HighShelfFilter.cpp **** 
+  51:HighShelfFilter.cpp ****         b[0] =      A * ((A + 1) + (A - 1)*cosW + 2*sqrtA*alpha);
+ 442              		.loc 1 51 9 is_stmt 1 view .LVU122
+ 443              		.loc 1 51 29 is_stmt 0 view .LVU123
+ 444 005e F7EE007A 		vmov.f32	s15, #1.0e+0
+ 445              		.loc 1 51 52 view .LVU124
+ 446 0062 37EE077A 		vadd.f32	s14, s14, s14
+  52:HighShelfFilter.cpp ****         b[1] = -2 * A * ((A - 1) + (A + 1)*cosW);
+ 447              		.loc 1 52 19 view .LVU125
+ 448 0066 B8EE006A 		vmov.f32	s12, #-2.0e+0
+  51:HighShelfFilter.cpp ****         b[1] = -2 * A * ((A - 1) + (A + 1)*cosW);
+ 449              		.loc 1 51 29 view .LVU126
+ 450 006a 38EE275A 		vadd.f32	s10, s16, s15
+  51:HighShelfFilter.cpp ****         b[1] = -2 * A * ((A - 1) + (A + 1)*cosW);
+ 451              		.loc 1 51 39 view .LVU127
+ 452 006e 78EE677A 		vsub.f32	s15, s16, s15
+ 453              		.loc 1 52 19 view .LVU128
+ 454 0072 28EE066A 		vmul.f32	s12, s16, s12
+  51:HighShelfFilter.cpp ****         b[1] = -2 * A * ((A - 1) + (A + 1)*cosW);
+ 455              		.loc 1 51 34 view .LVU129
+ 456 0076 F0EE456A 		vmov.f32	s13, s10
+  53:HighShelfFilter.cpp ****         b[2] =      A * ((A + 1) + (A - 1)*cosW - 2*sqrtA*alpha);
+  54:HighShelfFilter.cpp ****         a[0] =           (A + 1) - (A - 1)*cosW + 2*sqrtA*alpha;
+ 457              		.loc 1 54 34 view .LVU130
+ 458 007a F0EE455A 		vmov.f32	s11, s10
+  52:HighShelfFilter.cpp ****         b[2] =      A * ((A + 1) + (A - 1)*cosW - 2*sqrtA*alpha);
+ 459              		.loc 1 52 34 view .LVU131
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s 			page 11
+
+
+ 460 007e F0EE674A 		vmov.f32	s9, s15
+  51:HighShelfFilter.cpp ****         b[1] = -2 * A * ((A - 1) + (A + 1)*cosW);
+ 461              		.loc 1 51 34 view .LVU132
+ 462 0082 E7EE896A 		vfma.f32	s13, s15, s18
+ 463              		.loc 1 54 34 view .LVU133
+ 464 0086 E7EEC95A 		vfms.f32	s11, s15, s18
+  52:HighShelfFilter.cpp ****         b[2] =      A * ((A + 1) + (A - 1)*cosW - 2*sqrtA*alpha);
+ 465              		.loc 1 52 34 view .LVU134
+ 466 008a E5EE094A 		vfma.f32	s9, s10, s18
+  55:HighShelfFilter.cpp ****         a[1] =      2 * ((A - 1) - (A + 1)*cosW);
+ 467              		.loc 1 55 34 view .LVU135
+ 468 008e E5EE497A 		vfms.f32	s15, s10, s18
+  51:HighShelfFilter.cpp ****         b[1] = -2 * A * ((A - 1) + (A + 1)*cosW);
+ 469              		.loc 1 51 49 view .LVU136
+ 470 0092 B0EE665A 		vmov.f32	s10, s13
+  53:HighShelfFilter.cpp ****         a[0] =           (A + 1) - (A - 1)*cosW + 2*sqrtA*alpha;
+ 471              		.loc 1 53 49 view .LVU137
+ 472 0096 E7EE686A 		vfms.f32	s13, s14, s17
+  51:HighShelfFilter.cpp ****         b[1] = -2 * A * ((A - 1) + (A + 1)*cosW);
+ 473              		.loc 1 51 49 view .LVU138
+ 474 009a A7EE285A 		vfma.f32	s10, s14, s17
+ 475              		.loc 1 55 23 view .LVU139
+ 476 009e 77EEA77A 		vadd.f32	s15, s15, s15
+  53:HighShelfFilter.cpp ****         a[0] =           (A + 1) - (A - 1)*cosW + 2*sqrtA*alpha;
+ 477              		.loc 1 53 49 view .LVU140
+ 478 00a2 F0EE661A 		vmov.f32	s3, s13
+  54:HighShelfFilter.cpp ****         a[1] =      2 * ((A - 1) - (A + 1)*cosW);
+ 479              		.loc 1 54 49 view .LVU141
+ 480 00a6 F0EE656A 		vmov.f32	s13, s11
+  56:HighShelfFilter.cpp ****         a[2] =           (A + 1) - (A - 1)*cosW - 2*sqrtA*alpha;
+ 481              		.loc 1 56 49 view .LVU142
+ 482 00aa E7EE685A 		vfms.f32	s11, s14, s17
+  54:HighShelfFilter.cpp ****         a[1] =      2 * ((A - 1) - (A + 1)*cosW);
+ 483              		.loc 1 54 49 view .LVU143
+ 484 00ae E7EE286A 		vfma.f32	s13, s14, s17
+  52:HighShelfFilter.cpp ****         b[2] =      A * ((A + 1) + (A - 1)*cosW - 2*sqrtA*alpha);
+ 485              		.loc 1 52 23 view .LVU144
+ 486 00b2 26EE247A 		vmul.f32	s14, s12, s9
+  51:HighShelfFilter.cpp ****         b[1] = -2 * A * ((A - 1) + (A + 1)*cosW);
+ 487              		.loc 1 51 23 view .LVU145
+ 488 00b6 25EE086A 		vmul.f32	s12, s10, s16
+  52:HighShelfFilter.cpp ****         b[2] =      A * ((A + 1) + (A - 1)*cosW - 2*sqrtA*alpha);
+ 489              		.loc 1 52 9 is_stmt 1 view .LVU146
+  53:HighShelfFilter.cpp ****         a[0] =           (A + 1) - (A - 1)*cosW + 2*sqrtA*alpha;
+ 490              		.loc 1 53 9 view .LVU147
+  53:HighShelfFilter.cpp ****         a[0] =           (A + 1) - (A - 1)*cosW + 2*sqrtA*alpha;
+ 491              		.loc 1 53 23 is_stmt 0 view .LVU148
+ 492 00ba 21EE888A 		vmul.f32	s16, s3, s16
+ 493              	.LVL28:
+  54:HighShelfFilter.cpp ****         a[1] =      2 * ((A - 1) - (A + 1)*cosW);
+ 494              		.loc 1 54 9 is_stmt 1 view .LVU149
+  55:HighShelfFilter.cpp ****         a[2] =           (A + 1) - (A - 1)*cosW - 2*sqrtA*alpha;
+ 495              		.loc 1 55 9 view .LVU150
+ 496              		.loc 1 56 9 view .LVU151
+  57:HighShelfFilter.cpp **** 
+  58:HighShelfFilter.cpp ****         float a0 = a[0];
+ 497              		.loc 1 58 9 view .LVU152
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s 			page 12
+
+
+  59:HighShelfFilter.cpp ****         for (int i = 0; i < 3; i++) {
+ 498              		.loc 1 59 9 view .LVU153
+ 499              	.LBB16:
+ 500              		.loc 1 59 27 view .LVU154
+  60:HighShelfFilter.cpp ****             a[i] /= a0;
+ 501              		.loc 1 60 13 view .LVU155
+ 502              		.loc 1 60 18 is_stmt 0 view .LVU156
+ 503 00be 87EEA64A 		vdiv.f32	s8, s15, s13
+  61:HighShelfFilter.cpp ****             b[i] /= a0;
+ 504              		.loc 1 61 18 view .LVU157
+ 505 00c2 C7EE264A 		vdiv.f32	s9, s14, s13
+ 506 00c6 C8EE267A 		vdiv.f32	s15, s16, s13
+  60:HighShelfFilter.cpp ****             a[i] /= a0;
+ 507              		.loc 1 60 18 view .LVU158
+ 508 00ca C6EEA63A 		vdiv.f32	s7, s13, s13
+ 509 00ce 84ED024A 		vstr.32	s8, [r4, #8]
+ 510 00d2 85EEA65A 		vdiv.f32	s10, s11, s13
+ 511              		.loc 1 61 18 view .LVU159
+ 512 00d6 C4ED054A 		vstr.32	s9, [r4, #20]
+ 513 00da 86EE267A 		vdiv.f32	s14, s12, s13
+ 514 00de C4ED067A 		vstr.32	s15, [r4, #24]
+ 515              	.LBE16:
+  62:HighShelfFilter.cpp ****         }
+  63:HighShelfFilter.cpp **** }
+ 516              		.loc 1 63 1 view .LVU160
+ 517 00e2 BDEC048B 		vldm	sp!, {d8-d9}
+ 518              		.cfi_remember_state
+ 519              		.cfi_restore 82
+ 520              		.cfi_restore 83
+ 521              		.cfi_restore 80
+ 522              		.cfi_restore 81
+ 523              		.cfi_def_cfa_offset 8
+ 524              	.LVL29:
+ 525              	.LBB17:
+  60:HighShelfFilter.cpp ****             b[i] /= a0;
+ 526              		.loc 1 60 18 view .LVU161
+ 527 00e6 C4ED013A 		vstr.32	s7, [r4, #4]
+  61:HighShelfFilter.cpp ****             b[i] /= a0;
+ 528              		.loc 1 61 13 is_stmt 1 view .LVU162
+  60:HighShelfFilter.cpp ****             b[i] /= a0;
+ 529              		.loc 1 60 18 is_stmt 0 view .LVU163
+ 530 00ea 84ED035A 		vstr.32	s10, [r4, #12]
+  61:HighShelfFilter.cpp ****             b[i] /= a0;
+ 531              		.loc 1 61 18 view .LVU164
+ 532 00ee 84ED047A 		vstr.32	s14, [r4, #16]
+  59:HighShelfFilter.cpp ****             a[i] /= a0;
+ 533              		.loc 1 59 9 is_stmt 1 view .LVU165
+ 534              	.LVL30:
+  59:HighShelfFilter.cpp ****             a[i] /= a0;
+ 535              		.loc 1 59 27 view .LVU166
+  60:HighShelfFilter.cpp ****             b[i] /= a0;
+ 536              		.loc 1 60 13 view .LVU167
+  61:HighShelfFilter.cpp ****         }
+ 537              		.loc 1 61 13 view .LVU168
+  59:HighShelfFilter.cpp ****             a[i] /= a0;
+ 538              		.loc 1 59 9 view .LVU169
+  59:HighShelfFilter.cpp ****             a[i] /= a0;
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s 			page 13
+
+
+ 539              		.loc 1 59 27 view .LVU170
+  60:HighShelfFilter.cpp ****             b[i] /= a0;
+ 540              		.loc 1 60 13 view .LVU171
+  61:HighShelfFilter.cpp ****         }
+ 541              		.loc 1 61 13 view .LVU172
+  59:HighShelfFilter.cpp ****             a[i] /= a0;
+ 542              		.loc 1 59 9 view .LVU173
+  59:HighShelfFilter.cpp ****             a[i] /= a0;
+ 543              		.loc 1 59 27 view .LVU174
+ 544              	.LBE17:
+ 545              		.loc 1 63 1 is_stmt 0 view .LVU175
+ 546 00f2 10BD     		pop	{r4, pc}
+ 547              	.LVL31:
+ 548              	.L25:
+ 549              		.cfi_restore_state
+  49:HighShelfFilter.cpp **** 
+ 550              		.loc 1 49 28 view .LVU176
+ 551 00f4 B0EE480A 		vmov.f32	s0, s16
+ 552 00f8 FFF7FEFF 		bl	sqrtf
+ 553              	.LVL32:
+ 554 00fc B0EE407A 		vmov.f32	s14, s0
+ 555 0100 ADE7     		b	.L23
+ 556              	.L28:
+ 557 0102 00BFAFF3 		.align	3
+ 557      0080
+ 558              	.L27:
+ 559 0108 EA2E4454 		.word	1413754602
+ 560 010c FB211940 		.word	1075388923
+ 561              		.cfi_endproc
+ 562              	.LFE554:
+ 564              		.global	_ZTV15HighShelfFilter
+ 565              		.section	.rodata._ZTV15HighShelfFilter,"a"
+ 566              		.align	2
+ 567              		.set	.LANCHOR0,. + 0
+ 570              	_ZTV15HighShelfFilter:
+ 571 0000 00000000 		.word	0
+ 572 0004 00000000 		.word	0
+ 573 0008 00000000 		.word	_ZN15HighShelfFilterD1Ev
+ 574 000c 00000000 		.word	_ZN15HighShelfFilterD0Ev
+ 575 0010 00000000 		.word	_ZN15HighShelfFilter7ProcessEf
+ 576 0014 00000000 		.word	_ZN15HighShelfFilter4InitEv
+ 577              		.text
+ 578              	.Letext0:
+ 579              		.file 2 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 580              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 581              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\th
+ 582              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 583              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 584              		.file 7 "HighShelfFilter.h"
+ 585              		.file 8 "<built-in>"
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s 			page 14
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 HighShelfFilter.cpp
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:17     .text._ZN15HighShelfFilter4InitEv:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:26     .text._ZN15HighShelfFilter4InitEv:00000000 _ZN15HighShelfFilter4InitEv
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:82     .text._ZN15HighShelfFilter7ProcessEf:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:90     .text._ZN15HighShelfFilter7ProcessEf:00000000 _ZN15HighShelfFilter7ProcessEf
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:148    .text._ZN15HighShelfFilterD2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:156    .text._ZN15HighShelfFilterD2Ev:00000000 _ZN15HighShelfFilterD2Ev
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:189    .text._ZN15HighShelfFilterD2Ev:00000010 $d
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:156    .text._ZN15HighShelfFilterD2Ev:00000000 _ZN15HighShelfFilterD1Ev
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:196    .text._ZN15HighShelfFilterD0Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:204    .text._ZN15HighShelfFilterD0Ev:00000000 _ZN15HighShelfFilterD0Ev
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:248    .text._ZN15HighShelfFilterD0Ev:00000018 $d
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:253    .text._ZN15HighShelfFilterC2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:261    .text._ZN15HighShelfFilterC2Ev:00000000 _ZN15HighShelfFilterC2Ev
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:295    .text._ZN15HighShelfFilterC2Ev:00000010 $d
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:261    .text._ZN15HighShelfFilterC2Ev:00000000 _ZN15HighShelfFilterC1Ev
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:302    .text._ZN15HighShelfFilter4InitEPfS0_:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:310    .text._ZN15HighShelfFilter4InitEPfS0_:00000000 _ZN15HighShelfFilter4InitEPfS0_
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:362    .text._ZN15HighShelfFilter13MakeHighShelfEffff:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:370    .text._ZN15HighShelfFilter13MakeHighShelfEffff:00000000 _ZN15HighShelfFilter13MakeHighShelfEffff
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:559    .text._ZN15HighShelfFilter13MakeHighShelfEffff:00000108 $d
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:570    .rodata._ZTV15HighShelfFilter:00000000 _ZTV15HighShelfFilter
+C:\Users\micke\AppData\Local\Temp\ccOHtfnZ.s:566    .rodata._ZTV15HighShelfFilter:00000000 $d
+
+UNDEFINED SYMBOLS
+_ZN9AlgorithmD2Ev
+_ZdlPvj
+_ZN9AlgorithmC2Ev
+cosf
+sinf
+sqrtf

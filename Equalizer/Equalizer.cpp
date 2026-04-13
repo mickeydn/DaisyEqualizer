@@ -1,11 +1,4 @@
-///////////////////////////////////////////////////////////
-//  Equalizer.cpp
-//  Implementation of the Class Equalizer
-//  Created on:      06-aug-2014 09:31:01
-//  Modified:        28-feb-2018 09:32:00
-//  Modified:        27-nov-2025 20:01:00
-//  Original author: kbe
-///////////////////////////////////////////////////////////
+
 #include "Equalizer.h"
 
 #include <stdio.h>
@@ -51,17 +44,37 @@ void Equalizer::Init(int sampleRate)
 	m_EQParams[1].gain = 2.0; 
 	m_EQParams[2].fc = 2000.0;
 	m_EQParams[2].gain = 0.5; 
-	m_EQParams[3].fc = 8000.0;
+	m_EQParams[3].fc = 4000.0;
 	m_EQParams[3].gain = 2.0; 
+
 
 	for (short band = 0; band < NUM_EQ_BANDS; band++)
 	{
-		m_IIRfilter[band].Init();
-	    //m_EQParams[band].gain = 1.0; // Default gain
 		m_EQParams[band].Q = 8.0; // Default Q
-		m_filters[band] = &m_IIRfilter[band];
+
+		switch (BAND_TYPES[band])
+		{
+		case BAND_LOW_SHELF:
+			/* kode til hvis det er low shelf*/
+			m_LowShelfFilter.Init();
+			m_filters[band] = &m_LowShelfFilter;
+			break;
+
+		case BAND_PEAK_EQ:
+			/* kode til hvis det er peaking EQ*/
+			m_IIRfilter[band].Init();
+			m_filters[band] = &m_IIRfilter[band];
+			break;
+
+		case BAND_HIGH_SHELF:
+			/* kode til high shelf */
+			m_HighShelfFilter.Init();
+			m_filters[band] = &m_HighShelfFilter;
+			break;
+		}
 		updateEQParameters(band);
 	}
+	
 }
 
 float Equalizer::incParameter(short band, PARAMETER param, float delta)
@@ -127,11 +140,21 @@ void Equalizer::updateEQParameters(short band)
 	if (m_EQParams[band].Q < MIN_Q)
 		m_EQParams[band].Q = MIN_Q;
 
-	// Call creating peaking filter for IIR filter band
-	m_IIRfilter[band].makePeakEQ(sampleRate_,
-							      m_EQParams[band].fc,
-								  m_EQParams[band].Q,
-								  m_EQParams[band].gain);
+	switch (BAND_TYPES[band])
+    {
+        case BAND_LOW_SHELF:
+            m_LowShelfFilter.MakeLowShelf(sampleRate_,
+                m_EQParams[band].fc, m_EQParams[band].Q, m_EQParams[band].gain);
+            break;
+        case BAND_HIGH_SHELF:
+            m_HighShelfFilter.MakeHighShelf(sampleRate_,
+                m_EQParams[band].fc, m_EQParams[band].Q, m_EQParams[band].gain);
+            break;
+        case BAND_PEAK_EQ:
+            m_IIRfilter[band].makePeakEQ(sampleRate_,
+                m_EQParams[band].fc, m_EQParams[band].Q, m_EQParams[band].gain);
+            break;
+    }
 
 }
 

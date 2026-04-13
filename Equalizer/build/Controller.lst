@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
   35              		.loc 1 21 1 is_stmt 0 view .LVU1
   36 0000 7047     		bx	lr
   37              		.cfi_endproc
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 2
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 2
 
 
   38              	.LFE2572:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
   91              	_ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE:
   92              	.LVL4:
   93              	.LFB2569:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 3
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 3
 
 
   11:Controller.cpp **** {
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
  139              	.LVL7:
  140              	.LFB2575:
   22:Controller.cpp **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 4
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 4
 
 
   23:Controller.cpp **** float Controller::incBand()
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
  183              		.thumb
  184              		.thumb_func
  185              		.fpu fpv5-d16
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 5
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 5
 
 
  187              	_ZN10Controller8incParamEv:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
  231              		.cfi_offset 81, -12
  232              		.loc 1 42 24 view .LVU39
  233 0006 9FED0B8A 		vldr.32	s16, .L18
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 6
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 6
 
 
   40:Controller.cpp **** 	// Increments parameter value for PM_GAIN
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
   48:Controller.cpp **** {
  283              		.loc 1 48 1 is_stmt 1 view -0
  284              		.cfi_startproc
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 7
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 7
 
 
  285              		@ args = 0, pretend = 0, frame = 0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
  331              	.L22:
  332 0034 CDCCCC3D 		.word	1036831949
  333              		.cfi_endproc
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 8
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 8
 
 
  334              	.LFE2578:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
   71:Controller.cpp **** 			break;
   72:Controller.cpp **** 	}
   73:Controller.cpp **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 9
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 9
 
 
   74:Controller.cpp **** 	return val;
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
  413              		.loc 1 51 37 view .LVU76
  414 0036 FFF7FEBF 		b	_ZN9Equalizer12decParameterEs9PARAMETERf
  415              	.LVL25:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 10
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 10
 
 
  416              	.L32:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
  459 005a FFF7FEBF 		b	_ZN9Equalizer12incParameterEs9PARAMETERf
  460              	.LVL30:
  461              	.L26:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 11
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 11
 
 
  462              		.cfi_restore_state
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
  502              	.LBB34:
  503              	.LBB32:
   30:Controller.cpp **** }
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 12
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 12
 
 
  504              		.loc 1 30 16 view .LVU104
@@ -704,67 +704,72 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
  540              	.LBB35:
  541              	.LBI35:
  542              		.file 2 "Equalizer.h"
-   1:Equalizer.h   **** ///////////////////////////////////////////////////////////
-   2:Equalizer.h   **** //  Equalizer.h
-   3:Equalizer.h   **** //  Implementation of the Class Equalizer
-   4:Equalizer.h   **** //  Created on:      06-aug-2014 09:31:01
-   5:Equalizer.h   **** //  Modified:        28-feb-2018 09:32:00
-   6:Equalizer.h   **** //  Modified:        27-nov-2025 20:01:00
-   7:Equalizer.h   **** //  Original author: kbe
-   8:Equalizer.h   **** ///////////////////////////////////////////////////////////
-   9:Equalizer.h   **** 
-  10:Equalizer.h   **** #if !defined(EQUALIZER_INCLUDED_)
-  11:Equalizer.h   **** #define EQUALIZER_INCLUDED_
-  12:Equalizer.h   **** 
-  13:Equalizer.h   **** #include "IIRFilter.h"
-  14:Equalizer.h   **** #include "Algorithm.h"
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 13
+   1:Equalizer.h   **** #if !defined(EQUALIZER_INCLUDED_)
+   2:Equalizer.h   **** #define EQUALIZER_INCLUDED_
+   3:Equalizer.h   **** 
+   4:Equalizer.h   **** #include "IIRFilter.h"
+   5:Equalizer.h   **** #include "Algorithm.h"
+   6:Equalizer.h   **** #include "HighShelfFilter.h"
+   7:Equalizer.h   **** #include "LowShelfFilter.h"
+   8:Equalizer.h   **** 
+   9:Equalizer.h   **** #define NUM_EQ_BANDS 4 
+  10:Equalizer.h   **** 
+  11:Equalizer.h   **** #define MAX_FREQ		20000.0
+  12:Equalizer.h   **** #define MIN_FREQ        2.0
+  13:Equalizer.h   **** #define MAX_Q			20.0
+  14:Equalizer.h   **** #define MIN_Q        	1.0
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 13
 
 
-  15:Equalizer.h   **** 
-  16:Equalizer.h   **** #define NUM_EQ_BANDS 4 
+  15:Equalizer.h   **** #define MAX_GAIN 		5.0
+  16:Equalizer.h   **** #define MIN_GAIN 		0.1
   17:Equalizer.h   **** 
-  18:Equalizer.h   **** #define MAX_FREQ		20000.0
-  19:Equalizer.h   **** #define MIN_FREQ        2.0
-  20:Equalizer.h   **** #define MAX_Q			20.0
-  21:Equalizer.h   **** #define MIN_Q        	1.0
-  22:Equalizer.h   **** #define MAX_GAIN 		5.0
-  23:Equalizer.h   **** #define MIN_GAIN 		0.1
-  24:Equalizer.h   **** 
-  25:Equalizer.h   **** enum PARAMETER {
-  26:Equalizer.h   **** 	PM_GAIN = 0,
-  27:Equalizer.h   **** 	PM_FREQ = 1,
-  28:Equalizer.h   **** 	PM_Q = 2
-  29:Equalizer.h   **** };
-  30:Equalizer.h   **** 
-  31:Equalizer.h   **** class Equalizer : public Algorithm
-  32:Equalizer.h   **** {
-  33:Equalizer.h   **** public:
-  34:Equalizer.h   **** 
-  35:Equalizer.h   **** 	Equalizer();
-  36:Equalizer.h   **** 	virtual ~Equalizer();
-  37:Equalizer.h   **** 
-  38:Equalizer.h   **** 	float Process(float input) override;
-  39:Equalizer.h   **** 	void Init() override;
-  40:Equalizer.h   **** 	void Init(int SampleRate);
-  41:Equalizer.h   **** 
-  42:Equalizer.h   **** 	void setParameter(short band, PARAMETER param, float value);
-  43:Equalizer.h   **** 	float incParameter(short band, PARAMETER param, float delta);
-  44:Equalizer.h   **** 	float decParameter(short band, PARAMETER param, float delta);
-  45:Equalizer.h   **** 	float getParameter(short band, PARAMETER param);
-  46:Equalizer.h   **** 	void setBypass(bool val) { filterOn_ = !val; };
- 543              		.loc 2 46 7 view .LVU110
+  18:Equalizer.h   **** enum PARAMETER {
+  19:Equalizer.h   **** 	PM_GAIN = 0,
+  20:Equalizer.h   **** 	PM_FREQ = 1,
+  21:Equalizer.h   **** 	PM_Q = 2
+  22:Equalizer.h   **** };
+  23:Equalizer.h   **** 
+  24:Equalizer.h   **** enum BANDTYPE {
+  25:Equalizer.h   **** 	BAND_LOW_SHELF,
+  26:Equalizer.h   **** 	BAND_PEAK_EQ,
+  27:Equalizer.h   **** 	BAND_HIGH_SHELF
+  28:Equalizer.h   **** };
+  29:Equalizer.h   **** 
+  30:Equalizer.h   **** static const BANDTYPE BAND_TYPES[NUM_EQ_BANDS] = {
+  31:Equalizer.h   ****     BAND_LOW_SHELF,
+  32:Equalizer.h   ****     BAND_PEAK_EQ,
+  33:Equalizer.h   ****     BAND_PEAK_EQ,
+  34:Equalizer.h   ****     BAND_HIGH_SHELF
+  35:Equalizer.h   **** };
+  36:Equalizer.h   **** class Equalizer : public Algorithm
+  37:Equalizer.h   **** {
+  38:Equalizer.h   **** public:
+  39:Equalizer.h   **** 
+  40:Equalizer.h   **** 	Equalizer();
+  41:Equalizer.h   **** 	virtual ~Equalizer();
+  42:Equalizer.h   **** 
+  43:Equalizer.h   **** 	float Process(float input) override;
+  44:Equalizer.h   **** 	void Init() override;
+  45:Equalizer.h   **** 	void Init(int SampleRate);
+  46:Equalizer.h   **** 
+  47:Equalizer.h   **** 	void setParameter(short band, PARAMETER param, float value);
+  48:Equalizer.h   **** 	float incParameter(short band, PARAMETER param, float delta);
+  49:Equalizer.h   **** 	float decParameter(short band, PARAMETER param, float delta);
+  50:Equalizer.h   **** 	float getParameter(short band, PARAMETER param);
+  51:Equalizer.h   **** 	void setBypass(bool val) { filterOn_ = !val; };
+ 543              		.loc 2 51 7 view .LVU110
  544              	.LBB36:
- 545              		.loc 2 46 29 view .LVU111
- 546              		.loc 2 46 41 is_stmt 0 view .LVU112
+ 545              		.loc 2 51 29 view .LVU111
+ 546              		.loc 2 51 41 is_stmt 0 view .LVU112
  547 0000 81F00101 		eor	r1, r1, #1
  548              	.LVL35:
- 549              		.loc 2 46 41 view .LVU113
+ 549              		.loc 2 51 41 view .LVU113
  550              	.LBE36:
  551              	.LBE35:
  552              	.LBB38:
  553              	.LBB39:
- 554              		.loc 2 46 39 view .LVU114
+ 554              		.loc 2 51 39 view .LVU114
  555 0004 D0E90223 		ldrd	r2, r3, [r0, #8]
  556              	.LBE39:
  557              	.LBE38:
@@ -772,23 +777,23 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
  559              	.LBB37:
  560 0008 1172     		strb	r1, [r2, #8]
  561              	.LVL36:
- 562              		.loc 2 46 39 view .LVU115
+ 562              		.loc 2 51 39 view .LVU115
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 14
+
+
  563              	.LBE37:
  564              	.LBE41:
   80:Controller.cpp **** 	m_eqRight->setBypass(bypass);
  565              		.loc 1 80 2 is_stmt 1 view .LVU116
  566              	.LBB42:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 14
-
-
  567              	.LBI38:
- 568              		.loc 2 46 7 view .LVU117
+ 568              		.loc 2 51 7 view .LVU117
  569              	.LBB40:
- 570              		.loc 2 46 29 view .LVU118
- 571              		.loc 2 46 39 is_stmt 0 view .LVU119
+ 570              		.loc 2 51 29 view .LVU118
+ 571              		.loc 2 51 39 is_stmt 0 view .LVU119
  572 000a 1972     		strb	r1, [r3, #8]
  573              	.LVL37:
- 574              		.loc 2 46 39 view .LVU120
+ 574              		.loc 2 51 39 view .LVU120
  575              	.LBE40:
  576              	.LBE42:
   81:Controller.cpp **** }	
@@ -833,14 +838,14 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
  604              		.loc 1 86 2 view .LVU124
   84:Controller.cpp **** 	float val, freq, q;
  605              		.loc 1 84 1 is_stmt 0 view .LVU125
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 15
+
+
  606 0000 30B5     		push	{r4, r5, lr}
  607              		.cfi_def_cfa_offset 12
  608              		.cfi_offset 4, -12
  609              		.cfi_offset 5, -8
  610              		.cfi_offset 14, -4
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 15
-
-
  611 0002 0446     		mov	r4, r0
  612 0004 0D46     		mov	r5, r1
  613              		.loc 1 86 30 view .LVU126
@@ -893,14 +898,14 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
   89:Controller.cpp **** 	m_daisyPod->seed.Print("  Band %d Freq %.0f Q %.0f Gain %.1f Duration %u ns (%.0f ns)        \r", 
  655              		.loc 1 89 2 is_stmt 1 view .LVU138
  656              	.LBB45:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 16
+
+
  657              	.LBI45:
  658              		.file 3 "../../libDaisy//src/daisy_seed.h"
    1:../../libDaisy//src/daisy_seed.h **** #pragma once
    2:../../libDaisy//src/daisy_seed.h **** #ifndef DSY_SEED_H
    3:../../libDaisy//src/daisy_seed.h **** #define DSY_SEED_H
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 16
-
-
    4:../../libDaisy//src/daisy_seed.h **** 
    5:../../libDaisy//src/daisy_seed.h **** #include "daisy.h"
    6:../../libDaisy//src/daisy_seed.h **** 
@@ -953,14 +958,14 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
   53:../../libDaisy//src/daisy_seed.h ****     For the given GPIO on the Daisy Seed (labeled 1-32 in docs).
   54:../../libDaisy//src/daisy_seed.h ****     */
   55:../../libDaisy//src/daisy_seed.h ****     static dsy_gpio_pin GetPin(uint8_t pin_idx);
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 17
+
+
   56:../../libDaisy//src/daisy_seed.h **** 
   57:../../libDaisy//src/daisy_seed.h ****     /** Begins the audio for the seeds builtin audio.
   58:../../libDaisy//src/daisy_seed.h ****     the specified callback will get called whenever
   59:../../libDaisy//src/daisy_seed.h ****     new data is ready to be prepared.
   60:../../libDaisy//src/daisy_seed.h ****     */
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 17
-
-
   61:../../libDaisy//src/daisy_seed.h ****     void StartAudio(AudioHandle::InterleavingAudioCallback cb);
   62:../../libDaisy//src/daisy_seed.h **** 
   63:../../libDaisy//src/daisy_seed.h ****     /** Begins the audio for the seeds builtin audio.
@@ -1013,14 +1018,14 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
  110:../../libDaisy//src/daisy_seed.h **** 
  111:../../libDaisy//src/daisy_seed.h ****     /** Sets the state of the test point near pin 10
  112:../../libDaisy//src/daisy_seed.h ****      */
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 18
+
+
  113:../../libDaisy//src/daisy_seed.h ****     void SetTestPoint(bool state);
  114:../../libDaisy//src/daisy_seed.h **** 
  115:../../libDaisy//src/daisy_seed.h ****     /** Print formatted debug log message
  116:../../libDaisy//src/daisy_seed.h ****      */
  117:../../libDaisy//src/daisy_seed.h ****     template <typename... VA>
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 18
-
-
  118:../../libDaisy//src/daisy_seed.h ****     static void Print(const char* format, VA... va)
  659              		.loc 3 118 17 view .LVU139
  660              	.LBB46:
@@ -1073,14 +1078,14 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
  704              	.LFE2581:
  706              		.global	_ZTV10Controller
  707              		.section	.rodata._ZTV10Controller,"a"
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 19
+
+
  708              		.align	2
  709              		.set	.LANCHOR0,. + 0
  712              	_ZTV10Controller:
  713 0000 00000000 		.word	0
  714 0004 00000000 		.word	0
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 19
-
-
  715 0008 00000000 		.word	_ZN10ControllerD1Ev
  716 000c 00000000 		.word	_ZN10ControllerD0Ev
  717              		.text
@@ -1133,58 +1138,58 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 1
  764              		.file 49 "../../libDaisy//src/hid/led.h"
  765              		.file 50 "../../libDaisy//src/util/color.h"
  766              		.file 51 "../../libDaisy//src/hid/rgb_led.h"
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 20
+
+
  767              		.file 52 "../../libDaisy//src/dev/max11300.h"
  768              		.file 53 "../../libDaisy//src/hid/logger.h"
  769              		.file 54 "../../libDaisy//src/daisy_pod.h"
  770              		.file 55 "../../libDaisy//src/per/gpio.h"
  771              		.file 56 "../../libDaisy//src/dev/sdram.h"
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 20
-
-
  772              		.file 57 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
  773              		.file 58 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
  774              		.file 59 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
- 775              		.file 60 "Controller.h"
- 776              		.file 61 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\new"
- 777              		.file 62 "<built-in>"
- 778              		.file 63 "../../libDaisy//src/dev/sr_595.h"
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGE84mo.s 			page 21
+ 775              		.file 60 "../../libDaisy//src/dev/sr_595.h"
+ 776              		.file 61 "Controller.h"
+ 777              		.file 62 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\new"
+ 778              		.file 63 "<built-in>"
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s 			page 21
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 Controller.cpp
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:17     .text._ZN10ControllerD2Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:26     .text._ZN10ControllerD2Ev:00000000 _ZN10ControllerD2Ev
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:26     .text._ZN10ControllerD2Ev:00000000 _ZN10ControllerD1Ev
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:43     .text._ZN10ControllerD0Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:51     .text._ZN10ControllerD0Ev:00000000 _ZN10ControllerD0Ev
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:83     .text._ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:91     .text._ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE:00000000 _ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:123    .text._ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE:00000010 $d
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:91     .text._ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE:00000000 _ZN10ControllerC1EP9EqualizerS1_PN5daisy8DaisyPodE
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:130    .text._ZN10Controller7incBandEv:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:138    .text._ZN10Controller7incBandEv:00000000 _ZN10Controller7incBandEv
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:174    .text._ZN10Controller7incBandEv:00000020 $d
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:179    .text._ZN10Controller8incParamEv:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:187    .text._ZN10Controller8incParamEv:00000000 _ZN10Controller8incParamEv
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:202    .text._ZN10Controller8incParamEv:00000008 $d
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:207    .text._ZN10Controller13incParamValueEv:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:215    .text._ZN10Controller13incParamValueEv:00000000 _ZN10Controller13incParamValueEv
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:267    .text._ZN10Controller13incParamValueEv:00000034 $d
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:272    .text._ZN10Controller13decParamValueEv:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:280    .text._ZN10Controller13decParamValueEv:00000000 _ZN10Controller13decParamValueEv
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:332    .text._ZN10Controller13decParamValueEv:00000034 $d
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:337    .text._ZN10Controller6adjustEs:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:345    .text._ZN10Controller6adjustEs:00000000 _ZN10Controller6adjustEs
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:517    .text._ZN10Controller6adjustEs:00000080 $d
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:523    .text._ZN10Controller9setBypassEb:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:531    .text._ZN10Controller9setBypassEb:00000000 _ZN10Controller9setBypassEb
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:583    .rodata._ZN10Controller10printStateEmf.str1.4:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:588    .text._ZN10Controller10printStateEmf:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:596    .text._ZN10Controller10printStateEmf:00000000 _ZN10Controller10printStateEmf
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:702    .text._ZN10Controller10printStateEmf:00000070 $d
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:712    .rodata._ZTV10Controller:00000000 _ZTV10Controller
-C:\Users\micke\AppData\Local\Temp\ccGE84mo.s:708    .rodata._ZTV10Controller:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:17     .text._ZN10ControllerD2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:26     .text._ZN10ControllerD2Ev:00000000 _ZN10ControllerD2Ev
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:26     .text._ZN10ControllerD2Ev:00000000 _ZN10ControllerD1Ev
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:43     .text._ZN10ControllerD0Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:51     .text._ZN10ControllerD0Ev:00000000 _ZN10ControllerD0Ev
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:83     .text._ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:91     .text._ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE:00000000 _ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:123    .text._ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE:00000010 $d
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:91     .text._ZN10ControllerC2EP9EqualizerS1_PN5daisy8DaisyPodE:00000000 _ZN10ControllerC1EP9EqualizerS1_PN5daisy8DaisyPodE
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:130    .text._ZN10Controller7incBandEv:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:138    .text._ZN10Controller7incBandEv:00000000 _ZN10Controller7incBandEv
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:174    .text._ZN10Controller7incBandEv:00000020 $d
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:179    .text._ZN10Controller8incParamEv:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:187    .text._ZN10Controller8incParamEv:00000000 _ZN10Controller8incParamEv
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:202    .text._ZN10Controller8incParamEv:00000008 $d
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:207    .text._ZN10Controller13incParamValueEv:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:215    .text._ZN10Controller13incParamValueEv:00000000 _ZN10Controller13incParamValueEv
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:267    .text._ZN10Controller13incParamValueEv:00000034 $d
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:272    .text._ZN10Controller13decParamValueEv:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:280    .text._ZN10Controller13decParamValueEv:00000000 _ZN10Controller13decParamValueEv
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:332    .text._ZN10Controller13decParamValueEv:00000034 $d
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:337    .text._ZN10Controller6adjustEs:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:345    .text._ZN10Controller6adjustEs:00000000 _ZN10Controller6adjustEs
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:517    .text._ZN10Controller6adjustEs:00000080 $d
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:523    .text._ZN10Controller9setBypassEb:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:531    .text._ZN10Controller9setBypassEb:00000000 _ZN10Controller9setBypassEb
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:583    .rodata._ZN10Controller10printStateEmf.str1.4:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:588    .text._ZN10Controller10printStateEmf:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:596    .text._ZN10Controller10printStateEmf:00000000 _ZN10Controller10printStateEmf
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:702    .text._ZN10Controller10printStateEmf:00000070 $d
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:712    .rodata._ZTV10Controller:00000000 _ZTV10Controller
+C:\Users\micke\AppData\Local\Temp\ccCYVzjf.s:708    .rodata._ZTV10Controller:00000000 $d
 
 UNDEFINED SYMBOLS
 _ZdlPvj

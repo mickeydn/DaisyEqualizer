@@ -1,4 +1,4 @@
-
+#pragma once
 #include "Algorithm.h"
 #define float_PI 3.14159265359
 #define NUM_IIR_COEFFS 3

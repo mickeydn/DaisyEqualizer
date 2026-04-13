@@ -149,7 +149,7 @@ build/Controller.o: Controller.cpp \
  ../../libDaisy//src/util/VoctCalibration.h \
  ../../libDaisy//src/util/WaveTableLoader.h \
  ../../libDaisy//src/sys/fatfs.h ../../libDaisy//src/util/WavWriter.h \
- Equalizer.h IIRFilter.h Algorithm.h
+ Equalizer.h IIRFilter.h Algorithm.h HighShelfFilter.h LowShelfFilter.h
 ../../libDaisy//Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:
 ../../libDaisy//Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h:
 ../../libDaisy//Drivers/CMSIS/Include/core_cm7.h:
@@ -335,3 +335,5 @@ Controller.h:
 Equalizer.h:
 IIRFilter.h:
 Algorithm.h:
+HighShelfFilter.h:
+LowShelfFilter.h:
