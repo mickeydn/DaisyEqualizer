@@ -1,0 +1,1132 @@
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"AutoCorrelation.cpp"
+  13              		.text
+  14              	.Ltext0:
+  15              		.cfi_sections	.debug_frame
+  16              		.section	.text._ZN15AutoCorrelation4InitEi,"ax",%progbits
+  17              		.align	1
+  18              		.p2align 2,,3
+  19              		.global	_ZN15AutoCorrelation4InitEi
+  20              		.arch armv7e-m
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  24              		.fpu fpv5-d16
+  26              	_ZN15AutoCorrelation4InitEi:
+  27              	.LVL0:
+  28              	.LFB551:
+  29              		.file 1 "AutoCorrelation.cpp"
+   1:AutoCorrelation.cpp **** #include "AutoCorrelation.h"
+   2:AutoCorrelation.cpp **** #include <math.h>
+   3:AutoCorrelation.cpp **** #include <float.h>
+   4:AutoCorrelation.cpp **** 
+   5:AutoCorrelation.cpp **** //funktioner baseret på matlab kode til autokorrelation
+   6:AutoCorrelation.cpp **** // refactor nødvendigt for at simplificere og optimere
+   7:AutoCorrelation.cpp **** 
+   8:AutoCorrelation.cpp **** AutoCorrelation::AutoCorrelation() {}
+   9:AutoCorrelation.cpp **** AutoCorrelation::~AutoCorrelation() {}
+  10:AutoCorrelation.cpp **** 
+  11:AutoCorrelation.cpp **** void AutoCorrelation::Init(int samplerate)
+  12:AutoCorrelation.cpp **** {
+  30              		.loc 1 12 1 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  13:AutoCorrelation.cpp ****     sampleRate_ = samplerate;
+  34              		.loc 1 13 5 view .LVU1
+  14:AutoCorrelation.cpp ****     minLag_     = samplerate / 1000;  // max 1000 Hz
+  15:AutoCorrelation.cpp ****     maxLag_     = samplerate / 60;    // min 60 Hz
+  35              		.loc 1 15 30 is_stmt 0 view .LVU2
+  36 0000 0C4A     		ldr	r2, .L4
+  14:AutoCorrelation.cpp ****     minLag_     = samplerate / 1000;  // max 1000 Hz
+  37              		.loc 1 14 30 view .LVU3
+  38 0002 0D4B     		ldr	r3, .L4+4
+  39              		.loc 1 15 30 view .LVU4
+  40 0004 82FB01C2 		smull	ip, r2, r2, r1
+  14:AutoCorrelation.cpp ****     minLag_     = samplerate / 1000;  // max 1000 Hz
+  41              		.loc 1 14 30 view .LVU5
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 2
+
+
+  42 0008 4FEAE17C 		asr	ip, r1, #31
+  12:AutoCorrelation.cpp ****     sampleRate_ = samplerate;
+  43              		.loc 1 12 1 view .LVU6
+  44 000c 00B5     		push	{lr}
+  45              		.cfi_def_cfa_offset 4
+  46              		.cfi_offset 14, -4
+  14:AutoCorrelation.cpp ****     minLag_     = samplerate / 1000;  // max 1000 Hz
+  47              		.loc 1 14 30 view .LVU7
+  48 000e 83FB01E3 		smull	lr, r3, r3, r1
+  16:AutoCorrelation.cpp **** 
+  17:AutoCorrelation.cpp ****     for (int i = 0; i < ACF_BUFFER_SIZE; i++)
+  18:AutoCorrelation.cpp ****         acf_[i] = 0.0f;
+  19:AutoCorrelation.cpp **** }
+  49              		.loc 1 19 1 view .LVU8
+  50 0012 5DF804EB 		ldr	lr, [sp], #4
+  51              		.cfi_restore 14
+  52              		.cfi_def_cfa_offset 0
+  13:AutoCorrelation.cpp ****     minLag_     = samplerate / 1000;  // max 1000 Hz
+  53              		.loc 1 13 17 view .LVU9
+  54 0016 4160     		str	r1, [r0, #4]
+  14:AutoCorrelation.cpp ****     maxLag_     = samplerate / 60;    // min 60 Hz
+  55              		.loc 1 14 5 is_stmt 1 view .LVU10
+  15:AutoCorrelation.cpp **** 
+  56              		.loc 1 15 30 is_stmt 0 view .LVU11
+  57 0018 1144     		add	r1, r1, r2
+  58              	.LVL1:
+  14:AutoCorrelation.cpp ****     maxLag_     = samplerate / 60;    // min 60 Hz
+  59              		.loc 1 14 30 view .LVU12
+  60 001a CCEBA313 		rsb	r3, ip, r3, asr #6
+  61              	.LBB5:
+  18:AutoCorrelation.cpp **** }
+  62              		.loc 1 18 17 view .LVU13
+  63 001e 4FF40052 		mov	r2, #8192
+  64              	.LBE5:
+  15:AutoCorrelation.cpp **** 
+  65              		.loc 1 15 30 view .LVU14
+  66 0022 CCEB6111 		rsb	r1, ip, r1, asr #5
+  15:AutoCorrelation.cpp **** 
+  67              		.loc 1 15 17 view .LVU15
+  68 0026 C0E90231 		strd	r3, r1, [r0, #8]
+  17:AutoCorrelation.cpp ****         acf_[i] = 0.0f;
+  69              		.loc 1 17 5 is_stmt 1 view .LVU16
+  70              	.LVL2:
+  71              	.LBB6:
+  17:AutoCorrelation.cpp ****         acf_[i] = 0.0f;
+  72              		.loc 1 17 23 view .LVU17
+  18:AutoCorrelation.cpp **** }
+  73              		.loc 1 18 17 is_stmt 0 view .LVU18
+  74 002a 0021     		movs	r1, #0
+  75 002c 1030     		adds	r0, r0, #16
+  76              	.LVL3:
+  18:AutoCorrelation.cpp **** }
+  77              		.loc 1 18 17 view .LVU19
+  78 002e FFF7FEBF 		b	memset
+  79              	.LVL4:
+  80              	.L5:
+  18:AutoCorrelation.cpp **** }
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 3
+
+
+  81              		.loc 1 18 17 view .LVU20
+  82 0032 00BF     		.align	2
+  83              	.L4:
+  84 0034 89888888 		.word	-2004318071
+  85 0038 D34D6210 		.word	274877907
+  86              	.LBE6:
+  87              		.cfi_endproc
+  88              	.LFE551:
+  90              		.section	.text._ZN15AutoCorrelationD2Ev,"ax",%progbits
+  91              		.align	1
+  92              		.p2align 2,,3
+  93              		.global	_ZN15AutoCorrelationD2Ev
+  94              		.syntax unified
+  95              		.thumb
+  96              		.thumb_func
+  97              		.fpu fpv5-d16
+  99              	_ZN15AutoCorrelationD2Ev:
+ 100              	.LVL5:
+ 101              	.LFB548:
+   9:AutoCorrelation.cpp **** 
+ 102              		.loc 1 9 1 is_stmt 1 view -0
+ 103              		.cfi_startproc
+ 104              		@ args = 0, pretend = 0, frame = 0
+ 105              		@ frame_needed = 0, uses_anonymous_args = 0
+ 106              	.LBB7:
+   9:AutoCorrelation.cpp **** 
+ 107              		.loc 1 9 35 is_stmt 0 view .LVU22
+ 108 0000 034B     		ldr	r3, .L8
+ 109              	.LBE7:
+   9:AutoCorrelation.cpp **** 
+ 110              		.loc 1 9 1 view .LVU23
+ 111 0002 10B5     		push	{r4, lr}
+ 112              		.cfi_def_cfa_offset 8
+ 113              		.cfi_offset 4, -8
+ 114              		.cfi_offset 14, -4
+   9:AutoCorrelation.cpp **** 
+ 115              		.loc 1 9 1 view .LVU24
+ 116 0004 0446     		mov	r4, r0
+ 117              	.LBB8:
+   9:AutoCorrelation.cpp **** 
+ 118              		.loc 1 9 35 view .LVU25
+ 119 0006 0360     		str	r3, [r0]
+ 120 0008 FFF7FEFF 		bl	_ZN9AlgorithmD2Ev
+ 121              	.LVL6:
+   9:AutoCorrelation.cpp **** 
+ 122              		.loc 1 9 35 view .LVU26
+ 123              	.LBE8:
+   9:AutoCorrelation.cpp **** 
+ 124              		.loc 1 9 38 view .LVU27
+ 125 000c 2046     		mov	r0, r4
+ 126 000e 10BD     		pop	{r4, pc}
+ 127              	.LVL7:
+ 128              	.L9:
+   9:AutoCorrelation.cpp **** 
+ 129              		.loc 1 9 38 view .LVU28
+ 130              		.align	2
+ 131              	.L8:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 4
+
+
+ 132 0010 08000000 		.word	.LANCHOR0+8
+ 133              		.cfi_endproc
+ 134              	.LFE548:
+ 136              		.global	_ZN15AutoCorrelationD1Ev
+ 137              		.thumb_set _ZN15AutoCorrelationD1Ev,_ZN15AutoCorrelationD2Ev
+ 138              		.section	.text._ZN15AutoCorrelationD0Ev,"ax",%progbits
+ 139              		.align	1
+ 140              		.p2align 2,,3
+ 141              		.global	_ZN15AutoCorrelationD0Ev
+ 142              		.syntax unified
+ 143              		.thumb
+ 144              		.thumb_func
+ 145              		.fpu fpv5-d16
+ 147              	_ZN15AutoCorrelationD0Ev:
+ 148              	.LVL8:
+ 149              	.LFB550:
+   9:AutoCorrelation.cpp **** 
+ 150              		.loc 1 9 1 is_stmt 1 view -0
+ 151              		.cfi_startproc
+ 152              		@ args = 0, pretend = 0, frame = 0
+ 153              		@ frame_needed = 0, uses_anonymous_args = 0
+ 154              	.LBB9:
+ 155              	.LBB10:
+   9:AutoCorrelation.cpp **** 
+ 156              		.loc 1 9 35 is_stmt 0 view .LVU30
+ 157 0000 064B     		ldr	r3, .L12
+ 158              	.LBE10:
+ 159              	.LBE9:
+   9:AutoCorrelation.cpp **** 
+ 160              		.loc 1 9 1 view .LVU31
+ 161 0002 10B5     		push	{r4, lr}
+ 162              		.cfi_def_cfa_offset 8
+ 163              		.cfi_offset 4, -8
+ 164              		.cfi_offset 14, -4
+   9:AutoCorrelation.cpp **** 
+ 165              		.loc 1 9 1 view .LVU32
+ 166 0004 0446     		mov	r4, r0
+ 167              	.LVL9:
+ 168              	.LBB12:
+ 169              	.LBI9:
+   9:AutoCorrelation.cpp **** 
+ 170              		.loc 1 9 1 is_stmt 1 view .LVU33
+ 171              	.LBB11:
+   9:AutoCorrelation.cpp **** 
+ 172              		.loc 1 9 35 is_stmt 0 view .LVU34
+ 173 0006 0360     		str	r3, [r0]
+ 174 0008 FFF7FEFF 		bl	_ZN9AlgorithmD2Ev
+ 175              	.LVL10:
+   9:AutoCorrelation.cpp **** 
+ 176              		.loc 1 9 35 view .LVU35
+ 177              	.LBE11:
+ 178              	.LBE12:
+   9:AutoCorrelation.cpp **** 
+ 179              		.loc 1 9 38 view .LVU36
+ 180 000c 42F21001 		movw	r1, #8208
+ 181 0010 2046     		mov	r0, r4
+ 182 0012 FFF7FEFF 		bl	_ZdlPvj
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 5
+
+
+ 183              	.LVL11:
+ 184 0016 2046     		mov	r0, r4
+ 185 0018 10BD     		pop	{r4, pc}
+ 186              	.LVL12:
+ 187              	.L13:
+   9:AutoCorrelation.cpp **** 
+ 188              		.loc 1 9 38 view .LVU37
+ 189 001a 00BF     		.align	2
+ 190              	.L12:
+ 191 001c 08000000 		.word	.LANCHOR0+8
+ 192              		.cfi_endproc
+ 193              	.LFE550:
+ 195              		.section	.text._ZN15AutoCorrelationC2Ev,"ax",%progbits
+ 196              		.align	1
+ 197              		.p2align 2,,3
+ 198              		.global	_ZN15AutoCorrelationC2Ev
+ 199              		.syntax unified
+ 200              		.thumb
+ 201              		.thumb_func
+ 202              		.fpu fpv5-d16
+ 204              	_ZN15AutoCorrelationC2Ev:
+ 205              	.LVL13:
+ 206              	.LFB545:
+   8:AutoCorrelation.cpp **** AutoCorrelation::~AutoCorrelation() {}
+ 207              		.loc 1 8 1 is_stmt 1 view -0
+ 208              		.cfi_startproc
+ 209              		@ args = 0, pretend = 0, frame = 0
+ 210              		@ frame_needed = 0, uses_anonymous_args = 0
+   8:AutoCorrelation.cpp **** AutoCorrelation::~AutoCorrelation() {}
+ 211              		.loc 1 8 1 is_stmt 0 view .LVU39
+ 212 0000 10B5     		push	{r4, lr}
+ 213              		.cfi_def_cfa_offset 8
+ 214              		.cfi_offset 4, -8
+ 215              		.cfi_offset 14, -4
+   8:AutoCorrelation.cpp **** AutoCorrelation::~AutoCorrelation() {}
+ 216              		.loc 1 8 1 view .LVU40
+ 217 0002 0446     		mov	r4, r0
+ 218              	.LBB13:
+   8:AutoCorrelation.cpp **** AutoCorrelation::~AutoCorrelation() {}
+ 219              		.loc 1 8 34 view .LVU41
+ 220 0004 FFF7FEFF 		bl	_ZN9AlgorithmC2Ev
+ 221              	.LVL14:
+   8:AutoCorrelation.cpp **** AutoCorrelation::~AutoCorrelation() {}
+ 222              		.loc 1 8 34 view .LVU42
+ 223 0008 014B     		ldr	r3, .L16
+ 224              	.LBE13:
+   8:AutoCorrelation.cpp **** AutoCorrelation::~AutoCorrelation() {}
+ 225              		.loc 1 8 37 view .LVU43
+ 226 000a 2046     		mov	r0, r4
+ 227              	.LBB14:
+   8:AutoCorrelation.cpp **** AutoCorrelation::~AutoCorrelation() {}
+ 228              		.loc 1 8 34 view .LVU44
+ 229 000c 2360     		str	r3, [r4]
+ 230              	.LBE14:
+   8:AutoCorrelation.cpp **** AutoCorrelation::~AutoCorrelation() {}
+ 231              		.loc 1 8 37 view .LVU45
+ 232 000e 10BD     		pop	{r4, pc}
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 6
+
+
+ 233              	.LVL15:
+ 234              	.L17:
+   8:AutoCorrelation.cpp **** AutoCorrelation::~AutoCorrelation() {}
+ 235              		.loc 1 8 37 view .LVU46
+ 236              		.align	2
+ 237              	.L16:
+ 238 0010 08000000 		.word	.LANCHOR0+8
+ 239              		.cfi_endproc
+ 240              	.LFE545:
+ 242              		.global	_ZN15AutoCorrelationC1Ev
+ 243              		.thumb_set _ZN15AutoCorrelationC1Ev,_ZN15AutoCorrelationC2Ev
+ 244              		.section	.text._ZN15AutoCorrelation8removeDCEPfi,"ax",%progbits
+ 245              		.align	1
+ 246              		.p2align 2,,3
+ 247              		.global	_ZN15AutoCorrelation8removeDCEPfi
+ 248              		.syntax unified
+ 249              		.thumb
+ 250              		.thumb_func
+ 251              		.fpu fpv5-d16
+ 253              	_ZN15AutoCorrelation8removeDCEPfi:
+ 254              	.LVL16:
+ 255              	.LFB552:
+  20:AutoCorrelation.cpp **** 
+  21:AutoCorrelation.cpp **** void AutoCorrelation::removeDC(float* buffer, int bufferSize)
+  22:AutoCorrelation.cpp **** {
+ 256              		.loc 1 22 1 is_stmt 1 view -0
+ 257              		.cfi_startproc
+ 258              		@ args = 0, pretend = 0, frame = 0
+ 259              		@ frame_needed = 0, uses_anonymous_args = 0
+ 260              		@ link register save eliminated.
+  23:AutoCorrelation.cpp ****     float mean = 0.0f;
+ 261              		.loc 1 23 5 view .LVU48
+  24:AutoCorrelation.cpp ****     for (int i = 0; i < bufferSize; i++)
+ 262              		.loc 1 24 5 view .LVU49
+ 263              	.LBB17:
+ 264              		.loc 1 24 23 view .LVU50
+ 265 0000 002A     		cmp	r2, #0
+ 266              		.loc 1 24 23 is_stmt 0 view .LVU51
+ 267 0002 19DD     		ble	.L18
+ 268              	.LBE17:
+  23:AutoCorrelation.cpp ****     float mean = 0.0f;
+ 269              		.loc 1 23 11 view .LVU52
+ 270 0004 DFED0D7A 		vldr.32	s15, .L26
+ 271 0008 01EB8200 		add	r0, r1, r2, lsl #2
+ 272              	.LVL17:
+ 273              	.LBB18:
+ 274              		.loc 1 24 23 view .LVU53
+ 275 000c 0B46     		mov	r3, r1
+ 276              	.LVL18:
+ 277              	.L21:
+  25:AutoCorrelation.cpp ****         mean += buffer[i];
+ 278              		.loc 1 25 9 is_stmt 1 discriminator 2 view .LVU54
+ 279              		.loc 1 25 25 is_stmt 0 discriminator 2 view .LVU55
+ 280 000e B3EC017A 		vldmia.32	r3!, {s14}
+  24:AutoCorrelation.cpp ****     for (int i = 0; i < bufferSize; i++)
+ 281              		.loc 1 24 23 discriminator 2 view .LVU56
+ 282 0012 8342     		cmp	r3, r0
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 7
+
+
+ 283              		.loc 1 25 14 discriminator 2 view .LVU57
+ 284 0014 77EE877A 		vadd.f32	s15, s15, s14
+ 285              	.LVL19:
+  24:AutoCorrelation.cpp ****     for (int i = 0; i < bufferSize; i++)
+ 286              		.loc 1 24 5 is_stmt 1 discriminator 2 view .LVU58
+  24:AutoCorrelation.cpp ****     for (int i = 0; i < bufferSize; i++)
+ 287              		.loc 1 24 23 discriminator 2 view .LVU59
+ 288 0018 F9D1     		bne	.L21
+ 289              	.LBE18:
+  26:AutoCorrelation.cpp ****     mean /= bufferSize;
+ 290              		.loc 1 26 5 view .LVU60
+ 291              		.loc 1 26 10 is_stmt 0 view .LVU61
+ 292 001a 07EE102A 		vmov	s14, r2	@ int
+ 293 001e F8EEC76A 		vcvt.f32.s32	s13, s14
+ 294 0022 87EEA67A 		vdiv.f32	s14, s15, s13
+ 295              	.LVL20:
+  27:AutoCorrelation.cpp **** 
+  28:AutoCorrelation.cpp ****     for (int i = 0; i < bufferSize; i++)
+ 296              		.loc 1 28 5 is_stmt 1 view .LVU62
+ 297              	.LBB19:
+ 298              		.loc 1 28 23 view .LVU63
+ 299              	.L23:
+  29:AutoCorrelation.cpp ****         buffer[i] -= mean;
+ 300              		.loc 1 29 9 discriminator 2 view .LVU64
+ 301              		.loc 1 29 19 is_stmt 0 discriminator 2 view .LVU65
+ 302 0026 D1ED007A 		vldr.32	s15, [r1]
+ 303 002a 77EEC77A 		vsub.f32	s15, s15, s14
+ 304 002e E1EC017A 		vstmia.32	r1!, {s15}
+  28:AutoCorrelation.cpp ****         buffer[i] -= mean;
+ 305              		.loc 1 28 5 is_stmt 1 discriminator 2 view .LVU66
+  28:AutoCorrelation.cpp ****         buffer[i] -= mean;
+ 306              		.loc 1 28 23 discriminator 2 view .LVU67
+ 307 0032 8142     		cmp	r1, r0
+ 308 0034 F7D1     		bne	.L23
+ 309 0036 7047     		bx	lr
+ 310              	.LVL21:
+ 311              	.L18:
+  28:AutoCorrelation.cpp ****         buffer[i] -= mean;
+ 312              		.loc 1 28 23 is_stmt 0 discriminator 2 view .LVU68
+ 313              	.LBE19:
+  30:AutoCorrelation.cpp **** }
+ 314              		.loc 1 30 1 view .LVU69
+ 315 0038 7047     		bx	lr
+ 316              	.L27:
+ 317 003a 00BF     		.align	2
+ 318              	.L26:
+ 319 003c 00000000 		.word	0
+ 320              		.cfi_endproc
+ 321              	.LFE552:
+ 323              		.section	.text._ZN15AutoCorrelation10computeACFEPKfi,"ax",%progbits
+ 324              		.align	1
+ 325              		.p2align 2,,3
+ 326              		.global	_ZN15AutoCorrelation10computeACFEPKfi
+ 327              		.syntax unified
+ 328              		.thumb
+ 329              		.thumb_func
+ 330              		.fpu fpv5-d16
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 8
+
+
+ 332              	_ZN15AutoCorrelation10computeACFEPKfi:
+ 333              	.LVL22:
+ 334              	.LFB553:
+  31:AutoCorrelation.cpp **** 
+  32:AutoCorrelation.cpp **** void AutoCorrelation::computeACF(const float* buffer, int bufferSize)
+  33:AutoCorrelation.cpp **** {
+ 335              		.loc 1 33 1 is_stmt 1 view -0
+ 336              		.cfi_startproc
+ 337              		@ args = 0, pretend = 0, frame = 0
+ 338              		@ frame_needed = 0, uses_anonymous_args = 0
+  34:AutoCorrelation.cpp ****     
+  35:AutoCorrelation.cpp ****     float energy = 0.0f;
+ 339              		.loc 1 35 5 view .LVU71
+  36:AutoCorrelation.cpp ****     for (int i = 0; i < bufferSize; i++)
+ 340              		.loc 1 36 5 view .LVU72
+ 341              	.LBB20:
+ 342              		.loc 1 36 23 view .LVU73
+ 343 0000 002A     		cmp	r2, #0
+ 344              		.loc 1 36 23 is_stmt 0 view .LVU74
+ 345 0002 40DD     		ble	.L43
+ 346 0004 01EB820C 		add	ip, r1, r2, lsl #2
+ 347              	.LBE20:
+  35:AutoCorrelation.cpp ****     for (int i = 0; i < bufferSize; i++)
+ 348              		.loc 1 35 11 view .LVU75
+ 349 0008 9FED1F6A 		vldr.32	s12, .L47
+ 350              	.LBB21:
+ 351              		.loc 1 36 23 view .LVU76
+ 352 000c 0B46     		mov	r3, r1
+ 353              	.LBE21:
+  33:AutoCorrelation.cpp ****     
+ 354              		.loc 1 33 1 view .LVU77
+ 355 000e 30B5     		push	{r4, r5, lr}
+ 356              		.cfi_def_cfa_offset 12
+ 357              		.cfi_offset 4, -12
+ 358              		.cfi_offset 5, -8
+ 359              		.cfi_offset 14, -4
+ 360 0010 9400     		lsls	r4, r2, #2
+ 361              	.LVL23:
+ 362              	.L31:
+ 363              	.LBB22:
+  37:AutoCorrelation.cpp ****         energy += buffer[i] * buffer[i];
+ 364              		.loc 1 37 9 is_stmt 1 discriminator 2 view .LVU78
+ 365              		.loc 1 37 27 is_stmt 0 discriminator 2 view .LVU79
+ 366 0012 F3EC017A 		vldmia.32	r3!, {s15}
+  36:AutoCorrelation.cpp ****         energy += buffer[i] * buffer[i];
+ 367              		.loc 1 36 23 discriminator 2 view .LVU80
+ 368 0016 6345     		cmp	r3, ip
+ 369              		.loc 1 37 16 discriminator 2 view .LVU81
+ 370 0018 A7EEA76A 		vfma.f32	s12, s15, s15
+ 371              	.LVL24:
+  36:AutoCorrelation.cpp ****         energy += buffer[i] * buffer[i];
+ 372              		.loc 1 36 5 is_stmt 1 discriminator 2 view .LVU82
+  36:AutoCorrelation.cpp ****         energy += buffer[i] * buffer[i];
+ 373              		.loc 1 36 23 discriminator 2 view .LVU83
+ 374 001c F9D1     		bne	.L31
+ 375              	.LBE22:
+  38:AutoCorrelation.cpp **** 
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 9
+
+
+  39:AutoCorrelation.cpp ****     if (energy < 1e-6f) {
+ 376              		.loc 1 39 5 view .LVU84
+ 377              	.LBB23:
+ 378 001e DFED1B7A 		vldr.32	s15, .L47+4
+ 379 0022 B4EEE76A 		vcmpe.f32	s12, s15
+ 380 0026 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 381 002a 25D4     		bmi	.L46
+ 382 002c 01EB4205 		add	r5, r1, r2, lsl #1
+ 383 0030 00F11004 		add	r4, r0, #16
+ 384              	.LBE23:
+ 385              	.LBB26:
+  40:AutoCorrelation.cpp ****         for (int i = 0; i < bufferSize; i++)
+  41:AutoCorrelation.cpp ****             acf_[i] = 0.0f;
+  42:AutoCorrelation.cpp ****         return;
+  43:AutoCorrelation.cpp ****     }
+  44:AutoCorrelation.cpp **** 
+  45:AutoCorrelation.cpp ****     for (int lag = 0; lag < bufferSize; lag++) {
+ 386              		.loc 1 45 14 is_stmt 0 view .LVU85
+ 387 0034 4FF0000E 		mov	lr, #0
+ 388 0038 6D00     		lsls	r5, r5, #1
+ 389              	.LVL25:
+ 390              	.L35:
+ 391              	.LBB27:
+ 392              	.LBB28:
+  46:AutoCorrelation.cpp ****         float sum = 0.0f;
+  47:AutoCorrelation.cpp ****         for (int j = 0; j < bufferSize - lag; j++)
+ 393              		.loc 1 47 27 is_stmt 1 view .LVU86
+ 394 003a A2EB0E03 		sub	r3, r2, lr
+ 395 003e 002B     		cmp	r3, #0
+ 396 0040 17DD     		ble	.L38
+ 397              		.loc 1 47 27 is_stmt 0 view .LVU87
+ 398 0042 A5EB0C00 		sub	r0, r5, ip
+ 399 0046 0B46     		mov	r3, r1
+ 400              	.LBE28:
+  46:AutoCorrelation.cpp ****         float sum = 0.0f;
+ 401              		.loc 1 46 15 view .LVU88
+ 402 0048 DFED0F7A 		vldr.32	s15, .L47
+ 403              	.LVL26:
+ 404              	.L33:
+ 405              	.LBB29:
+  48:AutoCorrelation.cpp ****             sum += buffer[j] * buffer[j + lag];
+ 406              		.loc 1 48 13 is_stmt 1 discriminator 2 view .LVU89
+ 407              		.loc 1 48 28 is_stmt 0 discriminator 2 view .LVU90
+ 408 004c F3EC016A 		vldmia.32	r3!, {s13}
+ 409              		.loc 1 48 46 discriminator 2 view .LVU91
+ 410 0050 B0EC017A 		vldmia.32	r0!, {s14}
+  47:AutoCorrelation.cpp ****             sum += buffer[j] * buffer[j + lag];
+ 411              		.loc 1 47 27 discriminator 2 view .LVU92
+ 412 0054 9C45     		cmp	ip, r3
+ 413              		.loc 1 48 17 discriminator 2 view .LVU93
+ 414 0056 E6EE877A 		vfma.f32	s15, s13, s14
+ 415              	.LVL27:
+  47:AutoCorrelation.cpp ****             sum += buffer[j] * buffer[j + lag];
+ 416              		.loc 1 47 9 is_stmt 1 discriminator 2 view .LVU94
+  47:AutoCorrelation.cpp ****             sum += buffer[j] * buffer[j + lag];
+ 417              		.loc 1 47 27 discriminator 2 view .LVU95
+ 418 005a F7D1     		bne	.L33
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 10
+
+
+ 419              	.LVL28:
+ 420              	.L32:
+  47:AutoCorrelation.cpp ****             sum += buffer[j] * buffer[j + lag];
+ 421              		.loc 1 47 27 is_stmt 0 discriminator 2 view .LVU96
+ 422              	.LBE29:
+  49:AutoCorrelation.cpp ****         acf_[lag] = sum / energy;
+ 423              		.loc 1 49 9 is_stmt 1 discriminator 2 view .LVU97
+ 424              		.loc 1 49 25 is_stmt 0 discriminator 2 view .LVU98
+ 425 005c 87EE867A 		vdiv.f32	s14, s15, s12
+ 426              	.LBE27:
+  45:AutoCorrelation.cpp ****         float sum = 0.0f;
+ 427              		.loc 1 45 5 discriminator 2 view .LVU99
+ 428 0060 0EF1010E 		add	lr, lr, #1
+ 429              	.LVL29:
+  45:AutoCorrelation.cpp ****         float sum = 0.0f;
+ 430              		.loc 1 45 27 discriminator 2 view .LVU100
+ 431 0064 ACF1040C 		sub	ip, ip, #4
+ 432 0068 7245     		cmp	r2, lr
+ 433              	.LBB30:
+ 434              		.loc 1 49 19 discriminator 2 view .LVU101
+ 435 006a A4EC017A 		vstmia.32	r4!, {s14}
+ 436              	.LBE30:
+  45:AutoCorrelation.cpp ****         float sum = 0.0f;
+ 437              		.loc 1 45 5 is_stmt 1 discriminator 2 view .LVU102
+ 438              	.LVL30:
+  45:AutoCorrelation.cpp ****         float sum = 0.0f;
+ 439              		.loc 1 45 27 discriminator 2 view .LVU103
+ 440 006e E4D1     		bne	.L35
+ 441              	.LBE26:
+  50:AutoCorrelation.cpp ****     }
+  51:AutoCorrelation.cpp **** }
+ 442              		.loc 1 51 1 is_stmt 0 view .LVU104
+ 443 0070 30BD     		pop	{r4, r5, pc}
+ 444              	.LVL31:
+ 445              	.L38:
+ 446              	.LBB32:
+ 447              	.LBB31:
+  46:AutoCorrelation.cpp ****         for (int j = 0; j < bufferSize - lag; j++)
+ 448              		.loc 1 46 15 view .LVU105
+ 449 0072 DFED057A 		vldr.32	s15, .L47
+ 450 0076 F1E7     		b	.L32
+ 451              	.LVL32:
+ 452              	.L46:
+  46:AutoCorrelation.cpp ****         for (int j = 0; j < bufferSize - lag; j++)
+ 453              		.loc 1 46 15 view .LVU106
+ 454              	.LBE31:
+ 455              	.LBE32:
+ 456              	.LBB33:
+ 457              	.LBB24:
+  41:AutoCorrelation.cpp ****         return;
+ 458              		.loc 1 41 21 view .LVU107
+ 459 0078 2246     		mov	r2, r4
+ 460              	.LVL33:
+  41:AutoCorrelation.cpp ****         return;
+ 461              		.loc 1 41 21 view .LVU108
+ 462 007a 0021     		movs	r1, #0
+ 463              	.LVL34:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 11
+
+
+  41:AutoCorrelation.cpp ****         return;
+ 464              		.loc 1 41 21 view .LVU109
+ 465 007c 1030     		adds	r0, r0, #16
+ 466              	.LVL35:
+  41:AutoCorrelation.cpp ****         return;
+ 467              		.loc 1 41 21 view .LVU110
+ 468              	.LBE24:
+ 469              	.LBE33:
+ 470              		.loc 1 51 1 view .LVU111
+ 471 007e BDE83040 		pop	{r4, r5, lr}
+ 472              		.cfi_restore 14
+ 473              		.cfi_restore 5
+ 474              		.cfi_restore 4
+ 475              		.cfi_def_cfa_offset 0
+ 476              	.LBB34:
+ 477              	.LBB25:
+  41:AutoCorrelation.cpp ****         return;
+ 478              		.loc 1 41 21 view .LVU112
+ 479 0082 FFF7FEBF 		b	memset
+ 480              	.LVL36:
+ 481              	.L43:
+  41:AutoCorrelation.cpp ****         return;
+ 482              		.loc 1 41 21 view .LVU113
+ 483 0086 7047     		bx	lr
+ 484              	.L48:
+ 485              		.align	2
+ 486              	.L47:
+ 487 0088 00000000 		.word	0
+ 488 008c BD378635 		.word	897988541
+ 489              	.LBE25:
+ 490              	.LBE34:
+ 491              		.cfi_endproc
+ 492              	.LFE553:
+ 494              		.section	.text._ZN15AutoCorrelation7ProcessEPKfi,"ax",%progbits
+ 495              		.align	1
+ 496              		.p2align 2,,3
+ 497              		.global	_ZN15AutoCorrelation7ProcessEPKfi
+ 498              		.syntax unified
+ 499              		.thumb
+ 500              		.thumb_func
+ 501              		.fpu fpv5-d16
+ 503              	_ZN15AutoCorrelation7ProcessEPKfi:
+ 504              	.LVL37:
+ 505              	.LFB555:
+  52:AutoCorrelation.cpp **** 
+  53:AutoCorrelation.cpp **** int AutoCorrelation::findPeakLag()
+  54:AutoCorrelation.cpp **** {
+  55:AutoCorrelation.cpp ****     //nulstil under minimumsværdi
+  56:AutoCorrelation.cpp ****     int bestLag  = -1;
+  57:AutoCorrelation.cpp ****     float bestVal = -FLT_MAX;
+  58:AutoCorrelation.cpp **** 
+  59:AutoCorrelation.cpp ****     for (int lag = minLag_; lag < maxLag_; lag++) {
+  60:AutoCorrelation.cpp ****         if (acf_[lag] > bestVal) {
+  61:AutoCorrelation.cpp ****             bestVal = acf_[lag];
+  62:AutoCorrelation.cpp ****             bestLag = lag;
+  63:AutoCorrelation.cpp ****         }
+  64:AutoCorrelation.cpp ****     }
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 12
+
+
+  65:AutoCorrelation.cpp **** 
+  66:AutoCorrelation.cpp ****     return (bestVal > 0.0f) ? bestLag : -1;
+  67:AutoCorrelation.cpp **** }
+  68:AutoCorrelation.cpp **** 
+  69:AutoCorrelation.cpp **** PitchResult AutoCorrelation::Process(const float* buffer, int bufferSize)
+  70:AutoCorrelation.cpp **** {
+ 506              		.loc 1 70 1 is_stmt 1 view -0
+ 507              		.cfi_startproc
+ 508              		@ args = 0, pretend = 0, frame = 8224
+ 509              		@ frame_needed = 0, uses_anonymous_args = 0
+  71:AutoCorrelation.cpp ****     PitchResult result = {0.0f, 0.0f, false};
+ 510              		.loc 1 71 5 view .LVU115
+  72:AutoCorrelation.cpp **** 
+  73:AutoCorrelation.cpp ****     // Lav kopi så vi ikke modificerer original buffer ved DC-fjernelse
+  74:AutoCorrelation.cpp ****     float localBuffer[ACF_BUFFER_SIZE];
+ 511              		.loc 1 74 5 view .LVU116
+  75:AutoCorrelation.cpp ****     for (int i = 0; i < bufferSize; i++)
+ 512              		.loc 1 75 5 view .LVU117
+ 513              	.LBB43:
+ 514              		.loc 1 75 23 view .LVU118
+ 515              	.LBE43:
+  70:AutoCorrelation.cpp ****     PitchResult result = {0.0f, 0.0f, false};
+ 516              		.loc 1 70 1 is_stmt 0 view .LVU119
+ 517 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+ 518              		.cfi_def_cfa_offset 20
+ 519              		.cfi_offset 4, -20
+ 520              		.cfi_offset 5, -16
+ 521              		.cfi_offset 6, -12
+ 522              		.cfi_offset 7, -8
+ 523              		.cfi_offset 14, -4
+ 524 0002 ADF5005D 		sub	sp, sp, #8192
+ 525              		.cfi_def_cfa_offset 8212
+ 526              	.LBB44:
+ 527              		.loc 1 75 23 view .LVU120
+ 528 0006 171E     		subs	r7, r2, #0
+ 529              	.LBE44:
+  70:AutoCorrelation.cpp ****     PitchResult result = {0.0f, 0.0f, false};
+ 530              		.loc 1 70 1 view .LVU121
+ 531 0008 0646     		mov	r6, r0
+ 532 000a 89B0     		sub	sp, sp, #36
+ 533              		.cfi_def_cfa_offset 8248
+ 534 000c 08AD     		add	r5, sp, #32
+ 535              	.LBB45:
+ 536              		.loc 1 75 23 view .LVU122
+ 537 000e 20DD     		ble	.L55
+  76:AutoCorrelation.cpp ****         localBuffer[i] = buffer[i];
+ 538              		.loc 1 76 24 view .LVU123
+ 539 0010 4FEA870C 		lsl	ip, r7, #2
+ 540 0014 2846     		mov	r0, r5
+ 541              	.LVL38:
+ 542              		.loc 1 76 24 view .LVU124
+ 543 0016 6446     		mov	r4, ip
+ 544 0018 6246     		mov	r2, ip
+ 545              	.LVL39:
+ 546              		.loc 1 76 24 view .LVU125
+ 547 001a FFF7FEFF 		bl	memcpy
+ 548              	.LVL40:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 13
+
+
+ 549              		.loc 1 76 24 view .LVU126
+ 550 001e 2B46     		mov	r3, r5
+ 551 0020 05EB040C 		add	ip, r5, r4
+ 552 0024 DFED307A 		vldr.32	s15, .L70
+ 553 0028 2946     		mov	r1, r5
+ 554              	.L54:
+ 555              	.LVL41:
+ 556              		.loc 1 76 24 view .LVU127
+ 557              	.LBE45:
+ 558              	.LBB46:
+ 559              	.LBB47:
+ 560              	.LBB48:
+  25:AutoCorrelation.cpp ****     mean /= bufferSize;
+ 561              		.loc 1 25 9 is_stmt 1 view .LVU128
+  25:AutoCorrelation.cpp ****     mean /= bufferSize;
+ 562              		.loc 1 25 25 is_stmt 0 view .LVU129
+ 563 002a B1EC017A 		vldmia.32	r1!, {s14}
+  24:AutoCorrelation.cpp ****         mean += buffer[i];
+ 564              		.loc 1 24 23 view .LVU130
+ 565 002e 8C45     		cmp	ip, r1
+  25:AutoCorrelation.cpp ****     mean /= bufferSize;
+ 566              		.loc 1 25 14 view .LVU131
+ 567 0030 77EE877A 		vadd.f32	s15, s15, s14
+ 568              	.LVL42:
+  24:AutoCorrelation.cpp ****         mean += buffer[i];
+ 569              		.loc 1 24 5 is_stmt 1 view .LVU132
+  24:AutoCorrelation.cpp ****         mean += buffer[i];
+ 570              		.loc 1 24 23 view .LVU133
+ 571 0034 F9D1     		bne	.L54
+ 572              	.LBE48:
+  26:AutoCorrelation.cpp **** 
+ 573              		.loc 1 26 5 view .LVU134
+  26:AutoCorrelation.cpp **** 
+ 574              		.loc 1 26 10 is_stmt 0 view .LVU135
+ 575 0036 07EE107A 		vmov	s14, r7	@ int
+ 576 003a F8EEC76A 		vcvt.f32.s32	s13, s14
+ 577 003e 87EEA67A 		vdiv.f32	s14, s15, s13
+ 578              	.LVL43:
+  28:AutoCorrelation.cpp ****         buffer[i] -= mean;
+ 579              		.loc 1 28 5 is_stmt 1 view .LVU136
+ 580              	.LBB49:
+  28:AutoCorrelation.cpp ****         buffer[i] -= mean;
+ 581              		.loc 1 28 23 view .LVU137
+ 582              	.L56:
+  29:AutoCorrelation.cpp **** }
+ 583              		.loc 1 29 9 view .LVU138
+  29:AutoCorrelation.cpp **** }
+ 584              		.loc 1 29 19 is_stmt 0 view .LVU139
+ 585 0042 D3ED007A 		vldr.32	s15, [r3]
+ 586 0046 77EEC77A 		vsub.f32	s15, s15, s14
+ 587 004a E3EC017A 		vstmia.32	r3!, {s15}
+  28:AutoCorrelation.cpp ****         buffer[i] -= mean;
+ 588              		.loc 1 28 5 is_stmt 1 view .LVU140
+  28:AutoCorrelation.cpp ****         buffer[i] -= mean;
+ 589              		.loc 1 28 23 view .LVU141
+ 590 004e 9C45     		cmp	ip, r3
+ 591 0050 F7D1     		bne	.L56
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 14
+
+
+ 592              	.LVL44:
+ 593              	.L55:
+  28:AutoCorrelation.cpp ****         buffer[i] -= mean;
+ 594              		.loc 1 28 23 is_stmt 0 view .LVU142
+ 595              	.LBE49:
+ 596              	.LBE47:
+ 597              	.LBE46:
+  77:AutoCorrelation.cpp **** 
+  78:AutoCorrelation.cpp ****     removeDC(localBuffer, bufferSize);
+  79:AutoCorrelation.cpp ****     computeACF(localBuffer, bufferSize);
+ 598              		.loc 1 79 5 is_stmt 1 view .LVU143
+ 599              		.loc 1 79 15 is_stmt 0 view .LVU144
+ 600 0052 2946     		mov	r1, r5
+ 601 0054 3A46     		mov	r2, r7
+ 602 0056 3046     		mov	r0, r6
+ 603 0058 FFF7FEFF 		bl	_ZN15AutoCorrelation10computeACFEPKfi
+ 604              	.LVL45:
+  80:AutoCorrelation.cpp **** 
+  81:AutoCorrelation.cpp ****     int lag = findPeakLag();
+ 605              		.loc 1 81 5 is_stmt 1 view .LVU145
+ 606              	.LBB50:
+ 607              	.LBI50:
+  53:AutoCorrelation.cpp **** {
+ 608              		.loc 1 53 5 view .LVU146
+ 609              	.LBB51:
+  56:AutoCorrelation.cpp ****     float bestVal = -FLT_MAX;
+ 610              		.loc 1 56 5 view .LVU147
+  57:AutoCorrelation.cpp **** 
+ 611              		.loc 1 57 5 view .LVU148
+  59:AutoCorrelation.cpp ****         if (acf_[lag] > bestVal) {
+ 612              		.loc 1 59 5 view .LVU149
+ 613              	.LBB52:
+  59:AutoCorrelation.cpp ****         if (acf_[lag] > bestVal) {
+ 614              		.loc 1 59 35 is_stmt 0 view .LVU150
+ 615 005c D6E90231 		ldrd	r3, r1, [r6, #8]
+  59:AutoCorrelation.cpp ****         if (acf_[lag] > bestVal) {
+ 616              		.loc 1 59 33 view .LVU151
+ 617 0060 8B42     		cmp	r3, r1
+ 618 0062 39DA     		bge	.L51
+ 619 0064 1A1D     		adds	r2, r3, #4
+ 620              	.LBE52:
+  57:AutoCorrelation.cpp **** 
+ 621              		.loc 1 57 11 view .LVU152
+ 622 0066 9FED217A 		vldr.32	s14, .L70+4
+  56:AutoCorrelation.cpp ****     float bestVal = -FLT_MAX;
+ 623              		.loc 1 56 9 view .LVU153
+ 624 006a 4FF0FF30 		mov	r0, #-1
+ 625 006e 06EB8202 		add	r2, r6, r2, lsl #2
+ 626              	.LVL46:
+ 627              	.L59:
+ 628              	.LBB53:
+  60:AutoCorrelation.cpp ****             bestVal = acf_[lag];
+ 629              		.loc 1 60 9 is_stmt 1 view .LVU154
+  60:AutoCorrelation.cpp ****             bestVal = acf_[lag];
+ 630              		.loc 1 60 21 is_stmt 0 view .LVU155
+ 631 0072 F2EC017A 		vldmia.32	r2!, {s15}
+  60:AutoCorrelation.cpp ****             bestVal = acf_[lag];
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 15
+
+
+ 632              		.loc 1 60 9 view .LVU156
+ 633 0076 F4EEC77A 		vcmpe.f32	s15, s14
+ 634 007a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 635 007e 02DD     		ble	.L57
+  61:AutoCorrelation.cpp ****             bestLag = lag;
+ 636              		.loc 1 61 21 view .LVU157
+ 637 0080 B0EE677A 		vmov.f32	s14, s15
+ 638              	.LVL47:
+  60:AutoCorrelation.cpp ****             bestVal = acf_[lag];
+ 639              		.loc 1 60 9 view .LVU158
+ 640 0084 1846     		mov	r0, r3
+ 641              	.L57:
+ 642              	.LVL48:
+  59:AutoCorrelation.cpp ****         if (acf_[lag] > bestVal) {
+ 643              		.loc 1 59 5 is_stmt 1 view .LVU159
+ 644 0086 0133     		adds	r3, r3, #1
+ 645              	.LVL49:
+  59:AutoCorrelation.cpp ****         if (acf_[lag] > bestVal) {
+ 646              		.loc 1 59 33 view .LVU160
+ 647 0088 8B42     		cmp	r3, r1
+ 648 008a F2D1     		bne	.L59
+ 649              	.LBE53:
+  66:AutoCorrelation.cpp **** }
+ 650              		.loc 1 66 5 view .LVU161
+ 651              	.LVL50:
+  66:AutoCorrelation.cpp **** }
+ 652              		.loc 1 66 5 is_stmt 0 view .LVU162
+ 653              	.LBE51:
+ 654              	.LBE50:
+  82:AutoCorrelation.cpp **** 
+  83:AutoCorrelation.cpp ****     if (lag == -1)
+ 655              		.loc 1 83 5 is_stmt 1 view .LVU163
+ 656 008c B5EE407A 		vcmp.f32	s14, #0
+ 657 0090 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 658 0094 20DD     		ble	.L51
+ 659 0096 431C     		adds	r3, r0, #1
+ 660 0098 1ED0     		beq	.L51
+  84:AutoCorrelation.cpp ****         return result;
+  85:AutoCorrelation.cpp **** 
+  86:AutoCorrelation.cpp ****     result.frequency  = (float)sampleRate_ / lag;
+ 661              		.loc 1 86 5 view .LVU164
+ 662              	.LVL51:
+  87:AutoCorrelation.cpp ****     result.confidence = acf_[lag];  // normaliseret acf peak = naturlig confidence
+ 663              		.loc 1 87 5 view .LVU165
+  86:AutoCorrelation.cpp ****     result.confidence = acf_[lag];  // normaliseret acf peak = naturlig confidence
+ 664              		.loc 1 86 44 is_stmt 0 view .LVU166
+ 665 009a 07EE100A 		vmov	s14, r0	@ int
+  86:AutoCorrelation.cpp ****     result.confidence = acf_[lag];  // normaliseret acf peak = naturlig confidence
+ 666              		.loc 1 86 25 view .LVU167
+ 667 009e D6ED017A 		vldr.32	s15, [r6, #4]	@ int
+ 668              		.loc 1 87 33 view .LVU168
+ 669 00a2 06EB8000 		add	r0, r6, r0, lsl #2
+ 670              	.LVL52:
+  88:AutoCorrelation.cpp ****     result.valid      = true;
+  89:AutoCorrelation.cpp **** 
+  90:AutoCorrelation.cpp ****     return result;
+ 671              		.loc 1 90 12 view .LVU169
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 16
+
+
+ 672 00a6 4FF07E52 		mov	r2, #1065353216
+  86:AutoCorrelation.cpp ****     result.confidence = acf_[lag];  // normaliseret acf peak = naturlig confidence
+ 673              		.loc 1 86 44 view .LVU170
+ 674 00aa F8EEC76A 		vcvt.f32.s32	s13, s14
+  86:AutoCorrelation.cpp ****     result.confidence = acf_[lag];  // normaliseret acf peak = naturlig confidence
+ 675              		.loc 1 86 25 view .LVU171
+ 676 00ae F8EEE77A 		vcvt.f32.s32	s15, s15
+  87:AutoCorrelation.cpp ****     result.valid      = true;
+ 677              		.loc 1 87 33 view .LVU172
+ 678 00b2 0369     		ldr	r3, [r0, #16]	@ float
+ 679              	.LVL53:
+  88:AutoCorrelation.cpp ****     result.valid      = true;
+ 680              		.loc 1 88 5 is_stmt 1 view .LVU173
+ 681              		.loc 1 90 5 view .LVU174
+ 682              		.loc 1 90 12 is_stmt 0 view .LVU175
+ 683 00b4 45F8042C 		str	r2, [r5, #-4]	@ float
+ 684 00b8 45F8083C 		str	r3, [r5, #-8]	@ float
+  86:AutoCorrelation.cpp ****     result.confidence = acf_[lag];  // normaliseret acf peak = naturlig confidence
+ 685              		.loc 1 86 44 view .LVU176
+ 686 00bc 87EEA67A 		vdiv.f32	s14, s15, s13
+ 687              	.LVL54:
+ 688              		.loc 1 90 12 view .LVU177
+ 689 00c0 05ED037A 		vstr.32	s14, [r5, #-12]
+ 690              	.LVL55:
+ 691              	.L62:
+  91:AutoCorrelation.cpp **** }...
+ 692              		.loc 1 91 1 view .LVU178
+ 693 00c4 15ED030A 		vldr.32	s0, [r5, #-12]
+ 694 00c8 55ED020A 		vldr.32	s1, [r5, #-8]
+ 695 00cc 15ED011A 		vldr.32	s2, [r5, #-4]
+ 696 00d0 0DF5005D 		add	sp, sp, #8192
+ 697 00d4 09B0     		add	sp, sp, #36
+ 698              		.cfi_remember_state
+ 699              		.cfi_def_cfa_offset 20
+ 700              		@ sp needed
+ 701 00d6 F0BD     		pop	{r4, r5, r6, r7, pc}
+ 702              	.LVL56:
+ 703              	.L51:
+ 704              		.cfi_restore_state
+  84:AutoCorrelation.cpp ****         return result;
+ 705              		.loc 1 84 9 is_stmt 1 view .LVU179
+  84:AutoCorrelation.cpp ****         return result;
+ 706              		.loc 1 84 16 is_stmt 0 view .LVU180
+ 707 00d8 0023     		movs	r3, #0
+ 708 00da 45F80C3C 		str	r3, [r5, #-12]	@ float
+ 709 00de 45F8083C 		str	r3, [r5, #-8]	@ float
+ 710 00e2 45F8043C 		str	r3, [r5, #-4]	@ float
+ 711 00e6 EDE7     		b	.L62
+ 712              	.L71:
+ 713              		.align	2
+ 714              	.L70:
+ 715 00e8 00000000 		.word	0
+ 716 00ec FFFF7FFF 		.word	-8388609
+ 717              		.cfi_endproc
+ 718              	.LFE555:
+ 720              		.section	.text._ZN15AutoCorrelation11findPeakLagEv,"ax",%progbits
+ 721              		.align	1
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 17
+
+
+ 722              		.p2align 2,,3
+ 723              		.global	_ZN15AutoCorrelation11findPeakLagEv
+ 724              		.syntax unified
+ 725              		.thumb
+ 726              		.thumb_func
+ 727              		.fpu fpv5-d16
+ 729              	_ZN15AutoCorrelation11findPeakLagEv:
+ 730              	.LVL57:
+ 731              	.LFB554:
+  54:AutoCorrelation.cpp **** {
+ 732              		.loc 1 54 1 is_stmt 1 view -0
+ 733              		.cfi_startproc
+ 734              		@ args = 0, pretend = 0, frame = 0
+ 735              		@ frame_needed = 0, uses_anonymous_args = 0
+ 736              		@ link register save eliminated.
+  56:AutoCorrelation.cpp ****     int bestLag  = -1;
+ 737              		.loc 1 56 5 view .LVU182
+  57:AutoCorrelation.cpp ****     float bestVal = -FLT_MAX;
+ 738              		.loc 1 57 5 view .LVU183
+  59:AutoCorrelation.cpp ****     for (int lag = minLag_; lag < maxLag_; lag++) {
+ 739              		.loc 1 59 5 view .LVU184
+ 740              	.LBB54:
+  59:AutoCorrelation.cpp ****     for (int lag = minLag_; lag < maxLag_; lag++) {
+ 741              		.loc 1 59 35 is_stmt 0 view .LVU185
+ 742 0000 D0E90231 		ldrd	r3, r1, [r0, #8]
+  59:AutoCorrelation.cpp ****     for (int lag = minLag_; lag < maxLag_; lag++) {
+ 743              		.loc 1 59 33 view .LVU186
+ 744 0004 8B42     		cmp	r3, r1
+ 745 0006 1CDA     		bge	.L78
+ 746 0008 1A1D     		adds	r2, r3, #4
+ 747              	.LBE54:
+  57:AutoCorrelation.cpp ****     float bestVal = -FLT_MAX;
+ 748              		.loc 1 57 11 view .LVU187
+ 749 000a 9FED107A 		vldr.32	s14, .L82
+  56:AutoCorrelation.cpp ****     int bestLag  = -1;
+ 750              		.loc 1 56 9 view .LVU188
+ 751 000e 4FF0FF3C 		mov	ip, #-1
+ 752 0012 00EB8202 		add	r2, r0, r2, lsl #2
+ 753              	.LVL58:
+ 754              	.L76:
+ 755              	.LBB55:
+  60:AutoCorrelation.cpp ****         if (acf_[lag] > bestVal) {
+ 756              		.loc 1 60 9 is_stmt 1 view .LVU189
+  60:AutoCorrelation.cpp ****         if (acf_[lag] > bestVal) {
+ 757              		.loc 1 60 21 is_stmt 0 view .LVU190
+ 758 0016 F2EC017A 		vldmia.32	r2!, {s15}
+  60:AutoCorrelation.cpp ****         if (acf_[lag] > bestVal) {
+ 759              		.loc 1 60 9 view .LVU191
+ 760 001a F4EEC77A 		vcmpe.f32	s15, s14
+ 761 001e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 762 0022 02DD     		ble	.L74
+  61:AutoCorrelation.cpp ****             bestVal = acf_[lag];
+ 763              		.loc 1 61 21 view .LVU192
+ 764 0024 B0EE677A 		vmov.f32	s14, s15
+ 765              	.LVL59:
+  60:AutoCorrelation.cpp ****         if (acf_[lag] > bestVal) {
+ 766              		.loc 1 60 9 view .LVU193
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 18
+
+
+ 767 0028 9C46     		mov	ip, r3
+ 768              	.L74:
+ 769              	.LVL60:
+  59:AutoCorrelation.cpp ****     for (int lag = minLag_; lag < maxLag_; lag++) {
+ 770              		.loc 1 59 5 is_stmt 1 discriminator 2 view .LVU194
+ 771 002a 0133     		adds	r3, r3, #1
+ 772              	.LVL61:
+  59:AutoCorrelation.cpp ****     for (int lag = minLag_; lag < maxLag_; lag++) {
+ 773              		.loc 1 59 33 discriminator 2 view .LVU195
+ 774 002c 8B42     		cmp	r3, r1
+ 775 002e F2D1     		bne	.L76
+ 776              	.LBE55:
+  66:AutoCorrelation.cpp ****     return (bestVal > 0.0f) ? bestLag : -1;
+ 777              		.loc 1 66 5 view .LVU196
+  66:AutoCorrelation.cpp ****     return (bestVal > 0.0f) ? bestLag : -1;
+ 778              		.loc 1 66 29 is_stmt 0 view .LVU197
+ 779 0030 B5EEC07A 		vcmpe.f32	s14, #0
+ 780 0034 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 781 0038 D8BF     		it	le
+ 782 003a 4FF0FF3C 		movle	ip, #-1
+  67:AutoCorrelation.cpp **** }
+ 783              		.loc 1 67 1 view .LVU198
+ 784 003e 6046     		mov	r0, ip
+ 785              	.LVL62:
+  67:AutoCorrelation.cpp **** }
+ 786              		.loc 1 67 1 view .LVU199
+ 787 0040 7047     		bx	lr
+ 788              	.LVL63:
+ 789              	.L78:
+  66:AutoCorrelation.cpp ****     return (bestVal > 0.0f) ? bestLag : -1;
+ 790              		.loc 1 66 29 view .LVU200
+ 791 0042 4FF0FF3C 		mov	ip, #-1
+  67:AutoCorrelation.cpp **** }
+ 792              		.loc 1 67 1 view .LVU201
+ 793 0046 6046     		mov	r0, ip
+ 794              	.LVL64:
+  67:AutoCorrelation.cpp **** }
+ 795              		.loc 1 67 1 view .LVU202
+ 796 0048 7047     		bx	lr
+ 797              	.L83:
+ 798 004a 00BF     		.align	2
+ 799              	.L82:
+ 800 004c FFFF7FFF 		.word	-8388609
+ 801              		.cfi_endproc
+ 802              	.LFE554:
+ 804              		.global	_ZTV15AutoCorrelation
+ 805              		.section	.rodata._ZTV15AutoCorrelation,"a"
+ 806              		.align	2
+ 807              		.set	.LANCHOR0,. + 0
+ 810              	_ZTV15AutoCorrelation:
+ 811 0000 00000000 		.word	0
+ 812 0004 00000000 		.word	0
+ 813 0008 00000000 		.word	_ZN15AutoCorrelationD1Ev
+ 814 000c 00000000 		.word	_ZN15AutoCorrelationD0Ev
+ 815 0010 00000000 		.word	_ZN15AutoCorrelation7ProcessEPKfi
+ 816 0014 00000000 		.word	_ZN15AutoCorrelation4InitEi
+ 817              		.text
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 19
+
+
+ 818              	.Letext0:
+ 819              		.file 2 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 820              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 821              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\th
+ 822              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 823              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 824              		.file 7 "Algorithm.h"
+ 825              		.file 8 "AutoCorrelation.h"
+ 826              		.file 9 "<built-in>"
+ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 20
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 AutoCorrelation.cpp
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:17     .text._ZN15AutoCorrelation4InitEi:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:26     .text._ZN15AutoCorrelation4InitEi:00000000 _ZN15AutoCorrelation4InitEi
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:84     .text._ZN15AutoCorrelation4InitEi:00000034 $d
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:91     .text._ZN15AutoCorrelationD2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:99     .text._ZN15AutoCorrelationD2Ev:00000000 _ZN15AutoCorrelationD2Ev
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:132    .text._ZN15AutoCorrelationD2Ev:00000010 $d
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:99     .text._ZN15AutoCorrelationD2Ev:00000000 _ZN15AutoCorrelationD1Ev
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:139    .text._ZN15AutoCorrelationD0Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:147    .text._ZN15AutoCorrelationD0Ev:00000000 _ZN15AutoCorrelationD0Ev
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:191    .text._ZN15AutoCorrelationD0Ev:0000001c $d
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:196    .text._ZN15AutoCorrelationC2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:204    .text._ZN15AutoCorrelationC2Ev:00000000 _ZN15AutoCorrelationC2Ev
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:238    .text._ZN15AutoCorrelationC2Ev:00000010 $d
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:204    .text._ZN15AutoCorrelationC2Ev:00000000 _ZN15AutoCorrelationC1Ev
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:245    .text._ZN15AutoCorrelation8removeDCEPfi:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:253    .text._ZN15AutoCorrelation8removeDCEPfi:00000000 _ZN15AutoCorrelation8removeDCEPfi
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:319    .text._ZN15AutoCorrelation8removeDCEPfi:0000003c $d
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:324    .text._ZN15AutoCorrelation10computeACFEPKfi:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:332    .text._ZN15AutoCorrelation10computeACFEPKfi:00000000 _ZN15AutoCorrelation10computeACFEPKfi
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:487    .text._ZN15AutoCorrelation10computeACFEPKfi:00000088 $d
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:495    .text._ZN15AutoCorrelation7ProcessEPKfi:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:503    .text._ZN15AutoCorrelation7ProcessEPKfi:00000000 _ZN15AutoCorrelation7ProcessEPKfi
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:715    .text._ZN15AutoCorrelation7ProcessEPKfi:000000e8 $d
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:721    .text._ZN15AutoCorrelation11findPeakLagEv:00000000 $t
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:729    .text._ZN15AutoCorrelation11findPeakLagEv:00000000 _ZN15AutoCorrelation11findPeakLagEv
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:800    .text._ZN15AutoCorrelation11findPeakLagEv:0000004c $d
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:810    .rodata._ZTV15AutoCorrelation:00000000 _ZTV15AutoCorrelation
+C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:806    .rodata._ZTV15AutoCorrelation:00000000 $d
+
+UNDEFINED SYMBOLS
+memset
+_ZN9AlgorithmD2Ev
+_ZdlPvj
+_ZN9AlgorithmC2Ev
+memcpy

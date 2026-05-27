@@ -1,0 +1,638 @@
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"PitchDetector.cpp"
+  13              		.text
+  14              	.Ltext0:
+  15              		.cfi_sections	.debug_frame
+  16              		.section	.text._ZN13PitchDetectorC2Ev,"ax",%progbits
+  17              		.align	1
+  18              		.p2align 2,,3
+  19              		.global	_ZN13PitchDetectorC2Ev
+  20              		.arch armv7e-m
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  24              		.fpu fpv5-d16
+  26              	_ZN13PitchDetectorC2Ev:
+  27              	.LVL0:
+  28              	.LFB545:
+  29              		.file 1 "PitchDetector.cpp"
+   1:PitchDetector.cpp **** #include "PitchDetector.h"
+   2:PitchDetector.cpp **** 
+   3:PitchDetector.cpp **** PitchDetector::PitchDetector() :samplerate_(0),bypass_(false), selectedAlgorithm_(ALG_YIN), bufferI
+  30              		.loc 1 3 1 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		.loc 1 3 1 is_stmt 0 view .LVU1
+  35 0000 38B5     		push	{r3, r4, r5, lr}
+  36              		.cfi_def_cfa_offset 16
+  37              		.cfi_offset 3, -16
+  38              		.cfi_offset 4, -12
+  39              		.cfi_offset 5, -8
+  40              		.cfi_offset 14, -4
+  41              		.loc 1 3 1 view .LVU2
+  42 0002 0446     		mov	r4, r0
+  43              	.LBB2:
+  44              		.loc 1 3 107 view .LVU3
+  45 0004 0023     		movs	r3, #0
+  46 0006 42F21800 		movw	r0, #8216
+  47              	.LVL1:
+  48              		.loc 1 3 107 view .LVU4
+  49 000a 04F50055 		add	r5, r4, #8192
+  50 000e 2360     		str	r3, [r4]
+  51 0010 A380     		strh	r3, [r4, #4]	@ movhi
+  52 0012 2044     		add	r0, r0, r4
+  53 0014 AB60     		str	r3, [r5, #8]
+  54 0016 FFF7FEFF 		bl	_ZN11YinDetectorC1Ev
+  55              	.LVL2:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s 			page 2
+
+
+  56 001a 46F22C00 		movw	r0, #24620
+  57 001e 2044     		add	r0, r0, r4
+  58 0020 FFF7FEFF 		bl	_ZN15AutoCorrelationC1Ev
+  59              	.LVL3:
+   4:PitchDetector.cpp **** {
+   5:PitchDetector.cpp ****     lastResult_ = {0.0f, 0.0f, false};
+  60              		.loc 1 5 5 is_stmt 1 view .LVU5
+  61              		.loc 1 5 17 is_stmt 0 view .LVU6
+  62 0024 0023     		movs	r3, #0
+  63              	.LBE2:
+   6:PitchDetector.cpp **** }
+  64              		.loc 1 6 1 view .LVU7
+  65 0026 2046     		mov	r0, r4
+  66              	.LBB3:
+   5:PitchDetector.cpp **** }
+  67              		.loc 1 5 17 view .LVU8
+  68 0028 EB60     		str	r3, [r5, #12]	@ float
+  69 002a 2B61     		str	r3, [r5, #16]	@ float
+  70 002c 6B61     		str	r3, [r5, #20]	@ float
+  71              	.LBE3:
+  72              		.loc 1 6 1 view .LVU9
+  73 002e 38BD     		pop	{r3, r4, r5, pc}
+  74              		.loc 1 6 1 view .LVU10
+  75              		.cfi_endproc
+  76              	.LFE545:
+  78              		.global	_ZN13PitchDetectorC1Ev
+  79              		.thumb_set _ZN13PitchDetectorC1Ev,_ZN13PitchDetectorC2Ev
+  80              		.section	.text._ZN13PitchDetector12setAlgorithmE20PitchAlgorithmSelect,"ax",%progbits
+  81              		.align	1
+  82              		.p2align 2,,3
+  83              		.global	_ZN13PitchDetector12setAlgorithmE20PitchAlgorithmSelect
+  84              		.syntax unified
+  85              		.thumb
+  86              		.thumb_func
+  87              		.fpu fpv5-d16
+  89              	_ZN13PitchDetector12setAlgorithmE20PitchAlgorithmSelect:
+  90              	.LVL4:
+  91              	.LFB551:
+   7:PitchDetector.cpp **** 
+   8:PitchDetector.cpp **** PitchDetector::~PitchDetector() {}
+   9:PitchDetector.cpp **** 
+  10:PitchDetector.cpp **** 
+  11:PitchDetector.cpp **** void PitchDetector::Init(int samplerate) 
+  12:PitchDetector.cpp **** {
+  13:PitchDetector.cpp ****     samplerate_ = samplerate;
+  14:PitchDetector.cpp ****     m_yin.Init(samplerate);
+  15:PitchDetector.cpp ****     m_autocorr.Init(samplerate);
+  16:PitchDetector.cpp ****     m_activeAlgorithm = &m_yin; // Default to Yin algorithm
+  17:PitchDetector.cpp **** 
+  18:PitchDetector.cpp ****     for (int i = 0; i < PITCH_BUFFER_SIZE; i++)
+  19:PitchDetector.cpp ****         buffer_[i] = 0.0f;
+  20:PitchDetector.cpp **** }
+  21:PitchDetector.cpp **** 
+  22:PitchDetector.cpp **** void PitchDetector::setAlgorithm(PitchAlgorithmSelect alg) 
+  23:PitchDetector.cpp **** {
+  92              		.loc 1 23 1 is_stmt 1 view -0
+  93              		.cfi_startproc
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s 			page 3
+
+
+  94              		@ args = 0, pretend = 0, frame = 0
+  95              		@ frame_needed = 0, uses_anonymous_args = 0
+  96              		@ link register save eliminated.
+  24:PitchDetector.cpp ****     selectedAlgorithm_ = alg;
+  97              		.loc 1 24 5 view .LVU12
+  98              		.loc 1 24 24 is_stmt 0 view .LVU13
+  99 0000 4171     		strb	r1, [r0, #5]
+  25:PitchDetector.cpp ****     switch (selectedAlgorithm_) {
+ 100              		.loc 1 25 5 is_stmt 1 view .LVU14
+ 101 0002 49B1     		cbz	r1, .L5
+ 102 0004 0129     		cmp	r1, #1
+ 103 0006 06D1     		bne	.L8
+  26:PitchDetector.cpp ****         case ALG_YIN:
+  27:PitchDetector.cpp ****             m_activeAlgorithm = &m_yin;
+  28:PitchDetector.cpp ****             break;
+  29:PitchDetector.cpp ****         case ALG_AUTOCORRELATION:
+ 104              		.loc 1 29 9 view .LVU15
+  30:PitchDetector.cpp ****             m_activeAlgorithm = &m_autocorr;
+ 105              		.loc 1 30 13 view .LVU16
+ 106              		.loc 1 30 31 is_stmt 0 view .LVU17
+ 107 0008 46F22C03 		movw	r3, #24620
+ 108 000c 00F50042 		add	r2, r0, #32768
+ 109 0010 0344     		add	r3, r3, r0
+ 110 0012 D363     		str	r3, [r2, #60]
+  31:PitchDetector.cpp ****             break;
+ 111              		.loc 1 31 13 is_stmt 1 view .LVU18
+  32:PitchDetector.cpp ****     }
+  33:PitchDetector.cpp **** }
+ 112              		.loc 1 33 1 is_stmt 0 view .LVU19
+ 113 0014 7047     		bx	lr
+ 114              	.L8:
+ 115 0016 7047     		bx	lr
+ 116              	.L5:
+  26:PitchDetector.cpp ****             m_activeAlgorithm = &m_yin;
+ 117              		.loc 1 26 9 is_stmt 1 view .LVU20
+  27:PitchDetector.cpp ****             break;
+ 118              		.loc 1 27 13 view .LVU21
+  27:PitchDetector.cpp ****             break;
+ 119              		.loc 1 27 31 is_stmt 0 view .LVU22
+ 120 0018 42F21803 		movw	r3, #8216
+ 121 001c 00F50042 		add	r2, r0, #32768
+ 122 0020 0344     		add	r3, r3, r0
+ 123 0022 D363     		str	r3, [r2, #60]
+  28:PitchDetector.cpp ****         case ALG_AUTOCORRELATION:
+ 124              		.loc 1 28 13 is_stmt 1 view .LVU23
+ 125 0024 7047     		bx	lr
+ 126              		.cfi_endproc
+ 127              	.LFE551:
+ 129 0026 00BF     		.section	.text._ZN13PitchDetector12getAlgorithmEv,"ax",%progbits
+ 130              		.align	1
+ 131              		.p2align 2,,3
+ 132              		.global	_ZN13PitchDetector12getAlgorithmEv
+ 133              		.syntax unified
+ 134              		.thumb
+ 135              		.thumb_func
+ 136              		.fpu fpv5-d16
+ 138              	_ZN13PitchDetector12getAlgorithmEv:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s 			page 4
+
+
+ 139              	.LVL5:
+ 140              	.LFB552:
+  34:PitchDetector.cpp **** 
+  35:PitchDetector.cpp **** PitchAlgorithmSelect PitchDetector::getAlgorithm()
+  36:PitchDetector.cpp **** { return selectedAlgorithm_; }
+ 141              		.loc 1 36 1 view -0
+ 142              		.cfi_startproc
+ 143              		@ args = 0, pretend = 0, frame = 0
+ 144              		@ frame_needed = 0, uses_anonymous_args = 0
+ 145              		@ link register save eliminated.
+ 146              		.loc 1 36 3 view .LVU25
+ 147              		.loc 1 36 30 is_stmt 0 view .LVU26
+ 148 0000 4079     		ldrb	r0, [r0, #5]	@ zero_extendqisi2
+ 149              	.LVL6:
+ 150              		.loc 1 36 30 view .LVU27
+ 151 0002 7047     		bx	lr
+ 152              		.cfi_endproc
+ 153              	.LFE552:
+ 155              		.section	.text._ZN13PitchDetector13getLastResultEv,"ax",%progbits
+ 156              		.align	1
+ 157              		.p2align 2,,3
+ 158              		.global	_ZN13PitchDetector13getLastResultEv
+ 159              		.syntax unified
+ 160              		.thumb
+ 161              		.thumb_func
+ 162              		.fpu fpv5-d16
+ 164              	_ZN13PitchDetector13getLastResultEv:
+ 165              	.LVL7:
+ 166              	.LFB553:
+  37:PitchDetector.cpp **** 
+  38:PitchDetector.cpp **** PitchResult PitchDetector::getLastResult()
+  39:PitchDetector.cpp **** { return lastResult_; }
+ 167              		.loc 1 39 1 is_stmt 1 view -0
+ 168              		.cfi_startproc
+ 169              		@ args = 0, pretend = 0, frame = 32
+ 170              		@ frame_needed = 0, uses_anonymous_args = 0
+ 171              		@ link register save eliminated.
+ 172              		.loc 1 39 3 view .LVU29
+ 173              		.loc 1 39 10 is_stmt 0 view .LVU30
+ 174 0000 42F20C03 		movw	r3, #8204
+ 175              		.loc 1 39 1 view .LVU31
+ 176 0004 88B0     		sub	sp, sp, #32
+ 177              		.cfi_def_cfa_offset 32
+ 178              		.loc 1 39 10 view .LVU32
+ 179 0006 0344     		add	r3, r3, r0
+ 180 0008 93E80700 		ldm	r3, {r0, r1, r2}
+ 181              	.LVL8:
+ 182              		.loc 1 39 10 view .LVU33
+ 183 000c 08AB     		add	r3, sp, #32
+ 184 000e 03E90700 		stmdb	r3, {r0, r1, r2}
+ 185              		.loc 1 39 23 view .LVU34
+ 186 0012 DDED060A 		vldr.32	s1, [sp, #24]
+ 187 0016 9DED071A 		vldr.32	s2, [sp, #28]
+ 188 001a 9DED050A 		vldr.32	s0, [sp, #20]
+ 189 001e 08B0     		add	sp, sp, #32
+ 190              		.cfi_def_cfa_offset 0
+ 191              		@ sp needed
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s 			page 5
+
+
+ 192 0020 7047     		bx	lr
+ 193              		.cfi_endproc
+ 194              	.LFE553:
+ 196 0022 00BF     		.section	.text._ZN13PitchDetector9setBypassEb,"ax",%progbits
+ 197              		.align	1
+ 198              		.p2align 2,,3
+ 199              		.global	_ZN13PitchDetector9setBypassEb
+ 200              		.syntax unified
+ 201              		.thumb
+ 202              		.thumb_func
+ 203              		.fpu fpv5-d16
+ 205              	_ZN13PitchDetector9setBypassEb:
+ 206              	.LVL9:
+ 207              	.LFB554:
+  40:PitchDetector.cpp **** 
+  41:PitchDetector.cpp **** void PitchDetector::setBypass(bool bypass) 
+  42:PitchDetector.cpp **** {
+ 208              		.loc 1 42 1 is_stmt 1 view -0
+ 209              		.cfi_startproc
+ 210              		@ args = 0, pretend = 0, frame = 0
+ 211              		@ frame_needed = 0, uses_anonymous_args = 0
+ 212              		@ link register save eliminated.
+  43:PitchDetector.cpp ****     bypass_ = bypass;
+ 213              		.loc 1 43 5 view .LVU36
+ 214              		.loc 1 43 13 is_stmt 0 view .LVU37
+ 215 0000 0171     		strb	r1, [r0, #4]
+  44:PitchDetector.cpp **** }
+ 216              		.loc 1 44 1 view .LVU38
+ 217 0002 7047     		bx	lr
+ 218              		.cfi_endproc
+ 219              	.LFE554:
+ 221              		.section	.text._ZN13PitchDetector7ProcessEf,"ax",%progbits
+ 222              		.align	1
+ 223              		.p2align 2,,3
+ 224              		.global	_ZN13PitchDetector7ProcessEf
+ 225              		.syntax unified
+ 226              		.thumb
+ 227              		.thumb_func
+ 228              		.fpu fpv5-d16
+ 230              	_ZN13PitchDetector7ProcessEf:
+ 231              	.LVL10:
+ 232              	.LFB555:
+  45:PitchDetector.cpp **** 
+  46:PitchDetector.cpp **** PitchResult PitchDetector::Process(float input)
+  47:PitchDetector.cpp **** { 
+ 233              		.loc 1 47 1 is_stmt 1 view -0
+ 234              		.cfi_startproc
+ 235              		@ args = 0, pretend = 0, frame = 32
+ 236              		@ frame_needed = 0, uses_anonymous_args = 0
+  48:PitchDetector.cpp ****     if (bypass_) {
+ 237              		.loc 1 48 5 view .LVU40
+  47:PitchDetector.cpp ****     if (bypass_) {
+ 238              		.loc 1 47 1 is_stmt 0 view .LVU41
+ 239 0000 30B5     		push	{r4, r5, lr}
+ 240              		.cfi_def_cfa_offset 12
+ 241              		.cfi_offset 4, -12
+ 242              		.cfi_offset 5, -8
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s 			page 6
+
+
+ 243              		.cfi_offset 14, -4
+ 244              		.loc 1 48 5 view .LVU42
+ 245 0002 0579     		ldrb	r5, [r0, #4]	@ zero_extendqisi2
+  47:PitchDetector.cpp ****     if (bypass_) {
+ 246              		.loc 1 47 1 view .LVU43
+ 247 0004 89B0     		sub	sp, sp, #36
+ 248              		.cfi_def_cfa_offset 48
+ 249              		.loc 1 48 5 view .LVU44
+ 250 0006 A5B1     		cbz	r5, .L14
+  49:PitchDetector.cpp ****         lastResult_ = {0.0f, 0.0f, false};
+ 251              		.loc 1 49 9 is_stmt 1 view .LVU45
+ 252              		.loc 1 49 21 is_stmt 0 view .LVU46
+ 253 0008 00F50050 		add	r0, r0, #8192
+ 254              	.LVL11:
+ 255              		.loc 1 49 21 view .LVU47
+ 256 000c 0022     		movs	r2, #0
+  50:PitchDetector.cpp ****         return lastResult_;
+ 257              		.loc 1 50 16 view .LVU48
+ 258 000e 00F10C03 		add	r3, r0, #12
+  49:PitchDetector.cpp ****         lastResult_ = {0.0f, 0.0f, false};
+ 259              		.loc 1 49 21 view .LVU49
+ 260 0012 C260     		str	r2, [r0, #12]	@ float
+ 261 0014 0261     		str	r2, [r0, #16]	@ float
+ 262 0016 4261     		str	r2, [r0, #20]	@ float
+ 263              		.loc 1 50 9 is_stmt 1 view .LVU50
+ 264              		.loc 1 50 16 is_stmt 0 view .LVU51
+ 265 0018 93E80700 		ldm	r3, {r0, r1, r2}
+ 266              	.LVL12:
+ 267              		.loc 1 50 16 view .LVU52
+ 268 001c 08AB     		add	r3, sp, #32
+ 269              	.LVL13:
+ 270              		.loc 1 50 16 view .LVU53
+ 271 001e 03E90700 		stmdb	r3, {r0, r1, r2}
+ 272              	.LVL14:
+ 273              	.L15:
+  51:PitchDetector.cpp ****     }
+  52:PitchDetector.cpp ****     buffer_[bufferIndex_++] = input;
+  53:PitchDetector.cpp **** 
+  54:PitchDetector.cpp ****     if (bufferIndex_ >= PITCH_BUFFER_SIZE) {
+  55:PitchDetector.cpp ****         lastResult_ = m_activeAlgorithm->Process(buffer_, PITCH_BUFFER_SIZE);
+  56:PitchDetector.cpp ****         bufferIndex_ = 0; // Reset buffer index for next block
+  57:PitchDetector.cpp ****     }
+  58:PitchDetector.cpp **** 
+  59:PitchDetector.cpp ****     return lastResult_;
+  60:PitchDetector.cpp **** }...
+ 274              		.loc 1 60 1 view .LVU54
+ 275 0022 DDED060A 		vldr.32	s1, [sp, #24]
+ 276 0026 9DED071A 		vldr.32	s2, [sp, #28]
+ 277 002a 9DED050A 		vldr.32	s0, [sp, #20]
+ 278 002e 09B0     		add	sp, sp, #36
+ 279              		.cfi_remember_state
+ 280              		.cfi_def_cfa_offset 12
+ 281              		@ sp needed
+ 282 0030 30BD     		pop	{r4, r5, pc}
+ 283              	.LVL15:
+ 284              	.L14:
+ 285              		.cfi_restore_state
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s 			page 7
+
+
+  52:PitchDetector.cpp ****     buffer_[bufferIndex_++] = input;
+ 286              		.loc 1 52 5 is_stmt 1 view .LVU55
+  52:PitchDetector.cpp ****     buffer_[bufferIndex_++] = input;
+ 287              		.loc 1 52 13 is_stmt 0 view .LVU56
+ 288 0032 00F50054 		add	r4, r0, #8192
+ 289 0036 A368     		ldr	r3, [r4, #8]
+  52:PitchDetector.cpp ****     buffer_[bufferIndex_++] = input;
+ 290              		.loc 1 52 25 view .LVU57
+ 291 0038 5A1C     		adds	r2, r3, #1
+  52:PitchDetector.cpp ****     buffer_[bufferIndex_++] = input;
+ 292              		.loc 1 52 29 view .LVU58
+ 293 003a 00EB8303 		add	r3, r0, r3, lsl #2
+  54:PitchDetector.cpp ****     if (bufferIndex_ >= PITCH_BUFFER_SIZE) {
+ 294              		.loc 1 54 5 view .LVU59
+ 295 003e B2F5006F 		cmp	r2, #2048
+  52:PitchDetector.cpp ****     buffer_[bufferIndex_++] = input;
+ 296              		.loc 1 52 25 view .LVU60
+ 297 0042 A260     		str	r2, [r4, #8]
+  52:PitchDetector.cpp ****     buffer_[bufferIndex_++] = input;
+ 298              		.loc 1 52 29 view .LVU61
+ 299 0044 83ED020A 		vstr.32	s0, [r3, #8]
+  54:PitchDetector.cpp ****     if (bufferIndex_ >= PITCH_BUFFER_SIZE) {
+ 300              		.loc 1 54 5 is_stmt 1 view .LVU62
+ 301 0048 10DB     		blt	.L16
+  55:PitchDetector.cpp ****         lastResult_ = m_activeAlgorithm->Process(buffer_, PITCH_BUFFER_SIZE);
+ 302              		.loc 1 55 9 view .LVU63
+  55:PitchDetector.cpp ****         lastResult_ = m_activeAlgorithm->Process(buffer_, PITCH_BUFFER_SIZE);
+ 303              		.loc 1 55 23 is_stmt 0 view .LVU64
+ 304 004a 00F50043 		add	r3, r0, #32768
+  55:PitchDetector.cpp ****         lastResult_ = m_activeAlgorithm->Process(buffer_, PITCH_BUFFER_SIZE);
+ 305              		.loc 1 55 76 view .LVU65
+ 306 004e 00F10801 		add	r1, r0, #8
+ 307 0052 4FF40062 		mov	r2, #2048
+  55:PitchDetector.cpp ****         lastResult_ = m_activeAlgorithm->Process(buffer_, PITCH_BUFFER_SIZE);
+ 308              		.loc 1 55 23 view .LVU66
+ 309 0056 D86B     		ldr	r0, [r3, #60]
+ 310              	.LVL16:
+  55:PitchDetector.cpp ****         lastResult_ = m_activeAlgorithm->Process(buffer_, PITCH_BUFFER_SIZE);
+ 311              		.loc 1 55 76 view .LVU67
+ 312 0058 0368     		ldr	r3, [r0]
+ 313 005a 9B68     		ldr	r3, [r3, #8]
+ 314 005c 9847     		blx	r3
+ 315              	.LVL17:
+  56:PitchDetector.cpp ****         bufferIndex_ = 0; // Reset buffer index for next block
+ 316              		.loc 1 56 22 view .LVU68
+ 317 005e A560     		str	r5, [r4, #8]
+  55:PitchDetector.cpp ****         lastResult_ = m_activeAlgorithm->Process(buffer_, PITCH_BUFFER_SIZE);
+ 318              		.loc 1 55 76 view .LVU69
+ 319 0060 84ED030A 		vstr.32	s0, [r4, #12]
+ 320 0064 C4ED040A 		vstr.32	s1, [r4, #16]
+ 321 0068 84ED051A 		vstr.32	s2, [r4, #20]
+  56:PitchDetector.cpp ****         bufferIndex_ = 0; // Reset buffer index for next block
+ 322              		.loc 1 56 9 is_stmt 1 view .LVU70
+ 323              	.L16:
+  59:PitchDetector.cpp ****     return lastResult_;
+ 324              		.loc 1 59 5 view .LVU71
+  59:PitchDetector.cpp ****     return lastResult_;
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s 			page 8
+
+
+ 325              		.loc 1 59 12 is_stmt 0 view .LVU72
+ 326 006c 0C34     		adds	r4, r4, #12
+ 327              	.LVL18:
+  59:PitchDetector.cpp ****     return lastResult_;
+ 328              		.loc 1 59 12 view .LVU73
+ 329 006e 08AB     		add	r3, sp, #32
+ 330 0070 94E80700 		ldm	r4, {r0, r1, r2}
+ 331 0074 03E90700 		stmdb	r3, {r0, r1, r2}
+ 332 0078 D3E7     		b	.L15
+ 333              		.cfi_endproc
+ 334              	.LFE555:
+ 336 007a 00BF     		.section	.text._ZN13PitchDetectorD2Ev,"ax",%progbits
+ 337              		.align	1
+ 338              		.p2align 2,,3
+ 339              		.global	_ZN13PitchDetectorD2Ev
+ 340              		.syntax unified
+ 341              		.thumb
+ 342              		.thumb_func
+ 343              		.fpu fpv5-d16
+ 345              	_ZN13PitchDetectorD2Ev:
+ 346              	.LVL19:
+ 347              	.LFB548:
+   8:PitchDetector.cpp **** PitchDetector::~PitchDetector() {}
+ 348              		.loc 1 8 1 is_stmt 1 view -0
+ 349              		.cfi_startproc
+ 350              		@ args = 0, pretend = 0, frame = 0
+ 351              		@ frame_needed = 0, uses_anonymous_args = 0
+   8:PitchDetector.cpp **** PitchDetector::~PitchDetector() {}
+ 352              		.loc 1 8 1 is_stmt 0 view .LVU75
+ 353 0000 10B5     		push	{r4, lr}
+ 354              		.cfi_def_cfa_offset 8
+ 355              		.cfi_offset 4, -8
+ 356              		.cfi_offset 14, -4
+   8:PitchDetector.cpp **** PitchDetector::~PitchDetector() {}
+ 357              		.loc 1 8 1 view .LVU76
+ 358 0002 0446     		mov	r4, r0
+ 359              	.LBB4:
+   8:PitchDetector.cpp **** PitchDetector::~PitchDetector() {}
+ 360              		.loc 1 8 31 view .LVU77
+ 361 0004 46F22C00 		movw	r0, #24620
+ 362              	.LVL20:
+   8:PitchDetector.cpp **** PitchDetector::~PitchDetector() {}
+ 363              		.loc 1 8 31 view .LVU78
+ 364 0008 2044     		add	r0, r0, r4
+ 365 000a FFF7FEFF 		bl	_ZN15AutoCorrelationD1Ev
+ 366              	.LVL21:
+ 367 000e 42F21800 		movw	r0, #8216
+ 368 0012 2044     		add	r0, r0, r4
+ 369 0014 FFF7FEFF 		bl	_ZN11YinDetectorD1Ev
+ 370              	.LVL22:
+ 371              	.LBE4:
+   8:PitchDetector.cpp **** PitchDetector::~PitchDetector() {}
+ 372              		.loc 1 8 34 view .LVU79
+ 373 0018 2046     		mov	r0, r4
+ 374 001a 10BD     		pop	{r4, pc}
+   8:PitchDetector.cpp **** PitchDetector::~PitchDetector() {}
+ 375              		.loc 1 8 34 view .LVU80
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s 			page 9
+
+
+ 376              		.cfi_endproc
+ 377              	.LFE548:
+ 379              		.global	_ZN13PitchDetectorD1Ev
+ 380              		.thumb_set _ZN13PitchDetectorD1Ev,_ZN13PitchDetectorD2Ev
+ 381              		.section	.text._ZN13PitchDetector4InitEi,"ax",%progbits
+ 382              		.align	1
+ 383              		.p2align 2,,3
+ 384              		.global	_ZN13PitchDetector4InitEi
+ 385              		.syntax unified
+ 386              		.thumb
+ 387              		.thumb_func
+ 388              		.fpu fpv5-d16
+ 390              	_ZN13PitchDetector4InitEi:
+ 391              	.LVL23:
+ 392              	.LFB550:
+  12:PitchDetector.cpp **** {
+ 393              		.loc 1 12 1 is_stmt 1 view -0
+ 394              		.cfi_startproc
+ 395              		@ args = 0, pretend = 0, frame = 0
+ 396              		@ frame_needed = 0, uses_anonymous_args = 0
+  13:PitchDetector.cpp ****     samplerate_ = samplerate;
+ 397              		.loc 1 13 5 view .LVU82
+  12:PitchDetector.cpp **** {
+ 398              		.loc 1 12 1 is_stmt 0 view .LVU83
+ 399 0000 70B5     		push	{r4, r5, r6, lr}
+ 400              		.cfi_def_cfa_offset 16
+ 401              		.cfi_offset 4, -16
+ 402              		.cfi_offset 5, -12
+ 403              		.cfi_offset 6, -8
+ 404              		.cfi_offset 14, -4
+  14:PitchDetector.cpp ****     m_yin.Init(samplerate);
+ 405              		.loc 1 14 15 view .LVU84
+ 406 0002 42F21805 		movw	r5, #8216
+  12:PitchDetector.cpp **** {
+ 407              		.loc 1 12 1 view .LVU85
+ 408 0006 0446     		mov	r4, r0
+  13:PitchDetector.cpp ****     samplerate_ = samplerate;
+ 409              		.loc 1 13 17 view .LVU86
+ 410 0008 0160     		str	r1, [r0]
+  14:PitchDetector.cpp ****     m_yin.Init(samplerate);
+ 411              		.loc 1 14 5 is_stmt 1 view .LVU87
+  12:PitchDetector.cpp **** {
+ 412              		.loc 1 12 1 is_stmt 0 view .LVU88
+ 413 000a 0E46     		mov	r6, r1
+  14:PitchDetector.cpp ****     m_yin.Init(samplerate);
+ 414              		.loc 1 14 15 view .LVU89
+ 415 000c 0544     		add	r5, r5, r0
+ 416 000e 2846     		mov	r0, r5
+ 417              	.LVL24:
+  14:PitchDetector.cpp ****     m_yin.Init(samplerate);
+ 418              		.loc 1 14 15 view .LVU90
+ 419 0010 FFF7FEFF 		bl	_ZN11YinDetector4InitEi
+ 420              	.LVL25:
+  15:PitchDetector.cpp ****     m_autocorr.Init(samplerate);
+ 421              		.loc 1 15 5 is_stmt 1 view .LVU91
+  15:PitchDetector.cpp ****     m_autocorr.Init(samplerate);
+ 422              		.loc 1 15 20 is_stmt 0 view .LVU92
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s 			page 10
+
+
+ 423 0014 46F22C00 		movw	r0, #24620
+ 424 0018 3146     		mov	r1, r6
+ 425 001a 2044     		add	r0, r0, r4
+ 426 001c FFF7FEFF 		bl	_ZN15AutoCorrelation4InitEi
+ 427              	.LVL26:
+  16:PitchDetector.cpp ****     m_activeAlgorithm = &m_yin; // Default to Yin algorithm
+ 428              		.loc 1 16 5 is_stmt 1 view .LVU93
+  16:PitchDetector.cpp ****     m_activeAlgorithm = &m_yin; // Default to Yin algorithm
+ 429              		.loc 1 16 23 is_stmt 0 view .LVU94
+ 430 0020 04F50043 		add	r3, r4, #32768
+ 431              	.LBB5:
+  19:PitchDetector.cpp ****         buffer_[i] = 0.0f;
+ 432              		.loc 1 19 20 view .LVU95
+ 433 0024 04F10800 		add	r0, r4, #8
+ 434 0028 4FF40052 		mov	r2, #8192
+ 435              	.LBE5:
+  16:PitchDetector.cpp ****     m_activeAlgorithm = &m_yin; // Default to Yin algorithm
+ 436              		.loc 1 16 23 view .LVU96
+ 437 002c DD63     		str	r5, [r3, #60]
+  18:PitchDetector.cpp ****     for (int i = 0; i < PITCH_BUFFER_SIZE; i++)
+ 438              		.loc 1 18 5 is_stmt 1 view .LVU97
+ 439              	.LVL27:
+ 440              	.LBB6:
+  18:PitchDetector.cpp ****     for (int i = 0; i < PITCH_BUFFER_SIZE; i++)
+ 441              		.loc 1 18 23 view .LVU98
+  19:PitchDetector.cpp ****         buffer_[i] = 0.0f;
+ 442              		.loc 1 19 20 is_stmt 0 view .LVU99
+ 443 002e 0021     		movs	r1, #0
+ 444              	.LBE6:
+  20:PitchDetector.cpp **** }
+ 445              		.loc 1 20 1 view .LVU100
+ 446 0030 BDE87040 		pop	{r4, r5, r6, lr}
+ 447              		.cfi_restore 14
+ 448              		.cfi_restore 6
+ 449              		.cfi_restore 5
+ 450              		.cfi_restore 4
+ 451              		.cfi_def_cfa_offset 0
+ 452              	.LVL28:
+ 453              	.LBB7:
+  19:PitchDetector.cpp ****         buffer_[i] = 0.0f;
+ 454              		.loc 1 19 20 view .LVU101
+ 455 0034 FFF7FEBF 		b	memset
+ 456              	.LVL29:
+  19:PitchDetector.cpp ****         buffer_[i] = 0.0f;
+ 457              		.loc 1 19 20 view .LVU102
+ 458              	.LBE7:
+ 459              		.cfi_endproc
+ 460              	.LFE550:
+ 462              		.text
+ 463              	.Letext0:
+ 464              		.file 2 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 465              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 466              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\th
+ 467              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 468              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 469              		.file 7 "Algorithm.h"
+ 470              		.file 8 "PitchDetector.h"
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s 			page 11
+
+
+ 471              		.file 9 "YinDetector.h"
+ 472              		.file 10 "AutoCorrelation.h"
+ 473              		.file 11 "<built-in>"
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s 			page 12
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 PitchDetector.cpp
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:17     .text._ZN13PitchDetectorC2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:26     .text._ZN13PitchDetectorC2Ev:00000000 _ZN13PitchDetectorC2Ev
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:26     .text._ZN13PitchDetectorC2Ev:00000000 _ZN13PitchDetectorC1Ev
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:81     .text._ZN13PitchDetector12setAlgorithmE20PitchAlgorithmSelect:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:89     .text._ZN13PitchDetector12setAlgorithmE20PitchAlgorithmSelect:00000000 _ZN13PitchDetector12setAlgorithmE20PitchAlgorithmSelect
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:130    .text._ZN13PitchDetector12getAlgorithmEv:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:138    .text._ZN13PitchDetector12getAlgorithmEv:00000000 _ZN13PitchDetector12getAlgorithmEv
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:156    .text._ZN13PitchDetector13getLastResultEv:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:164    .text._ZN13PitchDetector13getLastResultEv:00000000 _ZN13PitchDetector13getLastResultEv
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:197    .text._ZN13PitchDetector9setBypassEb:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:205    .text._ZN13PitchDetector9setBypassEb:00000000 _ZN13PitchDetector9setBypassEb
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:222    .text._ZN13PitchDetector7ProcessEf:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:230    .text._ZN13PitchDetector7ProcessEf:00000000 _ZN13PitchDetector7ProcessEf
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:337    .text._ZN13PitchDetectorD2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:345    .text._ZN13PitchDetectorD2Ev:00000000 _ZN13PitchDetectorD2Ev
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:345    .text._ZN13PitchDetectorD2Ev:00000000 _ZN13PitchDetectorD1Ev
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:382    .text._ZN13PitchDetector4InitEi:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccVRYnMk.s:390    .text._ZN13PitchDetector4InitEi:00000000 _ZN13PitchDetector4InitEi
+
+UNDEFINED SYMBOLS
+_ZN11YinDetectorC1Ev
+_ZN15AutoCorrelationC1Ev
+_ZN15AutoCorrelationD1Ev
+_ZN11YinDetectorD1Ev
+_ZN11YinDetector4InitEi
+_ZN15AutoCorrelation4InitEi
+memset
