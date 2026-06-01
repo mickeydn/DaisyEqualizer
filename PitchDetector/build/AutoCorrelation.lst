@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
   40 0004 82FB01C2 		smull	ip, r2, r2, r1
   14:AutoCorrelation.cpp ****     minLag_     = samplerate / 1000;  // max 1000 Hz
   41              		.loc 1 14 30 view .LVU5
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 2
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 2
 
 
   42 0008 4FEAE17C 		asr	ip, r1, #31
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
   79              	.LVL4:
   80              	.L5:
   18:AutoCorrelation.cpp **** }
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 3
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 3
 
 
   81              		.loc 1 18 17 view .LVU20
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
  129              		.loc 1 9 38 view .LVU28
  130              		.align	2
  131              	.L8:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 4
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 4
 
 
  132 0010 08000000 		.word	.LANCHOR0+8
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
  180 000c 42F21001 		movw	r1, #8208
  181 0010 2046     		mov	r0, r4
  182 0012 FFF7FEFF 		bl	_ZdlPvj
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 5
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 5
 
 
  183              	.LVL11:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
    8:AutoCorrelation.cpp **** AutoCorrelation::~AutoCorrelation() {}
  231              		.loc 1 8 37 view .LVU45
  232 000e 10BD     		pop	{r4, pc}
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 6
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 6
 
 
  233              	.LVL15:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
   24:AutoCorrelation.cpp ****     for (int i = 0; i < bufferSize; i++)
  281              		.loc 1 24 23 discriminator 2 view .LVU56
  282 0012 8342     		cmp	r3, r0
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 7
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 7
 
 
  283              		.loc 1 25 14 discriminator 2 view .LVU57
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
  328              		.thumb
  329              		.thumb_func
  330              		.fpu fpv5-d16
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 8
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 8
 
 
  332              	_ZN15AutoCorrelation10computeACFEPKfi:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
  374 001c F9D1     		bne	.L31
  375              	.LBE22:
   38:AutoCorrelation.cpp **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 9
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 9
 
 
   39:AutoCorrelation.cpp ****     if (energy < 1e-6f) {
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
   47:AutoCorrelation.cpp ****             sum += buffer[j] * buffer[j + lag];
  417              		.loc 1 47 27 discriminator 2 view .LVU95
  418 005a F7D1     		bne	.L33
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 10
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 10
 
 
  419              	.LVL28:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
  461              		.loc 1 41 21 view .LVU108
  462 007a 0021     		movs	r1, #0
  463              	.LVL34:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 11
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 11
 
 
   41:AutoCorrelation.cpp ****         return;
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
   62:AutoCorrelation.cpp ****             bestLag = lag;
   63:AutoCorrelation.cpp ****         }
   64:AutoCorrelation.cpp ****     }
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 12
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 12
 
 
   65:AutoCorrelation.cpp **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
  546              		.loc 1 76 24 view .LVU125
  547 001a FFF7FEFF 		bl	memcpy
  548              	.LVL40:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 13
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 13
 
 
  549              		.loc 1 76 24 view .LVU126
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
  589              		.loc 1 28 23 view .LVU141
  590 004e 9C45     		cmp	ip, r3
  591 0050 F7D1     		bne	.L56
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 14
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 14
 
 
  592              	.LVL44:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
  630              		.loc 1 60 21 is_stmt 0 view .LVU155
  631 0072 F2EC017A 		vldmia.32	r2!, {s15}
   60:AutoCorrelation.cpp ****             bestVal = acf_[lag];
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 15
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 15
 
 
  632              		.loc 1 60 9 view .LVU156
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
   89:AutoCorrelation.cpp **** 
   90:AutoCorrelation.cpp ****     return result;
  671              		.loc 1 90 12 view .LVU169
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 16
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 16
 
 
  672 00a6 4FF07E52 		mov	r2, #1065353216
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
  718              	.LFE555:
  720              		.section	.text._ZN15AutoCorrelation11findPeakLagEv,"ax",%progbits
  721              		.align	1
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 17
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 17
 
 
  722              		.p2align 2,,3
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
  765              	.LVL59:
   60:AutoCorrelation.cpp ****         if (acf_[lag] > bestVal) {
  766              		.loc 1 60 9 view .LVU193
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 18
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 18
 
 
  767 0028 9C46     		mov	ip, r3
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
  815 0010 00000000 		.word	_ZN15AutoCorrelation7ProcessEPKfi
  816 0014 00000000 		.word	_ZN15AutoCorrelation4InitEi
  817              		.text
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 19
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 19
 
 
  818              	.Letext0:
@@ -1090,39 +1090,39 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 1
  824              		.file 7 "Algorithm.h"
  825              		.file 8 "AutoCorrelation.h"
  826              		.file 9 "<built-in>"
-ARM GAS  C:\Users\micke\AppData\Local\Temp\cc68dlcv.s 			page 20
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s 			page 20
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 AutoCorrelation.cpp
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:17     .text._ZN15AutoCorrelation4InitEi:00000000 $t
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:26     .text._ZN15AutoCorrelation4InitEi:00000000 _ZN15AutoCorrelation4InitEi
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:84     .text._ZN15AutoCorrelation4InitEi:00000034 $d
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:91     .text._ZN15AutoCorrelationD2Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:99     .text._ZN15AutoCorrelationD2Ev:00000000 _ZN15AutoCorrelationD2Ev
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:132    .text._ZN15AutoCorrelationD2Ev:00000010 $d
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:99     .text._ZN15AutoCorrelationD2Ev:00000000 _ZN15AutoCorrelationD1Ev
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:139    .text._ZN15AutoCorrelationD0Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:147    .text._ZN15AutoCorrelationD0Ev:00000000 _ZN15AutoCorrelationD0Ev
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:191    .text._ZN15AutoCorrelationD0Ev:0000001c $d
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:196    .text._ZN15AutoCorrelationC2Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:204    .text._ZN15AutoCorrelationC2Ev:00000000 _ZN15AutoCorrelationC2Ev
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:238    .text._ZN15AutoCorrelationC2Ev:00000010 $d
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:204    .text._ZN15AutoCorrelationC2Ev:00000000 _ZN15AutoCorrelationC1Ev
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:245    .text._ZN15AutoCorrelation8removeDCEPfi:00000000 $t
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:253    .text._ZN15AutoCorrelation8removeDCEPfi:00000000 _ZN15AutoCorrelation8removeDCEPfi
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:319    .text._ZN15AutoCorrelation8removeDCEPfi:0000003c $d
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:324    .text._ZN15AutoCorrelation10computeACFEPKfi:00000000 $t
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:332    .text._ZN15AutoCorrelation10computeACFEPKfi:00000000 _ZN15AutoCorrelation10computeACFEPKfi
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:487    .text._ZN15AutoCorrelation10computeACFEPKfi:00000088 $d
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:495    .text._ZN15AutoCorrelation7ProcessEPKfi:00000000 $t
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:503    .text._ZN15AutoCorrelation7ProcessEPKfi:00000000 _ZN15AutoCorrelation7ProcessEPKfi
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:715    .text._ZN15AutoCorrelation7ProcessEPKfi:000000e8 $d
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:721    .text._ZN15AutoCorrelation11findPeakLagEv:00000000 $t
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:729    .text._ZN15AutoCorrelation11findPeakLagEv:00000000 _ZN15AutoCorrelation11findPeakLagEv
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:800    .text._ZN15AutoCorrelation11findPeakLagEv:0000004c $d
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:810    .rodata._ZTV15AutoCorrelation:00000000 _ZTV15AutoCorrelation
-C:\Users\micke\AppData\Local\Temp\cc68dlcv.s:806    .rodata._ZTV15AutoCorrelation:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:17     .text._ZN15AutoCorrelation4InitEi:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:26     .text._ZN15AutoCorrelation4InitEi:00000000 _ZN15AutoCorrelation4InitEi
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:84     .text._ZN15AutoCorrelation4InitEi:00000034 $d
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:91     .text._ZN15AutoCorrelationD2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:99     .text._ZN15AutoCorrelationD2Ev:00000000 _ZN15AutoCorrelationD2Ev
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:132    .text._ZN15AutoCorrelationD2Ev:00000010 $d
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:99     .text._ZN15AutoCorrelationD2Ev:00000000 _ZN15AutoCorrelationD1Ev
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:139    .text._ZN15AutoCorrelationD0Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:147    .text._ZN15AutoCorrelationD0Ev:00000000 _ZN15AutoCorrelationD0Ev
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:191    .text._ZN15AutoCorrelationD0Ev:0000001c $d
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:196    .text._ZN15AutoCorrelationC2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:204    .text._ZN15AutoCorrelationC2Ev:00000000 _ZN15AutoCorrelationC2Ev
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:238    .text._ZN15AutoCorrelationC2Ev:00000010 $d
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:204    .text._ZN15AutoCorrelationC2Ev:00000000 _ZN15AutoCorrelationC1Ev
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:245    .text._ZN15AutoCorrelation8removeDCEPfi:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:253    .text._ZN15AutoCorrelation8removeDCEPfi:00000000 _ZN15AutoCorrelation8removeDCEPfi
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:319    .text._ZN15AutoCorrelation8removeDCEPfi:0000003c $d
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:324    .text._ZN15AutoCorrelation10computeACFEPKfi:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:332    .text._ZN15AutoCorrelation10computeACFEPKfi:00000000 _ZN15AutoCorrelation10computeACFEPKfi
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:487    .text._ZN15AutoCorrelation10computeACFEPKfi:00000088 $d
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:495    .text._ZN15AutoCorrelation7ProcessEPKfi:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:503    .text._ZN15AutoCorrelation7ProcessEPKfi:00000000 _ZN15AutoCorrelation7ProcessEPKfi
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:715    .text._ZN15AutoCorrelation7ProcessEPKfi:000000e8 $d
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:721    .text._ZN15AutoCorrelation11findPeakLagEv:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:729    .text._ZN15AutoCorrelation11findPeakLagEv:00000000 _ZN15AutoCorrelation11findPeakLagEv
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:800    .text._ZN15AutoCorrelation11findPeakLagEv:0000004c $d
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:810    .rodata._ZTV15AutoCorrelation:00000000 _ZTV15AutoCorrelation
+C:\Users\micke\AppData\Local\Temp\ccIdd2xa.s:806    .rodata._ZTV15AutoCorrelation:00000000 $d
 
 UNDEFINED SYMBOLS
 memset

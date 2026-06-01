@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
   41              		.loc 1 10 40 view .LVU4
   42 0008 10B4     		push	{r4}
   43              		.cfi_def_cfa_offset 4
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 2
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 2
 
 
   44              		.cfi_offset 4, -4
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
   19:YinDetector.cpp ****     }
   20:YinDetector.cpp **** 
   21:YinDetector.cpp **** }
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 3
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 3
 
 
   83              		.loc 1 21 1 view .LVU22
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
  132 0008 FFF7FEFF 		bl	_ZN9AlgorithmD2Ev
  133              	.LVL6:
    8:YinDetector.cpp **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 4
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 4
 
 
  134              		.loc 1 8 27 view .LVU30
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
  183              	.LBB17:
    8:YinDetector.cpp **** 
  184              		.loc 1 8 27 is_stmt 0 view .LVU38
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 5
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 5
 
 
  185 0006 0360     		str	r3, [r0]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
    6:YinDetector.cpp **** 
  234              		.loc 1 6 26 view .LVU46
  235 0008 014B     		ldr	r3, .L16
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 6
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 6
 
 
  236              	.LBE19:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
  284              		.loc 1 24 29 view .LVU55
  285 0002 8568     		ldr	r5, [r0, #8]
  286              		.loc 1 24 27 view .LVU56
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 7
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 7
 
 
  287 0004 002D     		cmp	r5, #0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
  333              	.LBE26:
   29:YinDetector.cpp ****         }
   30:YinDetector.cpp ****         d_[tau] = sum;
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 8
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 8
 
 
  334              		.loc 1 30 9 discriminator 2 view .LVU70
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
  375              	.LVL26:
   24:YinDetector.cpp ****         float sum = 0.0f;
  376              		.loc 1 24 27 view .LVU84
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 9
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 9
 
 
  377 0064 D9D1     		bne	.L22
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
  424              		.loc 1 37 5 view .LVU93
  425              	.LBB35:
  426              		.loc 1 37 27 view .LVU94
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 10
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 10
 
 
  427 0010 24DD     		ble	.L29
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
  473              	.LVL34:
  474              	.L29:
   37:YinDetector.cpp ****         cumsum += d_[tau];
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 11
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 11
 
 
  475              		.loc 1 37 27 is_stmt 0 discriminator 4 view .LVU110
@@ -628,179 +628,237 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
  499              	.LVL35:
  500              	.LFB554:
   42:YinDetector.cpp **** 
-  43:YinDetector.cpp **** int YinDetector::findTau(){
- 501              		.loc 1 43 27 is_stmt 1 view -0
+  43:YinDetector.cpp **** int YinDetector::findTau()
+  44:YinDetector.cpp **** {
+ 501              		.loc 1 44 1 is_stmt 1 view -0
  502              		.cfi_startproc
  503              		@ args = 0, pretend = 0, frame = 0
  504              		@ frame_needed = 0, uses_anonymous_args = 0
  505              		@ link register save eliminated.
-  44:YinDetector.cpp ****     for (int tau = tauMin_; tau < tauMax_; tau++) {
- 506              		.loc 1 44 5 view .LVU113
- 507              	.LBB38:
- 508              		.loc 1 44 35 is_stmt 0 view .LVU114
- 509 0000 D0E90213 		ldrd	r1, r3, [r0, #8]
- 510              		.loc 1 44 33 view .LVU115
- 511 0004 8B42     		cmp	r3, r1
- 512 0006 24DA     		bge	.L47
- 513 0008 03F60502 		addw	r2, r3, #2053
-  45:YinDetector.cpp ****         if (d_norm_[tau] < threshold_) {
- 514              		.loc 1 45 28 view .LVU116
- 515 000c 90ED047A 		vldr.32	s14, [r0, #16]
- 516 0010 00EB8202 		add	r2, r0, r2, lsl #2
- 517 0014 02E0     		b	.L46
- 518              	.LVL36:
- 519              	.L52:
-  44:YinDetector.cpp ****     for (int tau = tauMin_; tau < tauMax_; tau++) {
- 520              		.loc 1 44 5 discriminator 2 view .LVU117
- 521 0016 0133     		adds	r3, r3, #1
- 522              	.LVL37:
-  44:YinDetector.cpp ****     for (int tau = tauMin_; tau < tauMax_; tau++) {
- 523              		.loc 1 44 33 is_stmt 1 discriminator 2 view .LVU118
- 524 0018 8B42     		cmp	r3, r1
- 525 001a 1AD0     		beq	.L47
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 12
+  45:YinDetector.cpp ****     int tau = tauMin_ + 1; // starter ved tauMin + 1 så vi kan tjekke tau-1
+ 506              		.loc 1 45 5 view .LVU113
+  44:YinDetector.cpp ****     int tau = tauMin_ + 1; // starter ved tauMin + 1 så vi kan tjekke tau-1
+ 507              		.loc 1 44 1 is_stmt 0 view .LVU114
+ 508 0000 10B4     		push	{r4}
+ 509              		.cfi_def_cfa_offset 4
+ 510              		.cfi_offset 4, -4
+  46:YinDetector.cpp **** 
+  47:YinDetector.cpp ****     while (tau < tauMax_ - 1) {
+ 511              		.loc 1 47 18 view .LVU115
+ 512 0002 D0E90242 		ldrd	r4, r2, [r0, #8]
+  45:YinDetector.cpp **** 
+ 513              		.loc 1 45 9 view .LVU116
+ 514 0006 531C     		adds	r3, r2, #1
+ 515              	.LVL36:
+ 516              		.loc 1 47 5 is_stmt 1 view .LVU117
+ 517              		.loc 1 47 16 view .LVU118
+ 518              		.loc 1 47 26 is_stmt 0 view .LVU119
+ 519 0008 04F1FF3C 		add	ip, r4, #-1
+ 520              		.loc 1 47 16 view .LVU120
+ 521 000c 9C45     		cmp	ip, r3
+ 522 000e 18DD     		ble	.L49
+ 523 0010 02F60502 		addw	r2, r2, #2053
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 12
 
 
- 526              	.LVL38:
- 527              	.L46:
- 528              		.loc 1 45 9 view .LVU119
-  44:YinDetector.cpp ****     for (int tau = tauMin_; tau < tauMax_; tau++) {
- 529              		.loc 1 44 5 view .LVU120
- 530              		.loc 1 45 24 is_stmt 0 view .LVU121
- 531 001c F2EC017A 		vldmia.32	r2!, {s15}
- 532              		.loc 1 45 9 view .LVU122
- 533 0020 F4EEC77A 		vcmpe.f32	s15, s14
- 534 0024 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 535 0028 F5D5     		bpl	.L52
- 536 002a 03F60502 		addw	r2, r3, #2053
- 537 002e 00EB8202 		add	r2, r0, r2, lsl #2
- 538              	.LVL39:
- 539              	.L45:
-  46:YinDetector.cpp ****             while (tau + 1 < tauMax_ && d_norm_[tau + 1] < d_norm_[tau]) {
- 540              		.loc 1 46 13 is_stmt 1 view .LVU123
- 541              		.loc 1 46 38 view .LVU124
- 542 0032 1846     		mov	r0, r3
- 543              		.loc 1 46 24 is_stmt 0 view .LVU125
- 544 0034 0133     		adds	r3, r3, #1
- 545              	.LVL40:
- 546              		.loc 1 46 24 view .LVU126
- 547 0036 9446     		mov	ip, r2
- 548 0038 0432     		adds	r2, r2, #4
- 549              		.loc 1 46 38 view .LVU127
- 550 003a 8B42     		cmp	r3, r1
- 551 003c 0BDA     		bge	.L41
- 552              		.loc 1 46 38 discriminator 1 view .LVU128
- 553 003e 9CED017A 		vldr.32	s14, [ip, #4]
- 554 0042 DCED007A 		vldr.32	s15, [ip]
- 555 0046 B4EEE77A 		vcmpe.f32	s14, s15
- 556 004a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 557 004e F0D4     		bmi	.L45
- 558 0050 7047     		bx	lr
- 559              	.LVL41:
- 560              	.L47:
- 561              		.loc 1 46 38 discriminator 1 view .LVU129
- 562              	.LBE38:
-  47:YinDetector.cpp ****                 tau++;
-  48:YinDetector.cpp ****             }
-  49:YinDetector.cpp ****             return tau;
-  50:YinDetector.cpp ****         }
-  51:YinDetector.cpp ****     }
-  52:YinDetector.cpp ****     return -1; // No pitch detected
- 563              		.loc 1 52 13 view .LVU130
- 564 0052 4FF0FF30 		mov	r0, #-1
- 565              	.LVL42:
- 566              	.L41:
-  53:YinDetector.cpp **** 
-  54:YinDetector.cpp ****  }
- 567              		.loc 1 54 2 view .LVU131
- 568 0056 7047     		bx	lr
- 569              		.cfi_endproc
- 570              	.LFE554:
- 572              		.section	.text._ZN11YinDetector22parabolicInterpolationEi,"ax",%progbits
- 573              		.align	1
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 13
+ 524 0014 00EB8202 		add	r2, r0, r2, lsl #2
+ 525              	.L46:
+ 526              	.LBB37:
+  48:YinDetector.cpp ****         bool isDip = d_norm_[tau] < d_norm_[tau - 1] &&
+ 527              		.loc 1 48 9 is_stmt 1 view .LVU121
+ 528              	.LVL37:
+  49:YinDetector.cpp ****                      d_norm_[tau] < threshold_;
+  50:YinDetector.cpp **** 
+  51:YinDetector.cpp ****         if (isDip) {
+ 529              		.loc 1 51 9 view .LVU122
+  52:YinDetector.cpp ****             // følg ned til lokalt minimum
+  53:YinDetector.cpp ****             while (tau + 1 < tauMax_ && d_norm_[tau + 1] < d_norm_[tau]) {
+  54:YinDetector.cpp ****                 tau++;
+  55:YinDetector.cpp ****             }
+  56:YinDetector.cpp ****             return tau;
+  57:YinDetector.cpp ****         }
+  58:YinDetector.cpp ****         tau++;
+ 530              		.loc 1 58 9 view .LVU123
+ 531 0018 1146     		mov	r1, r2
+  48:YinDetector.cpp ****                      d_norm_[tau] < threshold_;
+ 532              		.loc 1 48 33 is_stmt 0 view .LVU124
+ 533 001a 0432     		adds	r2, r2, #4
+  48:YinDetector.cpp ****                      d_norm_[tau] < threshold_;
+ 534              		.loc 1 48 54 view .LVU125
+ 535 001c 91ED007A 		vldr.32	s14, [r1]
+  48:YinDetector.cpp ****                      d_norm_[tau] < threshold_;
+ 536              		.loc 1 48 33 view .LVU126
+ 537 0020 D2ED007A 		vldr.32	s15, [r2]
+  48:YinDetector.cpp ****                      d_norm_[tau] < threshold_;
+ 538              		.loc 1 48 54 view .LVU127
+ 539 0024 F4EEC77A 		vcmpe.f32	s15, s14
+ 540 0028 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 541 002c 06D5     		bpl	.L43
+  48:YinDetector.cpp ****                      d_norm_[tau] < threshold_;
+ 542              		.loc 1 48 54 discriminator 1 view .LVU128
+ 543 002e 90ED047A 		vldr.32	s14, [r0, #16]
+ 544 0032 F4EEC77A 		vcmpe.f32	s15, s14
+ 545 0036 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 546 003a 07D4     		bmi	.L45
+ 547              	.L43:
+ 548              		.loc 1 58 12 view .LVU129
+ 549 003c 0133     		adds	r3, r3, #1
+ 550              	.LVL38:
+ 551              		.loc 1 58 12 view .LVU130
+ 552              	.LBE37:
+  47:YinDetector.cpp ****         bool isDip = d_norm_[tau] < d_norm_[tau - 1] &&
+ 553              		.loc 1 47 5 is_stmt 1 view .LVU131
+  47:YinDetector.cpp ****         bool isDip = d_norm_[tau] < d_norm_[tau - 1] &&
+ 554              		.loc 1 47 16 view .LVU132
+ 555 003e 9C45     		cmp	ip, r3
+ 556 0040 EAD1     		bne	.L46
+ 557              	.LVL39:
+ 558              	.L49:
+  59:YinDetector.cpp ****     }
+  60:YinDetector.cpp ****     return -1; // ingen pitch fundet
+ 559              		.loc 1 60 13 is_stmt 0 view .LVU133
+ 560 0042 4FF0FF30 		mov	r0, #-1
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 13
 
 
- 574              		.p2align 2,,3
- 575              		.global	_ZN11YinDetector22parabolicInterpolationEi
- 576              		.syntax unified
- 577              		.thumb
- 578              		.thumb_func
- 579              		.fpu fpv5-d16
- 581              	_ZN11YinDetector22parabolicInterpolationEi:
- 582              	.LVL43:
- 583              	.LFB555:
-  55:YinDetector.cpp **** 
-  56:YinDetector.cpp ****  float YinDetector::parabolicInterpolation(int tau){
- 584              		.loc 1 56 52 is_stmt 1 view -0
- 585              		.cfi_startproc
- 586              		@ args = 0, pretend = 0, frame = 0
- 587              		@ frame_needed = 0, uses_anonymous_args = 0
- 588              		@ link register save eliminated.
-  57:YinDetector.cpp ****         if (tau <= 1 || tau >= tauMax_ - 1) {
- 589              		.loc 1 57 9 view .LVU133
- 590 0000 0129     		cmp	r1, #1
- 591 0002 2DDD     		ble	.L54
- 592              		.loc 1 57 40 is_stmt 0 discriminator 1 view .LVU134
- 593 0004 8368     		ldr	r3, [r0, #8]
- 594 0006 013B     		subs	r3, r3, #1
- 595              		.loc 1 57 22 discriminator 1 view .LVU135
- 596 0008 8B42     		cmp	r3, r1
- 597 000a 29DD     		ble	.L54
- 598              	.LVL44:
- 599              	.LBB43:
- 600              	.LBI43:
-  56:YinDetector.cpp ****         if (tau <= 1 || tau >= tauMax_ - 1) {
- 601              		.loc 1 56 8 is_stmt 1 view .LVU136
- 602              	.LBB44:
-  58:YinDetector.cpp ****             return float(tau); // No interpolation possible
-  59:YinDetector.cpp ****         }
-  60:YinDetector.cpp ****         float a = d_norm_[tau - 1];
- 603              		.loc 1 60 9 view .LVU137
- 604 000c 00EB8100 		add	r0, r0, r1, lsl #2
- 605              	.LVL45:
-  61:YinDetector.cpp ****         float b = d_norm_[tau];
-  62:YinDetector.cpp ****         float c = d_norm_[tau + 1];
-  63:YinDetector.cpp ****         float denom = 2.0f * b - a - c;
- 606              		.loc 1 63 32 is_stmt 0 view .LVU138
- 607 0010 F0EE005A 		vmov.f32	s11, #2.0e+0
-  64:YinDetector.cpp **** 
-  65:YinDetector.cpp ****         if (fabs(denom) < 1e-6f) {
- 608              		.loc 1 65 9 view .LVU139
- 609 0014 9FED156A 		vldr.32	s12, .L57
-  60:YinDetector.cpp ****         float b = d_norm_[tau];
- 610              		.loc 1 60 15 view .LVU140
- 611 0018 00F50050 		add	r0, r0, #8192
- 612 001c D0ED047A 		vldr.32	s15, [r0, #16]
- 613              	.LVL46:
-  61:YinDetector.cpp ****         float b = d_norm_[tau];
- 614              		.loc 1 61 9 is_stmt 1 view .LVU141
-  62:YinDetector.cpp ****         float denom = 2.0f * b - a - c;
- 615              		.loc 1 62 9 view .LVU142
-  63:YinDetector.cpp **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 14
+ 561              	.LVL40:
+ 562              	.L41:
+  61:YinDetector.cpp **** }
+ 563              		.loc 1 61 1 view .LVU134
+ 564 0046 5DF8044B 		ldr	r4, [sp], #4
+ 565              		.cfi_remember_state
+ 566              		.cfi_restore 4
+ 567              		.cfi_def_cfa_offset 0
+ 568 004a 7047     		bx	lr
+ 569              	.LVL41:
+ 570              	.L45:
+ 571              		.cfi_restore_state
+ 572              		.loc 1 61 1 view .LVU135
+ 573 004c 03F60502 		addw	r2, r3, #2053
+ 574 0050 00EB8202 		add	r2, r0, r2, lsl #2
+ 575 0054 08E0     		b	.L47
+ 576              	.LVL42:
+ 577              	.L56:
+ 578              	.LBB38:
+  53:YinDetector.cpp ****                 tau++;
+ 579              		.loc 1 53 38 discriminator 1 view .LVU136
+ 580 0056 91ED017A 		vldr.32	s14, [r1, #4]
+ 581 005a D1ED007A 		vldr.32	s15, [r1]
+ 582 005e B4EEE77A 		vcmpe.f32	s14, s15
+ 583 0062 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 584 0066 EED5     		bpl	.L41
+ 585              	.LVL43:
+ 586              	.L47:
+  53:YinDetector.cpp ****                 tau++;
+ 587              		.loc 1 53 13 is_stmt 1 view .LVU137
+  53:YinDetector.cpp ****                 tau++;
+ 588              		.loc 1 53 38 view .LVU138
+ 589 0068 1846     		mov	r0, r3
+  53:YinDetector.cpp ****                 tau++;
+ 590              		.loc 1 53 24 is_stmt 0 view .LVU139
+ 591 006a 0133     		adds	r3, r3, #1
+ 592              	.LVL44:
+  53:YinDetector.cpp ****                 tau++;
+ 593              		.loc 1 53 24 view .LVU140
+ 594 006c 1146     		mov	r1, r2
+ 595 006e 0432     		adds	r2, r2, #4
+  53:YinDetector.cpp ****                 tau++;
+ 596              		.loc 1 53 38 view .LVU141
+ 597 0070 A342     		cmp	r3, r4
+ 598 0072 F0DB     		blt	.L56
+ 599              	.LBE38:
+ 600              		.loc 1 61 1 view .LVU142
+ 601 0074 5DF8044B 		ldr	r4, [sp], #4
+ 602              		.cfi_restore 4
+ 603              		.cfi_def_cfa_offset 0
+ 604 0078 7047     		bx	lr
+ 605              		.cfi_endproc
+ 606              	.LFE554:
+ 608 007a 00BF     		.section	.text._ZN11YinDetector22parabolicInterpolationEi,"ax",%progbits
+ 609              		.align	1
+ 610              		.p2align 2,,3
+ 611              		.global	_ZN11YinDetector22parabolicInterpolationEi
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 14
 
 
- 616              		.loc 1 63 32 is_stmt 0 view .LVU143
- 617 0020 90ED055A 		vldr.32	s10, [r0, #20]
- 618 0024 B0EE677A 		vmov.f32	s14, s15
-  62:YinDetector.cpp ****         float denom = 2.0f * b - a - c;
- 619              		.loc 1 62 15 view .LVU144
- 620 0028 D0ED066A 		vldr.32	s13, [r0, #24]
- 621              	.LVL47:
-  63:YinDetector.cpp **** 
- 622              		.loc 1 63 9 is_stmt 1 view .LVU145
-  63:YinDetector.cpp **** 
- 623              		.loc 1 63 32 is_stmt 0 view .LVU146
- 624 002c 95EE257A 		vfnms.f32	s14, s10, s11
-  63:YinDetector.cpp **** 
- 625              		.loc 1 63 15 view .LVU147
- 626 0030 37EE667A 		vsub.f32	s14, s14, s13
- 627              	.LVL48:
- 628              		.loc 1 65 9 is_stmt 1 view .LVU148
- 629              	.LBB45:
- 630              	.LBI45:
- 631              		.file 2 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 612              		.syntax unified
+ 613              		.thumb
+ 614              		.thumb_func
+ 615              		.fpu fpv5-d16
+ 617              	_ZN11YinDetector22parabolicInterpolationEi:
+ 618              	.LVL45:
+ 619              	.LFB555:
+  62:YinDetector.cpp **** 
+  63:YinDetector.cpp ****  float YinDetector::parabolicInterpolation(int tau){
+ 620              		.loc 1 63 52 is_stmt 1 view -0
+ 621              		.cfi_startproc
+ 622              		@ args = 0, pretend = 0, frame = 0
+ 623              		@ frame_needed = 0, uses_anonymous_args = 0
+ 624              		@ link register save eliminated.
+  64:YinDetector.cpp ****         if (tau <= 1 || tau >= tauMax_ - 1) {
+ 625              		.loc 1 64 9 view .LVU144
+ 626 0000 0129     		cmp	r1, #1
+ 627 0002 2DDD     		ble	.L58
+ 628              		.loc 1 64 40 is_stmt 0 discriminator 1 view .LVU145
+ 629 0004 8368     		ldr	r3, [r0, #8]
+ 630 0006 013B     		subs	r3, r3, #1
+ 631              		.loc 1 64 22 discriminator 1 view .LVU146
+ 632 0008 8B42     		cmp	r3, r1
+ 633 000a 29DD     		ble	.L58
+ 634              	.LVL46:
+ 635              	.LBB43:
+ 636              	.LBI43:
+  63:YinDetector.cpp ****         if (tau <= 1 || tau >= tauMax_ - 1) {
+ 637              		.loc 1 63 8 is_stmt 1 view .LVU147
+ 638              	.LBB44:
+  65:YinDetector.cpp ****             return float(tau); // No interpolation possible
+  66:YinDetector.cpp ****         }
+  67:YinDetector.cpp ****         float a = d_norm_[tau - 1];
+ 639              		.loc 1 67 9 view .LVU148
+ 640 000c 00EB8100 		add	r0, r0, r1, lsl #2
+ 641              	.LVL47:
+  68:YinDetector.cpp ****         float b = d_norm_[tau];
+  69:YinDetector.cpp ****         float c = d_norm_[tau + 1];
+  70:YinDetector.cpp ****         float denom = 2.0f * b - a - c;
+ 642              		.loc 1 70 32 is_stmt 0 view .LVU149
+ 643 0010 F0EE005A 		vmov.f32	s11, #2.0e+0
+  71:YinDetector.cpp **** 
+  72:YinDetector.cpp ****         if (fabs(denom) < 1e-6f) {
+ 644              		.loc 1 72 9 view .LVU150
+ 645 0014 9FED156A 		vldr.32	s12, .L61
+  67:YinDetector.cpp ****         float b = d_norm_[tau];
+ 646              		.loc 1 67 15 view .LVU151
+ 647 0018 00F50050 		add	r0, r0, #8192
+ 648 001c D0ED047A 		vldr.32	s15, [r0, #16]
+ 649              	.LVL48:
+  68:YinDetector.cpp ****         float b = d_norm_[tau];
+ 650              		.loc 1 68 9 is_stmt 1 view .LVU152
+  69:YinDetector.cpp ****         float denom = 2.0f * b - a - c;
+ 651              		.loc 1 69 9 view .LVU153
+  70:YinDetector.cpp **** 
+ 652              		.loc 1 70 32 is_stmt 0 view .LVU154
+ 653 0020 90ED055A 		vldr.32	s10, [r0, #20]
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 15
+
+
+ 654 0024 B0EE677A 		vmov.f32	s14, s15
+  69:YinDetector.cpp ****         float denom = 2.0f * b - a - c;
+ 655              		.loc 1 69 15 view .LVU155
+ 656 0028 D0ED066A 		vldr.32	s13, [r0, #24]
+ 657              	.LVL49:
+  70:YinDetector.cpp **** 
+ 658              		.loc 1 70 9 is_stmt 1 view .LVU156
+  70:YinDetector.cpp **** 
+ 659              		.loc 1 70 32 is_stmt 0 view .LVU157
+ 660 002c 95EE257A 		vfnms.f32	s14, s10, s11
+  70:YinDetector.cpp **** 
+ 661              		.loc 1 70 15 view .LVU158
+ 662 0030 37EE667A 		vsub.f32	s14, s14, s13
+ 663              	.LVL50:
+ 664              		.loc 1 72 9 is_stmt 1 view .LVU159
+ 665              	.LBB45:
+ 666              	.LBI45:
+ 667              		.file 2 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
    1:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // -*- C++ -*- C forwarding header.
    2:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
    3:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // Copyright (C) 1997-2020 Free Software Foundation, Inc.
@@ -838,11 +896,11 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
   35:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** //
   36:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // ISO C++ 14882: 26.5  C library
   37:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** //
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 15
-
-
   38:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
   39:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #pragma GCC system_header
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 16
+
+
   40:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
   41:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include <bits/c++config.h>
   42:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include <bits/cpp_type_traits.h>
@@ -898,11 +956,11 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
   92:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_acosl(__x); }
   93:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
   94:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 16
-
-
   95:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
   96:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 17
+
+
   97:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
   98:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
   99:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     acos(_Tp __x)
@@ -958,11 +1016,11 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
  149:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_atan2l(__y, __x); }
  150:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
  151:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 17
-
-
  152:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp, typename _Up>
  153:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 18
+
+
  154:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
  155:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     atan2(_Tp __y, _Up __x)
  156:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     {
@@ -1018,11 +1076,11 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
  206:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
  207:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   cosh(long double __x)
  208:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_coshl(__x); }
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 18
-
-
  209:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
  210:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 19
+
+
  211:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
  212:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
  213:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
@@ -1054,452 +1112,375 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 1
  239:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
  240:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
  241:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   fabs(float __x)
- 632              		.loc 2 241 3 view .LVU149
- 633              	.LBB46:
+ 668              		.loc 2 241 3 view .LVU160
+ 669              	.LBB46:
  242:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_fabsf(__x); }
- 634              		.loc 2 242 5 view .LVU150
- 635              		.loc 2 242 31 is_stmt 0 view .LVU151
- 636 0034 F0EEC75A 		vabs.f32	s11, s14
- 637              	.LBE46:
- 638              	.LBE45:
- 639              		.loc 1 65 9 view .LVU152
- 640 0038 F4EEC65A 		vcmpe.f32	s11, s12
- 641 003c F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 642 0040 0ED4     		bmi	.L54
-  66:YinDetector.cpp ****             return float(tau); // Avoid division by zero
-  67:YinDetector.cpp ****         }
-  68:YinDetector.cpp ****         return float(tau) + 0.5f * (a - c) / denom;
- 643              		.loc 1 68 9 is_stmt 1 view .LVU153
- 644              		.loc 1 68 39 is_stmt 0 view .LVU154
- 645 0042 77EEE67A 		vsub.f32	s15, s15, s13
- 646              	.LVL49:
- 647              		.loc 1 68 16 view .LVU155
- 648 0046 06EE101A 		vmov	s12, r1	@ int
- 649              		.loc 1 68 34 view .LVU156
- 650 004a F6EE006A 		vmov.f32	s13, #5.0e-1
- 651              	.LVL50:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 19
+ 670              		.loc 2 242 5 view .LVU161
+ 671              		.loc 2 242 31 is_stmt 0 view .LVU162
+ 672 0034 F0EEC75A 		vabs.f32	s11, s14
+ 673              	.LBE46:
+ 674              	.LBE45:
+ 675              		.loc 1 72 9 view .LVU163
+ 676 0038 F4EEC65A 		vcmpe.f32	s11, s12
+ 677 003c F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 678 0040 0ED4     		bmi	.L58
+  73:YinDetector.cpp ****             return float(tau); // Avoid division by zero
+  74:YinDetector.cpp ****         }
+  75:YinDetector.cpp ****         return float(tau) + 0.5f * (a - c) / denom;
+ 679              		.loc 1 75 9 is_stmt 1 view .LVU164
+ 680              		.loc 1 75 39 is_stmt 0 view .LVU165
+ 681 0042 77EEE67A 		vsub.f32	s15, s15, s13
+ 682              	.LVL51:
+ 683              		.loc 1 75 16 view .LVU166
+ 684 0046 06EE101A 		vmov	s12, r1	@ int
+ 685              		.loc 1 75 34 view .LVU167
+ 686 004a F6EE006A 		vmov.f32	s13, #5.0e-1
+ 687              	.LVL52:
+ 688              		.loc 1 75 16 view .LVU168
+ 689 004e B8EEC60A 		vcvt.f32.s32	s0, s12
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 20
 
 
- 652              		.loc 1 68 16 view .LVU157
- 653 004e B8EEC60A 		vcvt.f32.s32	s0, s12
- 654              		.loc 1 68 34 view .LVU158
- 655 0052 67EEA67A 		vmul.f32	s15, s15, s13
- 656              		.loc 1 68 44 view .LVU159
- 657 0056 C7EE876A 		vdiv.f32	s13, s15, s14
- 658              		.loc 1 68 46 view .LVU160
- 659 005a 36EE800A 		vadd.f32	s0, s13, s0
- 660              	.LVL51:
- 661              		.loc 1 68 46 view .LVU161
- 662              	.LBE44:
- 663              	.LBE43:
-  69:YinDetector.cpp **** 
-  70:YinDetector.cpp **** 
-  71:YinDetector.cpp ****   }
- 664              		.loc 1 71 3 view .LVU162
- 665 005e 7047     		bx	lr
- 666              	.L54:
-  58:YinDetector.cpp ****         }
- 667              		.loc 1 58 13 is_stmt 1 view .LVU163
-  58:YinDetector.cpp ****         }
- 668              		.loc 1 58 29 is_stmt 0 view .LVU164
- 669 0060 07EE901A 		vmov	s15, r1	@ int
- 670 0064 B8EEE70A 		vcvt.f32.s32	s0, s15
- 671 0068 7047     		bx	lr
- 672              	.L58:
- 673 006a 00BF     		.align	2
- 674              	.L57:
- 675 006c BD378635 		.word	897988541
- 676              		.cfi_endproc
- 677              	.LFE555:
- 679              		.section	.text._ZN11YinDetector7ProcessEPKfi,"ax",%progbits
- 680              		.align	1
- 681              		.p2align 2,,3
- 682              		.global	_ZN11YinDetector7ProcessEPKfi
- 683              		.syntax unified
- 684              		.thumb
- 685              		.thumb_func
- 686              		.fpu fpv5-d16
- 688              	_ZN11YinDetector7ProcessEPKfi:
- 689              	.LVL52:
- 690              	.LFB556:
-  72:YinDetector.cpp **** 
-  73:YinDetector.cpp **** 
-  74:YinDetector.cpp ****  PitchResult YinDetector::Process(const float *buffer, int bufferSize)
-  75:YinDetector.cpp ****  {
- 691              		.loc 1 75 2 is_stmt 1 view -0
- 692              		.cfi_startproc
- 693              		@ args = 0, pretend = 0, frame = 32
- 694              		@ frame_needed = 0, uses_anonymous_args = 0
-  76:YinDetector.cpp ****     PitchResult result = {0.0f, 0.0f, false};
- 695              		.loc 1 76 5 view .LVU166
+ 690              		.loc 1 75 34 view .LVU169
+ 691 0052 67EEA67A 		vmul.f32	s15, s15, s13
+ 692              		.loc 1 75 44 view .LVU170
+ 693 0056 C7EE876A 		vdiv.f32	s13, s15, s14
+ 694              		.loc 1 75 46 view .LVU171
+ 695 005a 36EE800A 		vadd.f32	s0, s13, s0
+ 696              	.LVL53:
+ 697              		.loc 1 75 46 view .LVU172
+ 698              	.LBE44:
+ 699              	.LBE43:
+  76:YinDetector.cpp **** 
   77:YinDetector.cpp **** 
-  78:YinDetector.cpp ****     computeDifference(buffer, bufferSize);
- 696              		.loc 1 78 5 view .LVU167
-  75:YinDetector.cpp ****     PitchResult result = {0.0f, 0.0f, false};
- 697              		.loc 1 75 2 is_stmt 0 view .LVU168
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 20
+  78:YinDetector.cpp ****   }
+ 700              		.loc 1 78 3 view .LVU173
+ 701 005e 7047     		bx	lr
+ 702              	.L58:
+  65:YinDetector.cpp ****         }
+ 703              		.loc 1 65 13 is_stmt 1 view .LVU174
+  65:YinDetector.cpp ****         }
+ 704              		.loc 1 65 29 is_stmt 0 view .LVU175
+ 705 0060 07EE901A 		vmov	s15, r1	@ int
+ 706 0064 B8EEE70A 		vcvt.f32.s32	s0, s15
+ 707 0068 7047     		bx	lr
+ 708              	.L62:
+ 709 006a 00BF     		.align	2
+ 710              	.L61:
+ 711 006c BD378635 		.word	897988541
+ 712              		.cfi_endproc
+ 713              	.LFE555:
+ 715              		.section	.text._ZN11YinDetector7ProcessEPKfi,"ax",%progbits
+ 716              		.align	1
+ 717              		.p2align 2,,3
+ 718              		.global	_ZN11YinDetector7ProcessEPKfi
+ 719              		.syntax unified
+ 720              		.thumb
+ 721              		.thumb_func
+ 722              		.fpu fpv5-d16
+ 724              	_ZN11YinDetector7ProcessEPKfi:
+ 725              	.LVL54:
+ 726              	.LFB556:
+  79:YinDetector.cpp **** 
+  80:YinDetector.cpp **** 
+  81:YinDetector.cpp ****  PitchResult YinDetector::Process(const float *buffer, int bufferSize)
+  82:YinDetector.cpp ****  {
+ 727              		.loc 1 82 2 is_stmt 1 view -0
+ 728              		.cfi_startproc
+ 729              		@ args = 0, pretend = 0, frame = 32
+ 730              		@ frame_needed = 0, uses_anonymous_args = 0
+  83:YinDetector.cpp ****     PitchResult result = {0.0f, 0.0f, false};
+ 731              		.loc 1 83 5 view .LVU177
+  84:YinDetector.cpp **** 
+  85:YinDetector.cpp ****     computeDifference(buffer, bufferSize);
+ 732              		.loc 1 85 5 view .LVU178
+  82:YinDetector.cpp ****     PitchResult result = {0.0f, 0.0f, false};
+ 733              		.loc 1 82 2 is_stmt 0 view .LVU179
+ 734 0000 10B5     		push	{r4, lr}
+ 735              		.cfi_def_cfa_offset 8
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 21
 
 
- 698 0000 30B5     		push	{r4, r5, lr}
- 699              		.cfi_def_cfa_offset 12
- 700              		.cfi_offset 4, -12
- 701              		.cfi_offset 5, -8
- 702              		.cfi_offset 14, -4
- 703 0002 0546     		mov	r5, r0
- 704 0004 89B0     		sub	sp, sp, #36
- 705              		.cfi_def_cfa_offset 48
- 706              		.loc 1 78 22 view .LVU169
- 707 0006 FFF7FEFF 		bl	_ZN11YinDetector17computeDifferenceEPKfi
- 708              	.LVL53:
-  79:YinDetector.cpp ****     computeCMNDF();
- 709              		.loc 1 79 5 is_stmt 1 view .LVU170
- 710              	.LBB53:
- 711              	.LBI53:
+ 736              		.cfi_offset 4, -8
+ 737              		.cfi_offset 14, -4
+ 738 0002 0446     		mov	r4, r0
+ 739 0004 88B0     		sub	sp, sp, #32
+ 740              		.cfi_def_cfa_offset 40
+ 741              		.loc 1 85 22 view .LVU180
+ 742 0006 FFF7FEFF 		bl	_ZN11YinDetector17computeDifferenceEPKfi
+ 743              	.LVL55:
+  86:YinDetector.cpp ****     computeCMNDF();
+ 744              		.loc 1 86 5 is_stmt 1 view .LVU181
+ 745              	.LBB50:
+ 746              	.LBI50:
   34:YinDetector.cpp ****     d_norm_[0] = 1.0f;
- 712              		.loc 1 34 6 view .LVU171
- 713              	.LBB54:
+ 747              		.loc 1 34 6 view .LVU182
+ 748              	.LBB51:
   35:YinDetector.cpp ****     float cumsum = 0.0f;
- 714              		.loc 1 35 5 view .LVU172
+ 749              		.loc 1 35 5 view .LVU183
   35:YinDetector.cpp ****     float cumsum = 0.0f;
- 715              		.loc 1 35 16 is_stmt 0 view .LVU173
- 716 000a 4FF07E52 		mov	r2, #1065353216
- 717              	.LVL54:
- 718              	.LBB55:
+ 750              		.loc 1 35 16 is_stmt 0 view .LVU184
+ 751 000a 4FF07E51 		mov	r1, #1065353216
+ 752              	.LVL56:
+ 753              	.LBB52:
   37:YinDetector.cpp ****         cumsum += d_[tau];
- 719              		.loc 1 37 29 view .LVU174
- 720 000e AC68     		ldr	r4, [r5, #8]
- 721              	.LBE55:
-  35:YinDetector.cpp ****     float cumsum = 0.0f;
- 722              		.loc 1 35 16 view .LVU175
- 723 0010 05F50053 		add	r3, r5, #8192
- 724              	.LBB56:
+ 754              		.loc 1 37 29 view .LVU185
+ 755 000e A268     		ldr	r2, [r4, #8]
+ 756              	.LVL57:
   37:YinDetector.cpp ****         cumsum += d_[tau];
- 725              		.loc 1 37 27 view .LVU176
- 726 0014 012C     		cmp	r4, #1
- 727              	.LBE56:
+ 757              		.loc 1 37 29 view .LVU186
+ 758              	.LBE52:
   35:YinDetector.cpp ****     float cumsum = 0.0f;
- 728              		.loc 1 35 16 view .LVU177
- 729 0016 5A61     		str	r2, [r3, #20]	@ float
+ 759              		.loc 1 35 16 view .LVU187
+ 760 0010 04F50053 		add	r3, r4, #8192
+ 761              	.LBB53:
+  37:YinDetector.cpp ****         cumsum += d_[tau];
+ 762              		.loc 1 37 27 view .LVU188
+ 763 0014 012A     		cmp	r2, #1
+ 764              	.LBE53:
+  35:YinDetector.cpp ****     float cumsum = 0.0f;
+ 765              		.loc 1 35 16 view .LVU189
+ 766 0016 5961     		str	r1, [r3, #20]	@ float
   36:YinDetector.cpp ****     for (int tau = 1; tau < tauMax_; tau++) {
- 730              		.loc 1 36 5 is_stmt 1 view .LVU178
- 731              	.LVL55:
+ 767              		.loc 1 36 5 is_stmt 1 view .LVU190
+ 768              	.LVL58:
   37:YinDetector.cpp ****         cumsum += d_[tau];
- 732              		.loc 1 37 5 view .LVU179
- 733              	.LBB57:
-  37:YinDetector.cpp ****         cumsum += d_[tau];
- 734              		.loc 1 37 27 view .LVU180
- 735 0018 24DD     		ble	.L60
- 736 001a 42F21801 		movw	r1, #8216
- 737              	.LVL56:
-  37:YinDetector.cpp ****         cumsum += d_[tau];
- 738              		.loc 1 37 27 is_stmt 0 view .LVU181
- 739 001e 05F11400 		add	r0, r5, #20
- 740 0022 05F11803 		add	r3, r5, #24
- 741              	.LBE57:
-  36:YinDetector.cpp ****     for (int tau = 1; tau < tauMax_; tau++) {
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 21
-
-
- 742              		.loc 1 36 11 view .LVU182
- 743 0026 DFED377A 		vldr.32	s15, .L83
- 744 002a 2944     		add	r1, r1, r5
- 745 002c 00EB8400 		add	r0, r0, r4, lsl #2
- 746              	.LBB58:
-  37:YinDetector.cpp ****         cumsum += d_[tau];
- 747              		.loc 1 37 14 view .LVU183
- 748 0030 0122     		movs	r2, #1
- 749              	.LVL57:
- 750              	.L63:
-  38:YinDetector.cpp ****         d_norm_[tau] = (cumsum > 0.0f) ? d_[tau] / (cumsum / tau) : 0.0f;
- 751              		.loc 1 38 9 is_stmt 1 view .LVU184
-  38:YinDetector.cpp ****         d_norm_[tau] = (cumsum > 0.0f) ? d_[tau] / (cumsum / tau) : 0.0f;
- 752              		.loc 1 38 25 is_stmt 0 view .LVU185
- 753 0032 F3EC016A 		vldmia.32	r3!, {s13}
-  39:YinDetector.cpp ****     }
- 754              		.loc 1 39 40 view .LVU186
- 755 0036 9FED337A 		vldr.32	s14, .L83
-  38:YinDetector.cpp ****         d_norm_[tau] = (cumsum > 0.0f) ? d_[tau] / (cumsum / tau) : 0.0f;
- 756              		.loc 1 38 16 view .LVU187
- 757 003a 77EEA67A 		vadd.f32	s15, s15, s13
- 758              	.LVL58:
-  39:YinDetector.cpp ****     }
- 759              		.loc 1 39 9 is_stmt 1 view .LVU188
-  39:YinDetector.cpp ****     }
- 760              		.loc 1 39 40 is_stmt 0 view .LVU189
- 761 003e F4EEC77A 		vcmpe.f32	s15, s14
- 762 0042 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 763 0046 07DD     		ble	.L61
-  39:YinDetector.cpp ****     }
- 764              		.loc 1 39 60 view .LVU190
- 765 0048 07EE102A 		vmov	s14, r2	@ int
- 766 004c B8EEC77A 		vcvt.f32.s32	s14, s14
- 767 0050 87EE876A 		vdiv.f32	s12, s15, s14
-  39:YinDetector.cpp ****     }
- 768              		.loc 1 39 40 view .LVU191
- 769 0054 86EE867A 		vdiv.f32	s14, s13, s12
- 770              	.L61:
+ 769              		.loc 1 37 5 view .LVU191
+ 770              	.LBB54:
   37:YinDetector.cpp ****         cumsum += d_[tau];
  771              		.loc 1 37 27 view .LVU192
- 772 0058 8342     		cmp	r3, r0
+ 772 0018 24DD     		ble	.L64
+ 773 001a 42F21801 		movw	r1, #8216
+ 774 001e 04F1140C 		add	ip, r4, #20
+ 775 0022 04F11803 		add	r3, r4, #24
+ 776              	.LBE54:
+  36:YinDetector.cpp ****     for (int tau = 1; tau < tauMax_; tau++) {
+ 777              		.loc 1 36 11 is_stmt 0 view .LVU193
+ 778 0026 DFED257A 		vldr.32	s15, .L76
+ 779 002a 0CEB820C 		add	ip, ip, r2, lsl #2
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 22
+
+
+ 780 002e 2144     		add	r1, r1, r4
+ 781              	.LBB55:
   37:YinDetector.cpp ****         cumsum += d_[tau];
- 773              		.loc 1 37 5 view .LVU193
- 774 005a 02F10102 		add	r2, r2, #1
- 775              	.LVL59:
+ 782              		.loc 1 37 14 view .LVU194
+ 783 0030 0122     		movs	r2, #1
+ 784              	.LVL59:
+ 785              	.L67:
+  38:YinDetector.cpp ****         d_norm_[tau] = (cumsum > 0.0f) ? d_[tau] / (cumsum / tau) : 0.0f;
+ 786              		.loc 1 38 9 is_stmt 1 view .LVU195
+  38:YinDetector.cpp ****         d_norm_[tau] = (cumsum > 0.0f) ? d_[tau] / (cumsum / tau) : 0.0f;
+ 787              		.loc 1 38 25 is_stmt 0 view .LVU196
+ 788 0032 F3EC016A 		vldmia.32	r3!, {s13}
   39:YinDetector.cpp ****     }
- 776              		.loc 1 39 22 view .LVU194
- 777 005e A1EC017A 		vstmia.32	r1!, {s14}
+ 789              		.loc 1 39 40 view .LVU197
+ 790 0036 9FED217A 		vldr.32	s14, .L76
+  38:YinDetector.cpp ****         d_norm_[tau] = (cumsum > 0.0f) ? d_[tau] / (cumsum / tau) : 0.0f;
+ 791              		.loc 1 38 16 view .LVU198
+ 792 003a 77EEA67A 		vadd.f32	s15, s15, s13
+ 793              	.LVL60:
+  39:YinDetector.cpp ****     }
+ 794              		.loc 1 39 9 is_stmt 1 view .LVU199
+  39:YinDetector.cpp ****     }
+ 795              		.loc 1 39 40 is_stmt 0 view .LVU200
+ 796 003e F4EEC77A 		vcmpe.f32	s15, s14
+ 797 0042 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 798 0046 07DD     		ble	.L65
+  39:YinDetector.cpp ****     }
+ 799              		.loc 1 39 60 view .LVU201
+ 800 0048 07EE102A 		vmov	s14, r2	@ int
+ 801 004c B8EEC77A 		vcvt.f32.s32	s14, s14
+ 802 0050 87EE876A 		vdiv.f32	s12, s15, s14
+  39:YinDetector.cpp ****     }
+ 803              		.loc 1 39 40 view .LVU202
+ 804 0054 86EE867A 		vdiv.f32	s14, s13, s12
+ 805              	.L65:
   37:YinDetector.cpp ****         cumsum += d_[tau];
- 778              		.loc 1 37 5 is_stmt 1 view .LVU195
- 779              	.LVL60:
+ 806              		.loc 1 37 27 view .LVU203
+ 807 0058 6345     		cmp	r3, ip
   37:YinDetector.cpp ****         cumsum += d_[tau];
- 780              		.loc 1 37 27 view .LVU196
- 781 0062 E6D1     		bne	.L63
- 782              	.LVL61:
- 783              	.L60:
+ 808              		.loc 1 37 5 view .LVU204
+ 809 005a 02F10102 		add	r2, r2, #1
+ 810              	.LVL61:
+  39:YinDetector.cpp ****     }
+ 811              		.loc 1 39 22 view .LVU205
+ 812 005e A1EC017A 		vstmia.32	r1!, {s14}
   37:YinDetector.cpp ****         cumsum += d_[tau];
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 22
+ 813              		.loc 1 37 5 is_stmt 1 view .LVU206
+ 814              	.LVL62:
+  37:YinDetector.cpp ****         cumsum += d_[tau];
+ 815              		.loc 1 37 27 view .LVU207
+ 816 0062 E6D1     		bne	.L67
+ 817              	.LVL63:
+ 818              	.L64:
+  37:YinDetector.cpp ****         cumsum += d_[tau];
+ 819              		.loc 1 37 27 is_stmt 0 view .LVU208
+ 820              	.LBE55:
+ 821              	.LBE51:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 23
 
 
- 784              		.loc 1 37 27 is_stmt 0 view .LVU197
- 785              	.LBE58:
- 786              	.LBE54:
- 787              	.LBE53:
-  80:YinDetector.cpp **** 
-  81:YinDetector.cpp ****     int tau = findTau();
- 788              		.loc 1 81 5 is_stmt 1 view .LVU198
- 789              	.LBB59:
- 790              	.LBI59:
-  43:YinDetector.cpp ****     for (int tau = tauMin_; tau < tauMax_; tau++) {
- 791              		.loc 1 43 5 view .LVU199
- 792              	.LBE59:
-  44:YinDetector.cpp ****         if (d_norm_[tau] < threshold_) {
- 793              		.loc 1 44 5 view .LVU200
- 794              	.LBB61:
- 795              	.LBB60:
-  44:YinDetector.cpp ****         if (d_norm_[tau] < threshold_) {
- 796              		.loc 1 44 14 is_stmt 0 view .LVU201
- 797 0064 EB68     		ldr	r3, [r5, #12]
- 798              	.LVL62:
-  44:YinDetector.cpp ****         if (d_norm_[tau] < threshold_) {
- 799              		.loc 1 44 33 is_stmt 1 view .LVU202
- 800 0066 A342     		cmp	r3, r4
- 801 0068 47DA     		bge	.L64
- 802 006a 03F60502 		addw	r2, r3, #2053
-  45:YinDetector.cpp ****             while (tau + 1 < tauMax_ && d_norm_[tau + 1] < d_norm_[tau]) {
- 803              		.loc 1 45 28 is_stmt 0 view .LVU203
- 804 006e 95ED047A 		vldr.32	s14, [r5, #16]
- 805 0072 05EB8202 		add	r2, r5, r2, lsl #2
- 806 0076 02E0     		b	.L69
- 807              	.L80:
-  44:YinDetector.cpp ****         if (d_norm_[tau] < threshold_) {
- 808              		.loc 1 44 5 view .LVU204
- 809 0078 0133     		adds	r3, r3, #1
- 810              	.LVL63:
-  44:YinDetector.cpp ****         if (d_norm_[tau] < threshold_) {
- 811              		.loc 1 44 33 is_stmt 1 view .LVU205
- 812 007a A342     		cmp	r3, r4
- 813 007c 3DD0     		beq	.L64
- 814              	.L69:
-  45:YinDetector.cpp ****             while (tau + 1 < tauMax_ && d_norm_[tau + 1] < d_norm_[tau]) {
- 815              		.loc 1 45 9 view .LVU206
-  44:YinDetector.cpp ****         if (d_norm_[tau] < threshold_) {
- 816              		.loc 1 44 5 view .LVU207
-  45:YinDetector.cpp ****             while (tau + 1 < tauMax_ && d_norm_[tau + 1] < d_norm_[tau]) {
- 817              		.loc 1 45 24 is_stmt 0 view .LVU208
- 818 007e F2EC017A 		vldmia.32	r2!, {s15}
-  45:YinDetector.cpp ****             while (tau + 1 < tauMax_ && d_norm_[tau + 1] < d_norm_[tau]) {
- 819              		.loc 1 45 9 view .LVU209
- 820 0082 F4EEC77A 		vcmpe.f32	s15, s14
- 821 0086 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 822 008a F5D5     		bpl	.L80
-  45:YinDetector.cpp ****             while (tau + 1 < tauMax_ && d_norm_[tau + 1] < d_norm_[tau]) {
- 823              		.loc 1 45 9 view .LVU210
- 824 008c 03F60502 		addw	r2, r3, #2053
- 825 0090 05EB8202 		add	r2, r5, r2, lsl #2
- 826 0094 08E0     		b	.L68
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 23
-
-
+ 822              	.LBE50:
+  87:YinDetector.cpp **** 
+  88:YinDetector.cpp ****     int tau = findTau();
+ 823              		.loc 1 88 5 is_stmt 1 view .LVU209
+ 824              		.loc 1 88 22 is_stmt 0 view .LVU210
+ 825 0064 2046     		mov	r0, r4
+ 826 0066 FFF7FEFF 		bl	_ZN11YinDetector7findTauEv
  827              	.LVL64:
- 828              	.L82:
-  46:YinDetector.cpp ****                 tau++;
- 829              		.loc 1 46 38 view .LVU211
- 830 0096 90ED017A 		vldr.32	s14, [r0, #4]
- 831 009a D0ED007A 		vldr.32	s15, [r0]
- 832 009e B4EEE77A 		vcmpe.f32	s14, s15
- 833 00a2 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 834 00a6 05D5     		bpl	.L67
- 835              	.LVL65:
- 836              	.L68:
-  46:YinDetector.cpp ****                 tau++;
- 837              		.loc 1 46 13 is_stmt 1 view .LVU212
-  46:YinDetector.cpp ****                 tau++;
- 838              		.loc 1 46 38 view .LVU213
- 839 00a8 1946     		mov	r1, r3
-  46:YinDetector.cpp ****                 tau++;
- 840              		.loc 1 46 24 is_stmt 0 view .LVU214
- 841 00aa 0133     		adds	r3, r3, #1
- 842              	.LVL66:
-  46:YinDetector.cpp ****                 tau++;
- 843              		.loc 1 46 24 view .LVU215
- 844 00ac 1046     		mov	r0, r2
- 845 00ae 0432     		adds	r2, r2, #4
-  46:YinDetector.cpp ****                 tau++;
- 846              		.loc 1 46 38 view .LVU216
- 847 00b0 A342     		cmp	r3, r4
- 848 00b2 F0DB     		blt	.L82
- 849              	.L67:
- 850              	.LVL67:
-  46:YinDetector.cpp ****                 tau++;
- 851              		.loc 1 46 38 view .LVU217
- 852              	.LBE60:
- 853              	.LBE61:
-  82:YinDetector.cpp **** 
-  83:YinDetector.cpp ****     if (tau == -1){
- 854              		.loc 1 83 5 is_stmt 1 view .LVU218
- 855 00b4 4B1C     		adds	r3, r1, #1
- 856 00b6 20D0     		beq	.L64
-  84:YinDetector.cpp ****         return result;
-  85:YinDetector.cpp ****     }
-  86:YinDetector.cpp ****     
-  87:YinDetector.cpp ****     float tauRefined = parabolicInterpolation(tau);
- 857              		.loc 1 87 5 view .LVU219
- 858              		.loc 1 87 46 is_stmt 0 view .LVU220
- 859 00b8 2846     		mov	r0, r5
- 860 00ba FFF7FEFF 		bl	_ZN11YinDetector22parabolicInterpolationEi
- 861              	.LVL68:
+  89:YinDetector.cpp **** 
+  90:YinDetector.cpp ****     if (tau == -1){
+ 828              		.loc 1 90 5 view .LVU211
+ 829 006a 431C     		adds	r3, r0, #1
   88:YinDetector.cpp **** 
-  89:YinDetector.cpp ****     result.frequency   = samplerate_ / tauRefined;
- 862              		.loc 1 89 5 is_stmt 1 view .LVU221
-  90:YinDetector.cpp ****     result.confidence  = 1.0f - d_norm_[tau]; // høj confidence = lav d_norm
- 863              		.loc 1 90 5 view .LVU222
-  89:YinDetector.cpp ****     result.confidence  = 1.0f - d_norm_[tau]; // høj confidence = lav d_norm
- 864              		.loc 1 89 38 is_stmt 0 view .LVU223
- 865 00be 95ED017A 		vldr.32	s14, [r5, #4]	@ int
- 866              		.loc 1 90 44 view .LVU224
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 24
+ 830              		.loc 1 88 22 view .LVU212
+ 831 006c 0146     		mov	r1, r0
+ 832              	.LVL65:
+ 833              		.loc 1 90 5 is_stmt 1 view .LVU213
+ 834 006e 20D0     		beq	.L75
+  91:YinDetector.cpp ****         return result;
+  92:YinDetector.cpp ****     }
+  93:YinDetector.cpp ****     
+  94:YinDetector.cpp ****     float tauRefined = parabolicInterpolation(tau);
+ 835              		.loc 1 94 5 view .LVU214
+ 836              		.loc 1 94 46 is_stmt 0 view .LVU215
+ 837 0070 2046     		mov	r0, r4
+ 838              	.LVL66:
+ 839              		.loc 1 94 46 view .LVU216
+ 840 0072 FFF7FEFF 		bl	_ZN11YinDetector22parabolicInterpolationEi
+ 841              	.LVL67:
+  95:YinDetector.cpp **** 
+  96:YinDetector.cpp ****     result.frequency   = samplerate_ / tauRefined;
+ 842              		.loc 1 96 5 is_stmt 1 view .LVU217
+  97:YinDetector.cpp ****     result.confidence  = 1.0f - d_norm_[tau]; // høj confidence = lav d_norm
+ 843              		.loc 1 97 5 view .LVU218
+  96:YinDetector.cpp ****     result.confidence  = 1.0f - d_norm_[tau]; // høj confidence = lav d_norm
+ 844              		.loc 1 96 38 is_stmt 0 view .LVU219
+ 845 0076 94ED017A 		vldr.32	s14, [r4, #4]	@ int
+ 846              		.loc 1 97 44 view .LVU220
+ 847 007a 01F60401 		addw	r1, r1, #2052
+ 848              	.LVL68:
+ 849              		.loc 1 97 31 view .LVU221
+ 850 007e F7EE007A 		vmov.f32	s15, #1.0e+0
+  96:YinDetector.cpp ****     result.confidence  = 1.0f - d_norm_[tau]; // høj confidence = lav d_norm
+ 851              		.loc 1 96 38 view .LVU222
+ 852 0082 B8EEC77A 		vcvt.f32.s32	s14, s14
+ 853              		.loc 1 97 44 view .LVU223
+ 854 0086 04EB8104 		add	r4, r4, r1, lsl #2
+ 855              	.LVL69:
+  98:YinDetector.cpp ****     result.valid       = true;
+  99:YinDetector.cpp **** 
+ 100:YinDetector.cpp ****     return result;
+ 856              		.loc 1 100 12 view .LVU224
+ 857 008a CDED077A 		vstr.32	s15, [sp, #28]
+  96:YinDetector.cpp ****     result.confidence  = 1.0f - d_norm_[tau]; // høj confidence = lav d_norm
+ 858              		.loc 1 96 38 view .LVU225
+ 859 008e C7EE006A 		vdiv.f32	s13, s14, s0
+ 860              	.LVL70:
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 24
 
 
- 867 00c2 01F60401 		addw	r1, r1, #2052
- 868              	.LVL69:
- 869              		.loc 1 90 31 view .LVU225
- 870 00c6 F7EE007A 		vmov.f32	s15, #1.0e+0
-  89:YinDetector.cpp ****     result.confidence  = 1.0f - d_norm_[tau]; // høj confidence = lav d_norm
- 871              		.loc 1 89 38 view .LVU226
- 872 00ca B8EEC77A 		vcvt.f32.s32	s14, s14
- 873              		.loc 1 90 44 view .LVU227
- 874 00ce 05EB8105 		add	r5, r5, r1, lsl #2
- 875              	.LVL70:
-  91:YinDetector.cpp ****     result.valid       = true;
-  92:YinDetector.cpp **** 
-  93:YinDetector.cpp ****     return result;
- 876              		.loc 1 93 12 view .LVU228
- 877 00d2 CDED077A 		vstr.32	s15, [sp, #28]
-  89:YinDetector.cpp ****     result.confidence  = 1.0f - d_norm_[tau]; // høj confidence = lav d_norm
- 878              		.loc 1 89 38 view .LVU229
- 879 00d6 C7EE006A 		vdiv.f32	s13, s14, s0
- 880              	.LVL71:
-  90:YinDetector.cpp ****     result.valid       = true;
- 881              		.loc 1 90 31 view .LVU230
- 882 00da 95ED016A 		vldr.32	s12, [r5, #4]
- 883 00de 77EEC67A 		vsub.f32	s15, s15, s12
- 884              	.LVL72:
-  91:YinDetector.cpp ****     result.valid       = true;
- 885              		.loc 1 91 5 is_stmt 1 view .LVU231
- 886              		.loc 1 93 5 view .LVU232
- 887              		.loc 1 93 12 is_stmt 0 view .LVU233
- 888 00e2 CDED067A 		vstr.32	s15, [sp, #24]
- 889 00e6 CDED056A 		vstr.32	s13, [sp, #20]
- 890              	.LVL73:
- 891              	.L71:
-  94:YinDetector.cpp **** 
-  95:YinDetector.cpp ****  }
- 892              		.loc 1 95 2 view .LVU234
- 893 00ea DDED060A 		vldr.32	s1, [sp, #24]
- 894 00ee 9DED071A 		vldr.32	s2, [sp, #28]
- 895 00f2 9DED050A 		vldr.32	s0, [sp, #20]
- 896 00f6 09B0     		add	sp, sp, #36
- 897              		.cfi_remember_state
- 898              		.cfi_def_cfa_offset 12
- 899              		@ sp needed
- 900 00f8 30BD     		pop	{r4, r5, pc}
- 901              	.LVL74:
- 902              	.L64:
- 903              		.cfi_restore_state
-  84:YinDetector.cpp ****     }
- 904              		.loc 1 84 9 is_stmt 1 view .LVU235
-  84:YinDetector.cpp ****     }
- 905              		.loc 1 84 16 is_stmt 0 view .LVU236
- 906 00fa 0023     		movs	r3, #0
- 907 00fc 0593     		str	r3, [sp, #20]	@ float
- 908 00fe 0693     		str	r3, [sp, #24]	@ float
- 909 0100 0793     		str	r3, [sp, #28]	@ float
- 910 0102 F2E7     		b	.L71
- 911              	.L84:
- 912              		.align	2
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 25
+  97:YinDetector.cpp ****     result.valid       = true;
+ 861              		.loc 1 97 31 view .LVU226
+ 862 0092 94ED016A 		vldr.32	s12, [r4, #4]
+ 863 0096 77EEC67A 		vsub.f32	s15, s15, s12
+ 864              	.LVL71:
+  98:YinDetector.cpp ****     result.valid       = true;
+ 865              		.loc 1 98 5 is_stmt 1 view .LVU227
+ 866              		.loc 1 100 5 view .LVU228
+ 867              		.loc 1 100 12 is_stmt 0 view .LVU229
+ 868 009a CDED067A 		vstr.32	s15, [sp, #24]
+ 869 009e CDED056A 		vstr.32	s13, [sp, #20]
+ 870              	.LVL72:
+ 871              	.L69:
+ 101:YinDetector.cpp **** 
+ 102:YinDetector.cpp ****  }
+ 872              		.loc 1 102 2 view .LVU230
+ 873 00a2 DDED060A 		vldr.32	s1, [sp, #24]
+ 874 00a6 9DED071A 		vldr.32	s2, [sp, #28]
+ 875 00aa 9DED050A 		vldr.32	s0, [sp, #20]
+ 876 00ae 08B0     		add	sp, sp, #32
+ 877              		.cfi_remember_state
+ 878              		.cfi_def_cfa_offset 8
+ 879              		@ sp needed
+ 880 00b0 10BD     		pop	{r4, pc}
+ 881              	.LVL73:
+ 882              	.L75:
+ 883              		.cfi_restore_state
+  91:YinDetector.cpp ****     }
+ 884              		.loc 1 91 9 is_stmt 1 view .LVU231
+  91:YinDetector.cpp ****     }
+ 885              		.loc 1 91 16 is_stmt 0 view .LVU232
+ 886 00b2 0023     		movs	r3, #0
+ 887 00b4 0593     		str	r3, [sp, #20]	@ float
+ 888 00b6 0693     		str	r3, [sp, #24]	@ float
+ 889 00b8 0793     		str	r3, [sp, #28]	@ float
+ 890 00ba F2E7     		b	.L69
+ 891              	.L77:
+ 892              		.align	2
+ 893              	.L76:
+ 894 00bc 00000000 		.word	0
+ 895              		.cfi_endproc
+ 896              	.LFE556:
+ 898              		.global	_ZTV11YinDetector
+ 899              		.section	.rodata._ZTV11YinDetector,"a"
+ 900              		.align	2
+ 901              		.set	.LANCHOR0,. + 0
+ 904              	_ZTV11YinDetector:
+ 905 0000 00000000 		.word	0
+ 906 0004 00000000 		.word	0
+ 907 0008 00000000 		.word	_ZN11YinDetectorD1Ev
+ 908 000c 00000000 		.word	_ZN11YinDetectorD0Ev
+ 909 0010 00000000 		.word	_ZN11YinDetector7ProcessEPKfi
+ 910 0014 00000000 		.word	_ZN11YinDetector4InitEi
+ 911              		.text
+ 912              	.Letext0:
+ 913              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 914              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\th
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 25
 
 
- 913              	.L83:
- 914 0104 00000000 		.word	0
- 915              		.cfi_endproc
- 916              	.LFE556:
- 918              		.global	_ZTV11YinDetector
- 919              		.section	.rodata._ZTV11YinDetector,"a"
- 920              		.align	2
- 921              		.set	.LANCHOR0,. + 0
- 924              	_ZTV11YinDetector:
- 925 0000 00000000 		.word	0
- 926 0004 00000000 		.word	0
- 927 0008 00000000 		.word	_ZN11YinDetectorD1Ev
- 928 000c 00000000 		.word	_ZN11YinDetectorD0Ev
- 929 0010 00000000 		.word	_ZN11YinDetector7ProcessEPKfi
- 930 0014 00000000 		.word	_ZN11YinDetector4InitEi
- 931              		.text
- 932              	.Letext0:
- 933              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
- 934              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\th
- 935              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
- 936              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
- 937              		.file 7 "Algorithm.h"
- 938              		.file 8 "YinDetector.h"
- 939              		.file 9 "<built-in>"
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s 			page 26
+ 915              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 916              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 917              		.file 7 "Algorithm.h"
+ 918              		.file 8 "YinDetector.h"
+ 919              		.file 9 "<built-in>"
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s 			page 26
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 YinDetector.cpp
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:17     .text._ZN11YinDetector4InitEi:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:26     .text._ZN11YinDetector4InitEi:00000000 _ZN11YinDetector4InitEi
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:95     .text._ZN11YinDetector4InitEi:00000038 $d
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:103    .text._ZN11YinDetectorD2Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:111    .text._ZN11YinDetectorD2Ev:00000000 _ZN11YinDetectorD2Ev
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:144    .text._ZN11YinDetectorD2Ev:00000010 $d
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:111    .text._ZN11YinDetectorD2Ev:00000000 _ZN11YinDetectorD1Ev
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:151    .text._ZN11YinDetectorD0Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:159    .text._ZN11YinDetectorD0Ev:00000000 _ZN11YinDetectorD0Ev
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:203    .text._ZN11YinDetectorD0Ev:0000001c $d
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:208    .text._ZN11YinDetectorC2Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:216    .text._ZN11YinDetectorC2Ev:00000000 _ZN11YinDetectorC2Ev
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:250    .text._ZN11YinDetectorC2Ev:00000010 $d
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:216    .text._ZN11YinDetectorC2Ev:00000000 _ZN11YinDetectorC1Ev
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:257    .text._ZN11YinDetector17computeDifferenceEPKfi:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:265    .text._ZN11YinDetector17computeDifferenceEPKfi:00000000 _ZN11YinDetector17computeDifferenceEPKfi
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:382    .text._ZN11YinDetector17computeDifferenceEPKfi:00000068 $d
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:388    .text._ZN11YinDetector12computeCMNDFEv:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:396    .text._ZN11YinDetector12computeCMNDFEv:00000000 _ZN11YinDetector12computeCMNDFEv
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:485    .text._ZN11YinDetector12computeCMNDFEv:00000064 $d
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:490    .text._ZN11YinDetector7findTauEv:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:498    .text._ZN11YinDetector7findTauEv:00000000 _ZN11YinDetector7findTauEv
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:573    .text._ZN11YinDetector22parabolicInterpolationEi:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:581    .text._ZN11YinDetector22parabolicInterpolationEi:00000000 _ZN11YinDetector22parabolicInterpolationEi
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:675    .text._ZN11YinDetector22parabolicInterpolationEi:0000006c $d
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:680    .text._ZN11YinDetector7ProcessEPKfi:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:688    .text._ZN11YinDetector7ProcessEPKfi:00000000 _ZN11YinDetector7ProcessEPKfi
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:914    .text._ZN11YinDetector7ProcessEPKfi:00000104 $d
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:924    .rodata._ZTV11YinDetector:00000000 _ZTV11YinDetector
-C:\Users\micke\AppData\Local\Temp\ccy1F6Ra.s:920    .rodata._ZTV11YinDetector:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:17     .text._ZN11YinDetector4InitEi:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:26     .text._ZN11YinDetector4InitEi:00000000 _ZN11YinDetector4InitEi
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:95     .text._ZN11YinDetector4InitEi:00000038 $d
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:103    .text._ZN11YinDetectorD2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:111    .text._ZN11YinDetectorD2Ev:00000000 _ZN11YinDetectorD2Ev
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:144    .text._ZN11YinDetectorD2Ev:00000010 $d
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:111    .text._ZN11YinDetectorD2Ev:00000000 _ZN11YinDetectorD1Ev
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:151    .text._ZN11YinDetectorD0Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:159    .text._ZN11YinDetectorD0Ev:00000000 _ZN11YinDetectorD0Ev
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:203    .text._ZN11YinDetectorD0Ev:0000001c $d
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:208    .text._ZN11YinDetectorC2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:216    .text._ZN11YinDetectorC2Ev:00000000 _ZN11YinDetectorC2Ev
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:250    .text._ZN11YinDetectorC2Ev:00000010 $d
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:216    .text._ZN11YinDetectorC2Ev:00000000 _ZN11YinDetectorC1Ev
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:257    .text._ZN11YinDetector17computeDifferenceEPKfi:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:265    .text._ZN11YinDetector17computeDifferenceEPKfi:00000000 _ZN11YinDetector17computeDifferenceEPKfi
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:382    .text._ZN11YinDetector17computeDifferenceEPKfi:00000068 $d
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:388    .text._ZN11YinDetector12computeCMNDFEv:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:396    .text._ZN11YinDetector12computeCMNDFEv:00000000 _ZN11YinDetector12computeCMNDFEv
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:485    .text._ZN11YinDetector12computeCMNDFEv:00000064 $d
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:490    .text._ZN11YinDetector7findTauEv:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:498    .text._ZN11YinDetector7findTauEv:00000000 _ZN11YinDetector7findTauEv
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:609    .text._ZN11YinDetector22parabolicInterpolationEi:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:617    .text._ZN11YinDetector22parabolicInterpolationEi:00000000 _ZN11YinDetector22parabolicInterpolationEi
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:711    .text._ZN11YinDetector22parabolicInterpolationEi:0000006c $d
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:716    .text._ZN11YinDetector7ProcessEPKfi:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:724    .text._ZN11YinDetector7ProcessEPKfi:00000000 _ZN11YinDetector7ProcessEPKfi
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:894    .text._ZN11YinDetector7ProcessEPKfi:000000bc $d
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:904    .rodata._ZTV11YinDetector:00000000 _ZTV11YinDetector
+C:\Users\micke\AppData\Local\Temp\ccxJD8Ul.s:900    .rodata._ZTV11YinDetector:00000000 $d
 
 UNDEFINED SYMBOLS
 memset

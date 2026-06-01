@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   27:../../libDaisy//src/daisy_pod.h ****     /** Knobs */
   28:../../libDaisy//src/daisy_pod.h ****     enum Knob
   29:../../libDaisy//src/daisy_pod.h ****     {
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 2
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 2
 
 
   30:../../libDaisy//src/daisy_pod.h ****         KNOB_1,    /** &  */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   40:../../libDaisy//src/hid/midi.h **** 
   41:../../libDaisy//src/hid/midi.h ****         /** Pointer to buffer for DMA UART rx byte transfer in background.
   42:../../libDaisy//src/hid/midi.h ****          *
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 3
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 3
 
 
   43:../../libDaisy//src/hid/midi.h ****          *  @details By default this uses a shared buffer in DMA_BUFFER_MEM_SECTION,
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   97:../../libDaisy//src/hid/midi.h ****     }
   98:../../libDaisy//src/hid/midi.h **** 
   99:../../libDaisy//src/hid/midi.h ****     /** @brief returns whether the UART peripheral is actively listening in the background or not *
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 4
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 4
 
 
  100:../../libDaisy//src/hid/midi.h ****     inline bool RxActive() { return uart_.IsListening(); }
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  154:../../libDaisy//src/hid/midi.h ****   public:
  155:../../libDaisy//src/hid/midi.h ****     MidiHandler() {}
  156:../../libDaisy//src/hid/midi.h ****     ~MidiHandler() {}
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 5
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 5
 
 
   38              		.loc 2 156 5 view .LVU1
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   51:../../libDaisy//src/util/FIFO.h ****         if(!IsFull())
   52:../../libDaisy//src/util/FIFO.h ****         {
   53:../../libDaisy//src/util/FIFO.h ****             buffer_[bufferIn_++] = elementToAdd;
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 6
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 6
 
 
   54:../../libDaisy//src/util/FIFO.h ****             if(bufferIn_ >= bufferSize_)
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  108:../../libDaisy//src/util/FIFO.h ****             bufferOut_++;
  109:../../libDaisy//src/util/FIFO.h ****             if(bufferOut_ >= bufferSize_)
  110:../../libDaisy//src/util/FIFO.h ****                 bufferOut_ -= bufferSize_;
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 7
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 7
 
 
  111:../../libDaisy//src/util/FIFO.h ****             return result;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  165:../../libDaisy//src/util/FIFO.h ****     bool IsEmpty() const { return bufferIn_ == bufferOut_; }
  166:../../libDaisy//src/util/FIFO.h **** 
  167:../../libDaisy//src/util/FIFO.h ****     /** returns true, if the buffer is Full */
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 8
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 8
 
 
  168:../../libDaisy//src/util/FIFO.h ****     bool IsFull() const { return GetNumElements() == bufferSize_ - 1; }
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  222:../../libDaisy//src/util/FIFO.h ****             if(nextIndex >= bufferSize_)
  223:../../libDaisy//src/util/FIFO.h ****                 nextIndex -= bufferSize_;
  224:../../libDaisy//src/util/FIFO.h ****         }
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 9
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 9
 
 
  225:../../libDaisy//src/util/FIFO.h **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  279:../../libDaisy//src/util/FIFO.h ****             index -= bufferSize_;
  280:../../libDaisy//src/util/FIFO.h ****         return buffer_[index];
  281:../../libDaisy//src/util/FIFO.h ****     }
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 10
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 10
 
 
  282:../../libDaisy//src/util/FIFO.h **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   57              		.loc 2 32 5 is_stmt 1 view .LVU7
   32:../../libDaisy//src/hid/midi.h **** 
   58              		.loc 2 32 5 is_stmt 0 view .LVU8
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 11
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 11
 
 
   59              	.LBE295:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   70              	.LBE297:
   71              	.LBB298:
   72              	.LBI298:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 12
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 12
 
 
   73              		.loc 6 25 5 is_stmt 1 view .LVU12
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   24:../../libDaisy//src/hid/switch.h ****         TYPE_MOMENTARY, /**< & */
   25:../../libDaisy//src/hid/switch.h ****     };
   26:../../libDaisy//src/hid/switch.h ****     /** Specifies whether the pressed is HIGH or LOW. */
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 13
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 13
 
 
   27:../../libDaisy//src/hid/switch.h ****     enum Polarity
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  119              	.LBI307:
  120              		.loc 8 23 5 is_stmt 1 view .LVU29
  121              		.loc 8 23 5 is_stmt 0 view .LVU30
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 14
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 14
 
 
  122              	.LBE307:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   20:../../libDaisy//src/daisy_seed.h ****   public:
   21:../../libDaisy//src/daisy_seed.h ****     DaisySeed() {}
   22:../../libDaisy//src/daisy_seed.h ****     ~DaisySeed() {}
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 15
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 15
 
 
  136              		.loc 10 22 5 is_stmt 1 view .LVU34
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   51:../../libDaisy//src/sys/system.h ****             use_icache  = true;
   52:../../libDaisy//src/sys/system.h ****             skip_clocks = false;
   53:../../libDaisy//src/sys/system.h ****         }
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 16
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 16
 
 
   54:../../libDaisy//src/sys/system.h **** 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
    5:../../libDaisy//src/hid/usb.h **** #include <stdlib.h>
    6:../../libDaisy//src/hid/usb.h **** 
    7:../../libDaisy//src/hid/usb.h **** namespace daisy
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 17
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 17
 
 
    8:../../libDaisy//src/hid/usb.h **** /** @addtogroup human_interface
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   14:../../libDaisy//src/per/adc.h ****     @{
   15:../../libDaisy//src/per/adc.h **** */
   16:../../libDaisy//src/per/adc.h **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 18
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 18
 
 
   17:../../libDaisy//src/per/adc.h **** /* While there may not be many configuration options here,
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   71:../../libDaisy//src/per/adc.h ****     \param mux_2 Third mux pin
   72:../../libDaisy//src/per/adc.h ****     \param speed conversion speed for this pin defaults to 8.5 cycles
   73:../../libDaisy//src/per/adc.h ****     */
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 19
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 19
 
 
   74:../../libDaisy//src/per/adc.h ****     void InitMux(dsy_gpio_pin    adc_pin,
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   12:../../libDaisy//src/hid/audio.h ****  *            board that includes one of those objects) then the intialization
   13:../../libDaisy//src/hid/audio.h ****  *            is already taken  care of.
   14:../../libDaisy//src/hid/audio.h ****  *           If you're setting up your own custom hardware, or need to make changes
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 20
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 20
 
 
   15:../../libDaisy//src/hid/audio.h ****  *           you will have to take the following steps:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   69:../../libDaisy//src/hid/audio.h **** 
   70:../../libDaisy//src/hid/audio.h ****     /** Type for a Non-Interleaving audio callback 
   71:../../libDaisy//src/hid/audio.h ****      * Non-Interleaving audio callbacks in daisy will be of this type
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 21
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 21
 
 
   72:../../libDaisy//src/hid/audio.h ****      */
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
    8:Application.cpp **** using namespace daisy;
    9:Application.cpp **** using namespace daisysp;
   10:Application.cpp **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 22
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 22
 
 
   11:Application.cpp **** #define USE_HWPOD
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  215              		.loc 15 28 26 view .LVU53
  216 0018 96B3     		cbz	r6, .L5
   29:Application.cpp ****     {
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 23
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 23
 
 
   30:Application.cpp ****         // Mikrofon/line-in signal processeres
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  258              		.loc 15 35 28 discriminator 2 view .LVU70
  259 005c 03EB0400 		add	r0, r3, r4
   35:Application.cpp ****         out[1][i] = in[1][i];
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 24
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 24
 
 
  260              		.loc 15 35 19 discriminator 2 view .LVU71
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  302              		.loc 15 40 25 view .LVU92
  303 008c 00EB8000 		add	r0, r0, r0, lsl #2
  304              		.loc 15 40 9 view .LVU93
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 25
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 25
 
 
  305 0090 1860     		str	r0, [r3]
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   68:Application.cpp ****         // Placeholder til lydfil-input
   69:Application.cpp ****         // sample = readFromFile();
   70:Application.cpp ****         PitchResult result = detectorLeft.Process(sample);
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 26
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 26
 
 
   71:Application.cpp ****         if (result.valid) {
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  364 001c FFF7FEFF 		bl	_ZN13PitchDetector4InitEi
  365              	.LVL14:
   86:Application.cpp **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 27
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 27
 
 
  366              		.loc 15 86 5 is_stmt 1 view .LVU106
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   57:../../libDaisy//src/daisy_seed.h ****     /** Begins the audio for the seeds builtin audio.
   58:../../libDaisy//src/daisy_seed.h ****     the specified callback will get called whenever
   59:../../libDaisy//src/daisy_seed.h ****     new data is ready to be prepared.
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 28
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 28
 
 
   60:../../libDaisy//src/daisy_seed.h ****     */
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  114:../../libDaisy//src/daisy_seed.h **** 
  115:../../libDaisy//src/daisy_seed.h ****     /** Print formatted debug log message
  116:../../libDaisy//src/daisy_seed.h ****      */
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 29
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 29
 
 
  117:../../libDaisy//src/daisy_seed.h ****     template <typename... VA>
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  407 0046 1248     		ldr	r0, .L15+12
  408 0048 FFF7FEFF 		bl	_ZN10Controller4InitEv
  409              	.LVL20:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 30
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 30
 
 
  104:Application.cpp **** 
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  449 007c FFF7FEFF 		bl	_ZN10Controller10printStateEmf
  450              	.LVL25:
  114:Application.cpp ****         }
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 31
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 31
 
 
  115:Application.cpp ****         counter++;
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  494              		.loc 10 21 5 view .LVU146
  495              	.LBB393:
  496              	.LBB394:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 32
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 32
 
 
  497              	.LBI394:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   53:../../libDaisy//src/per/qspi.h ****         E_INVALID_MODE,
   54:../../libDaisy//src/per/qspi.h ****     };
   55:../../libDaisy//src/per/qspi.h **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 33
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 33
 
 
   56:../../libDaisy//src/per/qspi.h ****     /** Configuration structure for interfacing with QSPI Driver */
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  110:../../libDaisy//src/per/qspi.h ****         This should be called before reinitializing QSPI in a different mode.
  111:../../libDaisy//src/per/qspi.h ****         \return Result::OK or Result::ERR
  112:../../libDaisy//src/per/qspi.h ****         */
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 34
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 34
 
 
  113:../../libDaisy//src/per/qspi.h ****     Result DeInit();
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  499              		.loc 16 166 5 view .LVU147
  500              	.LBE394:
  501              	.LBE393:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 35
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 35
 
 
  502              	.LBE392:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  553              	.LBB397:
  554              		.loc 16 166 34 view .LVU152
  555 000e 2560     		str	r5, [r4]
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 36
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 36
 
 
  556              	.LVL27:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   25:../../libDaisy//src/per/dac.h ****     enum class Result
   26:../../libDaisy//src/per/dac.h ****     {
   27:../../libDaisy//src/per/dac.h ****         OK,
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 37
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 37
 
 
   28:../../libDaisy//src/per/dac.h ****         ERR,
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   82:../../libDaisy//src/per/dac.h ****     };
   83:../../libDaisy//src/per/dac.h **** 
   84:../../libDaisy//src/per/dac.h ****     DacHandle() : pimpl_(nullptr) {}
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 38
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 38
 
 
  581              		.loc 17 84 5 is_stmt 1 view .LVU159
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   28:../../libDaisy//src/per/sai.h ****  *  sai_config.b_sync          = SaiHandle::Config::Sync::SLAVE;
   29:../../libDaisy//src/per/sai.h ****  *  sai_config.a_dir           = SaiHandle::Config::Direction::RECEIVE;
   30:../../libDaisy//src/per/sai.h ****  *  sai_config.b_dir           = SaiHandle::Config::Direction::TRANSMIT;
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 39
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 39
 
 
   31:../../libDaisy//src/per/sai.h ****  *  sai_config.pin_config.fs   = {DSY_GPIOE, 4};
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   85:../../libDaisy//src/per/sai.h ****         {
   86:../../libDaisy//src/per/sai.h ****             TRANSMIT,
   87:../../libDaisy//src/per/sai.h ****             RECEIVE,
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 40
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 40
 
 
   88:../../libDaisy//src/per/sai.h ****         };
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  632              	.LBB468:
  633              	.LBI468:
   21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 41
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 41
 
 
  634              		.loc 8 21 5 is_stmt 1 view .LVU174
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  674              		.loc 6 24 5 view .LVU188
   24:../../libDaisy//src/hid/led.h ****     ~Led() {}
  675              		.loc 6 24 5 is_stmt 0 view .LVU189
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 42
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 42
 
 
  676              	.LBE478:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   16:../../libDaisy//src/per/uart.h ****     */
   17:../../libDaisy//src/per/uart.h **** 
   18:../../libDaisy//src/per/uart.h **** /** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 43
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 43
 
 
   19:../../libDaisy//src/per/uart.h ****     Uart Peripheral
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
   73:../../libDaisy//src/per/uart.h ****             dsy_gpio_pin rx; /**< & */
   74:../../libDaisy//src/per/uart.h ****         } pin_config;        /**< & */
   75:../../libDaisy//src/per/uart.h **** 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 44
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 44
 
 
   76:../../libDaisy//src/per/uart.h ****         Config()
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  740              	.LBE458:
  741              	.LBE481:
  742              	.LBE487:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 45
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 45
 
 
  743              	.LBE493:
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  786              		.loc 4 18 17 view .LVU211
  787 0030 C4F83822 		str	r2, [r4, #568]
  788              	.LBE433:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 46
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 46
 
 
  789              	.LBE454:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  838              	.LBB462:
  839              	.LBB457:
  840              	.LBB450:
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 47
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 47
 
 
  841              	.LBB447:
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  889              	.LBE500:
  890              		.loc 15 123 1 view .LVU224
  891 0084 BDE8F041 		pop	{r4, r5, r6, r7, r8, lr}
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 48
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 48
 
 
  892              		.cfi_restore 14
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  942      00000000 
  942      00000000 
  942      00000000 
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 49
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 49
 
 
  943              		.section	.bss._ZL3dur,"aw",%nobits
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  999              		.file 54 "../../libDaisy//src/util/wav_format.h"
  1000              		.file 55 "../../libDaisy//src/util/color.h"
  1001              		.file 56 "../../libDaisy//src/dev/max11300.h"
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 50
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 50
 
 
  1002              		.file 57 "../../libDaisy//src/hid/logger.h"
@@ -2956,36 +2956,36 @@ ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 1
  1014              		.file 69 "Controller.h"
  1015              		.file 70 "../../libDaisy//src/dev/sr_595.h"
  1016              		.file 71 "<built-in>"
-ARM GAS  C:\Users\micke\AppData\Local\Temp\ccds2Mba.s 			page 51
+ARM GAS  C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s 			page 51
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 Application.cpp
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:17     .text._ZN5daisy8DaisyPodD2Ev:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:26     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD2Ev
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:26     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD1Ev
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:170    .text._Z13AudioCallbackPKPKfPPfj:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:178    .text._Z13AudioCallbackPKPKfPPfj:00000000 _Z13AudioCallbackPKPKfPPfj
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:316    .text._Z13AudioCallbackPKPKfPPfj:00000098 $d
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:935    .bss._ZL12detectorLeft:00000000 _ZL12detectorLeft
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:941    .bss._ZL13detectorRight:00000000 _ZL13detectorRight
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:324    .text.startup.main:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:332    .text.startup.main:00000000 main
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:458    .text.startup.main:00000084 $d
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:954    .bss._ZL5hwPod:00000000 _ZL5hwPod
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:470    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:00000000 $t
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:477    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:00000000 _GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:907    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:0000008c $d
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:922    .init_array:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:925    .bss._ZL10controller:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:929    .bss._ZL10controller:00000000 _ZL10controller
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:932    .bss._ZL12detectorLeft:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:938    .bss._ZL13detectorRight:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:944    .bss._ZL3dur:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:948    .bss._ZL3dur:00000000 _ZL3dur
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:951    .bss._ZL5hwPod:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:957    .bss._ZL5start:00000000 $d
-C:\Users\micke\AppData\Local\Temp\ccds2Mba.s:961    .bss._ZL5start:00000000 _ZL5start
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:17     .text._ZN5daisy8DaisyPodD2Ev:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:26     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD2Ev
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:26     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD1Ev
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:170    .text._Z13AudioCallbackPKPKfPPfj:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:178    .text._Z13AudioCallbackPKPKfPPfj:00000000 _Z13AudioCallbackPKPKfPPfj
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:316    .text._Z13AudioCallbackPKPKfPPfj:00000098 $d
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:935    .bss._ZL12detectorLeft:00000000 _ZL12detectorLeft
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:941    .bss._ZL13detectorRight:00000000 _ZL13detectorRight
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:324    .text.startup.main:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:332    .text.startup.main:00000000 main
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:458    .text.startup.main:00000084 $d
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:954    .bss._ZL5hwPod:00000000 _ZL5hwPod
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:470    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:00000000 $t
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:477    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:00000000 _GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:907    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:0000008c $d
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:922    .init_array:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:925    .bss._ZL10controller:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:929    .bss._ZL10controller:00000000 _ZL10controller
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:932    .bss._ZL12detectorLeft:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:938    .bss._ZL13detectorRight:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:944    .bss._ZL3dur:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:948    .bss._ZL3dur:00000000 _ZL3dur
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:951    .bss._ZL5hwPod:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:957    .bss._ZL5start:00000000 $d
+C:\Users\micke\AppData\Local\Temp\ccGFQYa0.s:961    .bss._ZL5start:00000000 _ZL5start
                            .group:00000000 _ZN5daisy8DaisyPodD5Ev
 
 UNDEFINED SYMBOLS

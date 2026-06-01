@@ -9,7 +9,7 @@ YinDetector::~YinDetector() {}
 
 void YinDetector::Init(int samplerate) {
     samplerate_ = samplerate;
-    tauMin_ = samplerate_ / 1200; //  periode for 1200 Hz
+    tauMin_ = samplerate_ / 600; //  periode for 1200 Hz
     tauMax_ = samplerate_ / 60; // periode for 60 Hz i samples
     threshold_ = 0.2f; // Threshold
 
@@ -40,18 +40,25 @@ void YinDetector::computeCMNDF() {
     }
 }
 
-int YinDetector::findTau(){
-    for (int tau = tauMin_; tau < tauMax_; tau++) {
-        if (d_norm_[tau] < threshold_) {
+int YinDetector::findTau()
+{
+    int tau = tauMin_ + 1; // starter ved tauMin + 1 så vi kan tjekke tau-1
+
+    while (tau < tauMax_ - 1) {
+        bool isDip = d_norm_[tau] < d_norm_[tau - 1] &&
+                     d_norm_[tau] < threshold_;
+
+        if (isDip) {
+            // følg ned til lokalt minimum
             while (tau + 1 < tauMax_ && d_norm_[tau + 1] < d_norm_[tau]) {
                 tau++;
             }
             return tau;
         }
+        tau++;
     }
-    return -1; // No pitch detected
-
- }
+    return -1; // ingen pitch fundet
+}
 
  float YinDetector::parabolicInterpolation(int tau){
         if (tau <= 1 || tau >= tauMax_ - 1) {

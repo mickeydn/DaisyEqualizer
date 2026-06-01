@@ -40,43 +40,6 @@ void AudioCallback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, s
     dur = (end - start) * 5; // ns
 }
 
-#ifndef USE_HWPOD
-
-static DaisySeed hwSeed;
-
-void algoTester(void)
-{
-    // Læs lydfil og detekter pitch
-    // TODO: tilføj lydfil-læsning når vi ved hvilket format der bruges
-    float sample, sample_rate;
-
-    hwSeed.Configure();
-    hwSeed.Init();
-    hwSeed.StartLog();
-    System::Delay(5000);
-    hwSeed.PrintLine("Daisy Pod Pitch Detector");
-
-    hwSeed.SetAudioBlockSize(SAMPLE_BUFFER_SIZE);
-    sample_rate = hwSeed.AudioSampleRate();
-    hwSeed.PrintLine("Sample rate %.6f", sample_rate);
-
-    detectorLeft.Init(sample_rate);
-    detectorLeft.setBypass(false);
-    detectorLeft.SetAlgorithm(ALG_YIN);
-
-    while (1) {
-        // Placeholder til lydfil-input
-        // sample = readFromFile();
-        PitchResult result = detectorLeft.Process(sample);
-        if (result.valid) {
-            hwSeed.PrintLine("Pitch: %.2f Hz | Confidence: %.2f", 
-                result.frequency, result.confidence);
-        }
-        System::Delay(100);
-    }
-}
-
-#endif
 
 int main(void)
 {
@@ -84,8 +47,6 @@ int main(void)
     detectorLeft.setBypass(true);
     detectorRight.Init(SAMPLE_RATE);
     detectorRight.setBypass(true);
-
-#ifdef USE_HWPOD
 
     int counter = 0;
 
@@ -115,9 +76,4 @@ int main(void)
         counter++;
     }
 
-#else
-
-    algoTester();
-
-#endif
 }
